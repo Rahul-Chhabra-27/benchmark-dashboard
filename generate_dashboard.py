@@ -57,16 +57,10 @@ SOURCES = [
         "group": "synthetic64k",
         "group_title": "Synthetic-KV 64K",
         "precision": "AWQ 4-bit",
-        # The completed compressed sweep ran on L40; the canonical no-compression
-        # reference is the later DGX run. Paths are applied in order so that the
-        # DGX baseline replaces the older L40 baseline with the same run label.
-        "paths": [
-            "results_synthetic_kv_qwen_awq_l40",
-            "results_synthetic_kv_qwen_awq_yarn_dgx_baseline",
-        ],
+        "path": "results_synthetic_kv_awq_no_prefix_all_budgets",
         "kind": "synthetic",
-        "budgets": ["No compression", "512", "1024", "2048", "4096"],
-        "provenance": "Qwen3-8B-AWQ · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
+        "budgets": ["No compression", "512", "1024", "2048", "4096", "8192"],
+        "provenance": "Qwen3-8B-AWQ · no K_/V_ prefixes · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
         "expected_tasks": ["64k"],
     },
     {
@@ -75,10 +69,13 @@ SOURCES = [
         "group": "synthetic64k",
         "group_title": "Synthetic-KV 64K",
         "precision": "Non-quantized",
-        "path": "results_synthetic_kv_qwen_yarn4_full_independent",
+        "paths": [
+            "results_synthetic_kv_direct_no_prefix",
+            "results_synthetic_kv_no_prefix_all_budgets",
+        ],
         "kind": "synthetic",
-        "budgets": ["No compression", "512", "1024", "2048", "4096"],
-        "provenance": "Qwen3-8B BF16 · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
+        "budgets": ["No compression", "512", "1024", "2048", "4096", "8192"],
+        "provenance": "Qwen3-8B BF16 · no K_/V_ prefixes · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
         "expected_tasks": ["64k"],
     },
 ]
