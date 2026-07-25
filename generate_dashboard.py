@@ -69,6 +69,18 @@ SOURCES = [
         "provenance": "Qwen3-8B-AWQ · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
         "expected_tasks": ["64k"],
     },
+    {
+        "id": "synthetic64k-nonquantized",
+        "title": "Synthetic-KV 64K · Non-quantized",
+        "group": "synthetic64k",
+        "group_title": "Synthetic-KV 64K",
+        "precision": "Non-quantized",
+        "path": "results_synthetic_kv_qwen_yarn4_full_independent",
+        "kind": "synthetic",
+        "budgets": ["No compression", "512", "1024", "2048", "4096"],
+        "provenance": "Qwen3-8B BF16 · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
+        "expected_tasks": ["64k"],
+    },
 ]
 
 

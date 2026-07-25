@@ -12,8 +12,9 @@ LOFT provenance is displayed directly in the dashboard:
   context (`max_context_length: null`), including the no-compression
   baseline and 256, 512, 1024, 2048, and 4096 budget labels (MiB).
 - All canonical non-quantized LOFT 128K results use YaRN-4.
-- Synthetic-KV 64K reports the completed Qwen3-8B-AWQ YaRN-4 sweep over the
-  full 2,340-sample dataset, including the canonical DGX no-compression baseline.
+- Synthetic-KV 64K compares completed Qwen3-8B-AWQ and non-quantized BF16
+  YaRN-4 sweeps over the full 2,340-sample dataset, including canonical
+  no-compression baselines.
 
 Regenerate after evaluations finish:
 
