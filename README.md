@@ -1,6 +1,7 @@
 # Benchmark dashboard
 
-This standalone report visualizes completed LOFT and RULER32K sweeps. LOFT
+This standalone report visualizes completed LOFT, RULER32K, and Synthetic-KV
+sweeps. LOFT
 shows true no-compression baselines where available and omits the older KVzip
 1%-pruned reference. It also shows the positional configuration used by each
 result.
@@ -11,6 +12,8 @@ LOFT provenance is displayed directly in the dashboard:
   context (`max_context_length: null`), including the no-compression
   baseline and 256, 512, 1024, 2048, and 4096 budget labels (MiB).
 - All canonical non-quantized LOFT 128K results use YaRN-4.
+- Synthetic-KV 64K reports the completed Qwen3-8B-AWQ YaRN-4 sweep over the
+  full 2,340-sample dataset, including the canonical DGX no-compression baseline.
 
 Regenerate after evaluations finish:
 
