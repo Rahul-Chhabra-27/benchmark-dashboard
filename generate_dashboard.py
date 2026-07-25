@@ -30,14 +30,31 @@ SOURCES = [
         "expected_tasks": ["nq_32k", "hotpotqa_32k", "musique_32k", "qampari_32k", "quest_32k"],
     },
     {
+        "id": "loft32k-awq",
+        "title": "LOFT 32K · AWQ",
+        "group": "loft32k",
+        "group_title": "LOFT 32K",
+        "precision": "AWQ 4-bit",
+        "path": "results_loft32k_qwen_awq_yarn4_fullcontext_all_budgets",
+        "kind": "loft",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096"],
+        "provenance": "Qwen3-8B-AWQ · 4-bit weights · FP16 KV cache",
+        "budget_provenance": {},
+        "expected_tasks": ["nq_32k", "hotpotqa_32k", "musique_32k", "qampari_32k", "quest_32k"],
+        "publish_predictions": True,
+    },
+    {
         "id": "loft128k",
         "title": "LOFT 128K · Non-quantized",
         "group": "loft128k",
         "group_title": "LOFT 128K",
         "precision": "Non-quantized",
-        "path": "results_loft128k_qwen_yarn4",
+        "paths": [
+            "results_loft128k_qwen_yarn4",
+            "results_loft128k_qwen_yarn4_dgx_4gb",
+        ],
         "kind": "loft",
-        "budgets": ["No compression", "256", "512", "1024", "2048"],
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096"],
         "provenance": "YaRN-4",
     },
     {
@@ -132,14 +149,16 @@ def score_fields(metrics, kind):
     return scores
 
 
-def publish_predictions(metric_file: Path, source_id: str, budget: str):
+def publish_predictions(metric_file: Path, source_id: str, budget: str, task: str = ""):
     prediction_file = metric_file.with_name("predictions.csv")
     if not prediction_file.exists():
         return None, []
 
     DOWNLOADS.mkdir(exist_ok=True)
     safe_budget = re.sub(r"[^a-z0-9]+", "-", budget.lower()).strip("-")
-    public_name = f"{source_id}-{safe_budget}.csv"
+    safe_task = re.sub(r"[^a-z0-9]+", "-", task.lower()).strip("-")
+    task_part = f"-{safe_task}" if safe_task else ""
+    public_name = f"{source_id}{task_part}-{safe_budget}.csv"
     shutil.copyfile(prediction_file, DOWNLOADS / public_name)
 
     with prediction_file.open(newline="") as handle:
@@ -153,7 +172,7 @@ def publish_predictions(metric_file: Path, source_id: str, budget: str):
     preview = []
     for index in indices:
         row = rows[index]
-        reference = row.get("answer", "")
+        reference = row.get("answer") or row.get("answers") or ""
         try:
             parsed = ast.literal_eval(reference)
             if isinstance(parsed, list) and parsed:
@@ -194,8 +213,13 @@ def collect(source):
             newest = max(newest, metric_file.stat().st_mtime)
             nested = next((v for v in metrics.values() if isinstance(v, dict)), {})
             prediction_url, prediction_preview = (
-                publish_predictions(metric_file, source["id"], budget)
-                if source["kind"] == "synthetic"
+                publish_predictions(
+                    metric_file,
+                    source["id"],
+                    budget,
+                    "" if source["kind"] == "synthetic" else task,
+                )
+                if source["kind"] == "synthetic" or source.get("publish_predictions")
                 else (None, [])
             )
             run = {
