@@ -12,11 +12,9 @@ LOFT provenance is displayed directly in the dashboard:
   context (`max_context_length: null`), including the no-compression
   baseline and 256, 512, 1024, 2048, and 4096 budget labels (MiB).
 - All canonical non-quantized LOFT 128K results use YaRN-4.
-- Synthetic-KV 64K uses the no-prefix benchmark transformation, removing
-  `K_`/`V_` consistently from contexts, questions, and reference answers.
-  The non-quantized BF16 sweep includes the true no-compression baseline and
-  512, 1024, 2048, 4096, and 8192 budgets. The matching Qwen3-8B-AWQ series is
-  displayed only after its complete sweep is available.
+- Synthetic-KV 64K includes the non-quantized BF16 true no-compression
+  baseline and 512, 1024, 2048, 4096, and 8192 budgets. The matching
+  Qwen3-8B-AWQ series is displayed only after its complete sweep is available.
 
 Regenerate after evaluations finish:
 

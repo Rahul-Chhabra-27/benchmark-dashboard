@@ -60,7 +60,7 @@ SOURCES = [
         "path": "results_synthetic_kv_awq_no_prefix_all_budgets",
         "kind": "synthetic",
         "budgets": ["No compression", "512", "1024", "2048", "4096", "8192"],
-        "provenance": "Qwen3-8B-AWQ · no K_/V_ prefixes · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
+        "provenance": "Qwen3-8B-AWQ · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
         "expected_tasks": ["64k"],
     },
     {
@@ -75,7 +75,7 @@ SOURCES = [
         ],
         "kind": "synthetic",
         "budgets": ["No compression", "512", "1024", "2048", "4096", "8192"],
-        "provenance": "Qwen3-8B BF16 · no K_/V_ prefixes · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
+        "provenance": "Qwen3-8B BF16 · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
         "expected_tasks": ["64k"],
     },
 ]
