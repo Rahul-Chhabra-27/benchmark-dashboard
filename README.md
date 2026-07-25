@@ -15,6 +15,9 @@ LOFT provenance is displayed directly in the dashboard:
 - Synthetic-KV 64K includes the non-quantized BF16 true no-compression
   baseline and 512, 1024, 2048, 4096, and 8192 budgets. The matching
   Qwen3-8B-AWQ series is displayed only after its complete sweep is available.
+- Completed Synthetic-KV configurations include deterministic prediction
+  previews and downloadable CSV files containing every question, reference,
+  prediction, and run statistic.
 
 Regenerate after evaluations finish:
 

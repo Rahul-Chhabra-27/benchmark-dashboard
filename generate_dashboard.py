@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Build a standalone dashboard from completed LOFT, RULER, and Synthetic-KV sweeps."""
 
+import ast
+import csv
 import json
 import re
+import shutil
 from datetime import datetime
 from pathlib import Path
 
@@ -10,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EVAL = ROOT / "kvpress" / "evaluation"
 OUT = Path(__file__).with_name("index.html")
+DOWNLOADS = Path(__file__).with_name("downloads")
 
 SOURCES = [
     {
@@ -128,6 +132,47 @@ def score_fields(metrics, kind):
     return scores
 
 
+def publish_predictions(metric_file: Path, source_id: str, budget: str):
+    prediction_file = metric_file.with_name("predictions.csv")
+    if not prediction_file.exists():
+        return None, []
+
+    DOWNLOADS.mkdir(exist_ok=True)
+    safe_budget = re.sub(r"[^a-z0-9]+", "-", budget.lower()).strip("-")
+    public_name = f"{source_id}-{safe_budget}.csv"
+    shutil.copyfile(prediction_file, DOWNLOADS / public_name)
+
+    with prediction_file.open(newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    if not rows:
+        return f"downloads/{public_name}", []
+
+    # Evenly spaced rows provide a deterministic, non-cherry-picked preview.
+    count = min(8, len(rows))
+    indices = sorted({round(i * (len(rows) - 1) / max(count - 1, 1)) for i in range(count)})
+    preview = []
+    for index in indices:
+        row = rows[index]
+        reference = row.get("answer", "")
+        try:
+            parsed = ast.literal_eval(reference)
+            if isinstance(parsed, list) and parsed:
+                reference = str(parsed[0])
+        except (SyntaxError, ValueError):
+            pass
+        prediction = row.get("predicted_answer", "")
+        preview.append(
+            {
+                "row": index + 1,
+                "question": row.get("question", ""),
+                "reference": reference,
+                "prediction": prediction,
+                "raw_match": prediction.strip().casefold() == reference.strip().casefold(),
+            }
+        )
+    return f"downloads/{public_name}", preview
+
+
 def collect(source):
     grouped = {}
     newest = 0.0
@@ -148,6 +193,11 @@ def collect(source):
             budget = budget_label(run_dir.name, source["kind"])
             newest = max(newest, metric_file.stat().st_mtime)
             nested = next((v for v in metrics.values() if isinstance(v, dict)), {})
+            prediction_url, prediction_preview = (
+                publish_predictions(metric_file, source["id"], budget)
+                if source["kind"] == "synthetic"
+                else (None, [])
+            )
             run = {
                 "scores": score_fields(metrics, source["kind"]),
                 "samples": int(metrics.get("num_samples", nested.get(
@@ -157,6 +207,8 @@ def collect(source):
                 "original_tokens": metrics.get("average_original_context_tokens"),
                 "retained_gb": metrics.get("average_retained_kv_memory_gb"),
                 "compression": metrics.get("average_compression_ratio"),
+                "prediction_url": prediction_url,
+                "prediction_preview": prediction_preview,
             }
             grouped.setdefault(task, {})[budget] = run
 
