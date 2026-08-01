@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EVAL = ROOT / "kvpress" / "evaluation"
+EVAL = ROOT / "kvpress" / "evaluation" / "results"
 OUT = Path(__file__).with_name("index.html")
 DOWNLOADS = Path(__file__).with_name("downloads")
 
@@ -87,15 +87,39 @@ SOURCES = [
         ],
     },
     {
+        "id": "synthetic32k-nonquantized",
+        "title": "Synthetic-KV 32K · Non-quantized",
+        "group": "synthetic32k",
+        "group_title": "Synthetic-KV 32K",
+        "precision": "Non-quantized",
+        "path": "results_synthetic_kv_32k_native_no_yarn",
+        "kind": "synthetic",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096"],
+        "provenance": "Qwen3-8B BF16 · max context 32,768 · 866-sample dataset",
+        "expected_tasks": ["32k"],
+    },
+    {
+        "id": "synthetic32k-awq",
+        "title": "Synthetic-KV 32K · AWQ",
+        "group": "synthetic32k",
+        "group_title": "Synthetic-KV 32K",
+        "precision": "AWQ 4-bit",
+        "path": "results_synthetic_kv_32k_native_awq_all_budgets",
+        "kind": "synthetic",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096"],
+        "provenance": "Qwen3-8B-AWQ · max context 32,768 · 866-sample dataset",
+        "expected_tasks": ["32k"],
+    },
+    {
         "id": "synthetic64k-awq",
         "title": "Synthetic-KV 64K · AWQ",
         "group": "synthetic64k",
         "group_title": "Synthetic-KV 64K",
         "precision": "AWQ 4-bit",
-        "path": "results_synthetic_kv_awq_no_prefix_all_budgets",
+        "path": "results_synthetic_kv_64k_yarn2_awq_all_budgets",
         "kind": "synthetic",
-        "budgets": ["No compression", "512", "1024", "2048", "4096", "8192"],
-        "provenance": "Qwen3-8B-AWQ · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096"],
+        "provenance": "Qwen3-8B-AWQ · YaRN-2 · max context 65,536 · 1,707-sample dataset",
         "expected_tasks": ["64k"],
     },
     {
@@ -105,12 +129,11 @@ SOURCES = [
         "group_title": "Synthetic-KV 64K",
         "precision": "Non-quantized",
         "paths": [
-            "results_synthetic_kv_direct_no_prefix",
-            "results_synthetic_kv_no_prefix_all_budgets",
+            "results_synthetic_kv_64k_prefixed_yarn2",
         ],
         "kind": "synthetic",
-        "budgets": ["No compression", "512", "1024", "2048", "4096", "8192"],
-        "provenance": "Qwen3-8B BF16 · YaRN-4 · max context 65,536 · full 2,340-sample dataset",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096"],
+        "provenance": "Qwen3-8B BF16 · YaRN-2 · max context 65,536 · 1,707-sample dataset",
         "expected_tasks": ["64k"],
     },
 ]
@@ -136,9 +159,13 @@ def task_name(name, kind):
         "synthetic": "new_synthetic_kv__",
     }
     prefix = prefixes[kind]
+    synthetic_32k_prefix = "new_synthetic_kv_32k__"
+    if kind == "synthetic" and name.startswith(synthetic_32k_prefix):
+        prefix = synthetic_32k_prefix
     if not name.startswith(prefix) or "__--home" not in name:
         return None
-    return name[len(prefix) :].split("__--home", 1)[0]
+    task = name[len(prefix) :].split("__--home", 1)[0]
+    return task
 
 
 def score_fields(metrics, kind):
@@ -233,7 +260,10 @@ def collect(source):
                     budget,
                     "" if source["kind"] == "synthetic" else task,
                 )
-                if source["kind"] == "synthetic" or source.get("publish_predictions")
+                if (
+                    budget in source["budgets"]
+                    and (source["kind"] == "synthetic" or source.get("publish_predictions"))
+                )
                 else (None, [])
             )
             run = {
@@ -287,6 +317,21 @@ def collect(source):
 
 def build() -> None:
     datasets = [collect(source) for source in SOURCES]
+    # Remove downloads from budgets that are no longer published (for example,
+    # an interrupted 8 GB run intentionally excluded from the dashboard).
+    published = {
+        run["prediction_url"]
+        for dataset in datasets
+        for runs in dataset["tasks"].values()
+        for run in runs.values()
+        if run["prediction_url"]
+    }
+    source_ids = {source["id"] for source in SOURCES}
+    for file in DOWNLOADS.glob("*.csv"):
+        if any(file.name.startswith(f"{source_id}-") for source_id in source_ids):
+            relative = f"downloads/{file.name}"
+            if relative not in published:
+                file.unlink()
     template = (Path(__file__).with_name("template.html")).read_text()
     output = template.replace("__DASHBOARD_DATA__", json.dumps(datasets, separators=(",", ":")))
     OUT.write_text(output)
