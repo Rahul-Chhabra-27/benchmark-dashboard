@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a standalone dashboard from completed LOFT, RULER, and Synthetic-KV sweeps."""
+"""Build a standalone dashboard from completed KVPress and RLM sweeps."""
 
 import ast
 import csv
@@ -137,6 +137,98 @@ SOURCES = [
         "expected_tasks": ["64k"],
     },
 ]
+
+
+def rlm_sources():
+    """Build dashboard variants from completed RLM JSONL checkpoints.
+
+    RLM outputs are intentionally ignored by Git because they can be large and
+    are produced on the cluster.  This collector keeps the dashboard build
+    reproducible: any ``evaluation/results/rlm/**/*.jsonl`` files present at
+    build time become an RLM-vs-vanilla comparison group automatically.
+    """
+    result_root = EVAL / "rlm"
+    if not result_root.exists():
+        return []
+
+    grouped = {}
+    for path in sorted(result_root.rglob("*.jsonl")):
+        try:
+            task, mode, model = path.stem.split(".", 2)
+        except ValueError:
+            # Ignore unrelated JSONL files rather than failing the whole site.
+            continue
+        condition = path.parent.name if path.parent != result_root else "default"
+        key = (condition, mode, model)
+        rows = []
+        try:
+            with path.open() as handle:
+                for line in handle:
+                    if not line.strip():
+                        continue
+                    try:
+                        record = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    rows.append(record)
+        except OSError:
+            continue
+        if not rows:
+            continue
+        bucket = grouped.setdefault(
+            key,
+            {"condition": condition, "mode": mode, "model": model, "tasks": {}, "newest": 0.0},
+        )
+        bucket["tasks"].setdefault(task, []).extend(rows)
+        bucket["newest"] = max(bucket["newest"], path.stat().st_mtime)
+
+    sources = []
+    for (condition, mode, model), data in sorted(grouped.items()):
+        # Keep the labels short enough for the chart legend while retaining
+        # the condition/model needed to identify an experiment.
+        mode_label = "RLM" if mode == "rlm" else "Vanilla"
+        precision = f"{mode_label} · {condition} · {model}"
+        tasks = {}
+        for task, rows in sorted(data["tasks"].items()):
+            correct = sum(bool(row.get("correct")) for row in rows)
+            finished = sum(bool(row.get("finished", True)) for row in rows)
+            tokens = [row.get("tokens") for row in rows if isinstance(row.get("tokens"), (int, float))]
+            latency = [row.get("latency_s") for row in rows if isinstance(row.get("latency_s"), (int, float))]
+            tasks[task] = {
+                "All examples": {
+                    "scores": {
+                        "accuracy": 100 * correct / len(rows),
+                        "finished_rate": 100 * finished / len(rows),
+                    },
+                    "samples": len(rows),
+                    "retained_tokens": None,
+                    "original_tokens": None,
+                    "retained_gb": None,
+                    "compression": None,
+                    "prediction_url": None,
+                    "prediction_preview": [],
+                    "tokens_per_query": sum(tokens) / len(tokens) if tokens else None,
+                    "latency_per_query": sum(latency) / len(latency) if latency else None,
+                }
+            }
+        sources.append(
+            {
+                "id": "rlm-" + re.sub(r"[^a-z0-9]+", "-", "-".join((condition, mode, model).lower())).strip("-"),
+                "title": precision,
+                "group": "rlm",
+                "group_title": "RLM vs Vanilla",
+                "precision": precision,
+                "kind": "rlm",
+                "budgets": ["All examples"],
+                "provenance": f"RLM benchmark · condition {condition} · root model {model}",
+                "budget_provenance": {},
+                "tasks": tasks,
+                "metrics": ["accuracy", "finished_rate"],
+                "excluded": [],
+                "updated": datetime.fromtimestamp(data["newest"]).strftime("%Y-%m-%d %H:%M") if data["newest"] else "—",
+            }
+        )
+    return sources
 
 
 def budget_label(name: str, kind: str) -> str:
@@ -316,7 +408,7 @@ def collect(source):
 
 
 def build() -> None:
-    datasets = [collect(source) for source in SOURCES]
+    datasets = [collect(source) for source in SOURCES] + rlm_sources()
     # Remove downloads from budgets that are no longer published (for example,
     # an interrupted 8 GB run intentionally excluded from the dashboard).
     published = {

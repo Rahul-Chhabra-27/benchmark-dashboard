@@ -1,7 +1,7 @@
 # Benchmark dashboard
 
-This standalone report visualizes completed LOFT, RULER32K, and Synthetic-KV
-sweeps. LOFT
+This standalone report visualizes completed LOFT, RULER32K, Synthetic-KV, and
+RLM sweeps. LOFT
 shows true no-compression baselines where available and omits the older KVzip
 1%-pruned reference. It also shows the positional configuration used by each
 result.
@@ -23,6 +23,11 @@ Regenerate after evaluations finish:
 ```bash
 python3 benchmark_dashboard/generate_dashboard.py
 ```
+
+Completed RLM checkpoints are imported automatically from
+`kvpress/evaluation/results/rlm/**/*.jsonl`. They appear in an `RLM vs Vanilla`
+tab with accuracy and completion-rate metrics; copy or sync the cluster output
+there before rebuilding the site.
 
 Then open `benchmark_dashboard/index.html` in a browser, or serve the repository
 with any static HTTP server.
