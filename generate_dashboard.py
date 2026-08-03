@@ -136,6 +136,18 @@ SOURCES = [
         "provenance": "Qwen3-8B BF16 · YaRN-2 · max context 65,536 · 1,707-sample dataset",
         "expected_tasks": ["64k"],
     },
+    {
+        "id": "synthetic64k-native-no-yarn",
+        "title": "Synthetic-KV 64K · No YaRN baseline",
+        "group": "synthetic64k",
+        "group_title": "Synthetic-KV 64K",
+        "precision": "No YaRN · native RoPE",
+        "path": "results_synthetic_kv_64k_native_qwen3_8b_no_yarn_baseline",
+        "kind": "synthetic",
+        "budgets": ["No compression"],
+        "provenance": "Qwen3-8B BF16 · no YaRN · max_context_length=null · native positional config 40,960",
+        "expected_tasks": ["64k"],
+    },
 ]
 
 
