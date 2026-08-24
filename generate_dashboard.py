@@ -12,6 +12,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EVAL = ROOT / "kvpress" / "evaluation" / "results"
+# `evaluation/results` is a symlink that currently only reaches the LOFT-32K
+# matrices; LOFT-128K, the 27B-model runs, and the 27B synthetic-KV runs live
+# directly under benchmark_artifacts instead. Sources opt into this base with
+# "base": "benchmark_artifacts" rather than repointing the existing symlink.
+BENCH = ROOT / "kvpress" / "benchmark_artifacts" / "results"
 OUT = Path(__file__).with_name("index.html")
 DOWNLOADS = Path(__file__).with_name("downloads")
 
@@ -70,6 +75,88 @@ SOURCES = [
         "budget_provenance": {},
         "expected_tasks": ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"],
         "publish_predictions": True,
+    },
+    {
+        "id": "loft32k-qwen3-4b-instruct",
+        "title": "LOFT 32K · Plain KVzip · Qwen3-4B-Instruct-2507",
+        "group": "loft32k",
+        "group_title": "LOFT 32K",
+        "precision": "Plain KVzip · Qwen3-4B-Instruct-2507",
+        "path": "loft/32k/matrices/results_loft32k_qwen3_4b_instruct_2507_native_all_budgets",
+        "base": "benchmark_artifacts",
+        "kind": "loft",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096"],
+        "provenance": "Qwen3-4B-Instruct-2507 BF16 · native RoPE (no YaRN needed at 32K)",
+        "budget_provenance": {},
+        "expected_tasks": ["nq_32k", "hotpotqa_32k", "musique_32k", "qampari_32k", "quest_32k"],
+    },
+    {
+        "id": "loft128k-qwen3-4b-instruct",
+        "title": "LOFT 128K · Plain KVzip · Qwen3-4B-Instruct-2507",
+        "group": "loft128k",
+        "group_title": "LOFT 128K",
+        "precision": "Plain KVzip · Qwen3-4B-Instruct-2507",
+        "path": "loft/128k/matrices/results_loft128k_qwen3_4b_instruct_2507_native_dgx_all_budgets",
+        "base": "benchmark_artifacts",
+        "kind": "loft",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096"],
+        "provenance": "Qwen3-4B-Instruct-2507 BF16 · native RoPE",
+        "budget_provenance": {},
+        "expected_tasks": ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"],
+    },
+    {
+        "id": "loft32k-qwen35-27b-gptq",
+        "title": "LOFT 32K · Plain KVzip · Qwen3.5-27B-GPTQ-Int4",
+        "group": "loft32k",
+        "group_title": "LOFT 32K",
+        "precision": "Plain KVzip · Qwen3.5-27B-GPTQ-Int4",
+        "path": "loft/32k/runs/results_loft32k_qwen35_27b_gptq_all_budgets",
+        "base": "benchmark_artifacts",
+        "kind": "loft",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096"],
+        "provenance": "Qwen3.5-27B-GPTQ-Int4 · 4-bit GPTQ weights · FP16 KV cache",
+        "budget_provenance": {},
+        "expected_tasks": ["nq_32k", "hotpotqa_32k", "musique_32k", "qampari_32k", "quest_32k"],
+    },
+    {
+        "id": "loft128k-qwen35-27b-gptq",
+        "title": "LOFT 128K · Plain KVzip · Qwen3.5-27B-GPTQ-Int4",
+        "group": "loft128k",
+        "group_title": "LOFT 128K",
+        "precision": "Plain KVzip · Qwen3.5-27B-GPTQ-Int4",
+        "path": "loft/128k/runs/results_loft128k_qwen35_27b_gptq_all_budgets",
+        "base": "benchmark_artifacts",
+        "kind": "loft",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096"],
+        "provenance": "Qwen3.5-27B-GPTQ-Int4 · 4-bit GPTQ weights · FP16 KV cache",
+        "budget_provenance": {},
+        "expected_tasks": ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"],
+    },
+    {
+        "id": "synthetic32k-qwen35-27b-gptq",
+        "title": "Synthetic-KV 32K · Plain KVzip · Qwen3.5-27B-GPTQ-Int4",
+        "group": "synthetic32k",
+        "group_title": "Synthetic-KV 32K",
+        "precision": "Plain KVzip · Qwen3.5-27B-GPTQ-Int4",
+        "path": "synthetic_kv/32k/runs/results_synthetic_kv_32k_qwen35_27b_gptq_all_budgets",
+        "base": "benchmark_artifacts",
+        "kind": "synthetic",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096", "8192"],
+        "provenance": "Qwen3.5-27B-GPTQ-Int4 · 4-bit GPTQ weights · max context 32,768",
+        "expected_tasks": ["32k"],
+    },
+    {
+        "id": "synthetic64k-qwen35-27b-gptq",
+        "title": "Synthetic-KV 64K · Plain KVzip · Qwen3.5-27B-GPTQ-Int4",
+        "group": "synthetic64k",
+        "group_title": "Synthetic-KV 64K",
+        "precision": "Plain KVzip · Qwen3.5-27B-GPTQ-Int4",
+        "path": "synthetic_kv/64k/runs/results_synthetic_kv_64k_qwen35_27b_gptq_all_budgets",
+        "base": "benchmark_artifacts",
+        "kind": "synthetic",
+        "budgets": ["No compression", "256", "512", "1024", "2048", "4096", "8192"],
+        "provenance": "Qwen3.5-27B-GPTQ-Int4 · 4-bit GPTQ weights · max context 65,536",
+        "expected_tasks": ["64k"],
     },
     {
         "id": "ruler32k",
@@ -243,6 +330,117 @@ def rlm_sources():
     return sources
 
 
+RLM_KVZIP_VARIANTS = [
+    (
+        "32k",
+        "loft32k",
+        "LOFT 32K",
+        ["nq_32k", "hotpotqa_32k", "musique_32k", "qampari_32k", "quest_32k"],
+    ),
+    (
+        "128k",
+        "loft128k",
+        "LOFT 128K",
+        ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"],
+    ),
+]
+
+RLM_RUN_DIR_RE = re.compile(r"^loft__(?P<task>.+?)_{3}home.*?__rlm__kvzip-(?P<press>kvzip|no_press)(?P<value>[0-9.]*)(?P<unit>MB|GB)?$")
+
+
+def rlm_kvzip_sources():
+    """RLM + KVzip sub-call compression vs. an RLM-no-press ablation.
+
+    Reads the same evaluation/results/rlm/ tree rlm_sources() looks at, but
+    parses run_benchmark.py's actual nested `<run-dir>/metrics.json` output
+    (rlm_sources() expects a flat task.mode.model.jsonl layout that no longer
+    matches). Uses "loft" as the kind and the plain-LOFT task names/group ids
+    so these variants land in the same LOFT 32K/128K views as the plain-KVzip
+    sources above and can be directly compared via the precision chips.
+    """
+    sources = []
+    for ctx, group, group_title, expected_tasks in RLM_KVZIP_VARIANTS:
+        for kind_id, precision, run_dir_name, budgets, provenance in [
+            (
+                "rlm-kvzip",
+                "RLM + KVzip · Qwen3-4B-Instruct-2507",
+                f"rlm/loft{ctx}_full_batch",
+                ["256", "512", "1024", "2048", "4096"],
+                "RLM keeps the document out of the prompt; each llm_query sub-call is "
+                "compressed in-process via kvpress's KVzipPress, budgeted the same way "
+                "as the plain-KVzip sweep above (converted to a per-sub-call token cap).",
+            ),
+            (
+                "rlm-nopress",
+                "RLM (no press, ablation) · Qwen3-4B-Instruct-2507",
+                f"rlm/loft{ctx}_nopress_ablation",
+                ["No press"],
+                "Ablation: identical RLM harness and sub-call backend, but press=None so "
+                "sub-calls are never compressed -- isolates RLM's search strategy from "
+                "KVzip's contribution.",
+            ),
+        ]:
+            directory = EVAL / run_dir_name
+            if not directory.is_dir():
+                continue
+            grouped = {}
+            newest = 0.0
+            for metric_file in sorted(directory.glob("*/metrics.json")):
+                match = RLM_RUN_DIR_RE.match(metric_file.parent.name)
+                if not match or match.group("press") != ("kvzip" if kind_id == "rlm-kvzip" else "no_press"):
+                    continue
+                task = match.group("task")
+                try:
+                    metrics = json.loads(metric_file.read_text())
+                except (OSError, json.JSONDecodeError):
+                    continue
+                newest = max(newest, metric_file.stat().st_mtime)
+                if kind_id == "rlm-kvzip":
+                    value, unit = match.group("value"), match.group("unit")
+                    budget = f"{float(value) * (1024 if unit == 'GB' else 1):g}"
+                else:
+                    budget = "No press"
+                runtime = metrics.get("runtime", {})
+                run = {
+                    "scores": score_fields(metrics, "loft"),
+                    "samples": int(metrics.get("num_samples", 0)),
+                    "retained_tokens": runtime.get("average_sub_retained_context_tokens"),
+                    "original_tokens": runtime.get("average_sub_context_tokens"),
+                    "retained_gb": None,
+                    "compression": runtime.get("average_sub_compression_ratio"),
+                    "prediction_url": None,
+                    "prediction_preview": [],
+                }
+                grouped.setdefault(task, {})[budget] = run
+
+            expected = set(budgets)
+            complete = {
+                task: {budget: runs[budget] for budget in budgets}
+                for task, runs in sorted(grouped.items())
+                if task in expected_tasks and expected.issubset(runs)
+            }
+            incomplete = sorted(task for task in expected_tasks if not expected.issubset(grouped.get(task, {})))
+            metric_keys = sorted({key for runs in complete.values() for run in runs.values() for key in run["scores"]})
+            sources.append(
+                {
+                    "id": f"{kind_id}-loft{ctx}",
+                    "title": precision,
+                    "group": group,
+                    "group_title": group_title,
+                    "precision": precision,
+                    "kind": "loft",
+                    "budgets": budgets,
+                    "provenance": provenance,
+                    "budget_provenance": {},
+                    "tasks": complete,
+                    "metrics": metric_keys,
+                    "excluded": incomplete,
+                    "updated": datetime.fromtimestamp(newest).strftime("%Y-%m-%d %H:%M") if newest else "—",
+                }
+            )
+    return sources
+
+
 def budget_label(name: str, kind: str) -> str:
     match = re.search(r"__memory_budget([0-9.]+)(MB|GB)(?:__|$)", name)
     if not match:
@@ -340,8 +538,9 @@ def publish_predictions(metric_file: Path, source_id: str, budget: str, task: st
 def collect(source):
     grouped = {}
     newest = 0.0
+    base = BENCH if source.get("base") == "benchmark_artifacts" else EVAL
     for relative_path in source.get("paths", [source.get("path")]):
-        directory = EVAL / relative_path
+        directory = base / relative_path
         for metric_file in directory.rglob("metrics.json"):
             run_dir = next(
                 (parent for parent in metric_file.parents if parent.parent == directory),
@@ -420,7 +619,7 @@ def collect(source):
 
 
 def build() -> None:
-    datasets = [collect(source) for source in SOURCES] + rlm_sources()
+    datasets = [collect(source) for source in SOURCES] + rlm_sources() + rlm_kvzip_sources()
     # Remove downloads from budgets that are no longer published (for example,
     # an interrupted 8 GB run intentionally excluded from the dashboard).
     published = {
