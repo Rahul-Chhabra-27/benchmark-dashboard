@@ -99,6 +99,7 @@ SOURCES = [
         "provenance": "Qwen3-4B-Instruct-2507 BF16 · native RoPE (no YaRN needed at 32K)",
         "budget_provenance": {},
         "expected_tasks": ["nq_32k", "hotpotqa_32k", "musique_32k", "qampari_32k", "quest_32k"],
+        "publish_predictions": True,
     },
     {
         "id": "loft128k-qwen3-4b-instruct",
@@ -115,6 +116,7 @@ SOURCES = [
         "provenance": "Qwen3-4B-Instruct-2507 BF16 · native RoPE",
         "budget_provenance": {},
         "expected_tasks": ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"],
+        "publish_predictions": True,
     },
     {
         "id": "loft32k-qwen35-27b-gptq",
@@ -131,6 +133,7 @@ SOURCES = [
         "provenance": "Qwen3.5-27B-GPTQ-Int4 · 4-bit GPTQ weights · FP16 KV cache",
         "budget_provenance": {},
         "expected_tasks": ["nq_32k", "hotpotqa_32k", "musique_32k", "qampari_32k", "quest_32k"],
+        "publish_predictions": True,
     },
     {
         "id": "loft128k-qwen35-27b-gptq",
@@ -147,6 +150,7 @@ SOURCES = [
         "provenance": "Qwen3.5-27B-GPTQ-Int4 · 4-bit GPTQ weights · FP16 KV cache",
         "budget_provenance": {},
         "expected_tasks": ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"],
+        "publish_predictions": True,
     },
     {
         "id": "synthetic32k-qwen35-27b-gptq",
@@ -213,6 +217,7 @@ SOURCES = [
             "niah_multiquery", "niah_multivalue", "niah_single_1", "niah_single_2",
             "niah_single_3", "qa_1", "qa_2", "vt",
         ],
+        "publish_predictions": True,
     },
     {
         "id": "synthetic32k-nonquantized",
@@ -563,6 +568,9 @@ def publish_predictions(metric_file: Path, source_id: str, budget: str, task: st
         return f"downloads/{public_name}", []
 
     # Evenly spaced rows provide a deterministic, non-cherry-picked preview.
+    # The full set is available via prediction_url -- the dashboard fetches
+    # and renders it client-side on demand rather than embedding every row
+    # of every task/budget into the page (which bloated index.html to ~20MB).
     count = min(8, len(rows))
     indices = sorted({round(i * (len(rows) - 1) / max(count - 1, 1)) for i in range(count)})
     preview = []

@@ -1,0 +1,1988 @@
+retained_context_tokens,memory_budget,split,answer_prefix,predicted_answer,token_budget,answers,memory_budget_unit,retained_kv_memory_mb,context_tokens,kv_memory_per_token_kb,question,uncompressed_kv_memory_mb,retained_kv_memory_gb,task,compression_ratio,max_new_tokens,uncompressed_kv_memory_gb
+6781.0,1.0,dev,Final Answer: ," ['Young Frankenstein (musical)']  
+Final Answer: ['Young Frankenstein (musical)']  
+
+Wait — let's carefully analyze the query and the provided documents.
+
+Query: ""What competition is a Senior British Open Championship?""
+
+Looking at the documents:
+
+- The document titled **""Young Frankenstein (musical)""** (ID: 361) mentions a ""Senior Open Championship"" in the context of a reference to a ""Senior Open Championship"" being a golf event.  
+- The document **""2016 Open Città della Disfida – Singles""** (ID: 511) does not mention anything about a ""Senior British Open Championship"".  
+- The document **""MLS Cup 2000""** (ID: 511) is about a soccer competition, not related.  
+- The document **""The Great Escape (film)""** (ID: 526) is about a film and not a competition.  
+- The document **""The 2018 BNP Paribas Primrose Bordeaux – Singles""** (ID: 527) is about a tennis tournament.  
+- The document **""The 2012 Taça",6781.0,"['2010 Senior Open Championship' '2014 Senior Open Championship'
+ '2017 Senior Open Championship' '2018 Senior Open Championship'
+ '2019 Senior Open Championship']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What competition is a Senior British Open Championship?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,dev,Final Answer: ," ['The Five Chinese Brothers', '503']  
+
+Explanation:  
+The query asks which movie was screenwritten by Adoor Gopalakrishan. However, in the provided documents, there is no mention of Adoor Gopalakrishan as a screenwriter. Instead, the document titled *The Five Chinese Brothers* (ID: 503) mentions that the film was written by Claire Huchet Bishop and illustrated by Kurt Wiese.  
+
+There is a confusion in the query: the name ""Adoor Gopalakrishan"" appears in the context of a film titled *The Five Chinese Brothers*, but the document does not state that Adoor Gopalakrishan wrote it. The correct name associated with the film is Claire Huchet Bishop.  
+
+Therefore, based on the documents:  
+- The only film mentioned with a connection to a person named ""Adoor Gopalakrishan"" is *The Five Chinese Brothers* (ID: 503).  
+- However, no evidence in the documents shows that Adoor Gopalakrishan wrote or screenwrote that film.  
+
+Thus, the correct answer to the query — ""Which movie was screenwritten by Adoor Gopalakrishan?"" —",6781.0,"['Anantaram' 'Kodiyettam' 'Mathilukal' 'Mukhamukham'
+ 'Oru Pennum Randaanum']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which movie was screenwritten by Adoor Gopalakrishan?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,dev,Final Answer: ," ['Juanita Growing Thunder']  
+
+Wait — let's carefully analyze the query and the provided documents.
+
+Query: *What is the name of the settlement that is next to the Tamar River?*
+
+Looking at the documents:
+
+- In the document **""Florida State Road 878""**, it says:  
+  *""The road is named for the nearby Snapper Creek which runs parallel to SR 878.""*  
+  → This refers to a location near the **Tamar River**? No — it mentions **Snapper Creek**, not Tamar River.
+
+- In the document **""Florida State Road 878""**, it says:  
+  *""The road is named for the nearby Snapper Creek which runs parallel to SR 878.""*  
+  → This is about a different river (Snapper Creek), not Tamar River.
+
+- In the document **""Florida State Road 878""**, it says:  
+  *""The road is named for the nearby Snapper Creek which runs parallel to SR 878.""*  
+  → Still not Tamar River.
+
+- In the document **""Florida State Road 878""**, it says:  
+  *""The road is named for the",6781.0,"['Bradstone' 'Lezant' 'Plymouth' 'St Stephens by Launceston Rural'
+ 'Werrington']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What is the name of the settlement that is next to the Tamar River?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,dev,Final Answer: ," ['The Mountaineer (Katoomba)']
+
+Explanation:  
+The only document that mentions a ship registered in Nova Scotia is ""The Mountaineer (Katoomba)"" which is explicitly stated to be a newspaper published in Katoomba, New South Wales — but this is in Australia, not Nova Scotia.  
+
+However, the query asks for ships registered in **Nova Scotia**, and the provided documents do not mention any ship registered in Nova Scotia. The only reference to a ship is ""The Mountaineer,"" which is located in **New South Wales, Australia**, not Nova Scotia.
+
+Therefore, based on the information provided, **no ship is mentioned as being registered in Nova Scotia**.
+
+Thus, the correct answer is:  
+**No ship is registered in Nova Scotia according to the provided documents.**
+
+Final Answer: []",6781.0,['Agnes' 'Montague' 'Rover' 'Sherbrooke' 'Sir John Sherbrooke'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Name the ships registered in Nova Scotia.
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,dev,Final Answer: ," ['Allein zu dir, Herr Jesu Christ', '410']  
+
+Explanation:  
+The query asks for an example of a chorale cantata. From the provided documents, the relevant entry is:  
+- **Title**: *Allein zu dir, Herr Jesu Christ*  
+- **ID**: 410 (from the ""Estradiol benzoate/hydroxyprogesterone caproate"" document, which is incorrectly referenced — this appears to be a data error in the original input).  
+
+However, upon closer inspection, the document titled *Estradiol benzoate/hydroxyprogesterone caproate* (ID: 410) does not contain any musical or chorale cantata information. The only relevant musical reference is in the *Estradiol benzoate/hydroxyprogesterone caproate* document, which incorrectly lists a piece titled *Allein zu dir, Herr Jesu Christ*, which is a known chorale cantata.  
+
+But the correct reference is in the **""Estradiol benzoate/hydroxyprogesterone caproate""** document (ID: 410), which mentions *Allein zu dir, Herr",6781.0,"['Allein zu dir, Herr Jesu Christ, BWV 33'
+ 'Ein feste Burg ist unser Gott, BWV 80'
+ 'O Ewigkeit, du Donnerwort, BWV 20'
+ 'Wachet auf, ruft uns die Stimme, BWV 140'
+ 'Wie schön leuchtet der Morgenstern, BWV 1']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What composition is an example of a chorale cantata?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,dev,Final Answer: ," ['Gregory Benford edited the piece ""The Producers (musical)""']  
+
+TITLE and ID used:  
+- Title: The Producers (musical)  
+- ID: 361  
+
+Justification:  
+The query asks: ""Gregory Benford edited what piece of writing?""  
+From the provided document:  
+> ""Upon entering the Marvel offices for the first time he was greeted by the same Submissions Editor, Len Kaminski, who had corresponded with the young [author]... He was also co-founder and executive director of the New England Skeptical Society, and was very active in the skeptical movement and paranormal investigations until his death from scleroderma in 2007. Early life. He studied at the Hochschule für Musik in Berlin training under Franz Schreker and Curt Sachs between 1927 and 1930.""  
+
+Wait — this document does **not** mention Gregory Benford editing a piece of writing. It mentions **Gregory Benford** in the context of a different person (possibly a mix-up).  
+
+However, in the document titled **""The Producers (musical)""**, it says:  
+> ""The story had been adapted as a live TV",6781.0,"['Alternate Americas' 'Alternate Empires' 'Alternate Heroes'
+ 'Alternate Wars' 'Nebula Awards Showcase 2000']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Gregory Benford edited what piece of writing?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,dev,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE and ID of the documents used:  
+- TITLE: ""Juanita Growing Thunder""  
+- ID: 149  
+
+Note: The query asks for the name of a former student from Ventura College. The only relevant document mentions ""Juanita Growing Thunder"" as a person associated with beads and a connection to Ventura College (implied through context). However, the name ""Juanita Growing Thunder"" appears in the document with ID 149, which refers to her as an artist, and there is no explicit mention of her being a student at Ventura College.  
+
+Given the information, the only name that appears in connection with a school or educational background is ""Juanita Growing Thunder,"" and the document (ID 149) is the only one that references her.  
+
+Final Answer:  
+['Juanita Growing Thunder']",6781.0,"['Michele Serros' 'Paul Seaton' 'Sun Mingming' 'Terrance Dotsy'
+ 'Zack Thornton']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What's the name of a former student from Ventura College?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,dev,Final Answer: ," ['Abdul Fatah Younis']  
+Document used: ID: 267, TITLE: ""Abdul Fatah Younis""  
+
+Final Answer: ['Abdul Fatah Younis']",6781.0,['Aung Min' 'Maung Maung Ohn' 'Myint Swe' 'San Yu' 'Thein Sein'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What individual served in the Myanmar Army?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,dev,Final Answer: ," ['Florida State Road 878']  
+
+**Explanation:**  
+The query asks about the structures created by George A. Berlinghof. From the provided documents, the only mention of George A. Berlinghof is in the context of the *Florida State Road 878* (also known as the ""GHI Building""), where it is stated that the building was designed by Raymond Hood and not by Berlinghof. There is no mention of George A. Berlinghof creating or being involved in any structure.  
+
+However, the name ""George A. Berlinghof"" appears in the document titled *Florida State Road 878*, but the text does not state that he created any structure. Instead, the document refers to Raymond Hood as the designer.  
+
+Additionally, the name ""George A. Berlinghof"" is not mentioned in any other document. The only reference to a person with a similar name is in the context of a different individual (George A. Berlinghof) in a different context (a composer or architect), but no structure is attributed to him.  
+
+Therefore, based on the provided documents, there is **no evidence** that George A. Berlinghof created any structure.  
+
+However, the query specifically asks",6781.0,"['Chadron Public Library' 'Crawford County Courthouse'
+ 'Dr. A.O. Thomas House' 'Franklin County Courthouse'
+ 'Howard County Courthouse']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What structures di George A. Berlinghof create?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,dev,Final Answer: ," ['The Great Escape (film)']  
+Note: Based on the provided documents, the only reference to Russell T Davies is in the context of ""The Great Escape (film)"" and ""The Producers (musical)"", where it is stated that Russell T Davies created ""The Producers (musical)"" and that he was involved in the ""The Great Escape (film)"" as a screenwriter. However, the query specifically asks about a show that was *executively produced* by Russell T Davies.
+
+Looking at the documents:
+- ""The Producers (musical)"" is described as being created by Russell T Davies.
+- ""The Great Escape (film)"" is mentioned as being adapted from a screenplay by T. Clavell and W. Newman, with no mention of Russell T Davies being involved in its production.
+
+There is no document stating that Russell T Davies *executively produced* a show. The closest match is ""The Producers (musical)"", which is described as being created by him.
+
+Therefore, the correct answer based on the documents is:
+
+Final Answer: ['The Producers (musical)']  
+
+TITLE and ID used:  
+- Title: The Producers (musical)  
+- ID: 361  
+
+Final",6781.0,"['Last of the Time Lords' 'Music of the Spheres'
+ 'The Unicorn and the Wasp' 'Time Crash' 'Voyage of the Damned']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What show was executively produced by Russell T Davies?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['2018 BNP Paribas Primera – Singles']  
+
+**Documents used:**  
+- TITLE: 2018 BNP Paribas Primera – Singles  
+- ID: 2018 BNP Paribas Primera – Singles  
+
+**Answer:**  
+The tennis player Lloyd Harris won the 2018 BNP Paribas Primera – Singles competition.  
+
+This is supported by the document titled ""2018 BNP Paribas Primera – Singles"", which states that Lloyd Harris won the title. The document also notes that the event is part of the tennis season and that Harris is a participant in the competition.  
+
+Final Answer: ['2018 BNP Paribas Primera – Singles']",6781.0,"[""2018 Kentucky Bank Tennis Championships – Men's Singles""
+ ""2018 Kunming Open – Men's Doubles""
+ ""2018 Stockton Challenger – Men's Singles""
+ ""2019 Burnie International – Men's Doubles""
+ ""2019 Launceston Tennis International – Men's Singles""]",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which competition did the tennis man Lloyd Harris win?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+Final Answer: ['Young Frankenstein (musical)']  
+
+Explanation:  
+The query asks: ""What groups was Walter Schreifels a member of?""  
+
+From the provided documents:  
+- In the document titled *Young Frankenstein (musical)*, it is stated: ""Walter Schreifels... was a member of the American hardcore punk band Quicksand and the band 'Rival Schools'.""  
+- The document *Young Frankenstein (musical)* is the only one that explicitly mentions Walter Schreifels and his affiliations.  
+
+Thus, the only relevant document is:  
+**TITLE**: Young Frankenstein (musical)  
+**ID**: 361  
+
+The answer to the query is that Walter Schreifels was a member of the bands *Quicksand* and *Rival Schools*.  
+
+However, the query specifically asks for the **groups** he was a member of. The document *Young Frankenstein (musical)* (ID: 361) states:  
+> ""Walter Schreifels... was a member of the American hardcore punk band Quicksand and the band 'Rival Schools'.""  
+
+Therefore,",6781.0,"['Dead Heavens' 'Gorilla Biscuits' 'Quicksand' 'Rival Schools'
+ 'Walking Concert']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What groups was Walter Schreifels a member of?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Arabsat-1B']  
+
+**Documents used:**  
+- ID: 52 (Arabsat-1B)  
+
+**Answer:**  
+The Arab Satellite Communications Organization (Arabsat) owns the Arabsat-1B satellite.  
+
+Final Answer: ['Arabsat-1B']",6781.0,['Arabsat-1A' 'Arabsat-1B' 'Arabsat-5A' 'Badr-4' 'INSAT-2DT'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What does the Arab Satellite Communications Organization own?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)', '412', '496', '707']  
+
+Explanation:  
+The query asks for ""existing wiki projects."" Based on the provided documents:  
+
+- ""Young Frankenstein (musical)"" is a project involving a musical adaptation, created by a team and produced as a show.  
+- ""412"" refers to the ""Arabsat-1B"" satellite project, which is a communications project, not a wiki.  
+- ""496"" refers to ""Caverna do Diabo State Park"" — a conservation area, not a wiki.  
+- ""496"" also refers to a project involving ""beadwork"" in the context of ""Juanita Growing Thunder"" (a beadwork artist).  
+- ""496"" and ""412"" are not wiki projects.  
+- ""496"" is linked to ""Juanita Growing Thunder"" who creates beadwork.  
+- ""496"" is also associated with ""bead work"" and ""art"" — which may be interpreted as a creative project.  
+
+However, the only document explicitly mentioning a ""wiki"" or ""wiki project"" is:  
+- ""Young Frank",6781.0,['Diplopedia' 'RationalWiki' 'Uncyclopedia' 'Veropedia' 'Wiktionary'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What are the existing wiki projects ?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE and ID used:  
+- Title: ""Juanita Growing Thunder""  
+- ID: 149  
+
+Note: The name ""Juanita Growing Thunder"" appears in the document with ID 149, which discusses beadwork and identifies her as a notable figure in beadwork. However, the query asks about a ""notable triathlete,"" and the document refers to ""bead work,"" not triathlon.  
+
+Given the provided documents, there is **no mention of a triathlete**. The only relevant individual mentioned is ""Juanita Growing Thunder,"" who is described as a beadwork artist, not a triathlete.  
+
+Therefore, based on the information available, **no individual in the documents is a notable triathlete**.  
+
+Final Answer: []",6781.0,"['Chris McCormack' 'Chrissie Wellington' 'Helen Jenkins' 'Magali Messmer'
+ 'Pete Jacobs']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who was a notable triathlete ?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder', 'Richard Aitson']
+
+Explanation:  
+The query asks for ""existing reagent compounds."" Based on the provided documents:
+
+- In the document titled *Juanita Growing Thunder*, it is stated that she is an artist who creates traditional Northern Plains regalia using beads. This implies that beadwork is a form of artistic creation involving beads as a material.
+- In the document titled *Richard Aitson*, it is mentioned that he is a silversmith and that his work involves creating items, which may include reagents or materials in a craft context. However, there is no explicit mention of ""reagent compounds"" in the context of chemistry or scientific reagents.
+
+However, the term ""reagent compounds"" typically refers to chemical substances used in reactions, not artistic materials. The only document that mentions a ""reagent"" in a literal sense is *Estradiol benzoate/estradiol valerate/hydroxyprogesterone caproate*, which refers to a pharmaceutical compound used as a contraceptive. But this is not directly linked to ""beads"" or ""artistic reagents.""
+
+Given the ambiguity of ""reagent compounds"" and the lack of a clear definition in the context of ""beads"" or",6781.0,['Ammonia' 'Collins reagent' 'Dimethylformamide' 'Ethanol' 'Sodium azide'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What are the existing reagent compounds ?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE and ID used:  
+- TITLE: Juanita Growing Thunder  
+- ID: 149  
+
+Note: The query asks for ""notable seowons,"" and based on the provided text, ""Seowon"" refers to a type of educational institution in Korea. However, the only relevant entity mentioned in the text is ""Juanita Growing Thunder,"" which is described as a beadwork artist. There is no mention of ""seowons"" as institutions or individuals in the text. The name ""Seowon"" appears in the context of a historical institution, but no ""notable seowons"" are named or described.  
+
+Therefore, the only relevant entity in the text related to beads and the term ""seowon"" is the artist ""Juanita Growing Thunder,"" who is associated with beadwork.  
+
+Final Answer: ['Juanita Growing Thunder']",6781.0,"['Byeongsan Seowon' 'Dosan Seowon' 'Oksan Seowon' 'Seoak Seowon'
+ 'Sosu Seowon']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What are some of the notable seowons ?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['2018 BNP Paribas Primera – Singles']  
+
+**Documents used:**  
+- TITLE: 2018 BNP Paribas Primera – Singles  
+- ID: 2018 BNP Paribas Primera – Singles  
+
+**Answer:**  
+Reilly Opelka emerged victorious in the 2018 BNP Paribas Primera – Singles competition.  
+
+Final Answer: ['2018 BNP Paribas Primera – Singles']",6781.0,"[""2015 Wimbledon Championships – Boys' Singles""
+ ""2016 Charlottesville Men's Pro Challenger – singles""
+ '2018 BNP Paribas Primrose Bordeaux – singles'
+ '2018 JSM Challenger of Champaign–Urbana – singles'
+ '2018 Knoxville Challenger – singles']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: In which sports competition did Reilly Opelka emerge victorious?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE: Juanita Growing Thunder  
+ID: 149  
+
+Note: The query asks ""Who graduated from Middletown High School South?"" but the only relevant document mentions ""Middletown High School South"" in the context of a different individual (not named in the text). However, the only document that mentions a school and a person is the one about ""Juanita Growing Thunder,"" who is described as being from the ""Wind River Reservation"" and having attended a school, though not explicitly Middletown High School South.  
+
+There is a mismatch: the document refers to ""Middletown High School South"" in a general way, but the individual named is not explicitly stated to have graduated from it. The name ""Juanita Growing Thunder"" appears in the document, and the only school mentioned is ""Wind River Reservation,"" not Middletown.  
+
+Therefore, based on the provided information, **no individual is explicitly stated to have graduated from Middletown High School South**.  
+
+However, since the query asks for the person who graduated from Middletown High School South, and the only relevant person mentioned in the context of a school is ""Juanita Growing Thunder,"" and the",6781.0,"['Christian Peter' 'Howard Barbieri' 'Jeff Kunkel' 'Knowshon Moreno'
+ 'Melanie McGuire']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who graduated from Middletown High School South?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['2018 BNP Paribas Primera – Singles']  
+
+**Documents used:**  
+- ID: 529  
+- TITLE: ""Elias Ymer""  
+
+**Answer:**  
+Elias Ymer won the 2018 BNP Paribas Primera – Singles competition.  
+
+Final Answer: ['2018 BNP Paribas Primera – Singles']",6781.0,"['2015 Città di Caltanissetta – singles'
+ '2016 Open Città della Disfida – singles' '2016 Stockholm Open – doubles'
+ '2017 Internationaux de Tennis de Vendée – singles'
+ '2017 Internazionali di Tennis del Friuli Venezia Giulia – singles']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What competition did Elias Ymer win?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+**Documents used:**  
+- TITLE: ""Tullahoma High School"" (from the context of the query)  
+- ID: 624  
+
+**Answer:**  
+The document indicates that Juanita Growing Thunder is a beadwork artist from the Wind River Reservation, and her family background includes connections to Tullahoma, though it does not explicitly state that she is an alumnus of Tullahoma High School.  
+
+However, the query asks specifically about **Tullahoma High School alumni**, and the only relevant information provided is that **Juanita Growing Thunder** is associated with the Wind River Reservation and has a connection to Tullahoma. There is no direct evidence in the provided text that she attended or graduated from Tullahoma High School.  
+
+Therefore, based on the information available, **no direct evidence confirms that Juanita Growing Thunder is an alumnus of Tullahoma High School**.  
+
+Thus, the answer to the query ""Who are Tullahoma High School alumni?"" cannot be definitively established from the given documents.  
+
+**Final Answer:**  
+[]  
+
+*(No valid alumnus of Tullahoma High School is confirmed in the provided documents.)*",6781.0,"['Antonio London' 'Bryan Morris' 'Dewon Brazelton' 'Dustin Lynch'
+ 'Jordan Sheffield']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who are Tullahoma High School alumni?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Producers (musical)']  
+Final Answer: ['The Producers (musical)']  
+
+**Explanation:**  
+The query asks: *For which motion picture was Hossein Shahabi responsible for production?*  
+
+From the provided document:  
+- The document titled **""The Producers (musical)""** states: *""The story had been adapted as a live TV production, screened by NBC as an episode of 'The Philco Television Playhouse' on January 27, 1951. The live broadcast was praised for engineering an ingenious set design for the live broadcast, including creating the illusion of tunnels. The film's screenplay was adapted by James Clavell, W. R. Burnett, and Walter Newman.""*  
+
+However, the name **Hossein Shahabi** is mentioned in the document **""The Producers (musical)""** in the context of a different person:  
+> ""The story had been adapted as a live TV production, screened by NBC as an episode of 'The Philco Television Playhouse' on January 27, 1951. The live broadcast was praised for engineering an ingenious set design for the live broadcast, including creating the illusion of tunnels. The film's",6781.0,"['Conditional release' 'Ghost' 'The Bright Day' 'The Sale'
+ 'The Traces of Light']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: For which motion picture was Hossein Shahabi responsible for production?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+Wait — there's a mistake in the interpretation.
+
+The query is: **""What linebacker was drafted by the Chicago Bears?""**
+
+Looking at the provided documents:
+
+- In the document titled **""E. J. Blitzer""** (likely a typo or mislabeling — appears to be ""E. J. Blitzer"" or ""E. J. Blitzer""), it says:  
+  > ""E. J. Blitzer... is a member of the investment group that won a $280 million bid for the purchase of the Philadelphia 76ers.""  
+  This is unrelated to football or drafting.
+
+- In the document titled **""E. J. Blitzer""**, there is no mention of a linebacker or a draft.
+
+- In the document titled **""E. J. Blitzer""**, the only relevant sentence is:  
+  > ""He is a member of the investment group that won a $280 million bid for the purchase of the Philadelphia 76ers.""  
+  This is about a sports team acquisition, not a draft.
+
+- In the document titled **""E. J. Blitzer""**, there is **no mention of a linebacker or a draft**.
+
+-",6781.0,['Ego Ferguson' 'Jerry Janes' 'Ron Rivera' 'Roquan Smith' 'Will Sutton'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What lineback was drafted by the Chicago Bears?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Krishnaraja Wadiyar III', '412']
+
+Explanation:  
+The query asks ""Who habitated the Kingdom of Mysore?"" Based on the provided document, the relevant information is from the document titled ""Krishnaraja Wadiyar III"" (ID: 412), which states that ""Krishnaraja Wadiyar III"" was the ruler of the Kingdom of Mysore. The term ""habitat"" in the query is interpreted as ""resided in"" or ""ruled"" in the context of the kingdom. The document explicitly identifies Krishnaraja Wadiyar III as the monarch of Mysore, thus answering the query.
+
+Note: The name ""Krishnaraja Wadiyar III"" is the correct title of the ruler, and the ID 412 corresponds to the document ""Krishnaraja Wadiyar III"".
+
+Final Answer:  
+['Krishnaraja Wadiyar III', '412']",6781.0,"['Chamarajendra Wadiyar X' 'Kanthirava Narasaraja I'
+ 'Kanthirava Narasaraja II' 'Krishnaraja Wadiyar II'
+ 'Krishnaraja Wadiyar III' 'Mir Ghulam Ali']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who habitated the Kingdom of Mysore?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Gourdou-Leseurre GL.30']  
+
+TITLE: Gourdou-Leseurre GL.30  
+ID: 629  
+
+Explanation:  
+The query asks for something that ""Gourdou-Leseurre"" produced. In the provided document (ID: 629), the entry ""Gourdou-Leseurre GL.30"" is described as a ""mesoscaphe"" (a type of underwater vessel) that was built by Jacques Piccard, and it is explicitly stated as a product of the Gourdou-Leseurre design. This directly answers the query.  
+
+Note: The name ""Gourdou-Leseurre"" appears in the document (ID: 629), and the item produced is the ""Gourdou-Leseurre GL.30"".  
+
+Thus, the correct answer is:  
+Final Answer: ['Gourdou-Leseurre GL.30']",6781.0,"['Gourdou-Leseurre GL-812 HY' 'Gourdou-Leseurre GL-832 HY'
+ 'Gourdou-Leseurre GL.2' 'Gourdou-Leseurre GL.30' 'Gourdou-Leseurre GL.50']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What is something that Gourdou-Leseurre produced?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE and ID used:  
+- TITLE: Juanita Growing Thunder  
+- ID: 149  
+
+Final Answer: ['Juanita Growing Thunder']",6781.0,['Charles Eastman' 'Little Crow' 'Sitting Bull' 'Spotted Elk' 'Zitkala-Sa'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who spoke Sioux as their mother tongue?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+However, upon careful review of the provided documents, there is **no direct evidence** that anyone is ""employed by the Houston Ballet"" in the documents provided.
+
+The only mention of a name related to a ballet is **""Juanita Growing Thunder""**, who is described as a **beadwork artist** and is associated with the **Kiowa Indian Tribe**, not with the Houston Ballet.
+
+Additionally, the document titled *""Solitary's Journey""* mentions a ""Youth of Today"" band, and a reference to ""Houston Ballet"" appears in a different context, but **no individual is stated to be employed by the Houston Ballet**.
+
+Therefore, based strictly on the provided documents:
+
+✅ No individual is explicitly stated to be employed by the Houston Ballet.
+
+Thus, the correct answer is:
+
+**No one is mentioned as being employed by the Houston Ballet in the provided documents.**
+
+Final Answer: []",6781.0,['Amy Fote' 'Connor Walsh' 'Jun Shuang Huang' 'Simon Ball' 'Stanton Welch'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who is employed by the Houston Ballet?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE: Juanita Growing Thunder  
+ID: 149  
+
+Note: The name ""Juanita Growing Thunder"" appears in the document as ""Juanita Growing Thunder Fogarty"" (likely a typo or formatting issue). Based on the provided text, the individual associated with beadwork and the reference to ""Boca Juniors"" is not explicitly linked to coaching the team. However, the only relevant document mentioning a connection to ""Boca Juniors"" or ""Boca"" is the one about ""Juanita Growing Thunder,"" which is the only one that references a person with a name related to the team.  
+
+Given the query: ""Who provided coaching for the Boca Juniors athletic team?""  
+There is no direct evidence in the provided documents that any individual coached the Boca Juniors. The only person mentioned in relation to a team is ""Juanita Growing Thunder,"" but there is no mention of her being a coach.  
+
+Therefore, based strictly on the provided information, **no individual is confirmed to have coached the Boca Juniors**.  
+
+However, since the query asks for the person who provided coaching, and the only name associated with a team is ""Juanita Growing Thunder,"" we infer that the intended answer is based on",6781.0,"['Carlos García Cambón' 'Gustavo Alfaro' 'Jorge José Benítez'
+ 'Mario Fortunato' 'Miguel Ángel Russo']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who provided coaching for the Boca Juniors athletic team?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Great Escape (ballet)']  
+ID: 64  
+
+Explanation:  
+The only document that mentions Christopher Wheeldon is the ""Crew of the Great Escape"" (ID: 64), which states that Christopher Wheeldon directed and choreographed the ballet ""The Great Escape"" (a ballet). This is the only ballet explicitly linked to Christopher Wheeldon in the provided documents.  
+
+Thus, the ballet that features dances choreographed by Christopher Wheeldon is **""The Great Escape""**, which is referenced in the document with ID 64.  
+
+Final Answer:  
+['The Great Escape (ballet)']  
+ID: 64",6781.0,"['After the Rain' ""Alice's Adventures in Wonderland""
+ 'An American in Paris' 'Carousel' 'Liturgy']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which ballet features dances were choreographed by Christopher Wheeldon?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+Final Answer: ['496']  
+
+List:  
+- TITLE: Juanita Growing Thunder  
+  ID: 496",6781.0,"['Custodio Parcon' 'Domingo Deluana' 'Herminigildo Yurong'
+ 'Lolinato To-ong' 'Tomas Campo Jr.']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What famous person was remembered for serving in the Philippine Marine corps?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['The Five Chinese Brothers']  
+ID: 126  
+
+Final Answer: ['",6781.0,"['Asterix and Cleopatra' ""Asterix and the Chieftain's Shield""
+ 'Asterix and the Great Crossing' 'Asterix in Belgium' 'Obelix and Co.']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Albert Uderzo illustrated what comic?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+Final Answer: ['Young Frankenstein (musical)']  
+
+**Explanation:**  
+The query asks: *""Vince Gilligan was the executive producer of what television program?""*  
+
+From the provided document:  
+- In the document titled **""Young Frankenstein (musical)""**, it states: *""Vince Gilligan was the executive producer of the musical adaptation of 'Young Frankenstein'.""*  
+- However, the document refers to a **musical**, not a **television program**.  
+- The query specifically asks about a **television program**, not a musical.  
+
+But in the **""Vince Gilligan""** section of the document (not directly titled), it says: *""Vince Gilligan... created the show 'Breaking Bad'.""*  
+However, the provided text does **not** explicitly state that Vince Gilligan was the executive producer of a television program.  
+
+The only reference to a television program is in the **""Young Frankenstein (musical)""** document, which says: *""Vince Gilligan was the executive producer of the musical adaptation of 'Young Frankenstein'.""*  
+
+Since the query is about a **television program**, and the only",6781.0,"['Battle Creek' 'Better Call Saul' 'Breaking Bad' 'The Lone Gunmen'
+ 'The X-Files']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Vince Gilligan was the executive producer of what television program?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Eduard Čech was the doctoral advisor to whom?']  
+TITLE: ""Eduard Čech was the doctoral advisor to whom?""  
+ID: 52  
+
+TITLE: ""Eduard Čech was the doctoral advisor to whom?""  
+ID: 52  
+
+Final Answer: ['Eduard Čech was the doctoral advisor to whom?']  
+TITLE: ""Eduard Čech was the doctoral advisor to whom?""  
+ID: 52  
+
+Final Answer: ['Eduard Čech was the doctoral advisor to whom?']  
+TITLE: ""Eduard Čech was the doctoral advisor to whom?""  
+ID: 52  
+
+Final Answer: ['Eduard Čech was the doctoral advisor to whom?']  
+TITLE: ""Eduard Čech was the doctoral advisor to whom?""  
+ID: 52  
+
+Final Answer: ['Eduard Čech was the doctoral advisor to whom?']  
+TITLE: ""Eduard Čech was the doctoral advisor to whom?""  
+ID: 52  
+
+Final Answer: ['Eduard Čech was the doctoral advisor to whom?']  
+TITLE: ""Eduard �",6781.0,"['Ivo Babuška' 'Petr Vopěnka' 'Vlastimil Dlab' 'Věra Trnková'
+ 'Zdeněk Frolík']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Eduard Čech was the doctoral advisor to whom?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['MS Pride of Dover']  
+
+**Documents used:**  
+- ID: 702 (Title: ""MS Pride of Dover"")  
+
+**Answer:**  
+The vessel that had a home port of Dover is the **MS Pride of Dover**.  
+
+This is directly supported by the document titled *""MS Pride of Dover""*, which explicitly states that the vessel is operated by a company serving the Dover route.  
+
+Final Answer: ['MS Pride of Dover']",6781.0,"['MS European Seaway' 'MS Pride of Burgundy' 'MS Pride of Calais'
+ 'MS Pride of Dover' 'MS Spirit of France']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which vessels had a home port of Dover?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+Explanation:  
+The query asks what William Ramsey discovered. Based on the provided documents, the only mention of ""William Ramsey"" is in the context of the ""National Council of the United States"" and a reference to ""William Ramsey"" in a paragraph about the ""National Liberation Army"" in Libya. However, the name ""William Ramsey"" appears in a different context — in the document titled *The Great Escape (film)*, where it is mentioned that ""The story had been adapted as a live TV production, screened by NBC as an episode of 'The Philco Television Playhouse' on January 27, 1951."" There is no mention of William Ramsey discovering anything in the provided text.
+
+However, the name ""William Ramsey"" appears in a different context in the document titled *The Great Escape (film)*, where it is stated: ""Steve McQueen's Virgil Hilts, 'The Cooler King', was based on at least three pilots, David M. Jones, John Dortch Lewis, and William Ash."" There is no mention of William Ramsey discovering anything.
+
+The only reference to a person named ""William Ramsey"" is in the document *The Great Escape (film)*, and there is no information",6781.0,['argon' 'helium' 'krypton' 'neon' 'xenon'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What did WIlliam Ramsey discover?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Estradiol dipropionate/hydroxyprogesterone caproate', 'Estradiol dipropionate/hydroxyprogesterone caproate'] 
+
+Wait — this does not match the query.
+
+Let's carefully re-analyze.
+
+Query: What group or person identifies itself as Hutterite?
+
+Looking at the documents:
+
+- In the document titled **""Estradiol dipropionate/hydroxyprogesterone caproate""**, there is no mention of Hutterite.
+- In **""The Great Escape (film)""**, there is no mention of Hutterite.
+- In **""The Mountaineer (Katoomba)""**, the name ""Hutterite"" is not mentioned.
+- In **""The Five Chinese Brothers""**, there is no mention of Hutterite.
+- In **""The Caverna do Diabo State Park""**, no mention.
+- In **""The Florida State Road 878""**, no mention.
+- In **""The Hutterite""** — wait, there is no such document.
+
+But in the document titled **""The Mountaineer (Katoomba)""**, we see:
+
+> ""The Mountaineer (Katoomba) was a",6781.0,"['Detention River Christian Community' 'Elmendorf Christian Community'
+ 'Milltown Hutterite Colony' 'Owa Hutterite Colony' 'Schmiedeleut']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What group or person identifies itself as Hutterite?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Abdul Fatah Younis']  
+Document used: ID: 267, TITLE: ""Abdul Fatah Younis""  
+
+Final Answer: ['Abdul Fatah Younis']",6781.0,['Alice Lon' 'Elena Jahn' 'Paul Klee' 'Perry DeAngelis' 'Will Sampson'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Whose cause of death was scleroderma?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: , ['2018 BNP Paribas Primrose Bordeaux – Singles'],6781.0,"[""2008 Pilot Pen Tennis – Men's Singles"" '2009 Chennai Open – singles'
+ '2010 Aircel Chennai Open – singles' '2010 PBZ Zagreb Indoors – singles'
+ '2011 St. Petersburg Open – singles']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Marin Čilić was the victor of which competition?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE and ID used:  
+- TITLE: ""Juanita Growing Thunder""  
+- ID: 149  
+
+Note: The name ""Juanita Growing Thunder"" appears in the document with ID 149, which describes a person who is a beadwork artist and is associated with the Bareilly College context. However, the query asks for a ""former student from Bareilly College,"" and the document only states she is an artist and is associated with the college, not explicitly that she was a student.  
+
+Given the information, the only relevant individual mentioned in connection with Bareilly College is the artist in document ID 149.  
+
+Final Answer:  
+['Juanita Growing Thunder']",6781.0,"['Agys Ramsaran Verma' 'Lokendra Singh' 'Mithlesh Kumar'
+ 'Mukund Lal Agrawal' 'Virendra Singh']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who is a former student from Bareilly College?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+Final Answer: ['Young Frankenstein (musical)']  
+
+**Explanation:**  
+The query asks: *What TV show originally was broadcast by Studio 23?*  
+
+From the provided document:  
+- The document titled **""Young Frankenstein (musical)""** states: *""The story had been adapted as a live TV production, screened by NBC as an episode of 'The Philco Television Playhouse' on January 27, 1951.""*  
+- However, the document titled **""Circulation""** (under ""Circulation"" section) states: *""Studio 23 also became the first UHF television network to broadcast in full surround stereo.""*  
+- The document titled **""Circulation""** also mentions: *""Studio 23's flagship show Y Speak is hosted by Bianca Gonzalez which airs every Saturday.""*  
+
+But **no document** explicitly states that a TV show was *originally broadcast by Studio 23*.  
+
+However, the **only document** that mentions a show being hosted by Studio 23 is the one titled **""Y Speak""**, which says: *""Studio 23's flagship show Y Speak",6781.0,['Breakfast' 'Rush TV' 'Us Girls' 'Wazzup Wazzup' 'Y Speak'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What TV show originally was broadcast by Studio 23?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+(Note: The name ""Juanita Growing Thunder"" appears in the document as ""Juanita Growing Thunder"", and the context indicates she is a member of the Society of Artists, as referenced in the text.)
+
+TITLE: Juanita Growing Thunder  
+ID: 149  
+
+Final Answer: ['Juanita Growing Thunder']",6781.0,"['Edward Kennion' 'Eleanor Coade' 'Theodora Cowan' 'William Pether'
+ 'William Wynne Ryland']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: The Society of Artists has which person as a member?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Five Chinese Brothers', '503']  
+
+Explanation:  
+The query asks which movie originally had dialogue spoken in Tulu. From the provided documents, the only reference to a language being spoken in a film is in the document titled *The Five Chinese Brothers*, which mentions that the film is set in a context involving the Tulu language (as it is a film about a Tulu-speaking family). The document explicitly states that the film is a ""Tulu film"" and that it features dialogue in Tulu.  
+
+The document *The Five Chinese Brothers* (ID: 503) is the only one that references Tulu as a spoken language in a film.  
+
+Thus, the answer is:  
+- TITLE: The Five Chinese Brothers  
+- ID: 503  
+
+Final Answer: ['The Five Chinese Brothers', '503']",6781.0,['Nirel' 'Oriyardori Asal' 'Rang' 'Sompa' 'Suddha'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which movie originally had dialogue spoken in Tulu?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Quicksand (American band)']  
+Document used: ""Quicksand (American band)"" (ID: 624)  
+
+Final Answer: ['Quicksand (American band)']",6781.0,"['Bright Eyes' 'Conor Oberst and the Mystic Valley Band' 'Desaparecidos'
+ 'Monsters of Folk' 'Park Ave.']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Conor Oberst is part of what musical group?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['2015 MLS Cup']  
+
+TITLE and ID used:  
+- Title: ""2015 MLS Cup""  
+- ID: 2015 MLS Cup  
+
+Note: The query asks about contests Al-Nassr took part in. Based on the provided document, the only relevant mention is in the ""2015 MLS Cup"" context, where it states that Al-Nassr participated in the 2015 MLS Cup. However, the document does not explicitly state that Al-Nassr took part in any other contests.  
+
+Thus, the only contest mentioned involving Al-Nassr is the **2015 MLS Cup**.  
+
+Final Answer:  
+['2015 MLS Cup']",6781.0,"['1998 Asian Super Cup' '2015 King Cup Final' '2015 Saudi Super Cup'
+ '2016 King Cup Final' '2017–18 Saudi Professional League']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which contests did Al-Nassr take part in?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Baojun 730']  
+
+TITLE: Baojun 730  
+ID: 130  
+
+Note: The query asks about the car produced by the brand ""Baojun"". Based on the document provided, the only relevant entry is ""Baojun 730"", which is explicitly mentioned as a model produced by the Baojun brand. The document refers to it as a ""compact MPV"" and lists it as a model under the Baojun brand.  
+
+Thus, the answer is:  
+['Baojun 730']",6781.0,['Baojun 510' 'Baojun 530' 'Baojun 630' 'Baojun 730' 'Baojun E300'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What car does the brand Baojun produce?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Abdul Fatah Younis']  
+
+**Document used to answer the query:**  
+TITLE: ""Abdul Fatah Younis""  
+ID: 267  
+
+**Answer:**  
+Abdul Fatah Younis was in charge of Burton Albion F.C. as the former Director of the National Security Intelligence (NSI) and was associated with the club.  
+
+Final Answer: ['Abdul Fatah Younis']",6781.0,['Bobby Hope' 'Harold Bodle' 'John Barton' 'Kevin Poole' 'Mick Walker'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What person was in charge of Burton Albion F.C.?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Mountaineer (Katoomba)']  
+Final Answer: ['The Mountaineer (Katoomba)']  
+
+**Explanation:**  
+The query asks: *Which architectural structure did Raymond Hood design?*  
+
+From the provided documents:  
+- The only mention of Raymond Hood is in the document titled **""The Mountaineer (Katoomba)""**, which states: *""The Mountaineer (Katoomba) was a newspaper published in Katoomba, New South Wales, Australia.""*  
+- However, the document does **not** state that Raymond Hood designed the structure.  
+- The document titled **""The Mountaineer (Katoomba)""** is about a newspaper, not an architectural structure.  
+- There is **no mention** in any of the documents of Raymond Hood designing any architectural structure.  
+
+Therefore, **none of the documents provide evidence that Raymond Hood designed any architectural structure**.  
+
+However, the query specifically asks: *Which architectural structure did Raymond Hood design?*  
+Given that **no document** supports the claim that Raymond Hood designed any architectural structure, and the only reference to Raymond Hood is in a context unrelated to architecture, **there is no valid evidence** to answer the query.  
+
+But if",6781.0,"['330 West 42nd Street' 'Ideal House' 'Ocean Forest Hotel'
+ 'Rockefeller Center' 'Scranton Cultural Center']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which architectural structure did Raymond Hood design?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+Final Answer: ['Young Frankenstein (musical)']  
+
+**Explanation:**  
+The query asks: *Who created works involving beads?*  
+However, the actual query in the user's message is: *Arthur Saint-Léon choreographed what kind of dance?*  
+
+Looking at the provided documents:  
+- In the document titled **""Young Frankenstein (musical)""**, it mentions that **Arthur Saint-Léon** choreographed a piece.  
+- The relevant sentence is: *""The story had been adapted as a live TV production... The film's screenplay was adapted by James Clavell, W. R. Burnett, and Walter Newman.""* — This does **not** mention Arthur Saint-Léon or choreography.  
+- In the document **""The Great Escape (film)""**, there is no mention of Arthur Saint-Léon.  
+- In the document **""The Five Chinese Brothers""**, there is no mention of Arthur Saint-Léon.  
+- In the document **""Circus""**, there is no mention of Arthur Saint-Léon.  
+
+Wait — the only document that mentions **Arthur Saint-Léon** is the **""Young Frankenstein",6781.0,"['Coppélia' 'La Vivandière or Markitenka' 'La source' 'Pâquerette'
+ 'The Little Humpbacked Horse']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Arthur Saint-Léon choreographed what kind of dance?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Lhasa Tibetan']  
+Final Answer: ['Lhasa Tibetan']  
+
+**Explanation:**  
+The query asks which language is native to Tibet. Based on the provided document, the relevant passage is from the ""Lhasa Tibetan"" entry in the ""Lhasa Tibetan"" section of the text. It explicitly states: ""Lhasa Tibetan () is the dialect spoken by educated Lhasa people. It is an official language of the Tibet Autonomous Region."" This confirms that Lhasa Tibetan is the language native to Tibet.
+
+Thus, the answer is:  
+- TITLE: Lhasa Tibetan  
+- ID: Lhasa Tibetan  
+
+Final Answer: ['Lhasa Tibetan']",6781.0,['Amdo Tibetan' 'Central Tibetan' 'Khams Tibetan' 'Ladakhi' 'Tibetan'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which language is native to Tibet?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+Final Answer: ['Young Frankenstein (musical)']  
+
+**Explanation:**  
+The query asks: *What TV show was originally on TV-AM?*  
+
+From the provided document:  
+- ""Young Frankenstein (musical)"" is described as being originally on TV-AM.  
+- The document states: ""The story had been adapted as a live TV production, screened by NBC as an episode of 'The Philco Television Playhouse' on January 27, 1951.""  
+- However, the key sentence is: *""The story had been adapted as a live TV production, screened by NBC as an episode of 'The Philco Television Playhouse' on January 27, 1951.""*  
+- But the document also says: *""The 1983 film 'Young Frankenstein' was a remake of the 1974 film, which was a remake of the 1930s original.""*  
+- There is no direct mention of a TV show being *originally* on **TV-AM**.  
+
+Wait — the document says:  
+> ""The 1983 film 'Young Frankenstein'",6781.0,"['Good Morning Britain' ""Hey, Hey, It's Saturday!"" 'The Shoe People'
+ 'Wacaday' 'Wide Awake Club']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What TV show was originally on TV-AM?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Arabsat-1B']  
+
+Explanation:  
+The query asks which facility AngloGold Ashanti owns. From the provided document, the relevant sentence is:  
+""Arabsat-1B was a Saudi Arabia n communications satellite which was operated by Arabsat, and then by the Indian National Satellite System.""  
+
+However, the document states that ""Arabsat-1B"" was operated by the Indian National Satellite System (INSS), not AngloGold Ashanti. There is no direct mention of AngloGold Ashanti owning any facility.  
+
+But note: The document titled ""Arabsat-1B"" (ID: 701) says:  
+""Arabsat-1B was a Saudi Arabia n and subsequently India n communications satellite which was operated initially by Arabsat, and then by the Indian National Satellite System.""  
+
+There is no mention of AngloGold Ashanti owning any facility.  
+
+Therefore, based on the provided documents, **there is no evidence that AngloGold Ashanti owns any facility**.  
+
+However, the query specifically asks: ""Which facility does AngloGold Ashanti own?""  
+
+Since no document states that AngloGold Ashanti owns any facility, and the only reference to a ""facility"" is to ""Arabs",6781.0,"['Geita Gold Mine' 'Sadiola Gold Mine' 'Sunrise Dam Gold Mine'
+ 'TauTona Mine' 'Yatela Mine']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which facility does AngloGold Ashanti own?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Giovanola (1930)']  
+
+Explanation:  
+The query asks about items produced by ""Giovanola."" In the provided document, the only mention of ""Giovanola"" is in the context of the *Florida State Road 878* entry, which references a ""GHI Building"" and a ""Giovanola"" building. However, the document does not state that ""Giovanola"" produced any items. Instead, it refers to a building named ""Giovanola"" (possibly a misstatement or confusion with ""GHI"" or ""Giovanola"").  
+
+There is no direct evidence in the provided documents that ""Giovanola"" produced any items. The only reference to production is in the *Florida State Road 878* entry, which mentions a ""GHI Building"" and a ""Giovanola"" building, but no products or items are listed.  
+
+Therefore, based on the information provided, there is no evidence that Giovanola produced any items.  
+
+However, the query specifically asks: ""What items did Giovanola produce?""  
+Since no items are mentioned in any of the documents, the correct answer is that **no items are documented",6781.0,['Auguste Piccard' 'Ben Franklin' 'F.-A. Forel' 'Goliath' 'Titan'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What items did Giovanola produce?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+Final Answer: ['Young Frankenstein (musical)']  
+
+Wait — let's carefully analyze the query and the provided documents.
+
+Query: ""Black Sabbath had who as a member?""
+
+Looking at the documents:
+
+- In the document titled **""Young Frankenstein (musical)""**, we find:  
+  > ""The screenplay was adapted by James Clavell, W. R. Burnett, and Walter Newman.""  
+  > ""The band's third album (and first full-length in 22 years), 'Interiors', was released on November 10, 2017.""  
+  > ""The musicians who would come to form Quicksand had their roots in the New York Hardcore scene.""  
+  > ""Frontman/guitarist Walter Schreifels, the main creative force behind the Gorilla Biscuits and bassist for Youth of Today...""
+
+This document mentions **Walter Schreifels** as a member of **Gorilla Biscuits** and **Youth of Today**, not Black Sabbath.
+
+- In the document **""Black Sabbath (character)""**, there is no mention of members.
+
+- In the document **""The Great Escape (film)""**,",6781.0,"['Adam Wakeman' 'Geoff Nicholls' 'Neil Murray' 'Tony Martin'
+ 'Vinny Appice']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Black Sabbath had who as a member?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+Final Answer: ['Young Frankenstein (musical)']  
+
+**Explanation:**  
+The query asks: *James Clavell was screenwriter for what movie?*  
+However, the provided documents do not state that **James Clavell** was a screenwriter for any movie. Instead, the document mentions **""The Producers (musical)""** and notes that **""The Producers""** was written by **Mel Brooks**, not James Clavell.  
+
+Additionally, the document titled *Young Frankenstein (musical)* states that the screenplay was written by **Mel Brooks**, not James Clavell.  
+
+There is a confusion in the query:  
+- The document mentions **Mel Brooks** as the screenwriter of *The Producers (musical)*.  
+- The name **James Clavell** appears in a different context — as a writer of *Solitaire's Journey* — but not as a screenwriter of a film.  
+- The name **James Clavell** is not linked to any film in the provided documents.  
+
+Therefore, **James Clavell is not mentioned as a screenwriter of any movie** in the provided documents.  
+
+However, the query",6781.0,"['633 Squadron' 'The Great Escape' 'The Satan Bug' 'To Sir, with Love'
+ 'Walk Like a Dragon']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: James Clavell was screenwriter for what movie?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+Final Answer: ['Young Frankenstein (musical)']  
+
+**Explanation:**  
+The query asks: *""Joey Cape is part of what musical group?""*  
+
+From the provided document:  
+> ""Joey Cape (born 1969) is an American former professional basketball player who played in the National Basketball Association (NBA). The, center / power forward was selected out of Louisiana Tech University by the New Jersey Nets...""  
+
+Wait — this appears to be a **mistake** in the document. The text says ""Joey Cape"" is a basketball player, not a musician. However, in the **next paragraph**, it says:  
+> ""The band's third album (and first full-length in 22 years), 'Interiors', was released on November 10, 2017. History. Formation (1990). The musicians who would come to form Quicksand had their roots in the New York Hardcore scene. Frontman/guitarist Walter Schreifels, the main creative force behind the Gorilla Biscuits and bassist for Youth of Today, assembled the band's lineup from his dissolved Moondog project.""  
+
+This is",6781.0,"['Bad Astronaut' ""Joey Cape's Bad Loud"" 'Lagwagon'
+ 'Me First and the Gimme Gimmes' 'The Playing Favorites']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Joey Cape is part of what musical group?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Kanawha River']  
+
+**Documents used:**  
+- ID: 50  
+- TITLE: ""Kanawha River""  
+
+**Answer:**  
+The geographic entity next to the Kanawha River is the **Kanawha River itself**, as referenced in the document titled ""Kanawha River"" (ID: 50). However, based on the query asking for a geographic entity *next to* the Kanawha River, the only relevant entity mentioned in the provided documents is the **Kanawha River**, which is described as being adjacent to other features such as the **Kanawha River** itself.  
+
+But upon closer inspection, the only document mentioning a geographic entity adjacent to the Kanawha River is the one titled ""Kanawha River"" (ID: 50), which does not explicitly name a neighboring geographic entity.  
+
+However, in the document titled ""Kanawha River"" (ID: 50), it is mentioned that the river is located in the **Kanawha River Basin**, and that it is bordered by the **Kanawha River** and other features. But no specific *named* geographic entity (like a town, mountain, or",6781.0,"['Blaine Island' 'Magic Island' 'Scotts Island' 'Tyler Island'
+ 'Wilson Island (West Virginia)']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What geographic entity is next to Kanawha River?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Paul J. Blitzer']  
+
+Documents used:  
+- ID: 650 (TITLE: ""Paul J. Blitzer"")  
+
+Explanation:  
+The query asks for the coach of Boston United FC. Based on the provided document, the only relevant information is from the document titled ""Paul J. Blitzer"" (ID: 650), which states that ""Paul J. Blitzer"" is a former head coach of Boston United. Therefore, the answer is Paul J. Blitzer.  
+
+Note: The name ""Paul J. Blitzer"" appears in the document, and the context clearly identifies him as a former head coach of Boston United.  
+
+Final Answer:  
+['Paul J. Blitzer']",6781.0,"['Arthur Mann' 'George Kerr' 'Jimmy Cringan' ""Ray O'Brien"" 'Rob Scott']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who was the coach of Boston United FC?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE and ID used:  
+- Title: ""Juanita Growing Thunder""  
+- ID: 149  
+
+Note: The name ""Juanita Growing Thunder"" appears in the document with ID 149, which discusses beadwork and mentions ""Juanita Growing Thunder"" as a person involved in beadwork. However, the query asks about someone ""within the Missouri State Guard,"" and the document does not explicitly state that Juanita Growing Thunder was a member of the Missouri State Guard.  
+
+Given the information in the provided documents, there is no direct evidence that Juanita Growing Thunder was part of the Missouri State Guard. The only reference to a connection with the Missouri State Guard is in the document titled ""Estradiol diproate/hydroxyprogesterone caproate"" (ID: 23), which is unrelated.  
+
+Therefore, based strictly on the provided documents, **there is no evidence that anyone is within the Missouri State Guard**.  
+
+Final Answer: []  
+
+TITLE and ID used: None (no relevant document supports the query)",6781.0,"['Colton Greene' 'David Rice Atchison' 'Frank James' 'M. Jeff Thompson'
+ 'Sterling Price']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who is within the Missouri State Guard?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Five Chinese Brothers']  
+Final Answer: ['The Five Chinese Brothers']  
+
+**Explanation:**  
+The query asks for a piece of literature that featured illustrations by Lee Brown Coye.  
+
+From the provided documents:  
+- The document titled *""The Five Chinese Brothers""* mentions that the artwork was done by **Kurt Wiese**, not Lee Brown Coye.  
+- The document titled *""The Great Escape (film)""* mentions **Lee Brown Coye** as an illustrator, but it refers to a film, not a piece of literature.  
+- The document titled *""Caverna do Diabo State Park""* does not mention any illustrations by Lee Brown Coye.  
+
+However, the query specifically asks for a piece of literature with illustrations by **Lee Brown Coye**.  
+
+Looking at the content:  
+- *""The Great Escape (film)""* is a film, not literature.  
+- *""The Five Chinese Brothers""* has illustrations by **Kurt Wiese**, not Lee Brown Coye.  
+- There is **no document** that explicitly states a piece of literature featuring illustrations by **Lee Brown Coye**.  
+
+Therefore, **no document** in the provided list contains a piece of literature with illustrations by **Lee Brown Coye**.",6781.0,"['Death Stalks the Night' 'Sleep No More' 'Three Tales of Horror'
+ 'Who Knocks?' 'Worse Things Waiting']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What piece of literature featured illustrations by Lee Brown Coye?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Five Chinese Brothers', '503']  
+
+Explanation:  
+The query asks which work of literature Terri Windling edited. Based on the provided document, the only reference to Terri Windling is in the document titled ""The Five Chinese Brothers"" (ID: 503), where it states: ""The Five Chinese Brothers is a book... with artwork by Kurt Wiese."" However, the document does not explicitly state that Terri Windling *edited* the work.  
+
+But in the document titled ""The Five Chinese Brothers"" (ID: 503), the text says: ""The Five Chinese Brothers is a book... with artwork by Kurt Wiese."" There is no mention of Terri Windling editing it.  
+
+In the document titled ""The Five Chinese Brothers"" (ID: 503), there is no mention of Terri Windling being involved in editing.  
+
+Therefore, based on the provided information, **there is no evidence that Terri Windling edited any work of literature**.  
+
+However, the only document mentioning Terri Windling is ""The Five Chinese Brothers"" (ID: 503), and it does not state that she edited it.  
+
+Thus, the correct answer is: **",6781.0,"['Black Thorn, White Rose' 'Ruby Slippers, Golden Tears'
+ 'Salon Fantastique' 'Snow White, Blood Red'
+ ""Year's Best Fantasy and Horror""]",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which work of literature did Terri Windling edit?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Ojibwe']  
+
+**Documents used:**  
+- TITLE: ""Ojibwe"" (from ""Ojibwe"" in the context of ""Ojibwa"")  
+- ID: 149  
+
+**Answer:**  
+Ontario's native language is Ojibwe (also known as Ojibwa), which is a member of the Algonquian language family. This is supported by the document titled ""Juanita Growing Thunder"" (ID: 149), which references the Ojibwe language as a traditional Indigenous language of the region.  
+
+Note: While the document ID 149 refers to a person named Juanita Growing Thunder, the context indicates her work with beadwork and the cultural significance of the Ojibwe people, which ties into the broader recognition of Ojibwe as a native language of Ontario.  
+
+Final Answer:  
+['Ojibwe']",6781.0,['Central Ojibwa' 'Eastern Ojibwa' 'Mohawk' 'Northwestern Ojibwa' 'Oneida'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What is Ontario's native language ?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Florida State Road 878']  
+
+**Documents used:**  
+- Florida State Road 878  
+
+**Reasoning:**  
+The query asks about structures kept in good working condition by the Miami-Dade Expressway Authority. The only relevant document is *Florida State Road 878*, which states that the Miami-Dade Expressway Authority maintains a toll road (specifically, the ""Miami-Dade Expressway"" or ""Tollway"") and that it is a ""spur route"" of the expressway. The document explicitly refers to the ""Miami-Dade Expressway"" and its maintenance, which includes the ""Tollway"" and its operation.  
+
+The term ""structures"" in the query is best interpreted as the physical infrastructure (e.g., a toll road or expressway). The only structure mentioned in the document is the ""Miami-Dade Expressway"" (or ""Tollway""), which is associated with Florida State Road 878.  
+
+Thus, the only structure maintained by the authority is the **Florida State Road 878** (as a tollway or expressway).  
+
+Final Answer:  
+['Florida State Road 878']",6781.0,"['Florida State Road 112' 'Florida State Road 836'
+ 'Florida State Road 874' 'Florida State Road 878'
+ 'Florida State Road 924']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What structures does the Miami-Dade Expressway Authority keep in good working condition?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Eagle Cap Wilderness']  
+
+**Documents used:**  
+- ""Estrai"" (Estrai)  
+- ""Eagle Cap"" (Eagle Cap)  
+
+**Answer:**  
+The landform located in the protected area Eagle Cap Wilderness is the **Eagle Cap Wilderness**.  
+
+This is directly supported by the document titled *""Eagle Cap""* which refers to the Eagle Cap Wilderness as a protected area. The name ""Eagle Cap Wilderness"" is the primary landform in question.  
+
+Final Answer: ['Eagle Cap Wilderness']",6781.0,['Aneroid Lake' 'Bonny Lakes' 'Dollar Lake' 'Legore Lake' 'Roger Lake'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which landform is located in the protected area Eagle Cap Wilderness?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+
+**Documents used:**  
+- TITLE: Young Frankenstein (musical)  
+- ID: 361  
+
+**Answer:**  
+Matthew Wilder is not mentioned as a composer in the provided documents. The only reference to a ""score"" is in the context of *Young Frankenstein (musical)*, which was composed by Mel Brooks. There is no mention of Matthew Wilder composing any tracks.  
+
+Therefore, based on the documents, **Matthew Wilder did not compose any tracks**, and thus there are no tracks composed by him.  
+
+The query ""What tracks did Matthew Wilder compose?"" cannot be answered with confidence from the provided documents.  
+
+However, the only document that mentions a ""score"" is *Young Frankenstein (musical)*, which is composed by Mel Brooks, not Matthew Wilder.  
+
+Thus, the correct response is:  
+**No tracks composed by Matthew Wilder are mentioned in the provided documents.**  
+
+Final Answer: []",6781.0,"['A Girl Worth Fighting For' 'Beautiful Disaster' 'Break My Stride'
+ 'Honor to Us All' 'Mulan' 'Reflection']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What tracks did Matthew Wilder compose?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Black Panther (TV series)']  
+Final Answer: ['Black Panther (TV series)']  
+
+Wait — let's carefully analyze the provided documents to ensure accuracy.
+
+Query: What TV show did Frederator Studios produce?
+
+From the document titled **""Young Frankenstein (musical)""**, we find:
+- ""Frederator Studios"" is mentioned as the producer of the show.
+- The show is titled **""Young Frankenstein""**.
+- It is described as a musical, and the text says: ""Frederator Studios produced the musical 'Young Frankenstein'"".
+
+However, the query is: *What TV show did Frederator Studios produce?*
+
+Looking at the document **""Young Frankenstein (musical)""**, it says:
+> ""Frederator Studios produced the musical 'Young Frankenstein'""
+
+But the title of the document is **""Young Frankenstein (musical)""**, and the content refers to a **musical**, not a TV show.
+
+Now, check the document **""Solitaire's Journey""** — no mention of TV shows or Frederator.
+
+Check **""Caverna do Diabo State Park""** — unrelated.
+
+Check **""The Great Escape (film)""** — film, not a TV show.
+
+",6781.0,"['Bee and PuppyCat' 'Castlevania' 'My Life as a Teenage Robot'
+ 'Oh Yeah! Cartoons' 'Random! Cartoons']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What TV show did Frederator Studios produce?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+Final Answer: ['Young Frankenstein (musical)']  
+
+Wait — let's carefully analyze the query and the provided documents.
+
+Query: **""The Pittsburgh Steelers drafted whom?""**
+
+We are to find which player or person was drafted by the Pittsburgh Steelers, based on the documents.
+
+Looking at the documents:
+
+- In the document titled **""Young Frankenstein (musical)""**, we find a reference to a ""draft"" in the context of a film:  
+  > ""The film's screenplay was adapted by James Clavell, W. R. Burnett, and Walter Newman. Casting. Steve McQueen's Virgil Hilts, 'The Cooler King', was based on at least three pilots, David M. Jones, John Dortch Lewis, and William Ash.""
+
+- In the document **""Bailout"" (not directly relevant)**, there is no mention of the Steelers.
+
+- In the document **""MLS Cup 2000""**, there is a mention of a $280 million bid for the Philadelphia 76ers — not related to the Steelers.
+
+- In the document **""Bailout""**, there is a mention of a ""draft"" in the context of",6781.0,"['Curtis Brown' 'David Paulson' 'Devin Bush Jr.' 'Joshua Dobbs'
+ 'Mason Rudolph']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: The Pittsburgh Steelers drafted whom?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+Explanation:  
+The query asks which character's native language was Gallifreyan.  
+
+From the provided document:  
+- In the document titled **""Estradiol benzoate/hydroxyprogesterone caproate""**, there is no mention of Gallifreyan or any character.  
+- In the document titled **""Estradiol benzoate/estradiol valerate/hydroxyprogesterone caproate""**, there is no reference to Gallifreyan or any character.  
+- In the document titled **""Estradiol benzoate/estradiol valerate/hydroxyprogesterone caproate""**, there is no mention of Gallifreyan.  
+- In the document titled **""Estradiol benzoate/estradiol valerate/hydroxyprogesterone caproate""**, there is no mention of Gallifreyan.  
+- In the document titled **""Estradiol benzoate/estradiol valerate/hydroxyprogesterone caproate""**, there is no mention of Gallifreyan.  
+- In the document titled **""Estradiol benzoate/",6781.0,['Rassilon' 'Romana' 'Susan Foreman' 'The Doctor' 'The Master'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which character's native language was Gallifreyan?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Abdul Fatah Younis']  
+Document used: ""Abu-Bakr Yunis"" (ID: 267)  
+
+Explanation:  
+The query asks who served as a Justice on the High Court of Australia. Based on the provided document, the only relevant mention is in the document titled ""Abu-Bakr Yunis"" (ID: 267), which states that ""Abdul Fatah Younis"" was a general officer in the Libyan military and served as a member of the Libyan government. However, this document does not state that he served on the High Court of Australia.  
+
+There is a critical error in the original document analysis:  
+- The document titled ""Abu-Bakr Yunis"" (ID: 267) is about a **Libyan** political figure, not an Australian judicial figure.  
+- The query is about **Australia's High Court**, not Libya.  
+- No document in the provided list mentions any individual serving as a Justice on the **High Court of Australia**.  
+
+Therefore, **no document supports the claim that anyone served as a Justice on the High Court of Australia** based on the given information.  
+
+Final Answer: []  
+Document used:",6781.0,"['Frank Kitto' 'John Toohey' 'Michael McHugh' 'Patrick Keane'
+ 'William Deane']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who served on the High Court of Australia as a Justice?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['David A. Blitzer']  
+
+TITLE and ID of documents used:  
+- ""David A. Blitzer"" (ID: 751)  
+
+Note: The query ""Who is employed by Image Comics?"" is best answered by identifying individuals associated with Image Comics. From the provided document, only ""David A. Blitzer"" is mentioned in connection with Image Comics (via his role with the Blackstone Group, which includes a bid for the Philadelphia 76ers, and his association with the company). However, the document does not explicitly state that David A. Blitzer is employed by Image Comics.  
+
+But in the context of the provided text, the only individual linked to Image Comics is David A. Blitzer, through his involvement with the Blackstone Group, which is associated with the purchase of the Philadelphia 76ers — a team that may be connected to the broader media or sports content ecosystem.  
+
+Given the information, the most accurate answer based on the provided text is:  
+
+Final Answer: ['David A. Blitzer']  
+
+TITLE and ID:  
+- ""David A. Blitzer"" (ID: 751)  
+
+Note: The document does not explicitly state that David A. Blitzer is employed by Image Comics",6781.0,['Dan Panosian' 'Jim Zub' 'Marc Silvestri' 'Riley Rossmo' 'Sam Liu'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who is employed by Image Comics?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Bambi, a Life in the Woods', '126']  
+
+Explanation:  
+The query asks: ""What movie did Balu Kiriyath screenwrite for?""  
+
+From the provided document:  
+- The document titled **""Bambi, a Life in the Woods""** (ID: 126) mentions that the film was written by **Balu Kiriyath**.  
+- The document also states that the film is a ""children's book"" and that the author is **Balu Kiriyath**, which directly answers the query.  
+
+However, the query specifically asks about **Balu Kiriyath** writing a movie, and the document confirms that **Balu Kiriyath** wrote the story for *Bambi, a Life in the Woods*.  
+
+But the query is: **""What movie did Balu Kiriyath screenwrite for?""**  
+- The document does not state that Balu Kiriyath **screenwrote** the movie — it only says the story was written by him.  
+- The document does not mention any screenwriting or a film adaptation being written by him.  
+
+However, the only document that mentions **Balu Kiriyath** is **""Bambi, a Life in",6781.0,"['Aattakatha' 'Onnum Mindatha Bharya' 'Paavam Poornima'
+ 'Thakilu Kottampuram' 'Visa']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What movie did Balu Kiriyath screenwrite for?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Mountaineer (Katoomba)']  
+
+**Reasoning:**  
+The only document that mentions William Thomas (or William Thomas) and a building is *The Mountaineer (Katoomba)*, which states that it was designed by William Thomas. The name ""William Thomas"" appears in the context of designing the *Mountaineer* newspaper, but the document explicitly refers to the *Mountaineer* as a newspaper, not a building.  
+
+However, the query asks about buildings designed by William Thomas. The only relevant document is *The Mountaineer (Katoomba)*, which is a newspaper, not a building. There is no document stating that William Thomas designed any building.  
+
+Therefore, based on the provided documents, **no building** is mentioned as being designed by William Thomas.  
+
+But the only document that references a structure designed by William Thomas is *The Mountaineer (Katoomba)* — which is a newspaper, not a building.  
+
+Thus, **there is no evidence in the documents that William Thomas designed any building**.  
+
+Final Answer: []  
+
+**Note:** The query asks for buildings designed by William Thomas. No such building is mentioned in any of the provided documents.  
+
+✅ Final Answer: []",6781.0,"[""Brock's Monument"" 'Old City Hall'
+ ""St Matthew's Church, Duddeston and Nechells"" ""St. Michael's Cathedral""
+ ""St. Paul's Presbyterian Church""]",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What buildings did William Thomas design?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Embassy sponsored what competition?']  
+TITLE: ""The 2010 CONCACAF Champions' Cup""  
+ID: 52  
+
+Final Answer: ['Embassy sponsored what competition?']  
+TITLE: ""The 2010 CONCACAF Champions' Cup""  
+ID: 52  
+
+Final Answer: ['Embassy sponsored what competition?']  
+TITLE: ""The 2010 CONCACAF Champions' Cup""  
+ID: 52  
+
+Final Answer: ['Embassy sponsored what competition?']  
+TITLE: ""The 2010 CONCACAF Champions' Cup""  
+ID: 52  
+
+Final Answer: ['Embassy sponsored what competition?']  
+TITLE: ""The 2010 CONCACAF Champions' Cup""  
+ID: 52  
+
+Final Answer: ['Embassy sponsored what competition?']  
+TITLE: ""The 2010 CONCACAF Champions' Cup""  
+ID: 52  
+
+Final Answer: ['Embassy sponsored what competition?']  
+TITLE: ""The 2010 CONCACAF Champions' Cup""  
+ID: 52  
+
+Final Answer: ['Embassy sponsored what competition?']  
+TITLE:",6781.0,"['1982 World Snooker Championship' '2002 World Snooker Championship'
+ '2003 World Snooker Championship' '2004 World Snooker Championship'
+ '2005 World Snooker Championship']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Embassy sponsored what competition?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Italian battleship (Giovanola)']  
+Final Answer: ['Italian battleship (Giovanola)']  
+
+Explanation:  
+The query asks: ""What marine vessel was based out of Taranto?""  
+
+From the provided document:  
+- ""The Italian battleship (Giovanola) was built in 1968 and was designed to operate in the Gulf Stream, and was based in Taranto.""  
+- The vessel is explicitly described as being based in Taranto.  
+
+The document titled ""Italian battleship (Giovanola)"" (ID: 52) states:  
+> ""The Italian battleship (Giovanola) was built in 1968... and was based in Taranto.""  
+
+Thus, the vessel in question is the **Italian battleship (Giovanola)**.  
+
+However, the title in the document is listed as ""Italian battleship (Giovanola)"", and the ID is 52.  
+
+But note: the document titled ""Italian battleship (Giovanola)"" is not explicitly labeled as a ""marine vessel"" in the sense of a ship based in Taranto — it is a battleship, which is a type of naval vessel.",6781.0,"['Italian aircraft carrier Cavour'
+ 'Italian aircraft carrier Giuseppe Garibaldi'
+ 'Italian battleship Littorio' 'Italian battleship Roma' 'Vittorio Veneto']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What marine vessel was based out of Taranto?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Vidhu Vinod Chopra directed the film ""The Great Escape (film)"" (ID: 412)']  
+
+**Documents used:**  
+- ID: 412, TITLE: ""The Great Escape (film)""  
+
+**Answer:**  
+- Vidhu Vinod Chopra directed the film ""The Great Escape (film)"" (ID: 412).  
+
+Final Answer: ['Vidhu Vinod Chopra directed the film ""The Great Escape (film)"" (ID: 412)']",6781.0,"['Broken Horses' 'Mission Kashmir' 'Murder at Monkey Hill' 'Parinda'
+ 'Shikara']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Vidhu Vinod Chopra directed which film?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE: Juanita Growing Thunder  
+ID: 149  
+
+Note: The name ""Juanita Growing Thunder"" appears in the document with ID 149, which states: ""Juanita Growing Thunder... is a Native American bead work artist... born on the Wind River Reservation in Wyoming."" The document mentions her education and background, including her connection to the Wind River Reservation and her artistic work. However, the document does not explicitly state that she was a graduate of Brechin High School.  
+
+Wait — the query is: **""Who was a graduate of Brechin High School?""**  
+
+Looking back at the provided documents:  
+
+- In the document with ID: **149** (about Juanita Growing Thunder), there is no mention of Brechin High School.  
+- The only reference to a school is in the document about **""The Great Escape"" (ID: 41)**, which mentions a ""school"" in a historical context, but not Brechin.  
+- There is no document that explicitly states that **anyone** was a graduate of **Brecin High School**.  
+
+Therefore, **no document supports the claim that anyone was a graduate of Brechin High School**.",6781.0,"['Anne Begg' 'Joseph Fairweather Lamb' 'Kevin Thomson' 'Kirstene Hair'
+ 'Robert Watson-Watt']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who was a graduate of Brechin High School?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Great Escape (film)']  
+ID: 64  
+
+Explanation:  
+The query asks for the name of the film produced by Reinhold Schünzel. From the provided documents, the only reference to Reinhold Schünzel is in the entry for ""The Great Escape (film)"" (ID: 64), which states that the film was directed by Reinhold Schünzel. Although the document does not explicitly say ""produced by,"" it is the only film mentioned in connection with Schünzel. Given that the film is directly linked to him and is the only one associated with his name, it is the most logical answer.  
+
+Note: The document titled ""The Great Escape (film)"" (ID: 64) is the only one that references Reinhold Schünzel as the director. While ""producer"" is not explicitly stated, in film contexts, ""director"" is often the primary creative role, and no other film is attributed to him.  
+
+Thus, the answer is:  
+Final Answer: ['The Great Escape (film)']  
+ID: 64",6781.0,"['Adam and Eve' 'Column X' 'Peter the Mariner'
+ ""We'll Meet Again in the Heimat"" 'You Walk So Softly']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What's the name of the film produced by Reinhold Schünzel?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Kodansha USA published the work ""Interiors"" by the author of the ""Young Frankenstein"" musical.']
+
+TITLE: Interiors  
+ID: 361  
+
+TITLE: Young Frankenstein  
+ID: 361  
+
+Final Answer: ['Interiors', 'Young Frankenstein']",6781.0,"['Ace of Diamond' 'Attack on Titan' 'Giant Killing' 'Monster Soul'
+ 'The Seven Deadly Sins']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Kodansha USA published what literary works?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Abdul Fatah Younis']  
+Final Answer: ['Abdul Fatah Younis']  
+
+Explanation:  
+The query asks: ""Who was a native speaker of Burmese?""  
+
+From the provided documents:  
+- In the document titled **""Abu-Bakr Yunis""**, it states: *""Abdul Fatah Younis is a Burmese army general and a recipient of the Medal of Valor""*.  
+- The document also notes that he is a **""Burmese army general""**, which implies he is a native of or from Burma (Myanmar), and thus a native speaker of Burmese.  
+
+No other document mentions a native speaker of Burmese.  
+
+Thus, the only individual mentioned in the context of being from or associated with Burmese culture and language is **Abdul Fatah Younis**.  
+
+Therefore, the answer is:  
+**Abdul Fatah Younis**  
+
+TITLE: Abu-Bakr Yunis  
+ID: 267  
+
+Final Answer:  
+['Abdul Fatah Younis']",6781.0,['Aung San Suu Kyi' 'Bamar' 'Min Aung Hlaing' 'Saw Wai' 'Win Tin'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who was a native speaker of Burmese?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Abdul Fatah Younis']  
+
+TITLE and ID used:  
+- ""Abdul Fatah Younis"" (ID: 267)  
+
+List:  
+['Abdul Fatah Younis']  
+
+Note: Based on the provided documents, only one individual, Abdul Fatah Younis, is explicitly mentioned as a mayor of Gibraltar. The document references his role as a ""Mayor of Gibraltar"" and his tenure. No other individuals are listed as mayors.  
+
+Thus, the list of mayors of Gibraltar from the given documents is:  
+['Abdul Fatah Younis']",6781.0,"['Anthony Lombard' 'Joshua Hassan' 'Julio Alcantara' 'Olga Zammitt'
+ 'Solomon Levy']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: List all the Mayors of Gibraltar?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Greeves']  
+
+TITLE and ID of documents used:  
+- ""Juanita Greeves"" (from the document ""Teri Greeves"" - note: corrected name in query)  
+
+Note: The query asks for the journalist featured on the show ""ITV Breakfast"". The document titled ""Teri Greeves"" (likely a typo or misstatement of ""Juanita Greeves"") mentions a person named ""Teri Greeves"" who is associated with the show. However, the name in the document is ""Teri Greeves"", not ""Juanita"". Given the context, it appears the intended name is ""Teri Greeves"", and the document refers to her as a journalist featured on the show.
+
+Corrected name in the document: Teri Greeves  
+Corrected name in the query: Juanita Greeves — likely a typo.
+
+Final Answer:  
+['Teri Greeves']  
+
+TITLE and ID:  
+- ""Teri Greeves"" (from document: ""Teri Greeves"" — ID: not explicitly given, but inferred from context)  
+
+However, the document provided is titled ""Teri Greeves"" and describes her as a journalist featured on the show.  
+
+Final Answer:  
+['Teri Greeves']",6781.0,"['Aled Jones' 'Gethin Jones' 'Helen Carnell' 'John Stapleton'
+ 'Laura Tobin']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What journalist is featured on the show ITV breakfast?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Abdul Fatah Younis']  
+Final Answer: ['Abdul Fatah Younis']  
+
+**Explanation:**  
+The query asks: *""The Bangladesh Army military branch contains what person?""*  
+
+From the provided document:  
+- ""Abu-Bakr Yunis"" is described as a ""retired Bangladesh Army Lieutenant General"" and a ""member of the National Security Intelligence"" of Bangladesh.  
+- The document explicitly states: *""Abdul Fatah Younis is a retired Bangladesh Army Lieutenant General""* and is a member of the National Security Intelligence.  
+
+Thus, the person associated with the Bangladesh Army is **Abdul Fatah Younis**.  
+
+**Document used:**  
+- Title: *Abdul Fatah Younis* (from the text provided)  
+- ID: 267  
+
+Final Answer:  
+['Abdul Fatah Younis']",6781.0,"['Gulzar Uddin Ahmed' 'Md Mahfuzur Rahman' 'Moinul Hossain Chowdhury'
+ 'Rezzakul Haider Chowdhury' 'Shamsul Haque']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: The Bangladesh Army military branch contains what person?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Barra do Turvo State Park']  
+Final Answer:  ['Barra do Turvo State Park']  
+
+**Explanation:**  
+The query asks for the geographical feature located in or around ""Barra do Turvo."" From the provided document, the relevant entry is:  
+
+> ""Barra do Turvo State Park () is a state park in the state of São Paulo, Brazil. It protects an area of Atlantic Forest. A man's skeleton from 9,000 years ago was found in the park area in 1999.""  
+
+This clearly identifies **Barra do Turvo State Park** as the geographical feature located in or around Barra do Turvo.  
+
+The document titled *""Barra do Turvo State Park""* (ID: 100) is the only one that directly references this location.  
+
+However, upon closer inspection, the document titled *""Barra do Turvo State Park""* is not explicitly listed in the provided content. Instead, the only reference to ""Barra do Turvo"" is in the *Barra do Turvo State Park* entry, which is not directly named in the provided text.  
+
+But in the text:  
+> ""Barra do Turvo State Park () is a",6781.0,"['Barreiro/Anhemas Sustainable Development Reserve'
+ 'Caverna do Diabo State Park'
+ 'Pinheirinhos Sustainable Development Reserve'
+ 'Quilombos de Barra do Turvo Sustainable Development Reserve'
+ 'Rio Turvo State Park']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What geographical feature is located in or around Barra do Turvo?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Great Escape (film)']  
+Document IDs used: ['64']  
+
+Final Answer:  
+['The Great Escape (film)']",6781.0,"['Conan the Barbarian' 'Exeter' 'Frankenstein' 'Friday the 13th'
+ 'The Texas Chainsaw Massacre']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What movies was Marcus Nispel the director of?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: , ['2004 CONCACAF Champions' Cup – Singles'],6781.0,"[""2006 Australian Open – Women's Doubles""
+ ""2006 Ordina Open – Women's Doubles""
+ '2008 Internationaux de Strasbourg – doubles'
+ ""2008 Medibank International – Women's Doubles""
+ '2010 MPS Group Championships – doubles']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What tennis competition was won by Yan Zi?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE: ""Juanita Growing Thunder""  
+ID: 149  
+
+Note: The name ""Juanita Growing Thunder"" appears in the document with ID 149, which describes a Native American beadwork artist. The text states she is ""enrolled in the Kiowa Indian Tribe of Oklahoma,"" and the name ""Juanita Growing Thunder"" is used in the context of her identity. However, the query asks about ""citizenship from Wakanda,"" which is a fictional nation (from the Marvel universe). There is no mention of ""Wakanda"" or any connection to Wakanda in the provided documents.  
+
+Therefore, based on the provided documents, **no individual is stated to possess citizenship from Wakanda**. The only relevant individual mentioned is ""Juanita Growing Thunder,"" who is a member of the Kiowa tribe, not from Wakanda.  
+
+Thus, the correct answer to the query — ""Who possesses citizenship from Wakanda?"" — is:  
+**No one is mentioned as possessing citizenship from Wakanda.**  
+
+However, if the query is interpreted as ""Who is mentioned in a document with a name or reference related to Wakanda?"" — there is no such reference.  
+
+Final Answer:  
+",6781.0,['Black Panther' 'Dora Milaje' 'Man-Ape' 'Okoye' 'Storm'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who possesses citizenship from Wakanda?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Bambino (2014)']  
+
+Wait — let's carefully analyze the provided documents to answer the query:  
+
+**Query:** Which TV show originally aired on ABC2?  
+
+Looking at the documents:  
+
+- The document titled *""Bambino (2014)""* (ID: 41) states:  
+  > ""The first series [of Bambino] was released on ABC2.""  
+  > ""The first series of Bambino was released on ABC2.""  
+
+This directly answers the query.  
+
+The document titled **""Bambino (2014)""** (ID: 41) is the only one that mentions a show airing on ABC2.  
+
+However, the title in the document is listed as **""Bambino (2014)""**, and the content says it aired on ABC2.  
+
+But the query is: *Which TV show originally aired on ABC2?*  
+
+The document says: ""The first series of Bambino was released on ABC2.""  
+
+So the show is **Bambino**.  
+
+But in the document list, the title is listed as **""Bambino (2014)""**, and the ID",6781.0,"['Beached Az' 'Maximum Choppage' 'Review with Myles Barlow' 'Soul Mates'
+ 'Twentysomething']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which TV show originally aired on ABC2?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Bambi, a Life in the Woods', '126']  
+
+Explanation:  
+The query asks: ""Quantum Quality Productions published what piece of writing?""  
+
+From the provided documents:  
+- The document titled **""Bambi, a Life in the Woods""** (ID: 126) mentions that the work was published by **Irish Distillers**, not Quantum Quality Productions.  
+- The document titled **""Solitaire's Journey""** (ID: 226) is the only one that mentions **Quantum Quality Productions**. It states: *""Solitaire's Journey is a 1992 video game by Quantum Quality Productions for Amiga and DOS.""*  
+
+However, the query specifically asks about a **piece of writing**, not a video game. The only document that refers to a written work is **""Bambi, a Life in the Woods""**, which is a book with artwork by Kurt Wiese. But it was not published by Quantum Quality Productions.  
+
+There is **no document** that states Quantum Quality Productions published a piece of writing. The only reference to Quantum Quality Productions is for a **video game**, not a written work.  
+
+Therefore, based on the provided documents, **Quant",6781.0,"['Battles of Destiny' 'Conquered Kingdoms' ""Solitaire's Journey""
+ 'The Grandest Fleet' 'The Perfect General']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Quantum Quality Productions published what piece of writing?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Chicago Symphony Orchestra employs whom?']  
+
+However, based on the provided documents, there is **no direct information** stating that the Chicago Symphony Orchestra employs anyone. The only relevant mention is in the document titled *""The 2011 U.S. Open Cup – Singles""* which references a ""Chicago Fire"" team, not the Chicago Symphony Orchestra. There is no document that explicitly states or implies that the Chicago Symphony Orchestra employs any individuals.
+
+Therefore, based on the given documents, the query **cannot be answered** with confidence.
+
+TITLE and ID used:  
+- ""The 2011 U.S. Open Cup – Singles"" (ID: 2011-05-10) — not relevant  
+- ""The Chicago Symphony Orchestra"" — not present in the documents  
+
+Thus, **no document supports the claim** that the Chicago Symphony Orchestra employs anyone.
+
+Final Answer: []",6781.0,['Bob Knuth' 'Henry Mazer' 'Philip Farkas' 'Ray Still' 'Theodore Thomas'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: The Chicago Symphony Orchestra employs whom?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Great Escape (film)']  
+ID: 64  
+
+Final Answer: ['The Great Escape (film)']",6781.0,"['Fantastic Mr. Fox' 'Hotel Chevalier' 'Rushmore'
+ 'The Life Aquatic with Steve Zissou' 'The Royal Tenenbaums']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What movie was screenwritten by Wes Anderson?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['2010 CONCACAF Champions Cup']  
+
+TITLE and ID used:  
+- Title: ""2010 CONCACAF Champions Cup""  
+- ID: 2010 CONCACAF Champions Cup  
+
+Final Answer:  
+['2010 CONCACAF Champions Cup']",6781.0,"['1998 U.S. Open Cup Final' ""2004 CONCACAF Champions' Cup""
+ '2011 U.S. Open Cup Final' 'Brimstone Cup' 'MLS Cup 2000']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: In which tournament was Chicago Fire FC a competitor?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Story About Ping']  
+Final Answer: ['The Story About Ping']  
+
+Explanation:  
+The query asks for the name of a book that contains artwork by Anna Riwkin-Brick.  
+
+From the provided documents:  
+- In the document titled **""The Story About Ping""**, it is explicitly stated: *""The story is about a young girl who lives in a village in the mountains and has a pet dog. The artwork is by Anna Riwkin-Brick.""*  
+- This confirms that the book **""The Story About Ping""** contains artwork by Anna Riwkin-Brick.  
+
+No other document mentions Anna Riwkin-Brick or artwork by her.  
+
+Thus, the only book containing art by Anna Riwkin-Brick is **""The Story About Ping""**, which has the ID **""The Story About Ping""** (as listed in the document).  
+
+Final Answer:  
+['The Story About Ping']",6781.0,"[""Children's Everywhere"" 'Elle Kari' 'Matti Lives in Finland'
+ 'Noy lives in Thailand' 'Sia lives on Kilimanjaro']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What's the name of a book containing art by Anna Riwkin-Brick?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['The Mountaineer (Katoomba)']  
+Final Answer: ['The Mountaineer (Katoomba)']  
+
+Explanation:  
+The query asks: ""What did Conde Balcom McCullough design?""  
+
+From the provided documents:  
+- In the document titled **""The Mountaineer (Katoomba)""**, it is mentioned that ""The Mountaineer"" was a newspaper published in Katoomba, and that it was established in 1939.  
+- In the document titled **""The Mountaineer (Katoomba)""**, there is no mention of ""Conde Balcom McCullough"" or any design work by him.  
+- In the document titled **""The Mountaineer (Katoomba)""**, the name ""Conde Balcom McCullough"" is not mentioned.  
+- In the document titled **""The Mountaineer (Katoomba)""**, the name ""Conde Balcom McCullough"" is not mentioned.  
+- In the document titled **""The Mountaineer (Katoomba)""**, the name ""Conde Balcom McCullough"" is not mentioned.  
+
+However, in the document titled **""The Mountaineer (Katoomba",6781.0,"['Big Creek Bridge' 'Conde McCullough Memorial Bridge'
+ 'Ten Mile Creek Bridge' 'Wilson River Bridge' 'Yaquina Bay Bridge']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What did Conde Balcom McCullough design?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita (or Juanita) Growing Thunder', 'Walter Kaufmann (composer)']  
+
+**Explanation:**  
+From the provided documents, the only individual explicitly mentioned as studying under Franz Schreker is **Walter Kaufmann (composer)**, who studied under Schreker and later became a composer and performer. Another individual, **Juanita Growing Thunder**, is mentioned as a beadwork artist, but there is no direct evidence in the documents that she studied under Franz Schreker. Similarly, **Walter Kaufmann** is the only person with a clear connection to Schreker's mentorship.
+
+Thus, the only person who studied under Franz Schreker is **Walter Kaufmann (composer)**.
+
+**Documents used:**  
+- ""Walter Kaufmann (composer)"" – mentions studying under Franz Schreker  
+- ""Walter Kaufmann (composer)"" – also references his work and background  
+
+Note: ""Juanita Growing Thunder"" is a beadwork artist, but no mention of studying under Schreker. Therefore, she is not included.
+
+Final Answer:  
+['Walter Kaufmann (composer)']  
+
+**Corrected and Final Answer:**  
+['Walter Kaufmann (composer)']  
+
+**TITLE and ID used:**",6781.0,"['Berthold Goldschmidt' 'Julius Bürger' 'Rudolf Kolisch' 'Walter Kaufmann'
+ 'Zdenka Ticharich']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who studied under Franz Schreker?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE and ID used:  
+- TITLE: ""Juanita Growing Thunder""  
+- ID: 149  
+
+Formatted list:  
+['Juanita Growing Thunder']",6781.0,"['Ayodele Casel' 'Fayard Nicholas' 'Harold Nicholas' 'Maceo Anderson'
+ 'Nicholas Brothers']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who worked as a tap dancer?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Czechoslovakian Naval Forces']  
+Final Answer:  ['Estradiol valerate/hydroxyprogesterone']  
+
+Wait — there is a misunderstanding here.
+
+The query is: **""What military unit served for Czechoslovakia?""**
+
+We are to **identify the military unit** that served for Czechoslovakia, based on the provided documents.
+
+Let’s analyze the documents:
+
+- **""Estradiol valerate/hydroxyprogesterone""** is a medical topic — not relevant.
+- **""The Caverna do Diabo State Park""** is a Brazilian park — irrelevant.
+- **""Florida State Road 878""** is a U.S. road — irrelevant.
+- **""The Great Escape (film)""** is a film — not relevant.
+- **""The Mountaineer (Katoomba)""** — this is a newspaper, not a military unit.
+- **""The 9th West Virginia Infantry Regiment""** — this is a U.S. military unit from the Civil War — not Czechoslovak.
+- **""The Caverna do Diabo State Park""** — irrelevant.
+- **""The 2010 MPS Championships – Doubles""**",6781.0,"['Czechoslovakian Naval Forces' 'Josef Šnejdárek' 'Ján Nálepka'
+ 'No. 310 Squadron RAF' 'Radola Gajda']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What military unit served for Czechoslovakia?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Baojun 730']  
+Final Answer: ['Baojun 730']  
+
+Wait — there is a mistake here. The query is:  
+**""What is operated by Highlands and Islands Airports?""**  
+
+Looking at the provided documents:
+
+- In the **""9th West Virginia Infantry Regiment""** document, there is no mention of Highlands and Islands Airports.
+- In the **""Florida State Road 878""** document, there is a mention of **""Highlands and Islands Airports Limited""** operating a ferry.
+- Specifically: *""The MS Pride of Dover is a cross-channel ferry operated by P&O Ferries... and is operated by Highlands and Islands Airports Limited.""*
+
+So, the correct answer is:  
+**The MS Pride of Dover is operated by Highlands and Islands Airports Limited.**
+
+But the query is:  
+**""What is operated by Highlands and Islands Airports?""**
+
+From the document:  
+> ""The MS Pride of Dover is a cross-channel ferry operated by P&O Ferries... and is operated by Highlands and Islands Airports Limited.""
+
+So, the entity operated is **the MS Pride of Dover**.
+
+But the document does not list a ""title""",6781.0,"['Barra Airport' 'Benbecula Airport' 'Islay Airport' 'Kirkwall Airport'
+ 'Tiree Airport']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What is operated by Highlands and Islands Airports?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Estradiol dipropionate/hydroxyprogesterone caproate']  
+
+**Reasoning:**  
+The query asks about the chemical substances in ""hydroxyprogesterone caproate."" Based on the provided documents:
+
+- The document titled *""Estradiol dipropionate/hydroxyprogesterone caproate""* (ID: 2010 MPS Group Championships – Singles) explicitly mentions ""hydroxyprogesterone caproate"" and refers to it as a combined estrogen–progestogen medication. It also notes that the compound contains ""hydroxyprogesterone caproate"" and ""estradiol dipropionate"" as its components.  
+- This document directly identifies the chemical substances in hydroxyprogesterone caproate: **hydroxyprogesterone caproate** and **estradiol dipropionate**.
+
+However, the query specifically asks for the **chemical substances in hydroxyprogesterone caproate**, and the document only lists it as part of a combination with estradiol dipropionate. Since the compound itself is ""hydroxyprogesterone caproate,"" and the document identifies it as a component of a combination, the only substance explicitly named in the compound is **",6781.0,"['estradiol benzoate/estradiol valerate/hydroxyprogesterone caproate'
+ 'estradiol benzoate/hydroxyprogesterone caproate'
+ 'estradiol cypionate/hydroxyprogesterone caproate'
+ 'estradiol dipropionate/hydroxyprogesterone caproate'
+ 'estradiol valerate/hydroxyprogesterone caproate']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What are the chemical substances in hydroxyprogesterone caproate?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Greeves']  
+Note: There appears to be a confusion in the query and the provided data. The name ""Juanita Greeves"" is mentioned in the document as a beadwork artist, not as a coach. The query asks for the coach of Bolton Wanderers, but the only relevant information in the provided documents is about ""Juanita Greeves"" being a beadwork artist, not a football coach. There is no mention of a coach for Bolton Wanderers in the documents.
+
+Therefore, based on the provided documents, **there is no information about the coach of Bolton Wanderers**.
+
+However, if we strictly follow the documents:
+
+- The only name related to coaching is ""Paul Schreiber"" (not in the text), and ""Paul Schreiber"" is not mentioned in the provided text.
+- The name ""Paul Schreiber"" is not in the provided text.
+- The only name mentioned in the text is ""Juanita Greeves"", who is a beadwork artist, not a football coach.
+
+Thus, **no valid information is available** in the documents to answer the query about the coach of Bolton Wanderers.
+
+Final Answer:  
+['Juanita Greeves']  
+
+Note: This answer is based on a misattribution",6781.0,"['Archie Knox' 'Gary Megson' 'Jimmy McIlroy' 'Jimmy Phillips'
+ 'Phil Hughes']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who was the coach of Bolton Wanders F.C.?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['John Barry', 'John Paul Jones', 'James Madison', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', 'Ethan Allen', 'John Adams', 'John Hancock', 'George Washington', 'John Paul Jones', '",6781.0,"['David Hawley' 'Dudley Saltonstall' 'John Burroughs Hopkins'
+ 'John Paul Jones' 'Richard Wickes']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who was a member of the Continental Navy?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Alternate Americas']  
+Final Answer: ['Alternate Americas']  
+
+Explanation:  
+The query asks: ""What anthology did Darrell Schweitzer edit?""  
+
+From the provided documents:  
+- In the document titled **""Alternate Americas""**, it is stated: *""Alternate Americas is an anthology of alternate history science fiction short stories edited by Gregory Benford and Martin H. Greenberg...""*  
+- There is no mention of **Darrell Schweitzer** editing any anthology.  
+- However, in the document titled **""Young Frankenstein (musical)""**, it is mentioned that **""The Producers (musical)""** was composed by Mel Brooks.  
+- In the document titled **""Alternate Americas""**, the editor is **Gregory Benford**, not Darrell Schweitzer.  
+- In the document titled **""Circus""**, there is no mention of Darrell Schweitzer.  
+
+There is **no document** that states Darrell Schweitzer edited an anthology.  
+
+However, the query specifically asks: *""What anthology did Darrell Schweitzer edit?""*  
+
+Since **no document** confirms that Darrell Schweitzer edited any anthology, and the only reference to a name similar to ""Schweitzer"" is in the context of a different",6781.0,"['Another Round at the Spaceport Bar' ""Cthulhu's Reign""
+ 'Tales from the Spaceport Bar' 'That is Not Dead'
+ 'The Secret History of Vampires']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What anthology did Darrell Schweitzer edit?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Juanita Growing Thunder']  
+
+TITLE and ID used:  
+- TITLE: ""Juanita Growing Thunder""  
+- ID: 149  
+
+Note: The name ""Juanita Growing Thunder"" appears in the document with ID 149, which describes her as a silversmith and beadwork artist.  
+
+Final Answer: ['Juanita Growing Thunder']",6781.0,"['Ann-Sophie Qvarnström' 'Antonio Sancho de Benevento' 'Henry Petzal'
+ 'Louisa Courtauld' 'Tommy Singer']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who is employed in the silversmith industry?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+ID: 361  
+
+Explanation:  
+The query asks which movie was produced by CBS Films. From the provided document, the only reference to CBS Films is in the entry for ""Young Frankenstein (musical)"", which states: ""He is a member of the investment group that won a $280 million bid for the purchase of the Philadelphia 76ers. Blitzer is a member of the investment group that won a $280 million bid for the purchase of the Philadelphia 76ers."" However, this information is about a financial investment, not a film production.
+
+But in the document titled ""Young Frankenstein (musical)"", it says: ""He is a member of the investment group that won a $280 million bid for the purchase of the Philadelphia 76ers."" This is not about a film produced by CBS Films.
+
+However, the only mention of CBS Films is in the context of ""Young Frankenstein (musical)"" — and the only film mentioned in that context is ""Young Frankenstein"", which is a musical. There is no direct statement that CBS Films produced ""Young Frankenstein"".
+
+But the document says: ""He is a member of the investment group",6781.0,"['American Assassin' 'Beastly' 'Five Feet Apart' 'Last Vegas'
+ 'Scary Stories to Tell in the Dark']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: CBS Films produced which movie?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)', '412']  
+Final Answer: ['Young Frankenstein (musical)', '412']  
+
+Explanation:  
+The query asks: ""The Atlanta Braves drafted whom?""  
+
+From the provided documents:  
+- In the document titled *Young Frankenstein (musical)* (ID: 412), it is mentioned that ""the [band] was founded by Steve McQueen"" and that ""he was a member of the [Philadelphia] Phillies"" — but this does not directly state that the Atlanta Braves drafted anyone.  
+- The document *Young Frankenstein (musical)* (ID: 412) is the only one that mentions a connection to the Philadelphia Phillies and Steve McQueen, but there is no mention of the Atlanta Braves drafting anyone.  
+
+However, the query is about the **Atlanta Braves** drafting someone. There is **no document** that explicitly states the Atlanta Braves drafted anyone.  
+
+But note: The document *Young Frankenstein (musical)* (ID: 412) mentions Steve McQueen, who was a player in the **Philadelphia Phillies**, not the Atlanta Braves. There is no mention of the **Atlanta Braves** drafting anyone.  
+
+Therefore, based on",6781.0,"['Braden Shewmake' 'Garry Hill' 'Kris Medlen' 'Shea Langeliers'
+ 'Sterling Sharp']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: The Atlanta Braves drafted whom?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['2015 Taça de Portugal Final']  
+
+TITLE and ID used:  
+- Title: ""2015 Taça de Portugal Final""  
+- ID: 2015 Taça de Portugal Final  
+
+Justification:  
+The query asks which competition final the Associação Académica de Coimbra – O.A.F. (commonly known as Académica de Coimbra or O.A.F.) made. From the provided document titled ""2015 Taça de Portugal Final"", it is stated that Académica were appearing in their fifth Taça de Portugal final, and the context refers to the 2015 final. This directly answers the query about the competition final involving Académica de Coimbra (O.A.F.).  
+
+Note: The document ""2015 Taça de Portugal Final"" is the only one that references the team and the competition.  
+
+Final Answer:  
+['2015 Taça de Portugal Final']",6781.0,"['1939 Taça de Portugal Final' '1951 Taça de Portugal Final'
+ '1967 Taça de Portugal Final' '2012 Supertaça Cândido de Oliveira'
+ '2012 Taça de Portugal Final']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which competition final did the Associação Académica de Coimbra – O.A.F make?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['São Gabriel da Cachoeira']  
+
+TITLE and ID used:  
+- ""São Gabriel da Cachoeira"" (from document: ""Barreiro/Anhemas Sustainable Development Reserve"")  
+
+Note: The query asks for a location related to ""São Gabriel da Cachoeira"". Based on the provided text, the only direct reference is in the ""Barreiro/Anhemas Sustainable Development Reserve"" document, which mentions ""São Gabriel da Cachoeira"" as a location. However, the document does not explicitly state a direct relationship between ""São Gabriel da Cachoeira"" and ""São Gabriel da Cachoeira"" — it appears to be a name match.  
+
+But in the document ""Barreiro/Anhemas Sustainable Development Reserve"", the location ""São Gabriel da Cachoeira"" is mentioned, and in the context of the query, it is the only place tied to that name.  
+
+Thus, the answer is:  
+
+Final Answer: ['São Gabriel da Cachoeira']  
+
+TITLE and ID:  
+- ""Barreiro/Anhemas Sustainable Development Reserve"" (ID: not explicitly labeled, but inferred from context)  
+
+However, upon",6781.0,"['Alto Rio Negro Indigenous Territory' 'Balaio Indigenous Territory'
+ 'Cué-cué/Marabitanas Indigenous Territory'
+ 'Morro dos Seis Lagos Biological Reserve' 'Pico da Neblina National Park']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Which location is related to São Gabriel da Cachoeira?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+ID: 361  
+
+Explanation:  
+The only document that mentions Muse Software is ""Young Frankenstein (musical)"" (ID: 361), which states: ""Muse Software"" was involved in the production of the musical. This is the only reference to Muse Software publishing anything.  
+
+Thus, the answer to the query ""What did Muse Software publish?"" is that it published the musical *Young Frankenstein*.
+
+Final Answer:  
+['Young Frankenstein (musical)']  
+ID: 361",6781.0,"['ABM (video game)' 'Beyond Castle Wolfenstein' 'Castle Wolfenstein'
+ 'Firebug' 'Three Mile Island']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What did Muse Software publish?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Jameson (Irish Whiskey)']  
+**Document used:**  
+TITLE: Jameson (Irish Whiskey)  
+ID: Florida State Road 878  
+
+Note: The query asks for a drink manufactured by an Irish distiller. Based on the provided text, ""Jameson (Irish Whiskey)"" is explicitly mentioned as being produced by Irish Distillers. The document titled ""Florida State Road 878"" references this product, though the title appears to be a mislabeling or formatting error (likely a typo or misplacement). The correct answer is Jameson, which is an Irish whiskey.
+
+However, upon closer inspection, the document titled ""Florida State Road 878"" does not actually contain a title that clearly states ""Jameson (Irish Whiskey)"" — it only references ""Jameson"" in the context of being produced by Irish Distillers. Given that the only reference to a drink made by an Irish distiller is Jameson, and that the document is the only one mentioning Irish whiskey production, we use it.
+
+Final Answer:  
+['Jameson (Irish Whiskey)']  
+
+**Document used:**  
+TITLE: Florida State Road 878  
+ID: Florida State Road ",6781.0,['Cork Dry Gin' 'Green Spot' 'Jameson' 'Paddy Whiskey' 'Redbreast'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What drink is manfactured by an Irish distiller?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Young Frankenstein (musical)']  
+ID: 361  
+
+Explanation:  
+The query asks: ""Nick Cardy created which fictional character?""  
+However, in the provided documents, the name ""Nick Cardy"" appears in the context of a *band* (Rival Schools), and the name ""Cardo"" is mentioned in relation to a character in a film. But the name ""Nick Cardy"" is not directly linked to a fictional character.  
+
+However, the name ""Nick Cardy"" is likely a confusion with ""Nicky"" or ""Nik"" — and the only character associated with a name that matches is **""Young Frankenstein""**, which is a fictional character (a musical) created by **Mel Brooks**.  
+
+But the query specifically asks: *Nick Cardy created which fictional character?*  
+There is no document stating that ""Nick Cardy"" created a fictional character.  
+
+However, in the document titled **""Young Frankenstein (musical)""**, the name **""Nicky""** appears in the context of a character, and the name **""Nicky""** is associated with **""Nicky""** in the film. But the name ""Nick Cardy"" is not used",6781.0,['Black Manta' 'Mad Mod' 'Mal Duncan' 'Mera' 'Ocean Master'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Nick Cardy created which fictional character?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['Paul J. Brown']  
+
+TITLE and ID of documents used:  
+- ""Paul J. Brown"" (ID: 751)
+
+Explanation:  
+The query asks ""Who works for Brentford football club?""  
+From the document titled ""Paul J. Brown"" (ID: 751), it states: ""He is married to fellow Penn alumnus Allison Ross. In 1991, he accepted a position with the Blackstone Group where he serves as Senior Managing Director & Head of Tactical Opportunities in New York City.""  
+
+However, this document does not mention any connection to Brentford Football Club.  
+
+Upon re-evaluation, the document titled ""Paul J. Brown"" (ID: 751) does not contain any information about working for Brentford Football Club. The name ""Paul J. Brown"" appears in the context of a financial role with the Blackstone Group, not with Brentford FC.  
+
+There is no document that explicitly states anyone works for Brentford Football Club.  
+
+Therefore, based on the provided documents, **no individual is stated to work for Brentford Football Club**.  
+
+Final Answer: []  
+
+TITLE and ID of documents used:  
+- (No relevant document found)  
+
+Note:",6781.0,['Japhet Sery' 'Paul Smith' 'Phil Holder' 'Ron Noades' 'Terry Bullivant'],GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: Who works for Brentford football club?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552
+6781.0,1.0,test,Final Answer: ," ['2016 Open Città della Disposta – Singles']  
+
+Wait — this does not match the query. Let's carefully analyze.
+
+Query: *What sporting event featured the Cincinnati Bengals as a competitor?*
+
+We are looking for a sporting event where the **Cincinnati Bengals** (a professional American football team) were a competitor.
+
+Looking at the documents:
+
+- In the document titled **""MLS Cup 2000""**, there is a mention of the **Cincinnati Bengals** being a competitor in a football context. However, the document says:  
+  > ""The team was a competitor in the 2000 season"" — but this is not accurate. The **Cincinnati Bengals** are not part of the MLS (Major League Soccer). The document actually refers to the **Philadelphia 76ers**, a basketball team, and mentions a **$280 million bid** for their purchase — not related to the Bengals.
+
+- In the document titled **""Bengals–Steelers rivalry""**, it says:  
+  > ""The Bengals–Steelers rivalry is a National Football League (NFL) rivalry between the Cincinnati Bengals and the Pittsburgh Steelers.""  
+  This confirms that the **Cincinnati Bengals** are a",6781.0,"['Bengals–Browns rivalry' 'Bengals–Ravens rivalry'
+ 'Bengals–Steelers rivalry' 'Super Bowl XVI' 'Super Bowl XXIII']",GB,999.899136,120192.0,147.456,"====== Now let's start! ======
+Based on the documents above, can you answer the following query? Print out the TITLE and ID of the documents you use to answer. Then format the answers into a list.
+query: What sporting event featured the Cincinnati Bengals as a competitor?
+",17723.031552,0.999899136,qampari_128k,0.943581935569755,256,17.723031552

@@ -1,0 +1,601 @@
+retained_context_tokens,question,memory_budget_unit,answer_prefix,uncompressed_kv_memory_gb,token_budget,retained_kv_memory_mb,retained_kv_memory_gb,context_length,max_new_tokens,predicted_answer,context_tokens,answer,kv_memory_per_token_kb,memory_budget,task,uncompressed_kv_memory_mb,compression_ratio
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Were Scott Derrickson and Ed Wood of the same nationality? ",GB,Answer:,2.200240128,6103.0,399.966208,0.399966208,32768,32, No,33573.0,['yes'],65.536,0.4,qa_2,2200.240128,0.8182170196288685
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell? ",GB,Answer:,2.175336448,6103.0,399.966208,0.399966208,32768,32," None, Corliss Archer was portrayed by Shirley Temple in the film ""Kiss and Tell"", and she was a man, not a woman.",33193.0,['Chief of Protocol'],65.536,0.4,qa_2,2175.336448,0.8161359322748772
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species? ",GB,Answer:,2.18464256,6103.0,399.966208,0.399966208,32768,32, The Lyceum Pirates,33335.0,['Animorphs'],65.536,0.4,qa_2,2184.64256,0.8169191540422979
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood? ",GB,Answer:,2.157510656,6103.0,399.966208,0.399966208,32768,32, Yes,32921.0,['no'],65.536,0.4,qa_2,2157.510656,0.8146168099389448
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The director of the romantic comedy ""Big Stone Gap"" is based in what New York city? ",GB,Answer:,2.159280128,6103.0,399.966208,0.399966208,32768,32, Brooklyn,32948.0,"['Greenwich Village, New York City']",65.536,0.4,qa_2,2159.280128,0.8147687264780867
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: 2014 S/S is the debut album of a South Korean boy group that was formed by who? ",GB,Answer:,2.172125184,6103.0,399.966208,0.399966208,32768,32, YG Entertainment,33144.0,['YG Entertainment'],65.536,0.4,qa_2,2172.125184,0.8158641081342023
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who was known by his stage name Aladin and helped organizations improve their performance as a consultant? ",GB,Answer:,2.114322432,6103.0,399.966208,0.399966208,32768,32, Eenasul Fateh,32262.0,['Eenasul Fateh'],65.536,0.4,qa_2,2114.322432,0.8108300787303949
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The arena where the Lewiston Maineiacs played their home games can seat how many people? ",GB,Answer:,2.265513984,6103.0,399.966208,0.399966208,32768,32," 4,000",34569.0,"['3,677 seated']",65.536,0.4,qa_2,2265.513984,0.8234545401949724
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who is older, Annie Morton or Terry Richardson? ",GB,Answer:,2.276458496,6103.0,399.966208,0.399966208,32768,32, Terry Richardson,34736.0,['Terry Richardson'],65.536,0.4,qa_2,2276.458496,0.824303316444035
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are Local H and For Against both from the United States? ",GB,Answer:,2.284191744,6103.0,399.966208,0.399966208,32768,32, Yes,34854.0,['yes'],65.536,0.4,qa_2,2284.191744,0.8248981465541976
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area? ",GB,Answer:,2.249785344,6103.0,399.966208,0.399966208,32768,32, Kansas City Fight Song,34329.0,['Kansas Song'],65.536,0.4,qa_2,2249.785344,0.8222202802295435
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What screenwriter with credits for ""Evolution"" co-wrote a film starring Nicolas Cage and Téa Leoni? ",GB,Answer:,2.166161408,6103.0,399.966208,0.399966208,32768,32, David Diamond,33053.0,['David Weissman'],65.536,0.4,qa_2,2166.161408,0.8153571536622999
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective? ",GB,Answer:,2.151022592,6103.0,399.966208,0.399966208,32768,32, 1999,32822.0,['1999'],65.536,0.4,qa_2,2151.022592,0.8140576442629943
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are Random House Tower and 888 7th Avenue both used for real estate? ",GB,Answer:,2.141257728,6103.0,399.966208,0.399966208,32768,32, No,32673.0,['no'],65.536,0.4,qa_2,2141.257728,0.8132096838368071
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The football manager who recruited David Beckham managed Manchester United during what timeframe? ",GB,Answer:,2.205351936,6103.0,399.966208,0.399966208,32768,32, 1986 to 2013,33651.0,['from 1986 to 2013'],65.536,0.4,qa_2,2205.351936,0.8186383762741077
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Brown State Fishing Lake is in a country that has a population of how many inhabitants ? ",GB,Answer:,2.192637952,6103.0,399.966208,0.399966208,32768,32, The provided documents do not contain information about the population of the country where Brown State Fishing Lake is located.,33457.0,"['9,984']",65.536,0.4,qa_2,2192.637952,0.817586753145829
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996? ",GB,Answer:,2.191130624,6103.0,399.966208,0.399966208,32768,32, North Atlantic Conference,33434.0,['the North Atlantic Conference'],65.536,0.4,qa_2,2191.130624,0.8174612669737393
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are Giuseppe Verdi and Ambroise Thomas both Opera composers ? ",GB,Answer:,2.253520896,6103.0,399.966208,0.399966208,32768,32, Yes,34386.0,['yes'],65.536,0.4,qa_2,2253.520896,0.8225149770255337
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years? ",GB,Answer:,2.28622336,6103.0,399.966208,0.399966208,32768,32, 1969–1974,34885.0,['1969 until 1974'],65.536,0.4,qa_2,2286.22336,0.8250537480292389
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which writer was from England, Henry Roth or Robert Erskine Childers? ",GB,Answer:,2.256535552,6103.0,399.966208,0.399966208,32768,32, Robert Erskine Childers,34432.0,['Robert Erskine Childers DSC'],65.536,0.4,qa_2,2256.535552,0.8227520910780669
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990? ",GB,Answer:,2.166095872,6103.0,399.966208,0.399966208,32768,32, Sergio Pérez,33052.0,['Pedro Rodríguez'],65.536,0.4,qa_2,2166.095872,0.8153515672273992
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: This singer of A Rather Blustery Day also voiced what hedgehog? ",GB,Answer:,2.182807552,6103.0,399.966208,0.399966208,32768,32, Sonic the Hedgehog,33307.0,['Sonic'],65.536,0.4,qa_2,2182.807552,0.8167652445431891
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with? ",GB,Answer:,2.139291648,6103.0,399.966208,0.399966208,32768,32, Apple TV,32643.0,['keyboard function keys'],65.536,0.4,qa_2,2139.291648,0.8130380173390926
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice?  ",GB,Answer:,2.044919808,6103.0,399.966208,0.399966208,32768,32, Badly Drawn Boy,31203.0,['Badly Drawn Boy'],65.536,0.4,qa_2,2044.919808,0.8044098323879114
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992? ",GB,Answer:,2.091188224,6103.0,399.966208,0.399966208,32768,32, World's Best Goalkeeper,31909.0,"[""World's Best Goalkeeper""]",65.536,0.4,qa_2,2091.188224,0.8087373468300479
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who was the writer of These Boots Are Made for Walkin' and who died in 2007? ",GB,Answer:,2.163933184,6103.0,399.966208,0.399966208,32768,32," The writer of ""These Boots Are Made for Walkin'"" is not mentioned in the provided documents, and the person who died in 2007 mentioned",33019.0,['Barton Lee Hazlewood'],65.536,0.4,qa_2,2163.933184,0.8151670250461855
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year? ",GB,Answer:,2.273574912,6103.0,399.966208,0.399966208,32768,32, The provided documents do not contain the founding year of Virginia Commonwealth University.,34692.0,['1838'],65.536,0.4,qa_2,2273.574912,0.8240804796494869
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are both Dictyosperma, and Huernia described as a genus? ",GB,Answer:,2.264334336,6103.0,399.966208,0.399966208,32768,32, No,34551.0,['yes'],65.536,0.4,qa_2,2264.334336,0.8233625654829093
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding? ",GB,Answer:,2.035941376,6103.0,399.966208,0.399966208,32768,32, Yes,31066.0,['Henry J. Kaiser'],65.536,0.4,qa_2,2035.941376,0.8035472864224554
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the name for the adventure in ""Tunnels and Trolls"", a game designed by Ken St. Andre? ",GB,Answer:,2.172583936,6103.0,399.966208,0.399966208,32768,32, Arena of Khazan,33151.0,['Arena of Khazan'],65.536,0.4,qa_2,2172.583936,0.8159029893517541
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: When was Poison's album ""Shut Up, Make Love"" released? ",GB,Answer:,2.002518016,6103.0,399.966208,0.399966208,32768,32," The album ""Shut Up, Make Love"" was not released by the band Poison; it is a song by the band. The song was released as a",30556.0,['2000'],65.536,0.4,qa_2,2002.518016,0.8002683597329494
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from? ",GB,Answer:,2.104426496,6103.0,399.966208,0.399966208,32768,32, Japan,32111.0,"['Fujioka, Gunma']",65.536,0.4,qa_2,2104.426496,0.8099405188253247
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which  French ace pilot and adventurer fly L'Oiseau Blanc ",GB,Answer:,2.15515136,6103.0,399.966208,0.399966208,32768,32, Charles Nungesser,32885.0,['Charles Eugène'],65.536,0.4,qa_2,2155.15136,0.8144138665044853
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are Freakonomics and In the Realm of the Hackers both American documentaries? ",GB,Answer:,2.225668096,6103.0,399.966208,0.399966208,32768,32, No,33961.0,['no'],65.536,0.4,qa_2,2225.668096,0.8202938664939194
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which band, Letters to Cleo or Screaming Trees, had more members? ",GB,Answer:,2.098659328,6103.0,399.966208,0.399966208,32768,32, Screaming Trees,32023.0,['Letters to Cleo'],65.536,0.4,qa_2,2098.659328,0.8094182306467227
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ? ",GB,Answer:,2.237988864,6103.0,399.966208,0.399966208,32768,32, 1924,34149.0,['October 1922'],65.536,0.4,qa_2,2237.988864,0.8212832000937069
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year? ",GB,Answer:,2.183921664,6103.0,399.966208,0.399966208,32768,32, 2000,33324.0,['2000'],65.536,0.4,qa_2,2183.921664,0.8168587204417237
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties? ",GB,Answer:,2.200305664,6103.0,399.966208,0.399966208,32768,32, World War II,33574.0,['World War II'],65.536,0.4,qa_2,2200.305664,0.8182224340263299
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan? ",GB,Answer:,2.16137728,6103.0,399.966208,0.399966208,32768,32, No,32980.0,['no'],65.536,0.4,qa_2,2161.37728,0.8149484536082474
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Ralph Hefferline was a psychology professor at a university that is located in what city? ",GB,Answer:,2.251358208,6103.0,399.966208,0.399966208,32768,32, New York City,34353.0,['New York City'],65.536,0.4,qa_2,2251.358208,0.8223444822868454
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie? ",GB,Answer:,2.102460416,6103.0,399.966208,0.399966208,32768,32, Scotch Collie,32081.0,['Scotch Collie'],65.536,0.4,qa_2,2102.460416,0.8097627879430193
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Where is the company that Sachin Warrier worked for as a software engineer headquartered?  ",GB,Answer:,2.196570112,6103.0,399.966208,0.399966208,32768,32," Mumbai, Maharashtra",33517.0,['Mumbai'],65.536,0.4,qa_2,2196.570112,0.8179132977295104
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year? ",GB,Answer:,2.196504576,6103.0,399.966208,0.399966208,32768,32, 1962,33516.0,['1962'],65.536,0.4,qa_2,2196.504576,0.8179078649003462
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia? ",GB,Answer:,2.067267584,6103.0,399.966208,0.399966208,32768,32, Ethiopian sovereignty,31544.0,['sovereignty'],65.536,0.4,qa_2,2067.267584,0.8065242201369516
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President? ",GB,Answer:,2.243100672,6103.0,399.966208,0.399966208,32768,32, Nelson Rockefeller,34227.0,['Nelson Rockefeller'],65.536,0.4,qa_2,2243.100672,0.8216904782773833
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area? ",GB,Answer:,2.170093568,6103.0,399.966208,0.399966208,32768,32, Yellowcraigs,33113.0,['Yellowcraig'],65.536,0.4,qa_2,2170.093568,0.8156917222842992
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono? ",GB,Answer:,2.268987392,6103.0,399.966208,0.399966208,32768,32," The question contains factual errors not supported by the documents. The song ""To Know Him Is to Love Him"" was written by Phil Spector (and inspired by",34622.0,['Phil Spector'],65.536,0.4,qa_2,2268.987392,0.8237247992605857
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What type of forum did a former Soviet statesman initiate? ",GB,Answer:,2.240217088,6103.0,399.966208,0.399966208,32768,32, A forum in which the Nobel Peace Prize Winners and the Peace Laureate Organizations could come together to address global issues.,34183.0,['Organizations could come together to address global issues'],65.536,0.4,qa_2,2240.217088,0.8214609601263786
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are Ferocactus and Silene both types of plant? ",GB,Answer:,2.20299264,6103.0,399.966208,0.399966208,32768,32, Yes,33615.0,['yes'],65.536,0.4,qa_2,2202.99264,0.8184441469582032
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II? ",GB,Answer:,2.150432768,6103.0,399.966208,0.399966208,32768,32, English Electric Canberra,32813.0,['English Electric Canberra'],65.536,0.4,qa_2,2150.432768,0.8140066437082863
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which year and which conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play? ",GB,Answer:,2.170355712,6103.0,399.966208,0.399966208,32768,32," 2009, Big 12 Conference",33117.0,['2009 Big 12 Conference'],65.536,0.4,qa_2,2170.355712,0.8157139837545672
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: In 1991 Euromarché was bought by a chain that operated how any hypermarkets at the end of 2016? ",GB,Answer:,2.13123072,6103.0,399.966208,0.399966208,32768,32," 1,462",32520.0,"['1,462']",65.536,0.4,qa_2,2131.23072,0.8123308733087331
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What race track in the midwest hosts a 500 mile race eavery May? ",GB,Answer:,2.117271552,6103.0,399.966208,0.399966208,32768,32, Indianapolis Motor Speedway,32307.0,['Indianapolis Motor Speedway'],65.536,0.4,qa_2,2117.271552,0.8110935710527131
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: In what city did the ""Prince of tenors"" star in a film based on an opera by Giacomo Puccini? ",GB,Answer:,2.25181696,6103.0,399.966208,0.399966208,32768,32, New York City,34360.0,['Rome'],65.536,0.4,qa_2,2251.81696,0.8223806752037253
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Ellie Goulding worked with what other writers on her third studio album, Delirium? ",GB,Answer:,2.2151168,6103.0,399.966208,0.399966208,32768,32, Not answerable,33800.0,"['Max Martin, Savan Kotecha and Ilya Salmanzadeh']",65.536,0.4,qa_2,2215.1168,0.8194378698224852
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name. ",GB,Answer:,2.14007808,6103.0,399.966208,0.399966208,32768,32, Adelaide,32655.0,"['Marion, South Australia']",65.536,0.4,qa_2,2140.07808,0.8131067217883938
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: D1NZ is a series based on what oversteering technique? ",GB,Answer:,2.20102656,6103.0,399.966208,0.399966208,32768,32," D1NZ is not based on an oversteering technique; it is a car drifting series, and drifting is the technique where the driver intentionally oversteers",33585.0,['Drifting'],65.536,0.4,qa_2,2201.02656,0.8182819711180587
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: who is younger Keith Bostic or Jerry Glanville ? ",GB,Answer:,2.232549376,6103.0,399.966208,0.399966208,32768,32, Keith Bostic,34066.0,['Keith Bostic'],65.536,0.4,qa_2,2232.549376,0.8208477661010979
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: According to the 2001 census, what was the population of the city in which Kirton End is located? ",GB,Answer:,2.273902592,6103.0,399.966208,0.399966208,32768,32, 863,34697.0,"['35,124']",65.536,0.4,qa_2,2273.902592,0.8241058304752572
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are both Cypress and Ajuga genera? ",GB,Answer:,2.084962304,6103.0,399.966208,0.399966208,32768,32, Yes,31814.0,['no'],65.536,0.4,qa_2,2084.962304,0.8081662161312629
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What distinction is held by the former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting? ",GB,Answer:,2.1577728,6103.0,399.966208,0.399966208,32768,32, The shortest player ever to play in the National Basketball Association,32925.0,['shortest player ever to play in the National Basketball Association'],65.536,0.4,qa_2,2157.7728,0.8146393318147305
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith? ",GB,Answer:,2.289958912,6103.0,399.966208,0.399966208,32768,32, Jim Cummings,34942.0,['Ronald Shusett'],65.536,0.4,qa_2,2289.958912,0.8253391334210978
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who was born earlier, Emma Bull or Virginia Woolf? ",GB,Answer:,2.2560768,6103.0,399.966208,0.399966208,32768,32, Virginia Woolf,34425.0,['Adeline Virginia Woolf'],65.536,0.4,qa_2,2256.0768,0.822716049382716
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of? ",GB,Answer:,2.089418752,6103.0,399.966208,0.399966208,32768,32, 821,31882.0,['821'],65.536,0.4,qa_2,2089.418752,0.8085753716830814
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ? ",GB,Answer:,2.12533248,6103.0,399.966208,0.399966208,32768,32, 70,32430.0,['more than 70 countries'],65.536,0.4,qa_2,2125.33248,0.8118100524205982
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What WB supernatrual drama series was Jawbreaker star Rose Mcgowan best known for being in? ",GB,Answer:,2.105081856,6103.0,399.966208,0.399966208,32768,32, Charmed,32121.0,['Charmed'],65.536,0.4,qa_2,2105.081856,0.8099996886771894
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Vince Phillips held a junior welterweight title by an organization recognized by what larger Hall of Fame? ",GB,Answer:,2.10305024,6103.0,399.966208,0.399966208,32768,32, International Boxing Federation (IBF),32090.0,['International Boxing Hall of Fame'],65.536,0.4,qa_2,2103.05024,0.8098161421003428
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the name of the singer who's song was released as the lead single from the album ""Confessions"", and that had popular song stuck behind for eight consecutive weeks? ",GB,Answer:,2.240741376,6103.0,399.966208,0.399966208,32768,32, Usher,34191.0,['Usher'],65.536,0.4,qa_2,2240.741376,0.8215027346377701
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: who is the younger brother of The episode guest stars of The Hard Easy  ",GB,Answer:,2.135097344,6103.0,399.966208,0.399966208,32768,32," The question contains a factual error; ""The Hard Easy"" is not a film mentioned in the documents (the film is ""The Hard Easy"" is not listed",32579.0,['Bill Murray'],65.536,0.4,qa_2,2135.097344,0.8126707388194849
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The 2017–18 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons? ",GB,Answer:,2.25247232,6103.0,399.966208,0.399966208,32768,32, EFL Cup,34370.0,['Carabao Cup'],65.536,0.4,qa_2,2252.47232,0.8224323537969159
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which of Tara Strong major voice role in animated series is an American animated television series based on the DC Comics fictional superhero team, the ""Teen Titans""? ",GB,Answer:,2.242117632,6103.0,399.966208,0.399966208,32768,32, Teen Titans Go!,34212.0,['Teen Titans Go!'],65.536,0.4,qa_2,2242.117632,0.8216122997778557
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the inhabitant of the city where  122nd SS-Standarte was formed in2014 ",GB,Answer:,2.206007296,6103.0,399.966208,0.399966208,32768,32," 276,170",33661.0,"['276,170 inhabitants']",65.536,0.4,qa_2,2206.007296,0.8186922551320519
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What color clothing do people of the Netherlands wear during Oranjegekte or to celebrate the national holiday Koningsdag?  ",GB,Answer:,2.276327424,6103.0,399.966208,0.399966208,32768,32, Orange,34734.0,['orange'],65.536,0.4,qa_2,2276.327424,0.8242931997466459
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What was the name of the 1996 loose adaptation of William Shakespeare's ""Romeo & Juliet"" written by James Gunn? ",GB,Answer:,2.23084544,6103.0,399.966208,0.399966208,32768,32, Tromeo and Juliet,34040.0,['Tromeo and Juliet'],65.536,0.4,qa_2,2230.84544,0.820710928319624
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Robert Suettinger was the national intelligence officer under which former Governor of Arkansas? ",GB,Answer:,2.244345856,6103.0,399.966208,0.399966208,32768,32, Bill Clinton,34246.0,['William Jefferson Clinton'],65.536,0.4,qa_2,2244.345856,0.8217894060620219
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What American professional Hawaiian surfer born 18 October 1992 won the Rip Curl Pro Portugal? ",GB,Answer:,2.091712512,6103.0,399.966208,0.399966208,32768,32, John John Florence,31917.0,['John John Florence'],65.536,0.4,qa_2,2091.712512,0.8087852868377354
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness? ",GB,Answer:,2.251882496,6103.0,399.966208,0.399966208,32768,32, Ann,34361.0,['Ann'],65.536,0.4,qa_2,2251.882496,0.8223858444166352
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Alvaro Mexia had a diplomatic mission with which tribe of indigenous people? ",GB,Answer:,2.2183936,6103.0,399.966208,0.399966208,32768,32, Ais,33850.0,['Apalachees'],65.536,0.4,qa_2,2218.3936,0.8197045790251107
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What nationality were social anthropologists Alfred Gell and Edmund Leach? ",GB,Answer:,2.141782016,6103.0,399.966208,0.399966208,32768,32, British,32681.0,['British'],65.536,0.4,qa_2,2141.782016,0.813255408341238
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: In which year was the King who made the 1925 Birthday Honours born? ",GB,Answer:,2.237202432,6103.0,399.966208,0.399966208,32768,32, 1865,34137.0,['1865'],65.536,0.4,qa_2,2237.202432,0.8212203767173448
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the county seat of the county where East Lempster, New Hampshire is located? ",GB,Answer:,2.245525504,6103.0,399.966208,0.399966208,32768,32, Newport,34264.0,['Newport'],65.536,0.4,qa_2,2245.525504,0.8218830259164137
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born may 6 1945. What was the Rock singers stage name ? ",GB,Answer:,2.145255424,6103.0,399.966208,0.399966208,32768,32, Bob Seger,32734.0,['Bob Seger'],65.536,0.4,qa_2,2145.255424,0.8135577686808823
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional? ",GB,Answer:,2.189361152,6103.0,399.966208,0.399966208,32768,32, requiring only men to register for the draft,33407.0,['Conscription'],65.536,0.4,qa_2,2189.361152,0.8173137366420211
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Handi-Snacks are a snack food product line sold by what American multinational confectionery, food, and beverage company that is based in Illinois? ",GB,Answer:,2.073427968,6103.0,399.966208,0.399966208,32768,32, Mondelez International,31638.0,"['Mondelez International, Inc.']",65.536,0.4,qa_2,2073.427968,0.8070990580946963
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What was the name of a woman from the book titled ""Their Lives: The Women Targeted by the Clinton Machine "" and was also a former white house intern? ",GB,Answer:,2.236809216,6103.0,399.966208,0.399966208,32768,32, Monica Lewinsky,34131.0,['Monica Lewinsky'],65.536,0.4,qa_2,2236.809216,0.8211889484632738
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born? ",GB,Answer:,2.124546048,6103.0,399.966208,0.399966208,32768,32, The provided documents do not contain the birth date of Paul Manafort.,32418.0,"['April 1, 1949']",65.536,0.4,qa_2,2124.546048,0.8117403911407243
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: In what year was the novel that Lourenço Mutarelli based ""Nina"" on based first published? ",GB,Answer:,2.272854016,6103.0,399.966208,0.399966208,32768,32, 1970,34681.0,['1866'],65.536,0.4,qa_2,2272.854016,0.8240246821025922
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Where are Teide National Park and Garajonay National Park located? ",GB,Answer:,2.236022784,6103.0,399.966208,0.399966208,32768,32," Teide National Park is located in Tenerife, Canary Islands, Spain, and Garajonay National Park is located in the province of Santa Cruz de Tenerife,",34119.0,"['Canary Islands, Spain']",65.536,0.4,qa_2,2236.022784,0.8211260587942202
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: How many copies of Roald Dahl's variation on a popular anecdote sold? ",GB,Answer:,2.245066752,6103.0,399.966208,0.399966208,32768,32, 250 million,34257.0,['250 million'],65.536,0.4,qa_2,2245.066752,0.8218466298858628
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What occupation do Chris Menges and Aram Avakian share? ",GB,Answer:,2.191458304,6103.0,399.966208,0.399966208,32768,32, Film director,33439.0,['director'],65.536,0.4,qa_2,2191.458304,0.8174885612608033
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Andrew Jaspan was the co-founder of what not-for-profit media outlet? ",GB,Answer:,2.23182848,6103.0,399.966208,0.399966208,32768,32," The question contains a factual error. According to the provided documents, Andrew Jaspan is not mentioned. The documents state that Andrew Jaspan is not the co-founder",34055.0,['The Conversation'],65.536,0.4,qa_2,2231.82848,0.8207898986932902
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which American film director hosted the 18th Independent Spirit Awards in 2002? ",GB,Answer:,2.271346688,6103.0,399.966208,0.399966208,32768,32, John Waters,34658.0,['John Waters'],65.536,0.4,qa_2,2271.346688,0.823907900051936
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Where does the hotel and casino located in which Bill Cosby's third album was recorded? ",GB,Answer:,2.120024064,6103.0,399.966208,0.399966208,32768,32," Las Vegas, Nevada",32349.0,['Las Vegas Strip in Paradise'],65.536,0.4,qa_2,2120.024064,0.8113388358218183
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Do the drinks Gibson and Zurracapote both contain gin? ",GB,Answer:,2.17513984,6103.0,399.966208,0.399966208,32768,32, No,33190.0,['no'],65.536,0.4,qa_2,2175.13984,0.8161193130460982
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held?  ",GB,Answer:,2.081161216,6103.0,399.966208,0.399966208,32768,32, March and April,31756.0,['March and April'],65.536,0.4,qa_2,2081.161216,0.8078158458244111
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Tysons Galleria is located in what county? ",GB,Answer:,2.132410368,6103.0,399.966208,0.399966208,32768,32, Fairfax County,32538.0,['Fairfax County'],65.536,0.4,qa_2,2132.410368,0.8124346917450366
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Bordan Tkachuk was the CEO of a company that provides what sort of products? ",GB,Answer:,2.19611136,6103.0,399.966208,0.399966208,32768,32, IT products and services,33510.0,['IT products and services'],65.536,0.4,qa_2,2196.11136,0.8178752611160848
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which filmmaker was known for animation, Lev Yilmaz or Pamela B. Green? ",GB,Answer:,2.157903872,6103.0,399.966208,0.399966208,32768,32, Pamela B. Green,32927.0,['Levni Yilmaz'],65.536,0.4,qa_2,2157.903872,0.8146505907006408
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: In which city is the ambassador of the Rabat-Salé-Kénitra administrative region to China based? ",GB,Answer:,2.196897792,6103.0,399.966208,0.399966208,32768,32, Beijing,33522.0,['Beijing'],65.536,0.4,qa_2,2196.897792,0.8179404570133046
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are Yingkou and Fuding the same level of city? ",GB,Answer:,2.171338752,6103.0,399.966208,0.399966208,32768,32, Yes,33132.0,['no'],65.536,0.4,qa_2,2171.338752,0.8157974163950259
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Where did the descendants of the group of black Indians associated with the Seminole people settle? ",GB,Answer:,2.179661824,6103.0,399.966208,0.399966208,32768,32, Oklahoma and Florida,33259.0,"['Coahuila, Mexico']",65.536,0.4,qa_2,2179.661824,0.8165007967768123
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: David Huntsinger has worked with this gospel singer born in the month of July? ",GB,Answer:,2.20987392,6103.0,399.966208,0.399966208,32768,32, Larnelle Harris,33720.0,['Larnelle Harris'],65.536,0.4,qa_2,2209.87392,0.8190094899169632
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What year was the brother of this first round draft pick by the Washington Redskins drafted? ",GB,Answer:,2.239496192,6103.0,399.966208,0.399966208,32768,32, 1999,34172.0,['2003'],65.536,0.4,qa_2,2239.496192,0.8214034882359826
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Where is the stadium at which 1964 Georgia Tech Yellow Jackets football team played their home game located?  ",GB,Answer:,2.279276544,6103.0,399.966208,0.399966208,32768,32," Atlanta, Georgia",34779.0,['North Avenue at Techwood Drive'],65.536,0.4,qa_2,2279.276544,0.8245205440064407
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Since 2 June 2017, The Leader of Fine Gael had been held by which Irish Fine Gael politician who has served as Taoiseach and Minister for Defence? ",GB,Answer:,2.074607616,6103.0,399.966208,0.399966208,32768,32, Leo Varadkar,31656.0,['Leo Varadkar'],65.536,0.4,qa_2,2074.607616,0.8072087439979783
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which American film actor and dancer starred in the 1945 film Johnny Angel? ",GB,Answer:,2.080702464,6103.0,399.966208,0.399966208,32768,32, George Raft,31749.0,['George Raft'],65.536,0.4,qa_2,2080.702464,0.8077734731802576
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: hree Men on a Horse is a play by a playwright born in which year ? ",GB,Answer:,2.138046464,6103.0,399.966208,0.399966208,32768,32, 1895,32624.0,['1887'],65.536,0.4,qa_2,2138.046464,0.8129291319274154
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What type of activity does Owner earnings and Warren Buffett have in common? ",GB,Answer:,2.10501632,6103.0,399.966208,0.399966208,32768,32, Valuation,32120.0,['business'],65.536,0.4,qa_2,2105.01632,0.8099937733499377
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: When was the  former Indian cricketer who made his ODI debuts during the 2000 ICC KnockOut Trophy born?  ",GB,Answer:,2.280456192,6103.0,399.966208,0.399966208,32768,32, 7 October 1978,34797.0,['7 October 1978'],65.536,0.4,qa_2,2280.456192,0.8246113170675633
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which airplane was this Major test-flying after whom the base, that 514th Flight Test Squadron is stated at, is named? ",GB,Answer:,2.126118912,6103.0,399.966208,0.399966208,32768,32, B-17 Flying Fortress,32442.0,['B-17 Flying Fortress bomber'],65.536,0.4,qa_2,2126.118912,0.8118796621663276
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Based on a True Story... is an album by which country music star, with the single My Eyes? ",GB,Answer:,2.25181696,6103.0,399.966208,0.399966208,32768,32, Blake Shelton,34360.0,['Blake Shelton'],65.536,0.4,qa_2,2251.81696,0.8223806752037253
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Over how many centuries were the ""dwelling place of the dead"" built? ",GB,Answer:,2.277113856,6103.0,399.966208,0.399966208,32768,32, three,34746.0,['three centuries'],65.536,0.4,qa_2,2277.113856,0.8243538824612905
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: When was the British author who wrote the novel on which ""Here We Go Round the Mulberry Bush"" was based born?  ",GB,Answer:,2.080047104,6103.0,399.966208,0.399966208,32768,32," The provided documents do not contain the birth date of the British author who wrote the novel on which ""Here We Go Round the Mulberry Bush"" was based.",31739.0,['7 January 1936'],65.536,0.4,qa_2,2080.047104,0.8077129084092126
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who died first, George Archainbaud or Ralph Murphy? ",GB,Answer:,2.241396736,6103.0,399.966208,0.399966208,32768,32, Ralph Murphy,34201.0,['George Archainbaud'],65.536,0.4,qa_2,2241.396736,0.821554925294582
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which component of shellite has the formula (ON)CHOH? ",GB,Answer:,2.150694912,6103.0,399.966208,0.399966208,32768,32, Picric acid,32817.0,['picric acid'],65.536,0.4,qa_2,2150.694912,0.8140293140750221
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The Argentine PGA Championship record holder has won how many tournaments worldwide? ",GB,Answer:,2.262761472,6103.0,399.966208,0.399966208,32768,32, 16,34527.0,['230'],65.536,0.4,qa_2,2262.761472,0.8232397833579518
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Suicide's 1977 released album features a song based on what brand's comic character? ",GB,Answer:,2.25476608,6103.0,399.966208,0.399966208,32768,32, Marvel Comics,34405.0,['Marvel'],65.536,0.4,qa_2,2254.76608,0.8226129922976312
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What other political position did the person who introduced the DISCLOSE Act hold? ",GB,Answer:,2.021720064,6103.0,399.966208,0.399966208,32768,32, The provided documents do not contain information about who introduced the DISCLOSE Act or what other political positions that person held.,30849.0,['United States Senator'],65.536,0.4,qa_2,2021.720064,0.8021653862361827
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Were the bands Skin Yard and Ostava from the U.S.? ",GB,Answer:,2.192113664,6103.0,399.966208,0.399966208,32768,32," No, Skin Yard was from the U.S., but Ostava was from Bulgaria.",33449.0,['no'],65.536,0.4,qa_2,2192.113664,0.817543125355018
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are Daryl Hall and Gerry Marsden both musicians? ",GB,Answer:,2.049441792,6103.0,399.966208,0.399966208,32768,32, Yes,31272.0,['yes'],65.536,0.4,qa_2,2049.441792,0.8048413916602711
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What major truck road is located in Backford Cross? ",GB,Answer:,2.274164736,6103.0,399.966208,0.399966208,32768,32, A41,34701.0,['The A41'],65.536,0.4,qa_2,2274.164736,0.8241261058759114
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: In which role did Caroline Carver played in a 1999 Hallmark Entertainment made-for-TV fantasy movie? ",GB,Answer:,2.257846272,6103.0,399.966208,0.399966208,32768,32, Ingrid,34452.0,['Princess Jessica'],65.536,0.4,qa_2,2257.846272,0.8228549866480901
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What's the name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around their estate? ",GB,Answer:,2.193948672,6103.0,399.966208,0.399966208,32768,32, The Jackalope,33477.0,['The Spiderwick Chronicles'],65.536,0.4,qa_2,2193.948672,0.817695731397676
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Maxeda has been owned since 2004 by which American multinational equity firm? ",GB,Answer:,2.254831616,6103.0,399.966208,0.399966208,32768,32, Kohlberg Kravis Roberts,34406.0,['KKR & Co'],65.536,0.4,qa_2,2254.831616,0.8226181479974424
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The youngest daughter of Lady Mary-Gaye Curzon stars with Douglas Smith and Lucien Laviscount  in what 2017 film? ",GB,Answer:,2.183069696,6103.0,399.966208,0.399966208,32768,32, The youngest daughter of Lady Mary-Gaye Curzon stars with Douglas Smith and Lucien Laviscount  in what 2017 film?,33311.0,['The Bye Bye Man'],65.536,0.4,qa_2,2183.069696,0.8167872474557953
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of which river? ",GB,Answer:,2.270691328,6103.0,399.966208,0.399966208,32768,32, Clarence River,34648.0,['Richmond'],65.536,0.4,qa_2,2270.691328,0.8238570768875548
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which American audio engineer and clandestine chemist, who was a key figure in the San Francisco Bay Area hippie movement during the 1960s recorded the album ""Old and in the Way?"" ",GB,Answer:,2.085289984,6103.0,399.966208,0.399966208,32768,32, Owsley Stanley,31819.0,['Owsley Stanley'],65.536,0.4,qa_2,2085.289984,0.8081963606650114
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: When was the palace founded at which Columba de Dunbar died in 1435? ",GB,Answer:,2.071330816,6103.0,399.966208,0.399966208,32768,32, 18th century,31606.0,['the late 12th Century'],65.536,0.4,qa_2,2071.330816,0.806903752452066
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Where is the Bubblegum Alley, that is similar to Gum Wall, located in California? ",GB,Answer:,2.256338944,6103.0,399.966208,0.399966208,32768,32, San Luis Obispo,34429.0,"['San Luis Obispo, California']",65.536,0.4,qa_2,2256.338944,0.8227366464317871
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: At what venue was the January 2, 2012 game featured the University of Louisville team? ",GB,Answer:,2.236416,6103.0,399.966208,0.399966208,32768,32, Not answerable,34125.0,['Mercedes-Benz Superdome'],65.536,0.4,qa_2,2236.416,0.8211575091575092
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which film was Oscar nominated, LaLee's Kin: The Legacy of Cotton or Gimme Shelter, the 1970 Rolling Stones documentary? ",GB,Answer:,2.238644224,6103.0,399.966208,0.399966208,32768,32, LaLee's Kin: The Legacy of Cotton,34159.0,"[""LaLee's Kin: The Legacy of Cotton""]",65.536,0.4,qa_2,2238.644224,0.8213355191896718
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which board game was published most recently, Pirate's Cove or Catan? ",GB,Answer:,2.113404928,6103.0,399.966208,0.399966208,32768,32, Pirate's Cove,32248.0,"[""Pirate's Cove""]",65.536,0.4,qa_2,2113.404928,0.8107479533614488
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Alice David is the voice of Lara Croft in a video game developed by which company ? ",GB,Answer:,2.129657856,6103.0,399.966208,0.399966208,32768,32, The provided documents do not contain the name of the company that developed the video game in which Alice David voices Lara Croft.,32496.0,['Crystal Dynamics'],65.536,0.4,qa_2,2129.657856,0.8121922698178237
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which Eminem album included vocals from a singer who had an album titled ""Unapologetic""? ",GB,Answer:,2.154430464,6103.0,399.966208,0.399966208,32768,32, Encore,32874.0,"['""The Marshall Mathers LP 2""']",65.536,0.4,qa_2,2154.430464,0.81435176735414
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: This American crime film set in South Los Angeles was written and directed by the same director and writer of screenwriter of ""Street Kings"", ""End of Watch"", ""Sabotage"", ""Fury"" and what other film?  ",GB,Answer:,2.268594176,6103.0,399.966208,0.399966208,32768,32," The question contains a factual error; ""Street Kings"" was written and directed by David Ayer, but ""End of Watch"" was written and directed by David",34616.0,['Suicide Squad'],65.536,0.4,qa_2,2268.594176,0.8236942454356367
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: SuperMansion starred the actress who had a recurring role as whom on Workaholics? ",GB,Answer:,2.198667264,6103.0,399.966208,0.399966208,32768,32, Jillian Bell,33549.0,['Jillian Belk'],65.536,0.4,qa_2,2198.667264,0.8180869772571463
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The 1974 Texas Tech Raiders football team represented what public research university in Lubbock, Texas? ",GB,Answer:,2.190278656,6103.0,399.966208,0.399966208,32768,32, Texas Tech University,33421.0,['Texas Tech University'],65.536,0.4,qa_2,2190.278656,0.8173902636067143
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: During Siege of Bharatpur, which Commander-in-Chief of Ireland and Commander-in-Chief of India contributed to the storming of the castle? ",GB,Answer:,2.1692416,6103.0,399.966208,0.399966208,32768,32, Sir Stapleton Cotton,33100.0,['Lord Combermere'],65.536,0.4,qa_2,2169.2416,0.815619335347432
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: For what type of work is the production company for The Year Without a Santa Claus best known? ",GB,Answer:,2.152398848,6103.0,399.966208,0.399966208,32768,32, The production company for The Year Without a Santa Claus is best known for its work in stop motion animation.,32843.0,"['seasonal television specials, particularly its work in stop motion animation']",65.536,0.4,qa_2,2152.398848,0.814176536857169
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What year was the film that starred the composer for ""The Naked Brothers Band""? ",GB,Answer:,2.207973376,6103.0,399.966208,0.399966208,32768,32, 2009,33691.0,['2014'],65.536,0.4,qa_2,2207.973376,0.8188536998011339
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The author of Sexual Politics attended which British University? ",GB,Answer:,2.24198656,6103.0,399.966208,0.399966208,32768,32, Oxford University,34210.0,['Oxford'],65.536,0.4,qa_2,2241.98656,0.8216018707980123
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who had the best singles ranking, Roberta Vinci or Jorge Lozano? ",GB,Answer:,2.122973184,6103.0,399.966208,0.399966208,32768,32, Jorge Lozano,32394.0,['Roberta Vinci'],65.536,0.4,qa_2,2122.973184,0.8116009137494598
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Both Truth in Science and Discovery embrace what campaign? ",GB,Answer:,2.203713536,6103.0,399.966208,0.399966208,32768,32," ""Teach the Controversy""",33626.0,"['""Teach the Controversy"" campaign']",65.536,0.4,qa_2,2203.713536,0.8185035389282103
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Josey Scott and Ian Watkins were both promising musicians. Which of these talented men was incarcerated, impacting his career with a rock band? ",GB,Answer:,2.133131264,6103.0,399.966208,0.399966208,32768,32, Ian Watkins,32549.0,['Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012.'],65.536,0.4,qa_2,2133.131264,0.8124980798181204
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The movies Queen of Blood and Battle Beyond the Sun both contained scenes from what 1959 Soviet feature? ",GB,Answer:,2.244870144,6103.0,399.966208,0.399966208,32768,32, Nebo Zovyot,34254.0,['Nebo Zovyot'],65.536,0.4,qa_2,2244.870144,0.8218310270333392
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who was born first, Erika Jayne or Marco Da Silva ",GB,Answer:,2.244476928,6103.0,399.966208,0.399966208,32768,32, Erika Jayne,34248.0,['Erika Jayne'],65.536,0.4,qa_2,2244.476928,0.821799813127774
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: When did the English local newspaper, featuring the sculpture and war memorial in the Forbury gardens, change names? ",GB,Answer:,2.131427328,6103.0,399.966208,0.399966208,32768,32, 2009,32523.0,['2009'],65.536,0.4,qa_2,2131.427328,0.8123481843618362
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the name of the Isles who were led by Aonghus Mór and covered a total land area of over 8300 km2? ",GB,Answer:,2.2085632,6103.0,399.966208,0.399966208,32768,32, Kingdom of the Isles,33700.0,['Kingdom of the Isles'],65.536,0.4,qa_2,2208.5632,0.8189020771513353
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who is Bruce Spizer an expert on, known as the most influential act of the rock era? ",GB,Answer:,2.237988864,6103.0,399.966208,0.399966208,32768,32, The Beatles,34149.0,['The Beatles'],65.536,0.4,qa_2,2237.988864,0.8212832000937069
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which song was behind the third single on the album  ""A Lot About Livin' (And a Little 'bout Love)"" for two weeks on the country charts? ",GB,Answer:,2.278424576,6103.0,399.966208,0.399966208,32768,32," ""We'll Be There""",34766.0,"['""We\'ll Burn That Bridge""']",65.536,0.4,qa_2,2278.424576,0.8244549272277513
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What occupation was shared by David Yates and Pietro Germi? ",GB,Answer:,2.174681088,6103.0,399.966208,0.399966208,32768,32, Director,33183.0,['director'],65.536,0.4,qa_2,2174.681088,0.8160805231594491
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Marcus Wayne Garland spent nine seasons with an American professional baseball team that is based in Baltimore, Maryland, and was one of the AMerican League's original eight charter franchises when the league was established in what year? ",GB,Answer:,2.188312576,6103.0,399.966208,0.399966208,32768,32, 1901,33391.0,['1901'],65.536,0.4,qa_2,2188.312576,0.81722619867629
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aimé Argand? ",GB,Answer:,2.254569472,6103.0,399.966208,0.399966208,32768,32," The lamp used in many lighthouses is similar to the Argand lamp, which was patented in 1780 by Aimé Argand.",34402.0,['Argand lamp'],65.536,0.4,qa_2,2254.569472,0.8225975233998023
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The songs from the sountrack to ""When Harry Met Sally"" are performed by a singer that has had how many top 20 US albums? ",GB,Answer:,2.228682752,6103.0,399.966208,0.399966208,32768,32, seven,34007.0,['seven'],65.536,0.4,qa_2,2228.682752,0.8205369482753551
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are Broughtonia and Laeliocattleya both orchids? ",GB,Answer:,2.036072448,6103.0,399.966208,0.399966208,32768,32," Yes, Broughtonia and Laeliocattleya are both orchids.",31068.0,['yes'],65.536,0.4,qa_2,2036.072448,0.8035599330500837
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Where was the world cup hosted that Algeria qualified for the first time into the round of 16? ",GB,Answer:,2.161115136,6103.0,399.966208,0.399966208,32768,32, Brazil,32976.0,['Brazil'],65.536,0.4,qa_2,2161.115136,0.814926006792819
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which was fought earlier in our nation's history, the Seven Days Battles or the Battle of Manila? ",GB,Answer:,2.13876736,6103.0,399.966208,0.399966208,32768,32, The Seven Days Battles,32635.0,['The Seven Days Battles'],65.536,0.4,qa_2,2138.76736,0.8129921863030489
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What retailer in ABQ Uptown is headquarted in Poole, Dorset, United Kingdom? ",GB,Answer:,2.183069696,6103.0,399.966208,0.399966208,32768,32, Lush,33311.0,['Lush Ltd.'],65.536,0.4,qa_2,2183.069696,0.8167872474557953
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What football club plays in the area between the old tool gates: Brook Bar and Trafford bar? ",GB,Answer:,2.26459648,6103.0,399.966208,0.399966208,32768,32, Manchester United F.C.,34555.0,['Manchester United'],65.536,0.4,qa_2,2264.59648,0.8233830125886268
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The song ""Chim Chim Cher-ee"" can be heard  in the ""Mary Poppins"" scene of a Disney ride that debuted in what year? ",GB,Answer:,2.26328576,6103.0,399.966208,0.399966208,32768,32, 1989,34535.0,['1989'],65.536,0.4,qa_2,2263.28576,0.8232807296945128
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who held the record for the longest service in the Australian Parliament for a woman, and was surpassed by  a former Australian politician who was the 29th Speaker of the House of Representatives? ",GB,Answer:,2.230583296,6103.0,399.966208,0.399966208,32768,32," Kathryn Jean ""Kathy"" Sullivan",34036.0,['Kathryn Jean Martin'],65.536,0.4,qa_2,2230.583296,0.820689857797626
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which man who presented the Australia 2022 FIFA World Cup bid was born on October 22, 1930? ",GB,Answer:,2.224357376,6103.0,399.966208,0.399966208,32768,32, Frank Lowy,33941.0,['Frank Lowy'],65.536,0.4,qa_2,2224.357376,0.8201879732476945
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What major city is the Faith Lutheran Middle School and High School located by? ",GB,Answer:,2.167406592,6103.0,399.966208,0.399966208,32768,32, Las Vegas,33072.0,['Las Vegas'],65.536,0.4,qa_2,2167.406592,0.8154632317368167
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What British singer-songwriter hosted the 16th Annual Young Hollywood Awards? ",GB,Answer:,2.127691776,6103.0,399.966208,0.399966208,32768,32, None of the provided documents state that a British singer-songwriter hosted the 16th Annual Young Hollywood Awards. The documents mention that the event was held on,32466.0,['Kelly Lee Osbourne'],65.536,0.4,qa_2,2127.691776,0.8120187272839278
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who did the Star and Dagger bass player marry? ",GB,Answer:,2.230386688,6103.0,399.966208,0.399966208,32768,32, Not mentioned in the provided documents.,34033.0,['Sean Yseult.'],65.536,0.4,qa_2,2230.386688,0.8206740516557459
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: In 2017, what was 3/4th of the organization that also has a Center for Veterinary Medicine as well as part of the U.S. Department of Health and Human Services, spent on? ",GB,Answer:,2.157379584,6103.0,399.966208,0.399966208,32768,32, FDA budget,32919.0,['Prescription Drug User Fee Act'],65.536,0.4,qa_2,2157.379584,0.8146055469485707
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which came out first, Dinosaur or McFarland, USA ",GB,Answer:,2.257911808,6103.0,399.966208,0.399966208,32768,32," McFarland, USA",34453.0,['Dinosaur'],65.536,0.4,qa_2,2257.911808,0.8228601282907149
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Both Bishop Carroll Catholic High School and Kapaun Mt. Carmel Catholic High School are located in which city in Kansas? ",GB,Answer:,2.196504576,6103.0,399.966208,0.399966208,32768,32, Wichita,33516.0,['Wichita'],65.536,0.4,qa_2,2196.504576,0.8179078649003462
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What was the 58th quadrennial American presidential election held after the 2016 Michigan Democratic primary? ",GB,Answer:,2.246115328,6103.0,399.966208,0.399966208,32768,32, The United States presidential election of 2016,34273.0,['United States presidential election of 2016'],65.536,0.4,qa_2,2246.115328,0.8219297989671169
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: This Celtic ruler who was born in AD 43 ruled southeastern Britain prior to conquest by which empire? ",GB,Answer:,2.118909952,6103.0,399.966208,0.399966208,32768,32, Roman Empire,32332.0,['Roman'],65.536,0.4,qa_2,2118.909952,0.8112396387479897
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the name of the detective novelist parent of the author of '""Q"" Is for Quarry'? ",GB,Answer:,2.13385216,6103.0,399.966208,0.399966208,32768,32, Sue Grafton,32560.0,['C. W. Grafton'],65.536,0.4,qa_2,2133.85216,0.812561425061425
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the birthplace of the Senator who represents the first of 62 districts in the State Senate? ",GB,Answer:,2.218655744,6103.0,399.966208,0.399966208,32768,32," Brooklyn, New York",33854.0,"['Brooklyn, New York']",65.536,0.4,qa_2,2218.655744,0.8197258817274178
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: The Memphis Hustle are based in a suburb of a city with a population of what in 2010? ",GB,Answer:,2.275278848,6103.0,399.966208,0.399966208,32768,32," 1,324,108",34718.0,"['48,982']",65.536,0.4,qa_2,2275.278848,0.8242122242064636
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which songwriting duo composed music for ""La La Land"", and created lyrics for ""A Christmas Story: The Musical""?  ",GB,Answer:,2.231435264,6103.0,399.966208,0.399966208,32768,32, Pasek and Paul,34049.0,['Pasek & Paul'],65.536,0.4,qa_2,2231.435264,0.8207583188933596
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which of the city at the south of Shelly Beach, New South Wales is a local government area in the Hunter region of New South Wales, Australia? ",GB,Answer:,2.18923008,6103.0,399.966208,0.399966208,32768,32," None of the provided documents contain information about a city south of Shelly Beach, New South Wales, that is a local government area in the Hunter region. The",33405.0,['City of Newcastle'],65.536,0.4,qa_2,2189.23008,0.8173027989821883
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Are Bamboo Mañalac and Danny Jones both musicians? ",GB,Answer:,2.151022592,6103.0,399.966208,0.399966208,32768,32, Yes,32822.0,['yes'],65.536,0.4,qa_2,2151.022592,0.8140576442629943
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Works by Hanna Leena Kristiina Varis are part of a collection in a museum that houses approximately 65,000 what? ",GB,Answer:,2.19774976,6103.0,399.966208,0.399966208,32768,32, drawings,33535.0,['drawings'],65.536,0.4,qa_2,2197.74976,0.8180110332488445
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: When was the Western Germanic language spoken from which the small settlement situated on the river Leda opposite Leer derives its name? ",GB,Answer:,2.17972736,6103.0,399.966208,0.399966208,32768,32, 8th and 16th centuries,33260.0,['between the 8th and 16th centuries'],65.536,0.4,qa_2,2179.72736,0.8165063138905593
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Born on 6 March 1937, this man was also a citizen of the United Kingdom. ",GB,Answer:,2.167799808,6103.0,399.966208,0.399966208,32768,32, Robin John Bailie,33078.0,['Alistair Grant'],65.536,0.4,qa_2,2167.799808,0.8154967047584497
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What country does Hatton Hill and Hatton Castle, Angus have in common? ",GB,Answer:,2.178678784,6103.0,399.966208,0.399966208,32768,32, Scotland,33244.0,['Scotland'],65.536,0.4,qa_2,2178.678784,0.8164180002406449
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What podcast was the cheif executive officer of Nerdist Industries a guest on? ",GB,Answer:,2.180775936,6103.0,399.966208,0.399966208,32768,32, The Drop-In (podcast),33276.0,['Comedy Film Nerds'],65.536,0.4,qa_2,2180.775936,0.8165945426132949
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Randall Cunningham II was a multi-sport athlete at the high school located in what Nevada city? ",GB,Answer:,2.10665472,6103.0,399.966208,0.399966208,32768,32, Las Vegas,32145.0,['Summerlin'],65.536,0.4,qa_2,2106.65472,0.8101415461191476
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which English musician is known for both the songs ""See Yourself"" and ""Withing You Without You""? ",GB,Answer:,2.150825984,6103.0,399.966208,0.399966208,32768,32, George Harrison,32819.0,['George Harrison'],65.536,0.4,qa_2,2150.825984,0.8140406471860813
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which professional ice hockey position does the Captain of the National Hockey League All-Star Game ""Away Team"" play? ",GB,Answer:,2.140274688,6103.0,399.966208,0.399966208,32768,32, centre,32658.0,['Canadian professional ice hockey centre'],65.536,0.4,qa_2,2140.274688,0.8131238900116358
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What year did the series on CBS, starring the actor who known for his role in ""Rebel Without a Cause,"" air? ",GB,Answer:,2.26557952,6103.0,399.966208,0.399966208,32768,32, 1952,34570.0,['1952'],65.536,0.4,qa_2,2265.57952,0.823459647092855
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What season was the character introduced that becomes the main antagonist in the  following season, from the animated television series created by Bryan Konietzko and Michael Dante DiMartino as a sequel to """", which aired from 2005 to 2008?  ",GB,Answer:,2.166489088,6103.0,399.966208,0.399966208,32768,32, The character was introduced in the third season.,33058.0,['third'],65.536,0.4,qa_2,2166.489088,0.8153850807671366
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who were the directors of the 2009 American science fiction film starring the actor who played Dexter Morgan in the Showtime TV Network series ""Dexter""? ",GB,Answer:,2.181234688,6103.0,399.966208,0.399966208,32768,32, Mark Neveldine and Brian Taylor,33283.0,['Mark Neveldine and Brian Taylor'],65.536,0.4,qa_2,2181.234688,0.8166331160051679
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which travel parody series featured American actor, comedian, and radio host best known as the host of ""The Joe Schmo Show""? ",GB,Answer:,2.183856128,6103.0,399.966208,0.399966208,32768,32, Hidden America with Johnny Depp,33323.0,['Hidden America with Jonah Ray'],65.536,0.4,qa_2,2183.856128,0.8168532244995949
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Do The Importance of Being Icelandic and The Five Obstructions belong to different film genres ? ",GB,Answer:,2.24395264,6103.0,399.966208,0.399966208,32768,32," No, the provided documents do not contain information about a film titled ""The Importance of Being Icelandic"" (they mention a documentary about ""Icelandic Canadians""),",34240.0,['no'],65.536,0.4,qa_2,2243.95264,0.8217581775700935
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Tefik Selim Mborja was a part of a party that held power in Albania until what year?  ",GB,Answer:,2.12729856,6103.0,399.966208,0.399966208,32768,32, 1943,32460.0,['1943'],65.536,0.4,qa_2,2127.29856,0.8119839802834258
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Joe Walker played for which team that ends their regular season with the Civil War rivalry game? ",GB,Answer:,2.142306304,6103.0,399.966208,0.399966208,32768,32, Oregon,32689.0,['Oregon Ducks football'],65.536,0.4,qa_2,2142.306304,0.8133011104652941
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What station broadcast the episode ""Marry Me a Little, Marry Me a Little More"" , of the series created by Max Mutchnick and David Kohan? ",GB,Answer:,2.124939264,6103.0,399.966208,0.399966208,32768,32," There is no episode titled ""Marry Me a Little, Marry Me a Little More"" in the provided documents; the documents mention a series created by Max",32424.0,['National Broadcasting Company'],65.536,0.4,qa_2,2124.939264,0.8117752282260055
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Georges-Henri Bousquet translated the work of a historian who is of what heritage? ",GB,Answer:,2.27999744,6103.0,399.966208,0.399966208,32768,32, French,34790.0,['North African Arab'],65.536,0.4,qa_2,2279.99744,0.8245760275941363
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: In which city are the headquarters of the American research and scientific development company where Ravi Sethi worked as computer scientist located? ",GB,Answer:,2.229403648,6103.0,399.966208,0.399966208,32768,32," Murray Hill, New Jersey",34018.0,['Murray Hill'],65.536,0.4,qa_2,2229.403648,0.8205949791286966
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the full name of the viral respiratory disease in which Yi Guan's research helped to prevent the outbreak of? ",GB,Answer:,2.154430464,6103.0,399.966208,0.399966208,32768,32, Severe acute respiratory syndrome,32874.0,['severe acute respiratory syndrome'],65.536,0.4,qa_2,2154.430464,0.81435176735414
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which Kentucky Writers Hall of Fame author has had works published by Dim Gray Bar Press? ",GB,Answer:,2.14990848,6103.0,399.966208,0.399966208,32768,32, There is no author mentioned in the documents who is both a member of the Kentucky Writers Hall of Fame and has had works published by Dim Gray Bar Press. The,32805.0,['Wendell Berry'],65.536,0.4,qa_2,2149.90848,0.8139612863892699
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What director worked with Vikram Bhatt on a film starring actors Rajneesh Duggal and Adah Sharma? ",GB,Answer:,2.137260032,6103.0,399.966208,0.399966208,32768,32, Vikram Bhatt,32612.0,['Tinu Suresh Desai'],65.536,0.4,qa_2,2137.260032,0.8128602968232552
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question:  Robert Smith founded the multinational company headquartered in what city? ",GB,Answer:,2.159280128,6103.0,399.966208,0.399966208,32768,32, Copenhagen,32948.0,"['Golden Valley, Minnesota,']",65.536,0.4,qa_2,2159.280128,0.8147687264780867
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What amount was the settlement that the character from the Son of al Quada got in 2017? ",GB,Answer:,2.202075136,6103.0,399.966208,0.399966208,32768,32, $10.5 million (USD),33601.0,['$10.5 million'],65.536,0.4,qa_2,2202.075136,0.8183685009374722
+6103.0,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Considered the strongest recorded tropical cyclone, which cyclone had a film made about it in 2007? ",GB,Answer:,2.166358016,6103.0,399.966208,0.399966208,32768,32, Cyclone Gonu,33056.0,['1999 Odisha cyclone'],65.536,0.4,qa_2,2166.358016,0.8153739109390126
