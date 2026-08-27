@@ -521,9 +521,12 @@ def rlm_autosub_sources():
             "rlm/loft128k_autosub_target0.5",
             AUTOSUB_RUN_DIR_RE,
             "rlm-autosub-today-kvzip-loft128k",
-            "RLM + KVzip, auto-chunk target {target} · Qwen3-4B-Instruct-2507",
+            "RLM + KVzip, auto-chunk target {target} (2x compression) · Qwen3-4B-Instruct-2507",
             "Sub-call chunk size is derived from the memory budget with target compression "
-            "{target}; realized KV removal is reported from each completed run.",
+            "ratio {target} -- i.e. the chunk is sized to 2x the memory budget's own token "
+            "capacity, so that if the root sends the full advertised chunk, exactly half of "
+            "it gets evicted. Realized KV removal (often well under 2x, since the root is "
+            "free to send less than advertised) is reported from each completed run.",
         ),
         (
             "rlm/loft128k_autosub_nopress_target0.0",
