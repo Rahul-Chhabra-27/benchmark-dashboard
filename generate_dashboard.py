@@ -781,7 +781,11 @@ def collect(source):
 
 
 def build() -> None:
-    datasets = [collect(source) for source in SOURCES] + rlm_sources() + rlm_kvzip_sources() + rlm_autosub_sources()
+    # rlm_kvzip_sources() (the fixed-32K-char-chunk, budget-independent family)
+    # is superseded by rlm_autosub_sources()'s budget-derived chunk sizing and
+    # intentionally left out of what gets published -- still defined above in
+    # case it's wanted again.
+    datasets = [collect(source) for source in SOURCES] + rlm_sources() + rlm_autosub_sources()
     # Remove downloads from budgets that are no longer published (for example,
     # an interrupted 8 GB run intentionally excluded from the dashboard).
     published = {
