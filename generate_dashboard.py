@@ -386,118 +386,6 @@ def rlm_sources():
     return sources
 
 
-RLM_KVZIP_VARIANTS = [
-    (
-        "32k",
-        "loft32k",
-        "LOFT 32K",
-        ["nq_32k", "hotpotqa_32k", "musique_32k", "qampari_32k", "quest_32k"],
-    ),
-    (
-        "128k",
-        "loft128k",
-        "LOFT 128K",
-        ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"],
-    ),
-]
-
-RLM_RUN_DIR_RE = re.compile(r"^loft__(?P<task>.+?)_{3}home.*?__rlm__kvzip-(?P<press>kvzip|no_press)(?P<value>[0-9.]*)(?P<unit>MB|GB)?$")
-
-
-def rlm_kvzip_sources():
-    """RLM + KVzip sub-call compression vs. an RLM-no-press ablation.
-
-    Reads the same evaluation/results/rlm/ tree rlm_sources() looks at, but
-    parses run_benchmark.py's actual nested `<run-dir>/metrics.json` output
-    (rlm_sources() expects a flat task.mode.model.jsonl layout that no longer
-    matches). Uses "loft" as the kind and the plain-LOFT task names/group ids
-    so these variants land in the same LOFT 32K/128K views as the plain-KVzip
-    sources above and can be directly compared via the precision chips.
-    """
-    sources = []
-    for ctx, group, group_title, expected_tasks in RLM_KVZIP_VARIANTS:
-        for kind_id, precision, run_dir_name, budgets, provenance in [
-            (
-                "rlm-kvzip",
-                "RLM + KVzip · Qwen3-4B-Instruct-2507",
-                f"rlm/loft{ctx}_full_batch",
-                ["256", "512", "1024", "2048", "4096"],
-                "RLM keeps the document out of the prompt; each llm_query sub-call is "
-                "compressed in-process via kvpress's KVzipPress, budgeted the same way "
-                "as the plain-KVzip sweep above (converted to a per-sub-call token cap).",
-            ),
-            (
-                "rlm-nopress",
-                "RLM (no press, ablation) · Qwen3-4B-Instruct-2507",
-                f"rlm/loft{ctx}_nopress_ablation",
-                ["Unbounded RLM"],
-                "Ablation: identical RLM harness and sub-call backend, but press=None so "
-                "sub-calls are never compressed -- isolates RLM's search strategy from "
-                "KVzip's contribution.",
-            ),
-        ]:
-            directory = EVAL / run_dir_name
-            if not directory.is_dir():
-                continue
-            grouped = {}
-            newest = 0.0
-            for metric_file in sorted(directory.glob("*/metrics.json")):
-                match = RLM_RUN_DIR_RE.match(metric_file.parent.name)
-                if not match or match.group("press") != ("kvzip" if kind_id == "rlm-kvzip" else "no_press"):
-                    continue
-                task = match.group("task")
-                try:
-                    metrics = json.loads(metric_file.read_text())
-                except (OSError, json.JSONDecodeError):
-                    continue
-                newest = max(newest, metric_file.stat().st_mtime)
-                if kind_id == "rlm-kvzip":
-                    value, unit = match.group("value"), match.group("unit")
-                    budget = f"{float(value) * (1024 if unit == 'GB' else 1):g}"
-                else:
-                    budget = "Unbounded RLM"
-                runtime = metrics.get("runtime", {})
-                run = {
-                    "scores": score_fields(metrics, "loft"),
-                    "samples": int(metrics.get("num_samples", 0)),
-                    "retained_tokens": runtime.get("average_sub_retained_context_tokens"),
-                    "original_tokens": runtime.get("average_sub_context_tokens"),
-                    "retained_gb": None,
-                    "compression": runtime.get("average_sub_compression_ratio"),
-                    "prediction_url": None,
-                    "prediction_preview": [],
-                }
-                grouped.setdefault(task, {})[budget] = run
-
-            expected = set(budgets)
-            complete = {
-                task: {budget: runs[budget] for budget in budgets}
-                for task, runs in sorted(grouped.items())
-                if task in expected_tasks and expected.issubset(runs)
-            }
-            incomplete = sorted(task for task in expected_tasks if not expected.issubset(grouped.get(task, {})))
-            metric_keys = sorted({key for runs in complete.values() for run in runs.values() for key in run["scores"]})
-            sources.append(
-                {
-                    "id": f"{kind_id}-loft{ctx}",
-                    "title": precision,
-                    "group": group,
-                    "group_title": group_title,
-                    "precision": precision,
-                    "model": "qwen3-4b-instruct-2507",
-                    "model_title": "Qwen3-4B-Instruct-2507",
-                    "kind": "loft",
-                    "budgets": budgets,
-                    "provenance": provenance,
-                    "budget_provenance": {},
-                    "tasks": complete,
-                    "metrics": metric_keys,
-                    "excluded": incomplete,
-                    "updated": datetime.fromtimestamp(newest).strftime("%Y-%m-%d %H:%M") if newest else "—",
-                }
-            )
-    return sources
-
 
 AUTOSUB_RUN_DIR_RE = re.compile(
     r"^loft__(?P<task>.+?)_{3}home.*?__rlm__kvzip-kvzip(?P<value>[0-9.]+)(?P<unit>MB|GB)__sub\d+__autosub(?P<target>[0-9.]+)$"
@@ -781,10 +669,9 @@ def collect(source):
 
 
 def build() -> None:
-    # rlm_kvzip_sources() (the fixed-32K-char-chunk, budget-independent family)
-    # is superseded by rlm_autosub_sources()'s budget-derived chunk sizing and
-    # intentionally left out of what gets published -- still defined above in
-    # case it's wanted again.
+    # The old fixed-32K-char-chunk RLM+KVzip family (budget-independent chunk
+    # sizing) has been removed -- rlm_autosub_sources()'s budget-derived
+    # sizing supersedes it.
     datasets = [collect(source) for source in SOURCES] + rlm_sources() + rlm_autosub_sources()
     # Remove downloads from budgets that are no longer published (for example,
     # an interrupted 8 GB run intentionally excluded from the dashboard).
