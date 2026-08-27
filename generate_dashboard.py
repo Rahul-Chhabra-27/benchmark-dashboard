@@ -502,87 +502,97 @@ def rlm_kvzip_sources():
 AUTOSUB_RUN_DIR_RE = re.compile(
     r"^loft__(?P<task>.+?)_{3}home.*?__rlm__kvzip-kvzip(?P<value>[0-9.]+)(?P<unit>MB|GB)__sub\d+__autosub(?P<target>[0-9.]+)$"
 )
+AUTOSUB_NOPRESS_RUN_DIR_RE = re.compile(
+    r"^loft__(?P<task>.+?)_{3}home.*?__rlm__kvzip-no_press(?P<value>[0-9.]+)(?P<unit>MB|GB)__sub\d+__autosub(?P<target>[0-9.]+)$"
+)
 
 
 def rlm_autosub_sources():
-    """RLM + KVzip with the sub-call chunk size DERIVED from the memory budget
-    (the rlm-budget-derived-chunk-size branch's --max-subcall-chars auto
-    --target-compression-ratio feature), instead of the fixed hand-picked
-    32000-char chunk the other rlm-kvzip sources use. Run directories get an
-    extra __sub<N>__autosub<ratio> suffix the plain RLM_RUN_DIR_RE doesn't
-    match, hence a separate regex/collector.
+    """Collect today's budget-derived RLM + KVzip and no-press matrices.
+
+    Unlike the older 5-budget sweep, these runs use 100 MB through 2 GB.  Keep
+    partially completed tasks visible so the dashboard reflects live progress
+    instead of hiding an entire task until every budget finishes.
     """
-    run_dir_name = "rlm/loft128k_autosub_target0.5"
-    directory = EVAL / run_dir_name
-    if not directory.is_dir():
-        return []
-
     expected_tasks = ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"]
-    budgets = ["256", "512", "750", "1024", "2048"]
-    grouped = {}
-    newest = 0.0
-    target_seen = None
-    for metric_file in sorted(directory.glob("*/metrics.json")):
-        match = AUTOSUB_RUN_DIR_RE.match(metric_file.parent.name)
-        if not match:
-            continue
-        task = match.group("task")
-        target_seen = match.group("target")
-        try:
-            metrics = json.loads(metric_file.read_text())
-        except (OSError, json.JSONDecodeError):
-            continue
-        newest = max(newest, metric_file.stat().st_mtime)
-        value, unit = match.group("value"), match.group("unit")
-        budget = f"{float(value) * (1024 if unit == 'GB' else 1):g}"
-        runtime = metrics.get("runtime", {})
-        run = {
-            "scores": score_fields(metrics, "loft"),
-            "samples": int(metrics.get("num_samples", 0)),
-            "retained_tokens": runtime.get("average_sub_retained_context_tokens"),
-            "original_tokens": runtime.get("average_sub_context_tokens"),
-            "retained_gb": None,
-            "compression": runtime.get("average_sub_compression_ratio"),
-            "prediction_url": None,
-            "prediction_preview": [],
-        }
-        grouped.setdefault(task, {})[budget] = run
-
-    expected = set(budgets)
-    complete = {
-        task: {budget: runs[budget] for budget in budgets}
-        for task, runs in sorted(grouped.items())
-        if task in expected_tasks and expected.issubset(runs)
-    }
-    incomplete = sorted(task for task in expected_tasks if not expected.issubset(grouped.get(task, {})))
-    metric_keys = sorted({key for runs in complete.values() for run in runs.values() for key in run["scores"]})
-    target = target_seen or "0.5"
-    precision = f"RLM + KVzip, auto-chunk target {target} · Qwen3-4B-Instruct-2507"
-    return [
-        {
-            "id": "rlm-autosub-loft128k",
-            "title": precision,
-            "group": "loft128k",
-            "group_title": "LOFT 128K",
-            "precision": precision,
-            "model": "qwen3-4b-instruct-2507",
-            "model_title": "Qwen3-4B-Instruct-2507",
-            "kind": "loft",
-            "budgets": budgets,
-            "provenance": (
-                f"Sub-call chunk size derived from the memory budget and a target compression "
-                f"ratio of {target} (chunk_tokens = token_budget / (1 - target)), instead of a "
-                f"fixed 32,000-char chunk. The realized ratio (shown as KV removed/retained) is "
-                f"what the run actually achieved, not the {target} target -- the chunk size is "
-                f"only advertised to the root, never enforced as a floor."
-            ),
-            "budget_provenance": {},
-            "tasks": complete,
-            "metrics": metric_keys,
-            "excluded": incomplete,
-            "updated": datetime.fromtimestamp(newest).strftime("%Y-%m-%d %H:%M") if newest else "—",
-        }
+    budgets = ["100", "256", "400", "512", "750", "1024", "2048"]
+    variants = [
+        (
+            "rlm/loft128k_autosub_target0.5",
+            AUTOSUB_RUN_DIR_RE,
+            "rlm-autosub-today-kvzip-loft128k",
+            "RLM + KVzip, auto-chunk target {target} · Qwen3-4B-Instruct-2507",
+            "Sub-call chunk size is derived from the memory budget with target compression "
+            "{target}; realized KV removal is reported from each completed run.",
+        ),
+        (
+            "rlm/loft128k_autosub_nopress_target0.0",
+            AUTOSUB_NOPRESS_RUN_DIR_RE,
+            "rlm-autosub-today-nopress-loft128k",
+            "RLM only, auto-chunk no-press · Qwen3-4B-Instruct-2507",
+            "Matched RLM auto-chunk ablation: the same budget-derived sub-call sizes, "
+            "but with press=None so no KV compression is applied.",
+        ),
     ]
+    sources = []
+    for run_dir_name, pattern, source_id, title_template, provenance_template in variants:
+        directory = EVAL / run_dir_name
+        if not directory.is_dir():
+            continue
+        grouped, newest, target_seen = {}, 0.0, None
+        for metric_file in sorted(directory.glob("*/metrics.json")):
+            match = pattern.match(metric_file.parent.name)
+            if not match:
+                continue
+            try:
+                metrics = json.loads(metric_file.read_text())
+            except (OSError, json.JSONDecodeError):
+                continue
+            task = match.group("task")
+            target_seen = match.group("target")
+            newest = max(newest, metric_file.stat().st_mtime)
+            value, unit = match.group("value"), match.group("unit")
+            budget = f"{float(value) * (1024 if unit == 'GB' else 1):g}"
+            runtime = metrics.get("runtime", {})
+            grouped.setdefault(task, {})[budget] = {
+                "scores": score_fields(metrics, "loft"),
+                "samples": int(metrics.get("num_samples", 0)),
+                "retained_tokens": runtime.get("average_sub_retained_context_tokens"),
+                "original_tokens": runtime.get("average_sub_context_tokens"),
+                "retained_gb": None,
+                "compression": runtime.get("average_sub_compression_ratio"),
+                "prediction_url": None,
+                "prediction_preview": [],
+            }
+        tasks = {
+            task: {budget: runs[budget] for budget in budgets if budget in runs}
+            for task, runs in sorted(grouped.items())
+            if task in expected_tasks
+        }
+        incomplete = sorted(task for task in expected_tasks if set(budgets) - set(grouped.get(task, {})))
+        metric_keys = sorted({key for runs in tasks.values() for run in runs.values() for key in run["scores"]})
+        target = target_seen or "0.5"
+        title = title_template.format(target=target)
+        sources.append(
+            {
+                "id": source_id,
+                "title": title,
+                "group": "loft128k",
+                "group_title": "LOFT 128K",
+                "precision": title,
+                "model": "qwen3-4b-instruct-2507",
+                "model_title": "Qwen3-4B-Instruct-2507",
+                "kind": "loft",
+                "budgets": budgets,
+                "provenance": provenance_template.format(target=target),
+                "budget_provenance": {},
+                "tasks": tasks,
+                "metrics": metric_keys,
+                "excluded": incomplete,
+                "updated": datetime.fromtimestamp(newest).strftime("%Y-%m-%d %H:%M") if newest else "—",
+            }
+        )
+    return sources
 
 
 def budget_label(name: str, kind: str) -> str:
