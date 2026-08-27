@@ -499,6 +499,92 @@ def rlm_kvzip_sources():
     return sources
 
 
+AUTOSUB_RUN_DIR_RE = re.compile(
+    r"^loft__(?P<task>.+?)_{3}home.*?__rlm__kvzip-kvzip(?P<value>[0-9.]+)(?P<unit>MB|GB)__sub\d+__autosub(?P<target>[0-9.]+)$"
+)
+
+
+def rlm_autosub_sources():
+    """RLM + KVzip with the sub-call chunk size DERIVED from the memory budget
+    (the rlm-budget-derived-chunk-size branch's --max-subcall-chars auto
+    --target-compression-ratio feature), instead of the fixed hand-picked
+    32000-char chunk the other rlm-kvzip sources use. Run directories get an
+    extra __sub<N>__autosub<ratio> suffix the plain RLM_RUN_DIR_RE doesn't
+    match, hence a separate regex/collector.
+    """
+    run_dir_name = "rlm/loft128k_autosub_target0.5"
+    directory = EVAL / run_dir_name
+    if not directory.is_dir():
+        return []
+
+    expected_tasks = ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"]
+    budgets = ["256", "512", "750", "1024", "2048"]
+    grouped = {}
+    newest = 0.0
+    target_seen = None
+    for metric_file in sorted(directory.glob("*/metrics.json")):
+        match = AUTOSUB_RUN_DIR_RE.match(metric_file.parent.name)
+        if not match:
+            continue
+        task = match.group("task")
+        target_seen = match.group("target")
+        try:
+            metrics = json.loads(metric_file.read_text())
+        except (OSError, json.JSONDecodeError):
+            continue
+        newest = max(newest, metric_file.stat().st_mtime)
+        value, unit = match.group("value"), match.group("unit")
+        budget = f"{float(value) * (1024 if unit == 'GB' else 1):g}"
+        runtime = metrics.get("runtime", {})
+        run = {
+            "scores": score_fields(metrics, "loft"),
+            "samples": int(metrics.get("num_samples", 0)),
+            "retained_tokens": runtime.get("average_sub_retained_context_tokens"),
+            "original_tokens": runtime.get("average_sub_context_tokens"),
+            "retained_gb": None,
+            "compression": runtime.get("average_sub_compression_ratio"),
+            "prediction_url": None,
+            "prediction_preview": [],
+        }
+        grouped.setdefault(task, {})[budget] = run
+
+    expected = set(budgets)
+    complete = {
+        task: {budget: runs[budget] for budget in budgets}
+        for task, runs in sorted(grouped.items())
+        if task in expected_tasks and expected.issubset(runs)
+    }
+    incomplete = sorted(task for task in expected_tasks if not expected.issubset(grouped.get(task, {})))
+    metric_keys = sorted({key for runs in complete.values() for run in runs.values() for key in run["scores"]})
+    target = target_seen or "0.5"
+    precision = f"RLM + KVzip, auto-chunk target {target} · Qwen3-4B-Instruct-2507"
+    return [
+        {
+            "id": "rlm-autosub-loft128k",
+            "title": precision,
+            "group": "loft128k",
+            "group_title": "LOFT 128K",
+            "precision": precision,
+            "model": "qwen3-4b-instruct-2507",
+            "model_title": "Qwen3-4B-Instruct-2507",
+            "kind": "loft",
+            "budgets": budgets,
+            "provenance": (
+                f"Sub-call chunk size derived from the memory budget and a target compression "
+                f"ratio of {target} (chunk_tokens = token_budget / (1 - target)), instead of a "
+                f"fixed 32,000-char chunk. The realized ratio (shown as KV removed/retained) is "
+                f"what the run actually achieved, not the {target} target -- the chunk size is "
+                f"only advertised to the root, never enforced as a floor."
+            ),
+            "budget_provenance": {},
+            "tasks": complete,
+            "metrics": metric_keys,
+            "excluded": incomplete,
+            "updated": datetime.fromtimestamp(newest).strftime("%Y-%m-%d %H:%M") if newest else "—",
+        }
+    ]
+
+
 def budget_label(name: str, kind: str) -> str:
     match = re.search(r"__memory_budget([0-9.]+)(MB|GB)(?:__|$)", name)
     if not match:
@@ -682,7 +768,7 @@ def collect(source):
 
 
 def build() -> None:
-    datasets = [collect(source) for source in SOURCES] + rlm_sources() + rlm_kvzip_sources()
+    datasets = [collect(source) for source in SOURCES] + rlm_sources() + rlm_kvzip_sources() + rlm_autosub_sources()
     # Remove downloads from budgets that are no longer published (for example,
     # an interrupted 8 GB run intentionally excluded from the dashboard).
     published = {
