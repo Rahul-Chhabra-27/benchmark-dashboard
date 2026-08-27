@@ -419,28 +419,21 @@ def rlm_kvzip_sources():
         for kind_id, precision, run_dir_name, budgets, provenance in [
             (
                 "rlm-kvzip",
-                "RLM + KVzip, fixed 32K-char chunk · Qwen3-4B-Instruct-2507",
+                "RLM + KVzip · Qwen3-4B-Instruct-2507",
                 f"rlm/loft{ctx}_full_batch",
                 ["256", "512", "1024", "2048", "4096"],
                 "RLM keeps the document out of the prompt; each llm_query sub-call is "
-                "compressed in-process via kvpress's KVzipPress. The CHUNK SENT to each "
-                "sub-call is a hand-picked, budget-INDEPENDENT 32,000-character constant "
-                "(the harness default, predates the auto-chunk-sizing feature below) -- only "
-                "the compression ratio applied to that fixed chunk varies with the budget "
-                "selected. Contrast with the 'auto-chunk' sources, where the chunk size "
-                "itself is derived from the budget.",
+                "compressed in-process via kvpress's KVzipPress, budgeted the same way "
+                "as the plain-KVzip sweep above (converted to a per-sub-call token cap).",
             ),
             (
                 "rlm-nopress",
-                "RLM only, unbounded (fixed 32K-char chunk, no compression) · Qwen3-4B-Instruct-2507",
+                "RLM (no press, ablation) · Qwen3-4B-Instruct-2507",
                 f"rlm/loft{ctx}_nopress_ablation",
                 ["No press"],
-                "Ablation: identical RLM harness and sub-call backend as the fixed-chunk row "
-                "above, but press=None so sub-calls are never compressed. 'No press' is its "
-                "only budget value because the 32,000-character chunk here is NOT tied to any "
-                "memory budget at all -- this is the closest thing on this dashboard to an "
-                "unconstrained RLM baseline. Do not confuse with the budget-matched no-press "
-                "arm under 'auto-chunk', which DOES vary its chunk size with the budget.",
+                "Ablation: identical RLM harness and sub-call backend, but press=None so "
+                "sub-calls are never compressed -- isolates RLM's search strategy from "
+                "KVzip's contribution.",
             ),
         ]:
             directory = EVAL / run_dir_name
@@ -528,7 +521,7 @@ def rlm_autosub_sources():
             "rlm/loft128k_autosub_target0.5",
             AUTOSUB_RUN_DIR_RE,
             "rlm-autosub-today-kvzip-loft128k",
-            "RLM + KVzip, budget-derived chunk, target {target} (2x compression) · Qwen3-4B-Instruct-2507",
+            "RLM + KVzip, auto-chunk target {target} (2x compression) · Qwen3-4B-Instruct-2507",
             "Sub-call chunk size is derived from the memory budget with target compression "
             "ratio {target} -- i.e. the chunk is sized to 2x the memory budget's own token "
             "capacity, so that if the root sends the full advertised chunk, exactly half of "
@@ -539,13 +532,9 @@ def rlm_autosub_sources():
             "rlm/loft128k_autosub_nopress_target0.0",
             AUTOSUB_NOPRESS_RUN_DIR_RE,
             "rlm-autosub-today-nopress-loft128k",
-            "RLM only, budget-derived chunk, no compression · Qwen3-4B-Instruct-2507",
-            "Matched ablation: the sub-call chunk size still varies with the memory budget "
-            "selected (same sizing formula as the row above, target ratio 0.0 -> chunk size "
-            "= the budget's own token capacity exactly), but press=None so nothing is ever "
-            "evicted. NOT the same as the 'unbounded' no-press row under the fixed-chunk "
-            "sources -- that one uses a single budget-independent 32,000-character chunk; "
-            "this one has a different chunk size at every budget.",
+            "RLM only, auto-chunk no-press · Qwen3-4B-Instruct-2507",
+            "Matched RLM auto-chunk ablation: the same budget-derived sub-call sizes, "
+            "but with press=None so no KV compression is applied.",
         ),
     ]
     sources = []
