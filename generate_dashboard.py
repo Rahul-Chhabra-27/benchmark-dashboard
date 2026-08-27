@@ -430,7 +430,7 @@ def rlm_kvzip_sources():
                 "rlm-nopress",
                 "RLM (no press, ablation) · Qwen3-4B-Instruct-2507",
                 f"rlm/loft{ctx}_nopress_ablation",
-                ["No press"],
+                ["Unbounded RLM"],
                 "Ablation: identical RLM harness and sub-call backend, but press=None so "
                 "sub-calls are never compressed -- isolates RLM's search strategy from "
                 "KVzip's contribution.",
@@ -455,7 +455,7 @@ def rlm_kvzip_sources():
                     value, unit = match.group("value"), match.group("unit")
                     budget = f"{float(value) * (1024 if unit == 'GB' else 1):g}"
                 else:
-                    budget = "No press"
+                    budget = "Unbounded RLM"
                 runtime = metrics.get("runtime", {})
                 run = {
                     "scores": score_fields(metrics, "loft"),
