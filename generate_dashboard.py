@@ -395,6 +395,88 @@ AUTOSUB_NOPRESS_RUN_DIR_RE = re.compile(
 )
 
 
+RLM_NOPRESS_RUN_DIR_RE = re.compile(r"^loft__(?P<task>.+?)_{3}home.*?__rlm__kvzip-no_press(?:[0-9.]*)(?:MB|GB)?$")
+
+RLM_UNBOUNDED_VARIANTS = [
+    ("32k", "loft32k", "LOFT 32K", ["nq_32k", "hotpotqa_32k", "musique_32k", "qampari_32k", "quest_32k"]),
+    ("128k", "loft128k", "LOFT 128K", ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"]),
+]
+
+
+def rlm_unbounded_nopress_sources():
+    """RLM with a fixed 32,000-char sub-call chunk and press=None ("Unbounded
+    RLM"): the pre-budget-derived-sizing no-press ablation. Kept separately
+    from the pressed "RLM + KVzip" family (removed -- its chunk size was
+    fixed and budget-independent, which is what made it worth dropping) and
+    from rlm_autosub_sources()'s budget-derived no-press arm below, which
+    sweeps real budgets rather than using one fixed, unbounded chunk size.
+    """
+    sources = []
+    for ctx, group, group_title, expected_tasks in RLM_UNBOUNDED_VARIANTS:
+        run_dir_name = f"rlm/loft{ctx}_nopress_ablation"
+        directory = EVAL / run_dir_name
+        if not directory.is_dir():
+            continue
+        grouped = {}
+        newest = 0.0
+        for metric_file in sorted(directory.glob("*/metrics.json")):
+            match = RLM_NOPRESS_RUN_DIR_RE.match(metric_file.parent.name)
+            if not match:
+                continue
+            task = match.group("task")
+            try:
+                metrics = json.loads(metric_file.read_text())
+            except (OSError, json.JSONDecodeError):
+                continue
+            newest = max(newest, metric_file.stat().st_mtime)
+            runtime = metrics.get("runtime", {})
+            run = {
+                "scores": score_fields(metrics, "loft"),
+                "samples": int(metrics.get("num_samples", 0)),
+                "retained_tokens": runtime.get("average_sub_retained_context_tokens"),
+                "original_tokens": runtime.get("average_sub_context_tokens"),
+                "retained_gb": None,
+                "compression": runtime.get("average_sub_compression_ratio"),
+                "prediction_url": None,
+                "prediction_preview": [],
+            }
+            grouped.setdefault(task, {})["Unbounded RLM"] = run
+
+        expected = {"Unbounded RLM"}
+        complete = {
+            task: runs for task, runs in sorted(grouped.items())
+            if task in expected_tasks and expected.issubset(runs)
+        }
+        incomplete = sorted(task for task in expected_tasks if not expected.issubset(grouped.get(task, {})))
+        metric_keys = sorted({key for runs in complete.values() for run in runs.values() for key in run["scores"]})
+        precision = "RLM (no press, ablation) · Qwen3-4B-Instruct-2507"
+        sources.append(
+            {
+                "id": f"rlm-nopress-{ctx}",
+                "title": precision,
+                "group": group,
+                "group_title": group_title,
+                "precision": precision,
+                "model": "qwen3-4b-instruct-2507",
+                "model_title": "Qwen3-4B-Instruct-2507",
+                "kind": "loft",
+                "budgets": ["Unbounded RLM"],
+                "provenance": (
+                    "Ablation: identical RLM harness and sub-call backend, but press=None so "
+                    "sub-calls are never compressed -- isolates RLM's search strategy from "
+                    "KVzip's contribution. Sub-call chunk is a fixed 32,000-char size, not "
+                    "derived from a memory budget."
+                ),
+                "budget_provenance": {},
+                "tasks": complete,
+                "metrics": metric_keys,
+                "excluded": incomplete,
+                "updated": datetime.fromtimestamp(newest).strftime("%Y-%m-%d %H:%M") if newest else "—",
+            }
+        )
+    return sources
+
+
 def rlm_autosub_sources():
     """Collect today's budget-derived RLM + KVzip and no-press matrices.
 
@@ -669,10 +751,14 @@ def collect(source):
 
 
 def build() -> None:
-    # The old fixed-32K-char-chunk RLM+KVzip family (budget-independent chunk
-    # sizing) has been removed -- rlm_autosub_sources()'s budget-derived
-    # sizing supersedes it.
-    datasets = [collect(source) for source in SOURCES] + rlm_sources() + rlm_autosub_sources()
+    # Only the pressed half of the old fixed-32K-char-chunk RLM+KVzip family
+    # is gone (budget-independent chunk sizing, superseded by
+    # rlm_autosub_sources()'s budget-derived sizing). The "Unbounded RLM"
+    # no-press ablation from that same family is kept via
+    # rlm_unbounded_nopress_sources() -- it's a different comparison
+    # (fixed-chunk, no compression at all) than the budget-swept no-press
+    # arm rlm_autosub_sources() provides.
+    datasets = [collect(source) for source in SOURCES] + rlm_sources() + rlm_unbounded_nopress_sources() + rlm_autosub_sources()
     # Remove downloads from budgets that are no longer published (for example,
     # an interrupted 8 GB run intentionally excluded from the dashboard).
     published = {
