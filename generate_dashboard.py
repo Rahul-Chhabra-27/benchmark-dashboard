@@ -614,6 +614,7 @@ def rlm_fixedgrid_sources():
                 "compression": runtime.get("average_sub_compression_ratio"),
                 "prediction_url": None,
                 "prediction_preview": [],
+                "fraction": 1.0 if task == "hotpotqa_128k" else 0.5,
             }
     if not grouped:
         return []
@@ -680,6 +681,7 @@ def plain_kvzip_1gb_2gb_sources():
                 "compression": float(row["average_compression_ratio"]),
                 "prediction_url": None,
                 "prediction_preview": [],
+                "fraction": 0.5,
             }
     if not tasks:
         return []
