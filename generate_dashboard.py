@@ -649,30 +649,33 @@ def rlm_fixedgrid_sources():
     ]
 
 
-def plain_kvzip_1gb_2gb_sources():
-    """Plain KVzip (no RLM) LOFT-128K at 1GB/2GB, run on infolab post-PR-fix.
-    Reads the flat summary CSV directly since infolab's /mnt/nas paths don't
-    match the --home-based path prefix collect() expects for the standard
-    per-run-directory sources.
+def apply_postfix_1gb_2gb_override(datasets):
+    """Overwrite loft128k-qwen3-4b-instruct's 1024/2048 (MB-equivalent) budget
+    entries with the post-fix infolab rerun, instead of publishing them as a
+    separate source. The attention_patch key-restoration fix only changes
+    behavior at >=1GB budgets (verified empirically against pre-fix LOFT-32K
+    predictions), so these two budgets' old numbers were computed with the bug
+    present and should not coexist with the corrected ones.
     """
     csv_path = ROOT / "kvpress/benchmark_artifacts/logs/running_log/loft128k_1gb_2gb_metrics.csv"
     if not csv_path.is_file():
-        return []
+        return
+    target = next((d for d in datasets if d["id"] == "loft128k-qwen3-4b-instruct"), None)
+    if target is None:
+        return
     import csv as csv_module
 
-    tasks = {}
+    budget_map = {"1.0": "1024", "2.0": "2048"}
     with open(csv_path, newline="") as f:
         for row in csv_module.DictReader(f):
-            task = row["task"]
-            budget = f"{float(row['memory_budget']):g}GB"
-            scores = {}
-            for key in ("em", "subspan_em", "f1", "coverage"):
-                if row.get(key):
-                    scores[key] = float(row[key]) * 100
+            task, budget = row["task"], budget_map.get(row["memory_budget"])
+            if budget is None or task not in target["tasks"]:
+                continue
+            scores = {key: float(row[key]) * 100 for key in ("em", "subspan_em", "f1", "coverage") if row.get(key)}
             primary = scores.get("coverage", scores.get("f1", scores.get("subspan_em", scores.get("em"))))
             if primary is not None:
                 scores["primary_score"] = primary
-            tasks.setdefault(task, {})[budget] = {
+            target["tasks"][task][budget] = {
                 "scores": scores,
                 "samples": int(float(row["num_samples"])),
                 "retained_tokens": float(row["average_retained_context_tokens"]),
@@ -683,33 +686,7 @@ def plain_kvzip_1gb_2gb_sources():
                 "prediction_preview": [],
                 "fraction": 0.5,
             }
-    if not tasks:
-        return []
-    expected_tasks = ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"]
-    budgets = sorted({b for runs in tasks.values() for b in runs}, key=lambda b: float(b.rstrip("GB")))
-    incomplete = sorted(task for task in expected_tasks if set(budgets) - set(tasks.get(task, {})))
-    metric_keys = sorted({key for runs in tasks.values() for run in runs.values() for key in run["scores"]})
-    return [
-        {
-            "id": "plain-kvzip-loft128k-1gb-2gb-postfix",
-            "title": "Plain KVzip (no RLM), 1GB/2GB · Qwen3-4B-Instruct-2507 · post-fix",
-            "group": "loft128k",
-            "group_title": "LOFT 128K",
-            "precision": "Plain KVzip (no RLM), 1GB/2GB · Qwen3-4B-Instruct-2507 · post-fix",
-            "model": "qwen3-4b-instruct-2507",
-            "model_title": "Qwen3-4B-Instruct-2507",
-            "kind": "loft",
-            "budgets": budgets,
-            "provenance": "Plain evaluate.py (no RLM), run on infolab after the attention_patch key-restoration "
-            "fix (commit fc94bd6+) and the dtype fix (torch_dtype vs dtype kwarg). 50% seeded sample "
-            "(fraction=0.5, seed=42). Directly comparable to any pre-fix 1GB/2GB LOFT-128K results.",
-            "budget_provenance": {},
-            "tasks": {t: r for t, r in sorted(tasks.items()) if t in expected_tasks},
-            "metrics": metric_keys,
-            "excluded": incomplete,
-            "updated": datetime.fromtimestamp(csv_path.stat().st_mtime).strftime("%Y-%m-%d %H:%M"),
-        }
-    ]
+    target["updated"] = datetime.fromtimestamp(csv_path.stat().st_mtime).strftime("%Y-%m-%d %H:%M")
 
 
 def budget_label(name: str, kind: str) -> str:
@@ -908,8 +885,8 @@ def build() -> None:
         + rlm_unbounded_nopress_sources()
         + rlm_autosub_sources()
         + rlm_fixedgrid_sources()
-        + plain_kvzip_1gb_2gb_sources()
     )
+    apply_postfix_1gb_2gb_override(datasets)
     # Remove downloads from budgets that are no longer published (for example,
     # an interrupted 8 GB run intentionally excluded from the dashboard).
     published = {
