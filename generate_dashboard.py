@@ -861,13 +861,9 @@ def collect(source):
 
 
 def build() -> None:
-    # The fixed-32K-char-chunk RLM+KVzip family (both the pressed half and the
-    # "Unbounded RLM" no-press ablation) is gone -- superseded by
-    # rlm_autosub_sources()'s budget-derived no-press arm.
     datasets = (
         [collect(source) for source in SOURCES]
         + rlm_sources()
-        + rlm_autosub_sources()
         + rlm_fixedgrid_sources()
     )
     apply_postfix_1gb_2gb_override(datasets)
