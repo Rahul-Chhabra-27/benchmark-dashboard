@@ -485,19 +485,8 @@ def rlm_autosub_sources():
     instead of hiding an entire task until every budget finishes.
     """
     expected_tasks = ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"]
-    budgets = ["100", "256", "400", "512", "750", "1024", "2048"]
+    budgets = ["256", "512", "750", "1024", "2048"]
     variants = [
-        (
-            "rlm/loft128k_autosub_target0.5",
-            AUTOSUB_RUN_DIR_RE,
-            "rlm-autosub-today-kvzip-loft128k",
-            "RLM + KVzip, auto-chunk target {target} (2x compression) · Qwen3-4B-Instruct-2507",
-            "Sub-call chunk size is derived from the memory budget with target compression "
-            "ratio {target} -- i.e. the chunk is sized to 2x the memory budget's own token "
-            "capacity, so that if the root sends the full advertised chunk, exactly half of "
-            "it gets evicted. Realized KV removal (often well under 2x, since the root is "
-            "free to send less than advertised) is reported from each completed run.",
-        ),
         (
             "rlm/loft128k_autosub_nopress_target0.0",
             AUTOSUB_NOPRESS_RUN_DIR_RE,
@@ -872,17 +861,12 @@ def collect(source):
 
 
 def build() -> None:
-    # Only the pressed half of the old fixed-32K-char-chunk RLM+KVzip family
-    # is gone (budget-independent chunk sizing, superseded by
-    # rlm_autosub_sources()'s budget-derived sizing). The "Unbounded RLM"
-    # no-press ablation from that same family is kept via
-    # rlm_unbounded_nopress_sources() -- it's a different comparison
-    # (fixed-chunk, no compression at all) than the budget-swept no-press
-    # arm rlm_autosub_sources() provides.
+    # The fixed-32K-char-chunk RLM+KVzip family (both the pressed half and the
+    # "Unbounded RLM" no-press ablation) is gone -- superseded by
+    # rlm_autosub_sources()'s budget-derived no-press arm.
     datasets = (
         [collect(source) for source in SOURCES]
         + rlm_sources()
-        + rlm_unbounded_nopress_sources()
         + rlm_autosub_sources()
         + rlm_fixedgrid_sources()
     )
