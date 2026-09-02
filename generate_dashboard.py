@@ -698,6 +698,19 @@ def apply_postfix_infolab_overrides(datasets):
                     target["budgets"].append(budget)
     if newest:
         target["updated"] = datetime.fromtimestamp(newest).strftime("%Y-%m-%d %H:%M")
+    # Recompute excluded now that budgets may have grown (e.g. 750MB added for
+    # only 4 of 5 tasks): a task missing any declared budget is a known,
+    # permanent gap here, not "still computing" -- the UI treats excluded
+    # tasks as already-accounted-for rather than blocking the whole budget.
+    target["excluded"] = sorted(
+        task for task, runs in target["tasks"].items() if set(target["budgets"]) - set(runs)
+    )
+    # Distinct from rlm_fixedgrid_sources()'s "excluded" (every task, while its
+    # campaign is still running -- not a permanent gap): this source's gaps
+    # come from a one-off manual CSV addition, so a missing task is known and
+    # final, not "still computing." Only sources built by this override get
+    # the budget-chip leniency in the frontend.
+    target["budget_gate_lenient"] = True
 
 
 def budget_label(name: str, kind: str) -> str:
