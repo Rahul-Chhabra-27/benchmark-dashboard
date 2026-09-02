@@ -568,6 +568,148 @@ def rlm_autosub_sources():
     return sources
 
 
+FIXEDGRID_RUN_DIR_RE = re.compile(
+    r"^loft__(?P<task>.+?)_{3}home.*?__rlm__kvzip-(?P<press>kvzip|no_press)(?P<tokens>[0-9]+)tokens__autosubx(?P<factor>[0-9]+)__fixed$"
+)
+
+
+def rlm_fixedgrid_sources():
+    """Collect the B x F fixed-chunk grid: for budget B and factor F, a sub-call
+    reads N=B*F tokens and KVzip prunes back to B. F=1 cells run no_press as the
+    uncompressed control. Each (B, F) pair becomes its own budget chip, e.g.
+    "256MB x1", since the dashboard's budget axis is one-dimensional.
+    """
+    expected_tasks = ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"]
+    token_to_mb = {1736: 256, 3472: 512, 5086: 750, 6944: 1024, 13888: 2048}
+    variants = [
+        ("rlm/loft128k_fixedgrid_full", "hotpotqa_128k only, 100% data"),
+        ("rlm/loft128k_fixedgrid_50pct", "nq/musique/qampari/quest, seeded 50% sample (seed 42)"),
+    ]
+    grouped, newest = {}, 0.0
+    for run_dir_name, _ in variants:
+        directory = EVAL / run_dir_name
+        if not directory.is_dir():
+            continue
+        for metric_file in sorted(directory.glob("*/metrics.json")):
+            match = FIXEDGRID_RUN_DIR_RE.match(metric_file.parent.name)
+            if not match:
+                continue
+            try:
+                metrics = json.loads(metric_file.read_text())
+            except (OSError, json.JSONDecodeError):
+                continue
+            task = match.group("task")
+            tokens = int(match.group("tokens"))
+            factor = int(match.group("factor"))
+            mb = token_to_mb.get(tokens)
+            budget = f"{mb}MB x{factor}" if mb else f"{tokens}tok x{factor}"
+            newest = max(newest, metric_file.stat().st_mtime)
+            runtime = metrics.get("runtime", {})
+            grouped.setdefault(task, {})[budget] = {
+                "scores": score_fields(metrics, "loft"),
+                "samples": int(metrics.get("num_samples", 0)),
+                "retained_tokens": runtime.get("average_sub_retained_context_tokens"),
+                "original_tokens": runtime.get("average_sub_context_tokens"),
+                "retained_gb": None,
+                "compression": runtime.get("average_sub_compression_ratio"),
+                "prediction_url": None,
+                "prediction_preview": [],
+            }
+    if not grouped:
+        return []
+    all_budgets = sorted(
+        {b for runs in grouped.values() for b in runs},
+        key=lambda b: (int(b.split("MB")[0]) if "MB" in b else 0, int(b.split("x")[-1])),
+    )
+    tasks = {task: runs for task, runs in sorted(grouped.items()) if task in expected_tasks}
+    incomplete = sorted(task for task in expected_tasks if set(all_budgets) - set(grouped.get(task, {})))
+    metric_keys = sorted({key for runs in tasks.values() for run in runs.values() for key in run["scores"]})
+    return [
+        {
+            "id": "rlm-fixedgrid-loft128k",
+            "title": "RLM + KVzip, fixed-chunk B x F grid · Qwen3-4B-Instruct-2507",
+            "group": "loft128k",
+            "group_title": "LOFT 128K",
+            "precision": "RLM + KVzip, fixed-chunk B x F grid · Qwen3-4B-Instruct-2507",
+            "model": "qwen3-4b-instruct-2507",
+            "model_title": "Qwen3-4B-Instruct-2507",
+            "kind": "loft",
+            "budgets": all_budgets,
+            "provenance": "Each budget chip is one (B, F) cell: a sub-call reads N=B*F tokens of the "
+            "document, then KVzip prunes it back to B tokens. x1 cells run no_press as the "
+            "uncompressed control at that budget. hotpotqa_128k runs at 100% data; the other "
+            "four tasks run a reproducible 50% sample (seed 42).",
+            "budget_provenance": {},
+            "tasks": tasks,
+            "metrics": metric_keys,
+            "excluded": incomplete,
+            "updated": datetime.fromtimestamp(newest).strftime("%Y-%m-%d %H:%M") if newest else "—",
+        }
+    ]
+
+
+def plain_kvzip_1gb_2gb_sources():
+    """Plain KVzip (no RLM) LOFT-128K at 1GB/2GB, run on infolab post-PR-fix.
+    Reads the flat summary CSV directly since infolab's /mnt/nas paths don't
+    match the --home-based path prefix collect() expects for the standard
+    per-run-directory sources.
+    """
+    csv_path = ROOT / "kvpress/benchmark_artifacts/logs/running_log/loft128k_1gb_2gb_metrics.csv"
+    if not csv_path.is_file():
+        return []
+    import csv as csv_module
+
+    tasks = {}
+    with open(csv_path, newline="") as f:
+        for row in csv_module.DictReader(f):
+            task = row["task"]
+            budget = f"{float(row['memory_budget']):g}GB"
+            scores = {}
+            for key in ("em", "subspan_em", "f1", "coverage"):
+                if row.get(key):
+                    scores[key] = float(row[key]) * 100
+            primary = scores.get("coverage", scores.get("f1", scores.get("subspan_em", scores.get("em"))))
+            if primary is not None:
+                scores["primary_score"] = primary
+            tasks.setdefault(task, {})[budget] = {
+                "scores": scores,
+                "samples": int(float(row["num_samples"])),
+                "retained_tokens": float(row["average_retained_context_tokens"]),
+                "original_tokens": float(row["average_original_context_tokens"]),
+                "retained_gb": float(row["average_retained_kv_memory_gb"]),
+                "compression": float(row["average_compression_ratio"]),
+                "prediction_url": None,
+                "prediction_preview": [],
+            }
+    if not tasks:
+        return []
+    expected_tasks = ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"]
+    budgets = sorted({b for runs in tasks.values() for b in runs}, key=lambda b: float(b.rstrip("GB")))
+    incomplete = sorted(task for task in expected_tasks if set(budgets) - set(tasks.get(task, {})))
+    metric_keys = sorted({key for runs in tasks.values() for run in runs.values() for key in run["scores"]})
+    return [
+        {
+            "id": "plain-kvzip-loft128k-1gb-2gb-postfix",
+            "title": "Plain KVzip (no RLM), 1GB/2GB · Qwen3-4B-Instruct-2507 · post-fix",
+            "group": "loft128k",
+            "group_title": "LOFT 128K",
+            "precision": "Plain KVzip (no RLM), 1GB/2GB · Qwen3-4B-Instruct-2507 · post-fix",
+            "model": "qwen3-4b-instruct-2507",
+            "model_title": "Qwen3-4B-Instruct-2507",
+            "kind": "loft",
+            "budgets": budgets,
+            "provenance": "Plain evaluate.py (no RLM), run on infolab after the attention_patch key-restoration "
+            "fix (commit fc94bd6+) and the dtype fix (torch_dtype vs dtype kwarg). 50% seeded sample "
+            "(fraction=0.5, seed=42). Directly comparable to any pre-fix 1GB/2GB LOFT-128K results.",
+            "budget_provenance": {},
+            "tasks": {t: r for t, r in sorted(tasks.items()) if t in expected_tasks},
+            "metrics": metric_keys,
+            "excluded": incomplete,
+            "updated": datetime.fromtimestamp(csv_path.stat().st_mtime).strftime("%Y-%m-%d %H:%M"),
+        }
+    ]
+
+
 def budget_label(name: str, kind: str) -> str:
     match = re.search(r"__memory_budget([0-9.]+)(MB|GB)(?:__|$)", name)
     if not match:
@@ -758,7 +900,14 @@ def build() -> None:
     # rlm_unbounded_nopress_sources() -- it's a different comparison
     # (fixed-chunk, no compression at all) than the budget-swept no-press
     # arm rlm_autosub_sources() provides.
-    datasets = [collect(source) for source in SOURCES] + rlm_sources() + rlm_unbounded_nopress_sources() + rlm_autosub_sources()
+    datasets = (
+        [collect(source) for source in SOURCES]
+        + rlm_sources()
+        + rlm_unbounded_nopress_sources()
+        + rlm_autosub_sources()
+        + rlm_fixedgrid_sources()
+        + plain_kvzip_1gb_2gb_sources()
+    )
     # Remove downloads from budgets that are no longer published (for example,
     # an interrupted 8 GB run intentionally excluded from the dashboard).
     published = {

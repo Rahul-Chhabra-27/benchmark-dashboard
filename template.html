@@ -43,7 +43,7 @@ function setModel(m){model=m;let vs=variants().filter(x=>x.model===m);selectedPr
 function toggle(set,value){set.has(value)?set.delete(value):set.add(value);if(!set.size)set.add(value);render()}
 function positionConfig(v,b){return v.budget_provenance?.[b]||v.provenance||'—'}
 function referenceBudget(v){return v.budgets.includes('No compression')?'No compression':v.budgets.includes('KVzip 1% prune')?'KVzip 1% prune':v.budgets.includes('unbounded')?'unbounded':v.budgets[0]}
-function budgetSortKey(b){if(['No compression','Unbounded RLM','KVzip 1% prune','unbounded'].includes(b))return -Infinity;let m=b.match(/^([0-9.]+)\s*(GB|MB)?$/);if(!m)return Infinity;let n=parseFloat(m[1]);return m[2]==='GB'?n*1024:n}
+function budgetSortKey(b){if(['No compression','Unbounded RLM','KVzip 1% prune','unbounded'].includes(b))return -Infinity;let g=b.match(/^([0-9.]+)MB x([0-9.]+)$/);if(g)return parseFloat(g[1])*100+parseFloat(g[2]);let m=b.match(/^([0-9.]+)\s*(GB|MB)?$/);if(!m)return Infinity;let n=parseFloat(m[1]);return m[2]==='GB'?n*1024:n}
 function runFor(row,series){return row.group===series.variant.group?series.variant.tasks[row.task]?.[series.budget]:null}
 function scoreFor(row,series){return runFor(row,series)?.scores?.[metric]??null}
 function seriesLabel(v,b){return `${v.precision} · ${b}`}
