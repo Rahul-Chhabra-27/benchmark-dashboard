@@ -646,44 +646,58 @@ def rlm_fixedgrid_sources():
     ]
 
 
-def apply_postfix_1gb_2gb_override(datasets):
-    """Overwrite loft128k-qwen3-4b-instruct's 1024/2048 (MB-equivalent) budget
-    entries with the post-fix infolab rerun, instead of publishing them as a
-    separate source. The attention_patch key-restoration fix only changes
-    behavior at >=1GB budgets (verified empirically against pre-fix LOFT-32K
-    predictions), so these two budgets' old numbers were computed with the bug
-    present and should not coexist with the corrected ones.
+def apply_postfix_infolab_overrides(datasets):
+    """Overwrite/add loft128k-qwen3-4b-instruct budget entries from post-fix
+    infolab CSV reruns, instead of publishing them as separate sources. The
+    attention_patch key-restoration fix only changes behavior at >=1GB
+    budgets (verified empirically against pre-fix LOFT-32K predictions);
+    750MB is below that line and unaffected by the fix, but wasn't part of
+    the original published matrix, so it's a new budget column, not an
+    override. Each CSV row's own memory_budget/memory_budget_unit decides
+    the target budget key -- no per-file hardcoding of values.
     """
-    csv_path = ROOT / "kvpress/benchmark_artifacts/logs/running_log/loft128k_1gb_2gb_metrics.csv"
-    if not csv_path.is_file():
-        return
+    csv_paths = [
+        ROOT / "kvpress/benchmark_artifacts/logs/running_log/loft128k_1gb_2gb_metrics.csv",
+        ROOT / "kvpress/benchmark_artifacts/logs/running_log/loft128k_750mb_metrics.csv",
+    ]
     target = next((d for d in datasets if d["id"] == "loft128k-qwen3-4b-instruct"), None)
     if target is None:
         return
     import csv as csv_module
 
-    budget_map = {"1.0": "1024", "2.0": "2048"}
-    with open(csv_path, newline="") as f:
-        for row in csv_module.DictReader(f):
-            task, budget = row["task"], budget_map.get(row["memory_budget"])
-            if budget is None or task not in target["tasks"]:
-                continue
-            scores = {key: float(row[key]) * 100 for key in ("em", "subspan_em", "f1", "coverage") if row.get(key)}
-            primary = scores.get("coverage", scores.get("f1", scores.get("subspan_em", scores.get("em"))))
-            if primary is not None:
-                scores["primary_score"] = primary
-            target["tasks"][task][budget] = {
-                "scores": scores,
-                "samples": int(float(row["num_samples"])),
-                "retained_tokens": float(row["average_retained_context_tokens"]),
-                "original_tokens": float(row["average_original_context_tokens"]),
-                "retained_gb": float(row["average_retained_kv_memory_gb"]),
-                "compression": float(row["average_compression_ratio"]),
-                "prediction_url": None,
-                "prediction_preview": [],
-                "fraction": 0.5,
-            }
-    target["updated"] = datetime.fromtimestamp(csv_path.stat().st_mtime).strftime("%Y-%m-%d %H:%M")
+    newest = 0.0
+    for csv_path in csv_paths:
+        if not csv_path.is_file():
+            continue
+        newest = max(newest, csv_path.stat().st_mtime)
+        with open(csv_path, newline="") as f:
+            for row in csv_module.DictReader(f):
+                task = row["task"]
+                if task not in target["tasks"]:
+                    continue
+                value, unit = float(row["memory_budget"]), row["memory_budget_unit"]
+                budget = f"{value * (1024 if unit == 'GB' else 1):g}"
+                scores = {
+                    key: float(row[key]) * 100 for key in ("em", "subspan_em", "f1", "coverage") if row.get(key)
+                }
+                primary = scores.get("coverage", scores.get("f1", scores.get("subspan_em", scores.get("em"))))
+                if primary is not None:
+                    scores["primary_score"] = primary
+                target["tasks"][task][budget] = {
+                    "scores": scores,
+                    "samples": int(float(row["num_samples"])),
+                    "retained_tokens": float(row["average_retained_context_tokens"]),
+                    "original_tokens": float(row["average_original_context_tokens"]),
+                    "retained_gb": float(row["average_retained_kv_memory_gb"]),
+                    "compression": float(row["average_compression_ratio"]),
+                    "prediction_url": None,
+                    "prediction_preview": [],
+                    "fraction": 0.5,
+                }
+                if budget not in target["budgets"]:
+                    target["budgets"].append(budget)
+    if newest:
+        target["updated"] = datetime.fromtimestamp(newest).strftime("%Y-%m-%d %H:%M")
 
 
 def budget_label(name: str, kind: str) -> str:
@@ -874,7 +888,7 @@ def build() -> None:
         + rlm_sources()
         + rlm_fixedgrid_sources()
     )
-    apply_postfix_1gb_2gb_override(datasets)
+    apply_postfix_infolab_overrides(datasets)
     # Remove downloads from budgets that are no longer published (for example,
     # an interrupted 8 GB run intentionally excluded from the dashboard).
     published = {
