@@ -594,8 +594,16 @@ def rlm_fixedgrid_sources():
             budget = f"{mb}MB x{factor}" if mb else f"{tokens}tok x{factor}"
             newest = max(newest, metric_file.stat().st_mtime)
             runtime = metrics.get("runtime", {})
+            scores = score_fields(metrics, "loft")
+            # RLM-only, not the shared canonical scorer: a looser substring-
+            # containment check ("does a gold answer string appear anywhere in
+            # the prediction"). Kept as its own field, never folded into
+            # primary_score, so it's never silently compared against plain
+            # KVzip's em/subspan_em/f1/coverage as if it were the same metric.
+            if runtime.get("progress_match_loose") is not None:
+                scores["progress_match_loose"] = float(runtime["progress_match_loose"]) * 100
             grouped.setdefault(task, {})[budget] = {
-                "scores": score_fields(metrics, "loft"),
+                "scores": scores,
                 "samples": int(metrics.get("num_samples", 0)),
                 "retained_tokens": runtime.get("average_sub_retained_context_tokens"),
                 "original_tokens": runtime.get("average_sub_context_tokens"),
