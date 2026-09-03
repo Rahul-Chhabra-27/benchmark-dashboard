@@ -633,6 +633,13 @@ def rlm_fixedgrid_sources():
             "model_title": "Qwen3-4B-Instruct-2507",
             "kind": "loft",
             "budgets": all_budgets,
+            # quest_128k's 2048MB x8 cell hit a pathological multi-hour hang (many
+            # RLM sub-call retries on one hard example) and was accepted as a gap
+            # rather than waited out further -- exempted here so the chip enables
+            # without the other 4 tasks' completed data waiting on it forever.
+            # Per-(task, budget) exemption, not the source-wide leniency flag,
+            # so genuinely still-computing budgets (the 4GB row) stay disabled.
+            "gap_exempt": {"quest_128k": ["2048MB x8"]},
             "provenance": "Each budget chip is one (B, F) cell: a sub-call reads N=B*F tokens of the "
             "document, then KVzip prunes it back to B tokens. x1 cells run no_press as the "
             "uncompressed control at that budget. hotpotqa_128k runs at 100% data; the other "
