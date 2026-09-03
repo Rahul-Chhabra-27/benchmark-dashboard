@@ -659,6 +659,7 @@ def apply_postfix_infolab_overrides(datasets):
     csv_paths = [
         ROOT / "kvpress/benchmark_artifacts/logs/running_log/loft128k_1gb_2gb_metrics.csv",
         ROOT / "kvpress/benchmark_artifacts/logs/running_log/loft128k_750mb_metrics.csv",
+        ROOT / "kvpress/benchmark_artifacts/loft128k_750mb_4gb_metrics.csv",
     ]
     target = next((d for d in datasets if d["id"] == "loft128k-qwen3-4b-instruct"), None)
     if target is None:
