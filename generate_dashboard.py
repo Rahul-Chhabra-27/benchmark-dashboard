@@ -590,6 +590,13 @@ def rlm_fixedgrid_sources():
             task = match.group("task")
             tokens = int(match.group("tokens"))
             factor = int(match.group("factor"))
+            if factor == 16:
+                # F=16 is consistently the weakest cell everywhere it's been
+                # tested (well below each task's own best), and it's also
+                # where every permanently-impossible cell lives (chunk bigger
+                # than the document itself). Dropped from the dashboard grid
+                # rather than kept as a column of mostly gaps and weak scores.
+                continue
             mb = token_to_mb.get(tokens)
             budget = f"{mb}MB x{factor}" if mb else f"{tokens}tok x{factor}"
             newest = max(newest, metric_file.stat().st_mtime)
