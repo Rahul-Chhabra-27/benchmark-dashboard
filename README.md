@@ -18,6 +18,14 @@ LOFT provenance is displayed directly in the dashboard:
   previews and downloadable CSV files containing every question, reference,
   prediction, and run statistic.
 
+The `RLM(new)` LOFT-128K source (September 5-7 campaign, source commit
+`c448c97`) is the one exception to the "regenerate from a run tree" rule: its
+raw runs are not reachable from this repo, so it is rebuilt from
+`data/rlm_new_loft128k.csv`, which is the record of truth for those cells. Its
+budget chips are labelled in GB (`2GB x4`) rather than the fixed-chunk grid's MB
+so the two RLM campaigns never share a chip -- their budget conversions are not
+verified against each other here.
+
 Regenerate after evaluations finish:
 
 ```bash
