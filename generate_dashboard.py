@@ -660,6 +660,99 @@ def rlm_fixedgrid_sources():
     ]
 
 
+RLM_NEW_CSV = Path(__file__).with_name("data") / "rlm_new_loft128k.csv"
+RLM_NEW_EXPECTED_TASKS = ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"]
+
+
+def rlm_new_loft128k_sources():
+    """The September 5-7 RLM campaign (source commit c448c97), read from a CSV
+    committed alongside this script rather than from a run tree.
+
+    Unlike every other source here, the raw run directories for this campaign
+    are not reachable from this repo, so the exported per-cell metrics CSV is
+    the record of truth. That also makes this source regenerable from a clean
+    checkout on any machine.
+
+    Each budget chip is one (logical KV budget, chunk factor) cell, labelled in
+    GB rather than the fixed-chunk grid's MB so the two campaigns never share a
+    chip: their budgets are quoted under conversions this repo cannot verify
+    against each other, and silently merging them would compare cells that only
+    look alike.
+    """
+    if not RLM_NEW_CSV.is_file():
+        return []
+    grouped = {}
+    with RLM_NEW_CSV.open(newline="") as handle:
+        for row in csv.DictReader(handle):
+            task = row["dataset"]
+            gb = float(row["logical_kv_budget_gb"])
+            gb_label = int(gb) if gb == int(gb) else gb
+            budget = f"{gb_label}GB x{int(row['chunk_factor'])}"
+            factor = float(row["effective_compression_factor"])
+            grouped.setdefault(task, {})[budget] = {
+                "scores": {
+                    "em": float(row["em"]) * 100,
+                    "subspan_em": float(row["subspan_em"]) * 100,
+                    "f1": float(row["f1"]) * 100,
+                    # LOFT's primary_score is f1 for these tasks, matching the
+                    # other LOFT sources on this dashboard.
+                    "primary_score": float(row["f1"]) * 100,
+                    # How much of the document the RLM actually read. This is an
+                    # RLM sizing statistic, NOT the LOFT "coverage" scorer, so it
+                    # gets its own key and is never folded into primary_score.
+                    "document_coverage": float(row["document_coverage_fraction"]) * 100,
+                },
+                "samples": int(row["num_samples"]),
+                "retained_tokens": int(row["kv_budget_tokens"]),
+                "original_tokens": int(row["chunk_tokens"]),
+                "retained_gb": gb,
+                # Fraction of the chunk's KV removed by the press; the x1 cells
+                # run no_press, so nothing is removed.
+                "compression": 0.0 if factor <= 1 else 1 - 1 / factor,
+                "prediction_url": None,
+                "prediction_preview": [],
+                # Not a subsample: every cell is the same 55-example set, so
+                # these runs opt out of the sample-fraction filter entirely.
+                "fraction": None,
+            }
+    if not grouped:
+        return []
+    tasks = {task: runs for task, runs in sorted(grouped.items())}
+    all_budgets = sorted(
+        {b for runs in tasks.values() for b in runs},
+        key=lambda b: (float(b.split("GB")[0]), int(b.split("x")[-1])),
+    )
+    return [
+        {
+            "id": "rlm-new-loft128k",
+            "title": "RLM(new) · post-c448c97 · Qwen3-4B-Instruct-2507",
+            "group": "loft128k",
+            "group_title": "LOFT 128K",
+            "precision": "RLM(new), post-c448c97 · Qwen3-4B-Instruct-2507",
+            "model": "qwen3-4b-instruct-2507",
+            "model_title": "Qwen3-4B-Instruct-2507",
+            "kind": "loft",
+            "budgets": all_budgets,
+            "provenance": "RLM(new), source commit c448c97 · 1,024-token scratchpad · search_k=0 · "
+            "each chip is one (logical KV budget, chunk factor) cell: a sub-call reads "
+            "budget x factor tokens, then KVzip prunes back to the budget; x1 cells run "
+            "no_press as the uncompressed control. Logical budgets are decimal GB at "
+            "147,456 bytes/token -- simulated KV retention, not measured GPU memory. "
+            "16 example-runs across 10 cells hit a GPU-fit error and 14 predictions were "
+            "unfinished; both are included in these scores (see RLM-new-loft128k.csv).",
+            "budget_provenance": {},
+            "tasks": tasks,
+            # "coverage" is declared but never populated: no cell in this campaign
+            # computed LOFT's coverage scorer. It stays listed so that selecting
+            # this source alongside the other LOFT-128K sources does not drop
+            # coverage out of the shared metric dropdown for all of them.
+            "metrics": ["coverage", "document_coverage", "em", "f1", "primary_score", "subspan_em"],
+            "excluded": [t for t in RLM_NEW_EXPECTED_TASKS if t not in tasks],
+            "updated": "2026-09-07 15:45",
+        }
+    ]
+
+
 def apply_postfix_infolab_overrides(datasets):
     """Overwrite/add loft128k-qwen3-4b-instruct budget entries from post-fix
     infolab CSV reruns, instead of publishing them as separate sources. The
@@ -915,6 +1008,7 @@ def build() -> None:
         [collect(source) for source in SOURCES]
         + rlm_sources()
         + rlm_fixedgrid_sources()
+        + rlm_new_loft128k_sources()
     )
     apply_postfix_infolab_overrides(datasets)
     # Remove downloads from budgets that are no longer published (for example,
