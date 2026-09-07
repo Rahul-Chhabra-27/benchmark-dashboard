@@ -569,7 +569,7 @@ def rlm_fixedgrid_sources():
     "256MB x1", since the dashboard's budget axis is one-dimensional.
     """
     expected_tasks = ["nq_128k", "hotpotqa_128k", "musique_128k", "qampari_128k", "quest_128k"]
-    token_to_mb = {1736: 256, 3472: 512, 5086: 750, 6944: 1024, 13888: 2048}
+    token_to_mb = {1736: 256, 3472: 512, 5086: 750, 6944: 1024, 13888: 2048, 27126: 4096}
     variants = [
         ("rlm/loft128k_fixedgrid_full", "hotpotqa_128k only, 100% data"),
         ("rlm/loft128k_fixedgrid_50pct", "nq/musique/qampari/quest, seeded 50% sample (seed 42)"),
@@ -647,18 +647,19 @@ def rlm_fixedgrid_sources():
             # Per-(task, budget) exemption, not the source-wide leniency flag,
             # so genuinely still-computing budgets (the 4GB row) stay disabled.
             #
-            # hotpotqa_128k's 27126tok x8 cell is a TEMPORARY exemption, not a
+            # hotpotqa_128k's 4096MB x8 cell is a TEMPORARY exemption, not a
             # permanent gap: its post-widenfix-clamp rerun crashed on a GPU
-            # preflight check (47.3GiB free vs ~48GiB needed -- transient node
-            # contention, not a real failure) and was resubmitted as job 304897.
-            # Exempted so the rest of the 4GB row (nq/musique/qampari/quest, all
-            # already complete after the fix) isn't held back waiting on a rerun
-            # that's actively in flight. Remove this entry once 304897 lands.
-            "gap_exempt": {"quest_128k": ["2048MB x8"], "hotpotqa_128k": ["27126tok x8"]},
+            # preflight check (47.3GiB then 39.5GiB free vs ~48GiB needed --
+            # transient node contention, not a real failure) and has been
+            # resubmitted (job 304903, busy nodes excluded). Exempted so the
+            # rest of the 4GB row (nq/musique/qampari/quest, all already
+            # complete after the fix) isn't held back waiting on a rerun
+            # that's actively in flight. Remove this entry once it lands.
+            "gap_exempt": {"quest_128k": ["2048MB x8"], "hotpotqa_128k": ["4096MB x8"]},
             "provenance": "Each budget chip is one (B, F) cell: a sub-call reads N=B*F tokens of the "
             "document, then KVzip prunes it back to B tokens. x1 cells run no_press as the "
             "uncompressed control at that budget. hotpotqa_128k runs at 100% data; the other "
-            "four tasks run a reproducible 50% sample (seed 42). hotpotqa_128k's 27126tok x8 "
+            "four tasks run a reproducible 50% sample (seed 42). hotpotqa_128k's 4096MB x8 "
             "cell is a rerun in progress (GPU preflight crash, resubmitted) -- expect it to "
             "appear within this row shortly.",
             "budget_provenance": {},
