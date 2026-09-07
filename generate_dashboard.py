@@ -646,11 +646,21 @@ def rlm_fixedgrid_sources():
             # without the other 4 tasks' completed data waiting on it forever.
             # Per-(task, budget) exemption, not the source-wide leniency flag,
             # so genuinely still-computing budgets (the 4GB row) stay disabled.
-            "gap_exempt": {"quest_128k": ["2048MB x8"]},
+            #
+            # hotpotqa_128k's 27126tok x8 cell is a TEMPORARY exemption, not a
+            # permanent gap: its post-widenfix-clamp rerun crashed on a GPU
+            # preflight check (47.3GiB free vs ~48GiB needed -- transient node
+            # contention, not a real failure) and was resubmitted as job 304897.
+            # Exempted so the rest of the 4GB row (nq/musique/qampari/quest, all
+            # already complete after the fix) isn't held back waiting on a rerun
+            # that's actively in flight. Remove this entry once 304897 lands.
+            "gap_exempt": {"quest_128k": ["2048MB x8"], "hotpotqa_128k": ["27126tok x8"]},
             "provenance": "Each budget chip is one (B, F) cell: a sub-call reads N=B*F tokens of the "
             "document, then KVzip prunes it back to B tokens. x1 cells run no_press as the "
             "uncompressed control at that budget. hotpotqa_128k runs at 100% data; the other "
-            "four tasks run a reproducible 50% sample (seed 42).",
+            "four tasks run a reproducible 50% sample (seed 42). hotpotqa_128k's 27126tok x8 "
+            "cell is a rerun in progress (GPU preflight crash, resubmitted) -- expect it to "
+            "appear within this row shortly.",
             "budget_provenance": {},
             "tasks": tasks,
             "metrics": metric_keys,
