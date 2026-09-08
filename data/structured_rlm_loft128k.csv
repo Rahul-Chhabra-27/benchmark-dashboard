@@ -1,4 +1,6 @@
 source,arm,task,samples,subspan_em,em,peak_context_tokens,section
+baseline,vanilla · whole 128k in-window · no RLM,nq_128k,110,0.500,,118661,arms 1-3 (2026-08-27)
+baseline,vanilla · whole 128k in-window · no RLM,hotpotqa_128k,110,0.455,,121294,arms 1-3 (2026-08-27)
 full55,A · agentic · str.find,nq_128k,55,0.5091,,2255,§1 §2
 full55,A · agentic · str.find,hotpotqa_128k,55,0.3818,,2170,§1 §2
 full55,B · agentic · search_k=5,nq_128k,55,0.6000,,2562,§1 §2

@@ -773,6 +773,24 @@ STRUCTURED_RLM_CSV = Path(__file__).with_name("data") / "structured_rlm_loft128k
 # under one task label, which is exactly the comparison the campaign write-up
 # spends its caveats warning against.
 STRUCTURED_RLM_SOURCES = {
+    # Listed FIRST so its chip leads the group and setGroup preselects it: the
+    # template puts 'No compression'/'unbounded' first everywhere else, and this
+    # is the same idea under a name budgetSortKey has no rule for.
+    "baseline": {
+        "title": "Baseline · whole 128k in-window, no RLM",
+        "precision": "Vanilla (no RLM) · Qwen3-4B-Instruct-2507",
+        "blurb": "The no-recursion control: the entire LOFT document in the model's "
+        "window, answered in one call. Qwen3-4B-2507 is natively 262,144 and was "
+        "served at --max-model-len 139264, so nothing was truncated "
+        "(context_retained = 1.0) and there is no context wall at 128k for the RLM "
+        "to be worth paying for -- vanilla outscores every RLM arm here. The "
+        "defensible RLM result is the cost axis beside it: ~2,000 peak tokens "
+        "against ~120,000, for 71-82% of vanilla's score. DIFFERENT ROW SET: n=110 "
+        "(LOFT dev 10 + test 100) from the 2026-08-27 arms 1-3 campaign, where every "
+        "other source here is 55 test rows. Read it as a reference line, NOT as a "
+        "paired comparison -- no significance test on this dashboard crosses that "
+        "boundary.",
+    },
     "full55": {
         "title": "Structured vs agentic · full 55 rows",
         "precision": "Structured RLM · full 55 · Qwen3-4B-Instruct-2507",
@@ -851,7 +869,11 @@ def structured_rlm_sources():
                 "samples": int(row["samples"]),
                 # Mean peak ROOT context, the axis compare.py puts against
                 # KVPress's retained tokens. Absent for the arms whose peak was
-                # not measured on that row set.
+                # not measured on that row set. The baseline's figure is the
+                # document MEASURED with the Qwen3-4B-Instruct-2507 tokenizer
+                # (118,606 / 121,229 tokens plus the question), not a number read
+                # back from that run's metrics.json -- its run tree is not
+                # reachable from here either.
                 "retained_tokens": int(peak) if peak else None,
                 "original_tokens": None,
                 "retained_gb": None,

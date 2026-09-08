@@ -38,8 +38,13 @@ second CSV-backed exception, rebuilt from `data/structured_rlm_loft128k.csv` by
   its own group: the metric dropdown is the intersection across the sources
   selected in a group, so putting a short metric list beside the LOFT-128K
   sources would strip f1 and coverage from all of them.
-- It is **four sources, not one**, because the campaign scored four different row
-  sets: all 55 rows per subset, the 51-row hard slice, and two pooled-only
+- Its **baseline chip is a different row set**. `vanilla · whole 128k in-window ·
+  no RLM` comes from the 2026-08-27 arms 1-3 campaign at **n=110** (LOFT dev 10 +
+  test 100); every other chip in the tab is 55 test rows. It is a reference line,
+  not a paired comparison. Its "Retained tokens" is the document measured with
+  the Qwen3-4B-Instruct-2507 tokenizer, not a figure from that run's metrics.
+- It is **five sources, not one**, because the campaign scored several different
+  row sets: all 55 rows per subset, the 51-row hard slice, and two pooled-only
   ablations. They are kept apart so no single task label ever mixes denominators.
   The hard-slice sources are selected on arm B answering wrongly, which
   disadvantages the arm sharing B's chunks by construction -- the per-source
