@@ -1,0 +1,33 @@
+source,arm,task,samples,subspan_em,em,peak_context_tokens,section
+full55,A · agentic · str.find,nq_128k,55,0.5091,,2255,§1 §2
+full55,A · agentic · str.find,hotpotqa_128k,55,0.3818,,2170,§1 §2
+full55,B · agentic · search_k=5,nq_128k,55,0.6000,,2562,§1 §2
+full55,B · agentic · search_k=5,hotpotqa_128k,55,0.4000,,2619,§1 §2
+full55,B′ rev1 · structured · BM25,nq_128k,55,0.4727,0.400,315,§1 §2 §4
+full55,B′ rev1 · structured · BM25,hotpotqa_128k,55,0.4000,0.127,386,§1 §2 §4
+full55,B′ rev2 · structured · BM25,nq_128k,55,0.5273,0.364,315,§1 §2 §4
+full55,B′ rev2 · structured · BM25,hotpotqa_128k,55,0.3455,0.236,386,§1 §2 §4
+full55,abl 1 · bare query map prompt,nq_128k,55,0.4364,,,§5.2
+full55,abl 1 · bare query map prompt,hotpotqa_128k,55,0.2545,,,§5.2
+full55,abl 2 · one merged map call,nq_128k,55,0.5455,,,§5.3
+full55,abl 2 · one merged map call,hotpotqa_128k,55,0.4000,,,§5.3
+hardslice,A · agentic · str.find,nq_128k,22,0.2727,,,§3
+hardslice,A · agentic · str.find,hotpotqa_128k,29,0.4138,,,§3
+hardslice,B · agentic · search_k=5,nq_128k,22,0.0455,,,§3
+hardslice,B · agentic · search_k=5,hotpotqa_128k,29,0.0345,,,§3
+hardslice,B′ rev2 · structured · BM25,nq_128k,22,0.3636,,,§3
+hardslice,B′ rev2 · structured · BM25,hotpotqa_128k,29,0.3103,,,§3
+hardslice,C rev1 · structured · selector,nq_128k,22,0.6818,0.091,,§3 §4
+hardslice,C rev1 · structured · selector,hotpotqa_128k,29,0.4828,0.069,,§3 §4
+hardslice,C rev2 · structured · selector,nq_128k,22,0.6364,0.409,325,§2 §3 §4
+hardslice,C rev2 · structured · selector,hotpotqa_128k,29,0.3448,0.172,456,§2 §3 §4
+rev2_2x2,cluster off · shape offer (B′ rev1),pooled_n110,110,0.4364,0.2636,,§5.1
+rev2_2x2,cluster off · shape require (abl 5),pooled_n110,110,0.4000,0.3091,,§5.1
+rev2_2x2,cluster on · shape offer (abl 3),pooled_n110,110,0.4727,0.1091,,§5.1
+rev2_2x2,cluster on · shape require (B′ rev2),pooled_n110,110,0.4364,0.3000,,§5.1
+transfer,C · structured · selector chunks,pooled_n51,51,0.4706,0.2745,400,§5.4
+transfer,A · agentic · no chunks,pooled_n51,51,0.3529,,,§5.4
+transfer,4c · agentic · frozen BM25,pooled_n51,51,0.2745,0.2353,1971,§5.4
+transfer,4 · agentic · selector chunks,pooled_n51,51,0.1569,0.0588,5166,§5.4
+transfer,4c capped · agentic · frozen BM25,pooled_n51,51,0.3529,0.2941,2184,§5.4
+transfer,4 capped · agentic · selector chunks,pooled_n51,51,0.2353,0.1176,5284,§5.4

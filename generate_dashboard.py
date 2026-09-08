@@ -764,6 +764,152 @@ def rlm_new_loft128k_sources():
     ]
 
 
+STRUCTURED_RLM_CSV = Path(__file__).with_name("data") / "structured_rlm_loft128k.csv"
+
+# One entry per source id in the CSV's `source` column. Each is published as its
+# OWN dashboard source rather than as chips on a shared one, because the four
+# differ in which rows they scored: 55 per subset, the 51-row hard slice, and two
+# pooled-only row sets. Merging them would put scores with different denominators
+# under one task label, which is exactly the comparison the campaign write-up
+# spends its caveats warning against.
+STRUCTURED_RLM_SOURCES = {
+    "full55": {
+        "title": "Structured vs agentic · full 55 rows",
+        "precision": "Structured RLM · full 55 · Qwen3-4B-Instruct-2507",
+        "blurb": "All 55 rows of each subset, nothing selected on. Arms A/B are the "
+        "agentic REPL; B' is the same BM25 chunks read by the fixed map->reduce "
+        "pipeline. Ablations 1 and 2 each remove one revision-2 difference.",
+    },
+    "hardslice": {
+        "title": "Structured vs agentic · hard slice (n=51)",
+        "precision": "Structured RLM · hard slice · Qwen3-4B-Instruct-2507",
+        "blurb": "The 51 rows where arm B retrieved the gold answer string and still "
+        "answered wrongly (nq 22 of 55, hotpotqa 29 of 29+). SELECTED ON ARM B BEING "
+        "WRONG, so B' -- which shares B's chunks -- is disadvantaged by construction "
+        "and C is not; arm A is reported beside it as the unselected comparator.",
+    },
+    "rev2_2x2": {
+        "title": "Revision-2 ablation · clustering x answer shape",
+        "precision": "Structured RLM · rev-2 2x2 pooled · Qwen3-4B-Instruct-2507",
+        "blurb": "The 2x2 that separates revision 2's two confounded changes, pooled "
+        "over both subsets (n=110). Clustering is worth +0.036 subspan at both prompt "
+        "settings; requiring the answer shape costs -0.036 subspan and buys em. "
+        "Neither is significant alone at this n.",
+    },
+    "transfer": {
+        "title": "Selector chunks read by the agentic root",
+        "precision": "Structured RLM · chunk transfer pooled · Qwen3-4B-Instruct-2507",
+        "blurb": "The hard slice's 51 rows, pooled. The same windows are worth 0.4706 "
+        "subspan to the fixed pipeline (C) and 0.2353 to the agentic loop (run 4 "
+        "capped) -- the selector's advantage is a property of the pipeline, not the "
+        "chunks. Uncapped run 4 re-searched 21.4x per example against the frozen "
+        "control's 1.7; the capped rows are the honest version.",
+    },
+}
+
+
+def structured_rlm_sources():
+    """The 2026-09-08 structured-chunks campaign (source commit 24f54e4).
+
+    Like `rlm_new_loft128k_sources`, and for the same reason, this is rebuilt
+    from a CSV committed beside this script: the run trees live on the compute
+    host and are not reachable from this repo. Unlike that source, the record of
+    truth behind the CSV is the campaign write-up
+    (`evaluation/rlm/STRUCTURED_RESULTS.md` in the benchmark repo), whose own
+    tables were re-derived from `metrics.json`.
+
+    Two things this campaign does NOT carry, and why they are absent rather than
+    zero-filled:
+
+    * **No f1, and therefore no LOFT `primary_score`.** The write-up scores
+      `subspan_em` (LOFT's own headline for these tasks) and `em`; f1 was never
+      computed. `primary_score` is published here AS `subspan_em` so the metric
+      selector has a working default, and the provenance string says so. This is
+      why the campaign gets its own group: within a group the metric dropdown is
+      the intersection across selected sources, so declaring a short metric list
+      next to the LOFT-128K sources would strip f1 and coverage from all of them.
+    * **No compression figures.** No arm here runs a press -- the axis the
+      campaign measures is peak ROOT context, which is published in the
+      `retained_tokens` column. `compression` is left None so the KV-removed
+      columns render as "--" instead of implying an uncompressed run was
+      measured at 0%.
+    """
+    if not STRUCTURED_RLM_CSV.is_file():
+        return []
+    grouped = {}
+    with STRUCTURED_RLM_CSV.open(newline="") as handle:
+        for row in csv.DictReader(handle):
+            scores = {"subspan_em": float(row["subspan_em"]) * 100}
+            # Published as the default metric, NOT as a separate measurement:
+            # see the docstring. Kept in lockstep with subspan_em.
+            scores["primary_score"] = scores["subspan_em"]
+            if row["em"]:
+                scores["em"] = float(row["em"]) * 100
+            peak = row["peak_context_tokens"]
+            grouped.setdefault(row["source"], {}).setdefault(row["task"], {})[row["arm"]] = {
+                "scores": scores,
+                "samples": int(row["samples"]),
+                # Mean peak ROOT context, the axis compare.py puts against
+                # KVPress's retained tokens. Absent for the arms whose peak was
+                # not measured on that row set.
+                "retained_tokens": int(peak) if peak else None,
+                "original_tokens": None,
+                "retained_gb": None,
+                "compression": None,
+                "prediction_url": None,
+                "prediction_preview": [],
+                "fraction": None,
+            }
+    datasets = []
+    for source_id, meta in STRUCTURED_RLM_SOURCES.items():
+        tasks = grouped.get(source_id)
+        if not tasks:
+            continue
+        # Chip order is the CSV's order, which is the write-up's: arms first,
+        # then the ablations that were run against them. budgetSortKey has no
+        # rule for these labels, so the template's sort leaves this order alone.
+        arms = []
+        for runs in tasks.values():
+            for arm in runs:
+                if arm not in arms:
+                    arms.append(arm)
+        # A chip is greyed out unless every task of every source declaring it has
+        # a run there. Each source here holds exactly one row set, so its tasks
+        # all carry the same arms and no gap_exempt is needed -- assert it rather
+        # than trusting the CSV, since a missing cell would silently disable the
+        # chip for the whole group.
+        for task, runs in tasks.items():
+            missing = [arm for arm in arms if arm not in runs]
+            assert not missing, f"{source_id}/{task} is missing arms {missing}"
+        datasets.append(
+            {
+                "id": f"structured-rlm-{source_id.replace('_', '-')}",
+                "title": meta["title"],
+                "group": "structured-rlm",
+                "group_title": "Structured RLM · LOFT 128K",
+                "precision": meta["precision"],
+                "model": "qwen3-4b-instruct-2507",
+                "model_title": "Qwen3-4B-Instruct-2507",
+                "kind": "loft",
+                "budgets": arms,
+                "provenance": meta["blurb"]
+                + " Source commit 24f54e4, one served vLLM at temperature 0.0, scored by "
+                "the shared score_prediction_frame. Chips are ARMS, not KV budgets: no arm "
+                "here runs a press, so the KV-removed columns stay empty. \"Retained "
+                "tokens\" is mean peak ROOT context. primary_score IS subspan_em -- f1 was "
+                "never computed for this campaign. Rebuilt from "
+                "data/structured_rlm_loft128k.csv; the record of truth is "
+                "evaluation/rlm/STRUCTURED_RESULTS.md in the benchmark repo.",
+                "budget_provenance": {},
+                "tasks": dict(sorted(tasks.items())),
+                "metrics": ["em", "primary_score", "subspan_em"],
+                "excluded": [],
+                "updated": "2026-09-08 15:00",
+            }
+        )
+    return datasets
+
+
 def apply_postfix_infolab_overrides(datasets):
     """Overwrite/add loft128k-qwen3-4b-instruct budget entries from post-fix
     infolab CSV reruns, instead of publishing them as separate sources. The
@@ -1020,6 +1166,7 @@ def build() -> None:
         + rlm_sources()
         + rlm_fixedgrid_sources()
         + rlm_new_loft128k_sources()
+        + structured_rlm_sources()
     )
     apply_postfix_infolab_overrides(datasets)
     # Remove downloads from budgets that are no longer published (for example,
