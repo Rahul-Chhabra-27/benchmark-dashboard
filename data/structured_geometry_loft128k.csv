@@ -1,0 +1,41 @@
+source,arm,task,samples,metric,score,em,peak_context_tokens,gold_in_retrieved,chars_admitted
+geometry,published · w2000 k5 · task query,nq_128k,55,subspan_em,0.5455,0.3455,316,0.655,10000
+geometry,published · w2000 k5 · task query,hotpotqa_128k,55,subspan_em,0.3455,0.2545,385,0.636,10000
+geometry,published · w2000 k5 · task query,musique_128k,55,subspan_em,0.1091,0.0364,379,0.291,10000
+geometry,w2000 k10 · task query,nq_128k,55,subspan_em,0.6727,0.4727,325,0.800,20000
+geometry,w2000 k10 · task query,hotpotqa_128k,55,subspan_em,0.4545,0.3455,446,0.818,20000
+geometry,w2000 k10 · task query,musique_128k,55,subspan_em,0.1818,0.1091,460,0.527,20000
+geometry,w8000 k10 · task query,nq_128k,55,subspan_em,0.7091,0.4909,308,0.909,80000
+geometry,w8000 k10 · task query,hotpotqa_128k,55,subspan_em,0.4727,0.3091,397,0.891,80000
+geometry,w8000 k10 · task query,musique_128k,55,subspan_em,0.1273,0.0727,405,0.655,80000
+geometry,w1000 k5 · BARE query,nq_128k,55,subspan_em,0.6909,0.4909,344,0.964,5000
+geometry,w1000 k5 · BARE query,hotpotqa_128k,55,subspan_em,0.5273,0.4000,431,0.909,5000
+geometry,w1000 k5 · BARE query,musique_128k,55,subspan_em,0.1818,0.0909,436,0.618,5000
+geometry,w2000 k2 · BARE query,nq_128k,55,subspan_em,0.8000,0.6000,309,0.945,4000
+geometry,w2000 k2 · BARE query,hotpotqa_128k,55,subspan_em,0.3636,0.2727,414,0.709,4000
+geometry,w2000 k2 · BARE query,musique_128k,55,subspan_em,0.1091,0.0727,403,0.382,4000
+geometry,w2000 k5 · BARE query,nq_128k,55,subspan_em,0.7818,0.6182,315,0.964,10000
+geometry,w2000 k5 · BARE query,hotpotqa_128k,55,subspan_em,0.4909,0.3273,454,0.891,10000
+geometry,w2000 k5 · BARE query,musique_128k,55,subspan_em,0.1636,0.1091,463,0.582,10000
+geometry,oracle chunks · w2000 k5,nq_128k,55,subspan_em,0.8000,0.6000,304,1.000,10000
+geometry,oracle chunks · w2000 k5,hotpotqa_128k,55,subspan_em,0.4909,0.3636,422,1.000,10000
+geometry,oracle chunks · w2000 k5,musique_128k,55,subspan_em,0.2182,0.1818,399,1.000,10000
+geometry,2 hops · w2000 k5,nq_128k,55,subspan_em,0.5273,0.3818,373,0.691,10000
+geometry,2 hops · w2000 k5,hotpotqa_128k,55,subspan_em,0.5818,0.4364,509,0.909,10000
+geometry,2 hops · w2000 k5,musique_128k,55,subspan_em,0.1273,0.0909,509,0.400,10000
+geometry,exposure 400 chars · w8000 k5,nq_128k,55,subspan_em,0.0364,0.0182,276,0.873,2000
+geometry,exposure 400 chars · w8000 k5,hotpotqa_128k,55,subspan_em,0.0000,0.0000,271,0.727,2000
+geometry,exposure 400 chars · w8000 k5,musique_128k,55,subspan_em,0.0364,0.0182,287,0.491,2000
+geometry,exposure 8000 chars · w8000 k5,nq_128k,55,subspan_em,0.6000,0.3636,298,0.873,40000
+geometry,exposure 8000 chars · w8000 k5,hotpotqa_128k,55,subspan_em,0.3818,0.2909,389,0.727,40000
+geometry,exposure 8000 chars · w8000 k5,musique_128k,55,subspan_em,0.1636,0.1273,367,0.491,40000
+geometry_mv,published · w2000 k5 · task query,qampari_128k,55,coverage,0.0794,0.0000,368,0.527,10000
+geometry_mv,w2000 k10 · task query,qampari_128k,55,coverage,0.3012,0.0000,552,0.945,20000
+geometry_mv,w8000 k10 · task query,qampari_128k,55,coverage,0.3685,0.0364,542,0.964,80000
+geometry_mv,w1000 k5 · BARE query,qampari_128k,55,coverage,0.3261,0.0182,601,0.945,5000
+geometry_mv,w2000 k2 · BARE query,qampari_128k,55,coverage,0.2139,0.0000,445,0.945,4000
+geometry_mv,w2000 k5 · BARE query,qampari_128k,55,coverage,0.3842,0.0182,630,0.982,10000
+geometry_mv,oracle chunks · w2000 k5,qampari_128k,55,coverage,0.5879,0.1273,678,1.000,10000
+geometry_mv,2 hops · w2000 k5,qampari_128k,55,coverage,0.2673,0.0909,768,0.600,10000
+geometry_mv,exposure 400 chars · w8000 k5,qampari_128k,55,coverage,0.0073,0.0000,297,0.709,2000
+geometry_mv,exposure 8000 chars · w8000 k5,qampari_128k,55,coverage,0.1376,0.0000,390,0.709,40000

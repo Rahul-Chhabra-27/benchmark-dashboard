@@ -765,6 +765,7 @@ def rlm_new_loft128k_sources():
 
 
 STRUCTURED_RLM_CSV = Path(__file__).with_name("data") / "structured_rlm_loft128k.csv"
+STRUCTURED_GEOMETRY_CSV = Path(__file__).with_name("data") / "structured_geometry_loft128k.csv"
 
 # One entry per source id in the CSV's `source` column. Each is published as its
 # OWN dashboard source rather than as chips on a shared one, because the four
@@ -825,6 +826,127 @@ STRUCTURED_RLM_SOURCES = {
     },
 }
 
+
+
+STRUCTURED_GEOMETRY_SOURCES = {
+    "geometry": {
+        "title": "Chunk geometry \u00b7 single-answer subsets",
+        "precision": "Structured RLM \u00b7 geometry sweep \u00b7 Qwen3-4B-Instruct-2507",
+        "metric": "subspan_em",
+        "group": "structured-geometry",
+        "group_title": "Structured RLM \u00b7 chunk geometry (LOFT 128K)",
+        "blurb": "What the map\u2192reduce pipeline reads, swept for the first time. Every "
+        "structured arm before this ran at one setting -- 2000-character windows, 400 of "
+        "overlap, 5 of them -- which is 512 tokens at 20% overlap, the retrieval optimum "
+        "the chunking literature lands on. What had never been chosen is the READ size: "
+        "--search-window set the BM25 unit and the reader's payload as one number. "
+        "Chips are CONFIGURATIONS, not KV budgets; no arm here runs a press, so the "
+        "KV-removed columns stay empty and \"retained tokens\" is mean peak ROOT context.",
+    },
+    "geometry_mv": {
+        "title": "Chunk geometry \u00b7 qampari (multi-answer)",
+        "precision": "Structured RLM \u00b7 geometry sweep \u00b7 Qwen3-4B-Instruct-2507",
+        "metric": "coverage",
+        "group": "structured-geometry-mv",
+        "group_title": "Structured RLM \u00b7 chunk geometry, multi-answer (LOFT 128K)",
+        "blurb": "qampari in its OWN group because it is scored on `coverage`, not "
+        "`subspan_em`. Its gold is a list of entities scattered across passages, and LOFT's "
+        "multi-value subspan metric demands every one be matched, which pins it near zero; "
+        "coverage is the fraction of the list recovered. Kept apart from the single-answer "
+        "subsets so the two metrics can never be read down one column -- within a group the "
+        "metric dropdown is the intersection across selected sources.",
+    },
+}
+
+
+def structured_geometry_sources():
+    """The 2026-09-09 chunk-geometry campaign (source commit d0a1ad6).
+
+    CSV-backed for the same reason every RLM source here is: the run trees live on
+    the compute host. 80 cells, 4,400 examples, zero errors; the chips published are
+    the ten configurations that exist for EVERY subset, out of the twenty run.
+
+    Three things worth knowing before reading the numbers:
+
+    * **`BARE query` is a retrieval FIX, not a tuning knob.** The structured arm had
+      been handing BM25 LOFT's whole task string -- a page of "print the TITLE and
+      ID... format the answers into a list" -- so windows were scored on boilerplate
+      that occurs in every one of them. Asking it the question instead moves recall of
+      the gold answer at depth 2 from 0.00 to 0.95 on nq. Runs before this campaign,
+      including the `structured-rlm-*` sources on this dashboard, all used the task
+      string.
+    * **`oracle chunks` is a ceiling, not an arm.** Its windows are the ones that
+      provably contain a gold answer, so retrieval is perfect by construction and
+      whatever is missing is the reader.
+    * **qampari's metric is `coverage`,** which is why it is a separate group.
+
+    `primary_score` is published as whichever of subspan_em / coverage is that
+    subset's LOFT headline, matching what evaluation/compare.py now selects.
+    """
+    if not STRUCTURED_GEOMETRY_CSV.is_file():
+        return []
+    grouped = {}
+    with STRUCTURED_GEOMETRY_CSV.open(newline="") as handle:
+        for row in csv.DictReader(handle):
+            score = float(row["score"]) * 100
+            scores = {row["metric"]: score, "primary_score": score}
+            if row["em"]:
+                scores["em"] = float(row["em"]) * 100
+            peak = row["peak_context_tokens"]
+            grouped.setdefault(row["source"], {}).setdefault(row["task"], {})[row["arm"]] = {
+                "scores": scores,
+                "samples": int(row["samples"]),
+                "retained_tokens": int(peak) if peak else None,
+                "original_tokens": None,
+                "retained_gb": None,
+                "compression": None,
+                "prediction_url": None,
+                "prediction_preview": [],
+                "fraction": None,
+            }
+    datasets = []
+    for source_id, meta in STRUCTURED_GEOMETRY_SOURCES.items():
+        tasks = grouped.get(source_id)
+        if not tasks:
+            continue
+        arms = []
+        for runs in tasks.values():
+            for arm in runs:
+                if arm not in arms:
+                    arms.append(arm)
+        # A chip is greyed out unless every task of every source declaring it has a
+        # run, so assert rather than trust: a missing cell disables the chip for the
+        # whole group and the loss is silent.
+        for task, runs in tasks.items():
+            missing = [arm for arm in arms if arm not in runs]
+            assert not missing, f"{source_id}/{task} is missing arms {missing}"
+        metrics = ["primary_score", meta["metric"]]
+        if any("em" in run["scores"] for runs in tasks.values() for run in runs.values()):
+            metrics.append("em")
+        datasets.append(
+            {
+                "id": f"structured-geometry-{source_id.replace('_', '-')}",
+                "title": meta["title"],
+                "group": meta["group"],
+                "group_title": meta["group_title"],
+                "precision": meta["precision"],
+                "model": "qwen3-4b-instruct-2507",
+                "model_title": "Qwen3-4B-Instruct-2507",
+                "kind": "loft",
+                "budgets": arms,
+                "provenance": meta["blurb"]
+                + " 55 test rows per subset, one served vLLM at temperature 0.0, 0 errors. "
+                "Source commit d0a1ad6; rebuilt from data/structured_geometry_loft128k.csv. "
+                "NOT a paired comparison with the n=110 vanilla reference line on the "
+                "Structured RLM tab.",
+                "budget_provenance": {},
+                "tasks": dict(sorted(tasks.items())),
+                "metrics": sorted(metrics),
+                "excluded": [],
+                "updated": "2026-09-09 21:00",
+            }
+        )
+    return datasets
 
 def structured_rlm_sources():
     """The 2026-09-08 structured-chunks campaign (source commit 24f54e4).
