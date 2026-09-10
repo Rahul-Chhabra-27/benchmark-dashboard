@@ -15,7 +15,7 @@ class StructuredDataTests(unittest.TestCase):
 
     def test_complete_campaigns_and_unique_runs(self):
         rows=self.data['runs']
-        self.assertEqual(len(rows),235)
+        self.assertEqual(sum(r['campaign']!='graph-order' for r in rows),235)
         self.assertEqual(len({r['id'] for r in rows}),len(rows))
         self.assertEqual(sum(r['campaign']=='query' for r in rows),84)
         self.assertEqual(sum(r['campaign']=='geometry' for r in rows),117)

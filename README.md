@@ -70,6 +70,19 @@ retries are deduplicated by example ID. Importing asserts that token sums match 
 reported mean usage. Updating the explorer never invokes the older generator or
 removes unrelated sources/downloads.
 
+The **Graph order vs source order** campaign (BM25-graph vs source chunk order,
+with vanilla, KVzip-only and base-RLM references on the same 55 test questions) is
+added separately from an `export.json` written on the compute host:
+
+```bash
+python3 splice_graph_order.py /path/to/export.json
+```
+
+It replaces only the `graph-order` campaign, its rows in the flat CSV and
+`downloads/structured/graph-order-*.csv`, and writes a summary to
+`data/graph_order_loft128k.json`. A `--snapshot` import rebuilds the JSON from
+scratch, so re-run the splice after one.
+
 Direct link: [Structured RLM](https://rahul-chhabra-27.github.io/benchmark-dashboard/#structured).
 Filter choices are retained in the URL for sharing.
 
