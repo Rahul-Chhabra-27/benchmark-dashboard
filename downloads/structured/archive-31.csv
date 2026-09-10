@@ -1,0 +1,62 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:nq_128k:5,,"[""Nala""]",,115441,32.14,False,max_steps
+loft:nq_128k:10,,"[""at least seven"", ""at least seven players"", ""seven""]",7,20122,13.4,True,final_called
+loft:nq_128k:11,,"[""September 1972""]",,93723,28.72,False,max_steps
+loft:nq_128k:13,,"[""2011""]",,96568,30.15,False,max_steps
+loft:nq_128k:14,,"[""the summit of Cadillac Mountain""]",,113764,29.06,False,max_steps
+loft:nq_128k:15,,"[""Indian government""]",Government of India,6871,7.6,True,final_called
+loft:nq_128k:17,,"[""Ledger""]",Heath Ledger,59996,38.74,True,final_called
+loft:nq_128k:19,,"[""The Lykan Hypersport""]",,115832,31.76,False,max_steps
+loft:nq_128k:20,,"[""Jack Lord"", ""John Joseph Patrick Ryan""]",,93992,33.16,False,max_steps
+loft:nq_128k:27,,"[""cell nucleus"", ""in the cell nucleus""]",,117579,43.65,False,max_steps
+loft:nq_128k:30,,"[""9 to 25 February 2018""]",,91229,25.35,False,max_steps
+loft:nq_128k:32,,"[""Grisha""]",,94011,29.39,False,max_steps
+loft:nq_128k:33,,"[""Serous Membrane"", ""the visceral membrane""]",serous membrane,64770,32.74,True,final_called
+loft:nq_128k:34,,"[""June 22, 1942""]",,112981,28.18,False,max_steps
+loft:nq_128k:39,,"[""David Ben-Gurion""]",David Ben-Gurion,113115,52.11,True,final_called
+loft:nq_128k:41,,"[""February 27, 2015"", ""February 27, 2015""]",,5325,6.73,True,abstained
+loft:nq_128k:42,,"[""produced by Quincy Jones""]",,92655,30.48,False,max_steps
+loft:nq_128k:44,,"[""Jakkur, Bangalore, India""]","Jawaharlal Nehru Centre for Advanced Scientific Research | CONTENT: The Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR) is a multidisciplinary research institute located at Jakkur, Bangalore, India. It was established by the Department of Science and Technology of the Government of India, to mark the birth centenary of Pandit Jawaharlal Nehru. | END ID: 809",11565,9.79,True,final_called
+loft:nq_128k:45,,"[""condense the steam""]",,96126,27.62,False,max_steps
+loft:nq_128k:47,,"[""coffee"", ""honey"", ""livestock"", ""macadamia nuts"", ""pineapple"", ""sugarcane""]",,9630,8.25,True,abstained
+loft:nq_128k:48,,"[""imperial rule""]",,94825,26.55,False,max_steps
+loft:nq_128k:51,,"[""Coire"", ""Corey"", ""Corie"", ""Correy"", ""Corrie"", ""Cory"", ""Khouri"", ""Kori"", ""Kory""]","TITLE: Alternative spellings for Cory are Corey, Coire, Corie, Corrie, Curry (surname), Correy, Kory, Khouri, and Kori.  
+ID: 553  
+
+List of different ways to spell Corey for a boy:  
+- Coire  
+- Corie  
+- Corrie  
+- Correy  
+- Kory  
+- Khouri  
+- Kori",85581,28.47,True,repetition_broken
+loft:hotpotqa_128k:2,,"[""in 2000""]",,122658,37.87,False,max_steps
+loft:hotpotqa_128k:4,,"[""Parliamentarians (\""Roundheads\"") and Royalists (\""Cavaliers\"")""]",,32115,12.96,True,abstained
+loft:hotpotqa_128k:7,,"[""Obsession""]",,126282,52.18,False,max_steps
+loft:hotpotqa_128k:8,,"[""Eli Roth""]",,125145,38.66,False,max_steps
+loft:hotpotqa_128k:11,,"[""1940""]",,126093,47.75,False,max_steps
+loft:hotpotqa_128k:12,,"[""The Galtür avalanche""]",The 1999 Galtür avalanche happened first,44689,17.99,True,final_called
+loft:hotpotqa_128k:15,,"[""England""]",England national team,33531,15.22,True,final_called
+loft:hotpotqa_128k:16,,"[""Morgan Llywelyn""]",Morgan Llywelyn,12943,6.89,True,final_called
+loft:hotpotqa_128k:20,,"[""Cambridge University""]",,136980,30.63,False,max_steps
+loft:hotpotqa_128k:21,,"[""25 million copies""]",25 million,21907,8.86,True,final_called
+loft:hotpotqa_128k:22,,"[""Ellie Kemper""]",,114809,32.72,False,max_steps
+loft:hotpotqa_128k:23,,"[""The R-8 Human Rhythm Composer""]",Roland R-8,27335,12.81,True,final_called
+loft:hotpotqa_128k:24,,"[""The Vanishing""]",,120912,42.75,False,max_steps
+loft:hotpotqa_128k:25,,"[""Michael Bruce Fiers""]",,5336,7.18,True,abstained
+loft:hotpotqa_128k:27,,"[""Justin Spitzer""]",,116552,28.85,False,max_steps
+loft:hotpotqa_128k:28,,"[""no""]","Yes, both Götterdämmerung and Dafne are considered operas.",67080,25.6,True,final_called
+loft:hotpotqa_128k:29,,"[""Rome""]",,124807,32.93,False,max_steps
+loft:hotpotqa_128k:30,,"[""Koninklijke Ahold N.V.""]",,121399,31.98,False,max_steps
+loft:hotpotqa_128k:33,,"[""world wushu tournament""]",World Wushu Championships,39656,26.47,True,final_called
+loft:hotpotqa_128k:34,,"[""Turkey""]",['Gülhane'],35884,28.55,True,final_called
+loft:hotpotqa_128k:37,,"[""Afro-Russian""]",,124944,30.48,False,max_steps
+loft:hotpotqa_128k:39,,"[""8 November 1978""]",,115989,28.73,False,max_steps
+loft:hotpotqa_128k:41,,"[""genus""]",,119264,31.87,False,max_steps
+loft:hotpotqa_128k:44,,"[""Jamnagar""]",,137375,29.94,False,max_steps
+loft:hotpotqa_128k:48,,"[""photographer""]",,119256,29.38,False,max_steps
+loft:hotpotqa_128k:49,,"[""eight""]",8,79242,26.55,True,final_called
+loft:hotpotqa_128k:51,,"[""no""]",Yes,101186,28.09,True,final_called
+loft:hotpotqa_128k:52,,"[""yes""]",,118579,29.54,False,max_steps
+loft:hotpotqa_128k:53,,"[""North End Football Club""]",Preston North End F.C.,11801,7.22,True,final_called

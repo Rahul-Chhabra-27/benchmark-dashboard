@@ -1,0 +1,208 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:hotpotqa_128k:0,,"[""Dan Bilzerian""]","TITLE: Extraction (film) | ID: 742  
+TITLE: Eli Roth | ID: 727  
+
+Final Answer: None of the documents identify an American professional poker player who starred in the 2015 movie ""Extraction"".",20879,9.63,True,structured_complete
+loft:hotpotqa_128k:1,,"[""Laura's Star""]","TITLE: Laura's Star | ID: 605  
+TITLE: Wonder Woman | ID: NOT FOUND  
+
+Final Answer: Laura's Star",21006,5.62,True,structured_complete
+loft:hotpotqa_128k:2,,"[""in 2000""]","TITLE: Kenneth P. LaValle Stadium | ID: 809  
+['2000']  
+Final Answer: ['2000']",21316,7.77,True,structured_complete
+loft:hotpotqa_128k:3,,"[""Araminta Ross""]","TITLE: A Woman Called Moses | ID: 970  
+[""Harriet Tubman""]
+
+Final Answer: Harriet Tubman",21536,4.8,True,structured_complete
+loft:hotpotqa_128k:4,,"[""Parliamentarians (\""Roundheads\"") and Royalists (\""Cavaliers\"")""]",Final Answer:,21058,5.32,True,structured_complete
+loft:hotpotqa_128k:5,,"[""Adolfo Rodríguez Saá""]","TITLE: Ricardo Rodríguez Saá | ID: 148  
+Final Answer: NONE",21878,8.62,True,structured_complete
+loft:hotpotqa_128k:6,,"[""1976""]","TITLE: Georgia World Congress Center | ID: 684  
+TITLE: Georgia International Convention Center | ID: 720  
+
+Final Answer: 1976",20737,8.18,True,structured_complete
+loft:hotpotqa_128k:7,,"[""Obsession""]","TITLE: Obsession (board game) | ID: 678
+TITLE: Battle Sheep | ID: 702
+
+Final Answer: Obsession",19416,5.01,True,structured_complete
+loft:hotpotqa_128k:8,,"[""Eli Roth""]","TITLE: Eli Roth | ID: 727  
+TITLE: The Man with the Iron Fists | ID: 818  
+
+List:  
+- RZA  
+
+Final Answer: RZA",21964,17.12,True,structured_complete
+loft:hotpotqa_128k:9,,"[""Washington State""]","TITLE: Mike Leach (American football coach) | ID: 817  
+Final Answer: ['Washington State University']",20492,7.7,True,structured_complete
+loft:hotpotqa_128k:10,,"[""Love Drunk""]","TITLE: Two Is Better Than One | ID: 221  
+TITLE: Love Drunk | ID: 334  
+
+Final Answer: Two Is Better Than One",21185,19.72,True,structured_complete
+loft:hotpotqa_128k:11,,"[""1940""]",,21606,3.51,True,abstained
+loft:hotpotqa_128k:12,,"[""The Galtür avalanche""]","TITLE: 1999 Galtür avalanche | ID: 967  
+TITLE: Rigopiano avalanche | ID: 1050  
+
+Final Answer: 1999 Galtür avalanche",21761,7.43,True,structured_complete
+loft:hotpotqa_128k:13,,"[""Ali Qushji""]","TITLE: Ali Qushji | ID: 539  
+['Ali Qushji']  
+Final Answer: ['Ali Qushji']",21247,7.17,True,structured_complete
+loft:hotpotqa_128k:14,,"[""December 1974""]","TITLE: Métal hurlant | ID: 1074  
+- The anthology in which the first pages of The Incal were released is Métal hurlant.  
+- Métal hurlant was created in December 1974.
+
+Final Answer: December 1974",21357,9.4,True,structured_complete
+loft:hotpotqa_128k:15,,"[""England""]","TITLE: Nike Hypervenom | ID: 413  
+Final Answer: England, France, Poland, Argentina, Uruguay, Algeria, Belgium, Ireland, Gabon",21325,9.72,True,structured_complete
+loft:hotpotqa_128k:16,,"[""Morgan Llywelyn""]","TITLE: Morgan Llywelyn | ID: 556  
+TITLE: Robert Jordan | ID: 569  
+
+Final Answer: Cannot determine who was born first because Morgan Llywelyn's birth date is not provided in the documents. Only Robert Jordan's birth date (October 17, 1948) is available. Without Morgan Llywelyn's birth date, the comparison cannot be made.",21018,12.4,True,structured_complete
+loft:hotpotqa_128k:17,,"[""Ten Walls""]","TITLE: Ten Walls | ID: 373  
+TITLE: Walking with Elephants | ID: 1213  
+
+Final Answer: ['Ten Walls']",22261,8.23,True,structured_complete
+loft:hotpotqa_128k:18,,"[""Caesars Palace Grand Prix""]","TITLE: Caesars Palace Grand Prix | ID: 888  
+TITLE: Jeff Wood (racing driver) | ID: 957  
+
+Final Answer: Caesars Palace Grand Prix",21483,7.78,True,structured_complete
+loft:hotpotqa_128k:19,,"[""The Suite Life of Zack & Cody""]","TITLE: Candace Flynn | ID: 597  
+TITLE: Ashley Tisdale | ID: 980  
+
+- High School Musical  
+
+Final Answer: High School Musical",21560,9.9,True,structured_complete
+loft:hotpotqa_128k:20,,"[""Cambridge University""]","TITLE: Governor's House, Knutsford | ID: 711  
+Final Answer: nothing relevant",20698,6.56,True,structured_complete
+loft:hotpotqa_128k:21,,"[""25 million copies""]","TITLE: Big Daddy (BioShock) | ID: 527  
+TITLE: Morgan Llywelyn | ID: 556  
+
+Final Answer: 40",20333,6.88,True,structured_complete
+loft:hotpotqa_128k:22,,"[""Ellie Kemper""]","TITLE: Unbreakable Kimmy Schmidt | ID: 451  
+Final Answer: Ellie Kemper",21770,5.32,True,structured_complete
+loft:hotpotqa_128k:23,,"[""The R-8 Human Rhythm Composer""]","TITLE: Roland R-8
+ID: 773
+
+List:
+- The Roland R-8 drum machine was introduced in 1989 and allowed 32 notes to be played simultaneously.
+
+Final Answer: The Roland R-8 drum machine was introduced in 1989 and allowed 32 notes to be played simultaneously.",21009,7.5,True,structured_complete
+loft:hotpotqa_128k:24,,"[""The Vanishing""]","TITLE: The Vanishing (1988 film) | ID: 255
+TITLE: The Golden Egg | ID: 1119
+
+Final Answer: NOTHING RELEVANT",22635,14.89,True,structured_complete
+loft:hotpotqa_128k:25,,"[""Michael Bruce Fiers""]","TITLE: Mike Fiers | ID: 1086  
+List:  
+- Mike Fiers played for the Houston Astros and the Milwaukee Brewers.  
+
+Final Answer: Mike Fiers",21118,6.35,True,structured_complete
+loft:hotpotqa_128k:26,,"[""Scapegoat Mountain""]","TITLE: Lewis and Clark County, Montana | ID: 392  
+TITLE: Scapegoat Mountain | ID: 816  
+
+Final Answer: Scapegoat Mountain",20495,6.46,True,structured_complete
+loft:hotpotqa_128k:27,,"[""Justin Spitzer""]","TITLE: Superstore (TV series) | ID: 497  
+TITLE: Johnny Pemberton | ID: 32  
+
+Final Answer: Justin Spitzer",21156,6.47,True,structured_complete
+loft:hotpotqa_128k:28,,"[""no""]","TITLE: Götterdämmerung | ID: 522  
+TITLE: Dafne | ID: 622  
+
+- Götterdämmerung is considered an opera.  
+- Dafne is considered an opera based on the provided information.  
+
+Final Answer:  
+- Götterdämmerung is considered an opera.  
+- Dafne is considered an opera.",22344,13.36,True,structured_complete
+loft:hotpotqa_128k:29,,"[""Rome""]","TITLE: Tosca (1956 film)  
+ID: 437  
+
+Final Answer: Rome",21358,9.46,True,structured_complete
+loft:hotpotqa_128k:30,,"[""Koninklijke Ahold N.V.""]","TITLE: Ahold | ID: 1015  
+Final Answer: Ahold",20743,6.99,True,structured_complete
+loft:hotpotqa_128k:31,,"[""Unbreakable""]","TITLE: Blinding Edge Pictures | ID: 292  
+TITLE: Unbreakable (film) | ID: 543  
+
+Final Answer: None of the documents confirm that Blinding Edge Pictures produced a 2000 film starring Bruce Willis. While ""Unbreakable"" (2000) is mentioned as a film produced by Blinding Edge Pictures and starring Bruce Willis, the notes do not explicitly state that Blinding Edge Pictures produced it. Therefore, the query cannot be answered with certainty based on the provided information.",21959,13.5,True,structured_complete
+loft:hotpotqa_128k:32,,"[""directed by Shane Meadows""]","TITLE: Stephen Graham | ID: 526  
+Final Answer: nothing relevant",22524,9.31,True,structured_complete
+loft:hotpotqa_128k:33,,"[""world wushu tournament""]","TITLE: Wing Chun (film) | ID: 469  
+TITLE: Donnie Yen | ID: 925  
+
+Final Answer: Donnie Yen",21600,8.24,True,structured_complete
+loft:hotpotqa_128k:34,,"[""Turkey""]",,20180,3.02,True,abstained
+loft:hotpotqa_128k:35,,"[""Omega SA""]","TITLE: Joseph Reiser | ID: 76  
+TITLE: Omega SA | ID: 618  
+
+Final Answer: None of the documents explicitly state the name of the company managed by Joseph Reiser based in Biel/Bienne, Switzerland. While Omega SA is mentioned as being based in Biel/Bienne and associated with Joseph Reiser, the documents do not confirm that Joseph Reiser managed Omega SA. Therefore, the query cannot be answered with certainty based on the provided information.",21633,11.97,True,structured_complete
+loft:hotpotqa_128k:36,,"[""five""]","TITLE: Don Quichotte | ID: 832  
+TITLE: Luisa Miller | ID: 1182  
+
+Final Answer: NOTHING RELEVANT",21236,10.12,True,structured_complete
+loft:hotpotqa_128k:37,,"[""Afro-Russian""]","TITLE: Jean Sagbo | ID: 107  
+TITLE: Afro-Russian | ID: 999  
+
+Final Answer: Afro-Russians",21934,10.99,True,structured_complete
+loft:hotpotqa_128k:38,,"[""Lawton Chiles""]","TITLE: Lawton Chiles | ID: 1141  
+Final Answer: Lawton Chiles",21995,6.59,True,structured_complete
+loft:hotpotqa_128k:39,,"[""8 November 1978""]","TITLE: Farshid Karimi | ID: 486  
+TITLE: Bernard Takawira | ID: 632  
+
+Final Answer: The document does not provide the birth date of the younger brother of Farshid Karimi. Therefore, the query cannot be answered based on the given information.",20690,10.11,True,structured_complete
+loft:hotpotqa_128k:40,,"[""Nye County""]","TITLE: Operation Buster–Jangle | ID: 747  
+TITLE: Nevada Test Site | ID: 747  
+
+Final Answer: NOTHING RELEVANT",20967,7.54,True,structured_complete
+loft:hotpotqa_128k:41,,"[""genus""]","TITLE: Phaedranassa | ID: 942  
+TITLE: Mitella | ID: 933  
+TITLE: Mitella | ID: 981  
+
+Final Answer: NOTHING RELEVANT",20805,12.12,True,structured_complete
+loft:hotpotqa_128k:42,,"[""yes""]","TITLE: Rod Lurie | ID: 260  
+TITLE: Anja Salomonowitz | ID: 1128  
+
+Final Answer: No",21628,9.39,True,structured_complete
+loft:hotpotqa_128k:43,,"[""Shawnee""]","TITLE: Keokuk Falls, Oklahoma  
+ID: 324  
+
+TITLE: Shawnee, Oklahoma  
+ID: 725  
+
+Final Answer: Shawnee",22142,10.25,True,structured_complete
+loft:hotpotqa_128k:44,,"[""Jamnagar""]","TITLE: Poonamben Maadam | ID: 584  
+TITLE: Bahoran Lal Maurya | ID: 854  
+
+Final Answer: India",20779,7.76,True,structured_complete
+loft:hotpotqa_128k:45,,"[""Viscount Cranborne""]","TITLE: William Pery, 3rd Earl of Limerick | ID: 820  
+Final Answer: NOTHING RELEVANT",21908,9.57,True,structured_complete
+loft:hotpotqa_128k:46,,"[""The Most Dangerous Game""]","TITLE: The Most Dangerous Game  
+ID: 793  
+
+Final Answer: The Most Dangerous Game",20560,4.48,True,structured_complete
+loft:hotpotqa_128k:47,,"[""John M. Dowd""]","TITLE: John M. Dowd | ID: 236  
+TITLE: Dowd Report | ID: 943  
+
+Final Answer: John M. Dowd",22115,12.13,True,structured_complete
+loft:hotpotqa_128k:48,,"[""photographer""]","TITLE: Howell Conant | ID: 651  
+- Howell T. Conant, Senior (March 13, 1916 – March 11, 1999) was an American fashion photographer noted for his portraits of the American actress and later Princess Consort of Monaco, Grace Kelly.
+
+Final Answer: fashion photographer",20304,5.82,True,structured_complete
+loft:hotpotqa_128k:49,,"[""eight""]","TITLE: Scorpion | ID: 491  
+Final Answer: 8",21151,6.56,True,structured_complete
+loft:hotpotqa_128k:50,,"[""Philadelphia""]","TITLE: Not Richard, But Dick | ID: 1214
+
+Final Answer: ['The Dead Milkmen']",22098,4.37,True,structured_complete
+loft:hotpotqa_128k:51,,"[""no""]","TITLE: Isaac Asimov | ID: 1130  
+TITLE: Michael Cunningham | ID: 1164  
+
+Final Answer: No",22083,12.0,True,structured_complete
+loft:hotpotqa_128k:52,,"[""yes""]","TITLE: Tonka (film) | ID: 338  
+TITLE: Ten Who Dared | ID: 860  
+
+Final Answer: yes",21742,6.49,True,structured_complete
+loft:hotpotqa_128k:53,,"[""North End Football Club""]","- TITLE: Preston North End F.C.  
+- ID: 845
+
+Final Answer: Preston North End F.C.",21453,8.91,True,structured_complete
+loft:hotpotqa_128k:54,,"[""Mercury Prize""]","TITLE: Sampha | ID: 12  
+TITLE: Hold On (SBTRKT song) | ID: 529  
+
+Final Answer: ['the 2017 Mercury Prize']",20784,12.03,True,structured_complete

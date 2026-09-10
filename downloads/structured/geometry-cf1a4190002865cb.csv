@@ -1,0 +1,196 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:hotpotqa_128k:0,,"[""Dan Bilzerian""]","TITLE: Extraction (film) | ID: 742  
+Final Answer:",1439,3.51,True,structured_complete
+loft:hotpotqa_128k:1,,"[""Laura's Star""]","TITLE: Wonder Woman (2009 film) | ID: 329  
+TITLE: Laura's Star | ID: 605  
+
+Final Answer: Laura's Star",1411,3.2,True,structured_complete
+loft:hotpotqa_128k:2,,"[""in 2000""]","TITLE: 2013 America East Men's Lacrosse Tournament | ID: 1209  
+Final Answer: The year construction began on the stadium where the 2013 America East Men's Lacrosse Tournament was held is not provided in the document. Therefore, based on the given information, the query cannot be answered.",1472,3.76,True,structured_complete
+loft:hotpotqa_128k:3,,"[""Araminta Ross""]","TITLE: A Woman Called Moses | ID: 970  
+[""Harriet Tubman""]
+
+Final Answer: Harriet Tubman",1176,1.31,True,structured_complete
+loft:hotpotqa_128k:4,,"[""Parliamentarians (\""Roundheads\"") and Royalists (\""Cavaliers\"")""]",,887,0.29,True,abstained
+loft:hotpotqa_128k:5,,"[""Adolfo Rodríguez Saá""]","TITLE: Ricardo Rodríguez Saá | ID: 148  
+Answer: Nothing relevant  
+
+Final Answer:",1465,5.0,True,structured_complete
+loft:hotpotqa_128k:6,,"[""1976""]","TITLE: Georgia World Congress Center | ID: 684  
+Final Answer: 1976",1578,5.07,True,structured_complete
+loft:hotpotqa_128k:7,,"[""Obsession""]","TITLE: Battle Sheep | ID: 702  
+Nothing is provided about Obsession or its release date. Therefore, based on the given information, we cannot determine which board game has been around longer.
+
+Final Answer: NOTHING RELEVANT",1088,2.01,True,structured_complete
+loft:hotpotqa_128k:8,,"[""Eli Roth""]","TITLE: Eli Roth  
+ID: 727  
+
+TITLE: The Man with the Iron Fists  
+ID: 818  
+
+Final Answer: RZA",2051,8.05,True,structured_complete
+loft:hotpotqa_128k:9,,"[""Washington State""]","TITLE: Mike Leach (American football coach) | ID: 817  
+- Mike Leach currently coaches at Washington State.
+
+Final Answer: Washington State",1108,1.99,True,structured_complete
+loft:hotpotqa_128k:10,,"[""Love Drunk""]","TITLE: Two Is Better Than One | ID: 221  
+TITLE: Love Drunk | ID: 334  
+
+Final Answer: Love Drunk",2085,8.47,True,structured_complete
+loft:hotpotqa_128k:11,,"[""1940""]",,754,0.18,True,abstained
+loft:hotpotqa_128k:12,,"[""The Galtür avalanche""]","TITLE: 1999 Galtür avalanche | ID: 967  
+TITLE: igopiano avalanche | ID: 1050  
+
+- The 1999 Galtür avalanche happened first.  
+
+Final Answer: The 1999 Galtür avalanche happened first.",1645,5.15,True,structured_complete
+loft:hotpotqa_128k:13,,"[""Ali Qushji""]","TITLE: Ali Qushji | ID: 539  
+List:  
+- Ali Qushji is best known for the development of astronomical physics independent from natural philosophy.
+
+Final Answer: Ali Qushji",1506,3.51,True,structured_complete
+loft:hotpotqa_128k:14,,"[""December 1974""]","TITLE: The Incal | ID: 230
+
+Final Answer: The creation date of the anthology is not specified in the provided content.",1151,3.04,True,structured_complete
+loft:hotpotqa_128k:15,,"[""England""]",,991,0.33,True,abstained
+loft:hotpotqa_128k:16,,"[""Morgan Llywelyn""]","TITLE: Morgan Llywelyn | ID: 556  
+TITLE: Robert Jordan | ID: NOT FOUND  
+
+Final Answer: Cannot determine",1097,2.03,True,structured_complete
+loft:hotpotqa_128k:17,,"[""Ten Walls""]","TITLE: Walking with Elephants | ID: 1213
+
+Final Answer: Ten Walls",1232,2.48,True,structured_complete
+loft:hotpotqa_128k:18,,"[""Caesars Palace Grand Prix""]","TITLE: Caesars Palace Grand Prix | ID: 888  
+Final Answer: Caesars Palace Grand Prix",1381,2.79,True,structured_complete
+loft:hotpotqa_128k:19,,"[""The Suite Life of Zack & Cody""]","TITLE: Candace Flynn | ID: 597  
+TITLE: Mitella | ID: 981  
+
+Final Answer: The Suite Life of Zack & Cody",1561,4.64,True,structured_complete
+loft:hotpotqa_128k:20,,"[""Cambridge University""]","TITLE: Governor's House, Knutsford | ID: 711  
+Final Answer: nothing relevant",1258,1.71,True,structured_complete
+loft:hotpotqa_128k:21,,"[""25 million copies""]","TITLE: Big Daddy (BioShock) | ID: 527
+
+Final Answer:",1027,1.73,True,structured_complete
+loft:hotpotqa_128k:22,,"[""Ellie Kemper""]",Final Answer: NOTHING RELEVANT,2094,8.29,True,structured_complete
+loft:hotpotqa_128k:23,,"[""The R-8 Human Rhythm Composer""]","TITLE: Roland R-8 | ID: 773  
+- The R-8 Human Rhythm Composer is an electronic drum machine introduced in 1989 by Roland Corporation.  
+- The device has 32-voice polyphony.
+
+Final Answer: Roland R-8",1321,2.18,True,structured_complete
+loft:hotpotqa_128k:24,,"[""The Vanishing""]","TITLE: The Vanishing (1988 film) | ID: 255  
+TITLE: The Golden Egg | ID: 1119  
+
+Final Answer: NOTHING RELEVANT",1944,7.07,True,structured_complete
+loft:hotpotqa_128k:25,,"[""Michael Bruce Fiers""]","TITLE: Nova Southeastern Sharks baseball | ID: 621  
+TITLE: Mike Fiers | ID: 1086  
+
+Final Answer: None of the documents provide a player who played for the Nova Southeastern Sharks, Milwaukee Brewers, and Houston Astros. The information available only confirms that Mike Fiers played for the Milwaukee Brewers and Houston Astros, and that the Nova Southeastern Sharks have produced MLB stars, including Mike Fiers, but no player is explicitly linked to all three teams. Therefore, the query cannot be answered based on the given documents.",1757,6.45,True,structured_complete
+loft:hotpotqa_128k:26,,"[""Scapegoat Mountain""]","TITLE: Lewis and Clark County, Montana | ID: 392  
+TITLE: Scapegoat Mountain | ID: 816  
+
+Final Answer: Scapegoat Mountain",1574,4.32,True,structured_complete
+loft:hotpotqa_128k:27,,"[""Justin Spitzer""]","TITLE: Superstore | ID: 32  
+TITLE: Johnny Pemberton | ID: 32  
+
+Final Answer: NOTHING RELEVANT",1727,5.52,True,structured_complete
+loft:hotpotqa_128k:28,,"[""no""]","TITLE: Götterdämmerung | ID: 522  
+TITLE: Dafne | ID: 622  
+
+Final Answer: [Götterdämmerung: No information provided to confirm or deny, Dafne: Yes, it is considered an opera]",1834,6.32,True,structured_complete
+loft:hotpotqa_128k:29,,"[""Rome""]","TITLE: Tosca (1956 film) | ID: 437  
+TITLE: Franco Corelli | ID: 1107  
+
+Final Answer: Rome",1574,4.19,True,structured_complete
+loft:hotpotqa_128k:30,,"[""Koninklijke Ahold N.V.""]","TITLE: Ahold | ID: 1015  
+Final Answer: Ahold",1369,1.97,True,structured_complete
+loft:hotpotqa_128k:31,,"[""Unbreakable""]","TITLE: Blinding Edge Pictures | ID: 292  
+TITLE: Unbreakable (film) | ID: 543  
+
+Final Answer: None of the provided documents state that Blinding Edge Pictures produced a 2000 film starring Bruce Willis. The only film mentioned produced by Blinding Edge Pictures is ""Unbreakable"" (2000), but it is not confirmed that Blinding Edge Pictures produced it, and the passage does not explicitly state that Blinding Edge Pictures produced ""Unbreakable"" or any film starring Bruce Willis. Therefore, the query cannot be answered with the given information.",1757,6.64,True,structured_complete
+loft:hotpotqa_128k:32,,"[""directed by Shane Meadows""]","TITLE: Stephen Graham | ID: 526  
+Answer: NOTHING RELEVANT
+
+Final Answer: NOTHING RELEVANT",1254,1.81,True,structured_complete
+loft:hotpotqa_128k:33,,"[""world wushu tournament""]","TITLE: Wing Chun (film)  
+ID: 469  
+TITLE: Donnie Yen  
+ID: 925  
+
+Final Answer: Donnie Yen won the world wushu tournament multiple times.",1840,6.45,True,structured_complete
+loft:hotpotqa_128k:34,,"[""Turkey""]","TITLE: Column of the Goths | ID: 1008  
+TITLE: Gül Mosque | ID: NOT PRESENT  
+
+List:
+- Istanbul
+
+Final Answer: Istanbul",1507,3.85,True,structured_complete
+loft:hotpotqa_128k:35,,"[""Omega SA""]","TITLE: Joseph Reiser | ID: 76  
+TITLE: Omega SA | ID: 618  
+
+Final Answer: Omega",1425,3.14,True,structured_complete
+loft:hotpotqa_128k:36,,"[""five""]","TITLE: Luisa Miller | ID: 1182  
+Final Answer: NOTHING RELEVANT",1191,2.79,True,structured_complete
+loft:hotpotqa_128k:37,,"[""Afro-Russian""]","TITLE: Jean Sagbo | ID: 107  
+TITLE: Afro-Russian | ID: 999  
+
+Afro-Russian",1539,3.79,True,structured_complete
+loft:hotpotqa_128k:38,,"[""Lawton Chiles""]","TITLE: Lawton Chiles | ID: 1141  
+Final Answer: Lawton Chiles",1540,3.1,True,structured_complete
+loft:hotpotqa_128k:39,,"[""8 November 1978""]","TITLE: Farshid Karimi | ID: 486  
+Final Answer: None of the documents provide the birth date of the younger brother of Farshid Karimi.",1194,2.9,True,structured_complete
+loft:hotpotqa_128k:40,,"[""Nye County""]","TITLE: Operation Buster–Jangle | ID: 747  
+Final Answer: NOTHING RELEVANT",1074,2.2,True,structured_complete
+loft:hotpotqa_128k:41,,"[""genus""]","TITLE: Mitella | ID: 981  
+TITLE: Phaedranassa | ID: NOT FOUND  
+
+Final Answer: None of the documents provide information about Phaedranassa, and while Mitella is described as a genus, the query asks about both being classified at the same level, which cannot be determined from the given information.",1227,3.66,True,structured_complete
+loft:hotpotqa_128k:42,,"[""yes""]","TITLE: Anja Salomonowitz | ID: 1128  
+- Anja Salomonowitz is a director.  
+- Rod Lurie's directorship is not mentioned.  
+
+Final Answer:  
+- Anja Salomonowitz is a director.  
+- Rod Lurie's directorship is not mentioned.",1527,4.03,True,structured_complete
+loft:hotpotqa_128k:43,,"[""Shawnee""]","TITLE: Keokuk Falls, Oklahoma | ID: 324  
+List:
+- The county seat of Pottawatomie County, Oklahoma (where Keokuk Falls is located) is not explicitly stated in the provided text. Therefore, based on the information given, the query cannot be fully answered.
+
+Final Answer: The county seat of Pottawatomie County, Oklahoma (where Keokuk Falls is located) is not explicitly stated in the provided text. Therefore, based on the information given, the query cannot be fully answered.",1615,5.39,True,structured_complete
+loft:hotpotqa_128k:44,,"[""Jamnagar""]","TITLE: Poonamben Maadam | ID: 584  
+- Country: India (inferred from Gujarat being a state in India)
+
+Final Answer: India",1388,2.71,True,structured_complete
+loft:hotpotqa_128k:45,,"[""Viscount Cranborne""]","TITLE: William Pery, 3rd Earl of Limerick | ID: 820  
+Final Answer: nothing relevant",1564,3.41,True,structured_complete
+loft:hotpotqa_128k:46,,"[""The Most Dangerous Game""]","TITLE: The Most Dangerous Game | ID: 793  
+TITLE: Seven Faces | ID: 257  
+
+[""The Hounds of Zaroff""]  
+
+Final Answer: The Hounds of Zaroff",1590,4.56,True,structured_complete
+loft:hotpotqa_128k:47,,"[""John M. Dowd""]","TITLE: John M. Dowd | ID: 236  
+TITLE: Dowd Report | ID: 943  
+Final Answer: John M. Dowd",1720,5.71,True,structured_complete
+loft:hotpotqa_128k:48,,"[""photographer""]","TITLE: Howell Conant  
+ID: 651  
+Final Answer: fashion photographer",1052,1.73,True,structured_complete
+loft:hotpotqa_128k:49,,"[""eight""]","TITLE: Karl Kraepelin | ID: 1093  
+Final Answer: 8",1104,1.87,True,structured_complete
+loft:hotpotqa_128k:50,,"[""Philadelphia""]","TITLE: Not Richard, But Dick | ID: 1214  
+Final Answer: Hollywood",1492,3.19,True,structured_complete
+loft:hotpotqa_128k:51,,"[""no""]","TITLE: Isaac Asimov | ID: 1130  
+TITLE: Michael Cunningham | ID: 1164  
+
+Final Answer: No",1625,4.89,True,structured_complete
+loft:hotpotqa_128k:52,,"[""yes""]","TITLE: Tonka (film) | ID: 338  
+TITLE: Ten Who Dared | ID: 860  
+
+Final Answer: cannot be determined",1653,5.21,True,structured_complete
+loft:hotpotqa_128k:53,,"[""North End Football Club""]","TITLE: Preston North End F.C. | ID: 845  
+TITLE: Steve Uzelac | ID: 912  
+
+Final Answer: Football League",1598,4.73,True,structured_complete
+loft:hotpotqa_128k:54,,"[""Mercury Prize""]","TITLE: Process | ID: 12  
+TITLE: Hold On (SBTRKT song) | ID: 529  
+
+Final Answer: Mercury Prize",1713,5.21,True,structured_complete

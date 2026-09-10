@@ -1,0 +1,397 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:qampari_128k:0,,"[""2018 Kentucky Bank Tennis Championships – Men's Singles"", ""2018 Kunming Open – Men's Doubles"", ""2018 Stockton Challenger – Men's Singles"", ""2019 Burnie International – Men's Doubles"", ""2019 Launceston Tennis International – Men's Singles""]","TITLE: 2019 Launceston Tennis International – Men's Singles | ID: 98  
+TITLE: 2018 Kentucky Bank Tennis Championships – Men's Singles | ID: 124  
+TITLE: 2019 Burnie International – Men's Doubles | ID: 145  
+TITLE: 2018 Kunming Open – Men's Doubles | ID: 449  
+TITLE: 2018 Stockton Challenger – Men's Singles | ID: 578  
+TITLE: kton Challenger – Men's Singles | ID: 578  
+
+[""2019 Launceston Tennis International – Men's Singles"", ""2018 Kentucky Bank Tennis Championships – Men's Singles"", ""2019 Burnie International – Men's Doubles"", ""2018 Kunming Open – Men's Doubles"", ""2018 Stockton Challenger – Men's Singles"", ""kton Challenger – Men's Singles""]  
+
+Final Answer: [""2019 Launceston Tennis International – Men's Singles"", ""2018 Kentucky Bank Tennis Championships – Men's Singles"", ""2019 Burnie International – Men's Doubles"", ""2018 Kunming Open – Men's Doubles"", ""2018 Stockton Challenger – Men's Singles"", ""kton Challenger – Men's Singles""]",8377,38.4,True,structured_complete
+loft:qampari_128k:1,,"[""Dead Heavens"", ""Gorilla Biscuits"", ""Quicksand"", ""Rival Schools"", ""Walking Concert""]","TITLE: Rival Schools | ID: 25  
+TITLE: Gorilla Biscuits | ID: 91  
+TITLE: Walking Concert | ID: 113  
+TITLE: Dead Heavens | ID: 734  
+TITLE: Quicksand (American band) | ID: 752  
+TITLE: Quicksand | ID: 752  
+
+[""Rival Schools"", ""Gorilla Biscuits"", ""Youth of Today"", ""Walking Concert"", ""Dead Heavens"", ""Quicksand""]  
+
+Final Answer: [""Rival Schools"", ""Gorilla Biscuits"", ""Youth of Today"", ""Walking Concert"", ""Dead Heavens"", ""Quicksand""]",8399,32.84,True,structured_complete
+loft:qampari_128k:2,,"[""Arabsat-1A"", ""Arabsat-1B"", ""Arabsat-5A"", ""Badr-4"", ""INSAT-2DT""]","TITLE: Badr-4 | ID: 317  
+TITLE: Arabsat-5A | ID: 355  
+TITLE: Arabsat-1A | ID: 446  
+TITLE: Arabsat-1B | ID: 710  
+TITLE: INSAT-2DT | ID: 747  
+
+[""Arabsat"", ""Arabsat-5A"", ""Arabsat-1A"", ""Arabsat-1B"", ""INSAT-2DT""]
+
+Final Answer: [""Arabsat"", ""Arabsat-5A"", ""Arabsat-1A"", ""Arabsat-1B"", ""INSAT-2DT""]",8714,41.24,True,structured_complete
+loft:qampari_128k:3,,"[""Diplopedia"", ""RationalWiki"", ""Uncyclopedia"", ""Veropedia"", ""Wiktionary""]","TITLE: Wiktionary | ID: 56  
+TITLE: Veropedia | ID: 398  
+TITLE: Uncyclopedia | ID: 401  
+
+Final Answer: [""Wiktionary"", ""Veropedia"", ""Uncyclopedia""]",7983,22.13,True,structured_complete
+loft:qampari_128k:4,,"[""Chris McCormack"", ""Chrissie Wellington"", ""Helen Jenkins"", ""Magali Messmer"", ""Pete Jacobs""]","TITLE: Chris McCormack (triathlete) | ID: 281  
+TITLE: Pete Jacobs (triathlete) | ID: 592  
+
+[""Chris McCormack is a notable triathlete. He has served as a consultant at the operational level with the royal family of Bahrain for steering their Bahrain Endurance vision. McCormack is a board member of the Pho3nix Foundation, a non-profit social welfare organisation founded by Polish businessman and philanthropist Sebastian Kulczyk that aims to create a global system of professional support for youths talented at sports."", ""Pete Jacobs was a notable triathlete, winning the 2012 Ironman World Championship and competing in long-distance, non-drafting triathlon events. He started competing in triathlon at age 18.""]
+
+Final Answer: [""Chris McCormack is a notable triathlete. He has served as a consultant at the operational level with the royal family of Bahrain for steering their Bahrain Endurance vision. McCormack is a board member of the Pho3nix Foundation, a non-profit social welfare organisation founded by Polish businessman and philanthropist Sebastian Kulczyk that aims to create a global system of professional support for youths talented at sports."", ""Pete Jacobs was a notable triathlete, winning the 2012 Ironman World Championship and competing in long-distance, non-drafting triathlon events. He started competing in triathlon at age 18.""]",7896,35.39,True,structured_complete
+loft:qampari_128k:5,,"[""Ammonia"", ""Collins reagent"", ""Dimethylformamide"", ""Ethanol"", ""Sodium azide""]","TITLE: Collins reagent | ID: 216  
+List of existing reagent compounds:  
+- Collins reagent  
+- Jones reagent  
+- Pyridinium chlorochromate (PCC)  
+- Pyridinium dichromate (PDC)
+
+Final Answer: [""Collins reagent"", ""Jones reagent"", ""Pyridinium chlorochromate (PCC)"", ""Pyridinium dichromate (PDC)""]",4753,10.14,True,structured_complete
+loft:qampari_128k:6,,"[""Byeongsan Seowon"", ""Dosan Seowon"", ""Oksan Seowon"", ""Seoak Seowon"", ""Sosu Seowon""]","TITLE: Byeongsan Seowon | ID: 219
+
+Final Answer: [""Byeongsan Seowon""]",7481,12.49,True,structured_complete
+loft:qampari_128k:7,,"[""2015 Wimbledon Championships – Boys' Singles"", ""2016 Charlottesville Men's Pro Challenger – singles"", ""2018 BNP Paribas Primrose Bordeaux – singles"", ""2018 JSM Challenger of Champaign–Urbana – singles"", ""2018 Knoxville Challenger – singles""]","TITLE: 2018 Knoxville Challenger – Singles | ID: 84  
+TITLE: 2015 Wimbledon Championships – Boys' Singles | ID: 318  
+TITLE: 2018 JSM Challenger of Champaign–Urbana – Singles | ID: 531  
+TITLE: 2016 Charlottesville Men's Pro Challenger – Singles | ID: 559  
+TITLE: 2018 BNP Paribas Primrose Bordeaux – Singles | ID: 717  
+
+[""2018 Knoxville Challenger – Singles"", ""2015 Wimbledon Championships – Boys' Singles"", ""2018 JSM Challenger of Champaign–Urbana – Singles"", ""2016 Charlottesville Men's Pro Challenger – Singles"", ""2018 BNP Paribas Primrose Bordeaux – Singles""]  
+Final Answer: [""2018 Knoxville Challenger – Singles"", ""2015 Wimbledon Championships – Boys' Singles"", ""2018 JSM Challenger of Champaign–Urbana – Singles"", ""2016 Charlottesville Men's Pro Challenger – Singles"", ""2018 BNP Paribas Primrose Bordeaux – Singles""]",8624,29.55,True,structured_complete
+loft:qampari_128k:8,,"[""Christian Peter"", ""Howard Barbieri"", ""Jeff Kunkel"", ""Knowshon Moreno"", ""Melanie McGuire""]","TITLE: Knowshon Moreno | ID: 316  
+TITLE: Christian Peter | ID: 430  
+TITLE: Melanie McGuire | ID: 438  
+TITLE: Early life and education | ID: 438  
+TITLE: Jeff Kunkel | ID: 537  
+
+[""Knowshon Moreno graduated from Middletown High School South."", ""Christian Peter graduated from Middletown High School South."", ""Melanie Lyn Slate graduated from Middletown High School South."", ""Jeff Kunkel graduated from Middletown High School South.""]
+
+Final Answer: [""Knowshon Moreno graduated from Middletown High School South."", ""Christian Peter graduated from Middletown High School South."", ""Melanie Lyn Slate graduated from Middletown High School South."", ""Jeff Kunkel graduated from Middletown High School South.""]",8494,32.1,True,structured_complete
+loft:qampari_128k:9,,"[""2015 Città di Caltanissetta – singles"", ""2016 Open Città della Disfida – singles"", ""2016 Stockholm Open – doubles"", ""2017 Internationaux de Tennis de Vendée – singles"", ""2017 Internazionali di Tennis del Friuli Venezia Giulia – singles""]","TITLE: 2015 Città di Caltanissetta – Singles | ID: 52  
+TITLE: 2017 Internazionali di Tennis del Friuli Venezia Giulia – Singles | ID: 291  
+TITLE: 2017 Internationaux de Tennis de Vendée – Singles | ID: 614  
+TITLE: 2016 Open Città della Disfida – Singles | ID: 669  
+
+[""2015 Città di Caltanissetta – Singles"", ""2017 Internazionali di Tennis del Friuli Venezia Giulia – Singles"", ""2017 Internationaux de Tennis de Vendée – Singles"", ""2016 Open Città della Disfida – Singles""]  
+Final Answer: [""2015 Città di Caltanissetta – Singles"", ""2017 Internazionali di Tennis del Friuli Venezia Giulia – Singles"", ""2017 Internationaux de Tennis de Vendée – Singles"", ""2016 Open Città della Disfida – Singles""]",8179,24.87,True,structured_complete
+loft:qampari_128k:10,,"[""Antonio London"", ""Bryan Morris"", ""Dewon Brazelton"", ""Dustin Lynch"", ""Jordan Sheffield""]","TITLE: Dustin Lynch | ID: 347  
+TITLE: Bryan Morris | ID: 566  
+TITLE: Antonio London | ID: 643  
+TITLE: Jordan Sheffield | ID: 645  
+TITLE: Dewon Brazelton | ID: 663  
+
+[""Dustin Lynch"", ""Bryan Morris"", ""Antonio London"", ""Jordan Sheffield"", ""Dewon Brazelton""]  
+Final Answer: [""Dustin Lynch"", ""Bryan Morris"", ""Antonio London"", ""Jordan Sheffield"", ""Dewon Brazelton""]",8151,24.43,True,structured_complete
+loft:qampari_128k:11,,"[""Conditional release"", ""Ghost"", ""The Bright Day"", ""The Sale"", ""The Traces of Light""]","TITLE: Ghost (1998 film) | ID: 31  
+TITLE: The Sale (film) | ID: 117  
+TITLE: The Traces of Light | ID: 210  
+TITLE: The Bright Day | ID: 558  
+TITLE: Conditional Release (film) | ID: 615  
+
+Final Answer: [""Ghost (1998 film)"", ""The Sale (film)"", ""The Traces of Light"", ""The Bright Day"", ""Conditional Release (film)""]",8622,33.24,True,structured_complete
+loft:qampari_128k:12,,"[""Ego Ferguson"", ""Jerry Janes"", ""Ron Rivera"", ""Roquan Smith"", ""Will Sutton""]","TITLE: Jerry Janes | ID: 13  
+TITLE: Roquan Smith | ID: 186  
+TITLE: Ron Rivera | ID: 413  
+
+Final Answer: [""Jerry Janes"", ""Roquan Smith"", ""Ron Rivera""]",9137,45.83,True,structured_complete
+loft:qampari_128k:13,,"[""Chamarajendra Wadiyar X"", ""Kanthirava Narasaraja I"", ""Kanthirava Narasaraja II"", ""Krishnaraja Wadiyar II"", ""Krishnaraja Wadiyar III"", ""Mir Ghulam Ali""]","TITLE: Mir Ghulam Ali  
+ID: 632  
+TITLE: Kanthirava Narasaraja II  
+ID: 652  
+TITLE: Krishnaraja Wadiyar II  
+ID: 698  
+TITLE: Chamarajendra Wadiyar X  
+ID: 706  
+TITLE: Krishnaraja Wadiyar III  
+ID: 742  
+
+[""Mir Ghulam Ali khan, a senior army commander (Ameer ul Behar) of Mysore, habitated the Kingdom of Mysore."", ""The Kingdom of Mysore was habitated by Kanthirava Narasaraja II, who ruled from 1704 to 1714. He was born deaf and known as 'Múk-arasu' ('mute king'). He succeeded to the throne through the influence of the prime minister Tirumala Iyengar. His son later took over and established Mysore's suzerainty."", ""The Kingdom of Mysore was habitated by Krishnaraja Wadiyar II, who ruled from 1734 to 1766."", ""The Kingdom of Mysore was habitated by the Wadiyar dynasty, specifically under the rule of Maharaja Chamarajendra Wadiyar X, who ruled from 1868 to 1894."", ""The Kingdom of Mysore was habitated by the Wadiyar dynasty, specifically under the rule of Maharaja Krishnaraja Wadiyar III, who ruled from 30 June 1799 to 27 March 1868.""]
+
+Final Answer: [""Mir Ghulam Ali khan, a senior army commander (Ameer ul Behar) of Mysore, habitated the Kingdom of Mysore."", ""The Kingdom of Mysore was habitated by Kanthirava Narasaraja II, who ruled from 1704 to 1714. He was born deaf and known as 'Múk-arasu' ('mute king'). He succeeded to the throne through the influence of the prime minister Tirumala Iyengar. His son later took over and established Mysore's suzerainty."", ""The Kingdom of Mysore was habitated by Krishnaraja Wadiyar II, who ruled from 1734 to 1766."", ""The Kingdom of Mysore was habitated by the Wadiyar dynasty, specifically under the rule of Maharaja Chamarajendra Wadiyar X, who ruled from 1868 to 1894."", ""The Kingdom of Mysore was habitated by the Wadiyar dynasty, specifically under the rule of Maharaja Krishnaraja Wadiyar III, who ruled from 30 June 1799 to 27 March 1868.""]",10040,65.77,True,structured_complete
+loft:qampari_128k:14,,"[""Gourdou-Leseurre GL-812 HY"", ""Gourdou-Leseurre GL-832 HY"", ""Gourdou-Leseurre GL.2"", ""Gourdou-Leseurre GL.30"", ""Gourdou-Leseurre GL.50""]","TITLE: Gourdou-Leseurre GL.2 | ID: 44  
+TITLE: Gourdou-Leseurre GL-812 HY | ID: 258  
+TITLE: Gourdou-Leseurre GL-832 HY | ID: 332  
+TITLE: Gourdou-Leseurre GL.50 | ID: 494  
+TITLE: Gourdou-Leseurre GL.30 | ID: 569  
+
+[""Gourdou-Leseurre produced the GL.2, a French fighter aircraft that made its maiden flight in 1918."", ""Gourdou-Leseurre produced the GL-812 HY, a 3-seat reconnaissance floatplane built in 1926-27."", ""Gourdou-Leseurre produced the GL-832 HY, a 1930s French light shipboard reconnaissance floatplane for the French Navy."", ""Gourdou-Leseurre produced the GL.50, also known as the Gourdou-Leseurre Type F, a French fighter prototype of the early 1920s."", ""Gourdou-Leseurre produced the GL.30, a racing aircraft built in France in 1920 which formed the basis for a highly successful family of fighter aircraft.""]
+
+Final Answer: [""Gourdou-Leseurre produced the GL.2, a French fighter aircraft that made its maiden flight in 1918."", ""Gourdou-Leseurre produced the GL-812 HY, a 3-seat reconnaissance floatplane built in 1926-27."", ""Gourdou-Leseurre produced the GL-832 HY, a 1930s French light shipboard reconnaissance floatplane for the French Navy."", ""Gourdou-Leseurre produced the GL.50, also known as the Gourdou-Leseurre Type F, a French fighter prototype of the early 1920s."", ""Gourdou-Leseurre produced the GL.30, a racing aircraft built in France in 1920 which formed the basis for a highly successful family of fighter aircraft.""]",10156,67.38,True,structured_complete
+loft:qampari_128k:15,,"[""Charles Eastman"", ""Little Crow"", ""Sitting Bull"", ""Spotted Elk"", ""Zitkala-Sa""]","[""Charles Eastman"", ""Juanita Growing Thunder Fogarty""]",9385,40.36,True,structured_complete
+loft:qampari_128k:16,,"[""Amy Fote"", ""Connor Walsh"", ""Jun Shuang Huang"", ""Simon Ball"", ""Stanton Welch""]","TITLE: Stanton Welch | ID: 187  
+TITLE: Connor Walsh (ballet dancer) | ID: 455  
+TITLE: Amy Fote | ID: 480  
+TITLE: Jun Shuang Huang | ID: 573  
+TITLE: Simon Ball | ID: 590  
+
+[""Stanton Welch"", ""Connor Walsh"", ""Amy Fote"", ""Jun Shuang Huang"", ""Simon Ball""]  
+Final Answer: [""Stanton Welch"", ""Connor Walsh"", ""Amy Fote"", ""Jun Shuang Huang"", ""Simon Ball""]",8438,29.0,True,structured_complete
+loft:qampari_128k:17,,"[""Carlos García Cambón"", ""Gustavo Alfaro"", ""Jorge José Benítez"", ""Mario Fortunato"", ""Miguel Ángel Russo""]","[""Mario Fortunato"", ""Gustavo Alfaro"", ""Carlos García Cambón"", ""Jorge José Benítez""]
+
+Final Answer: [""Mario Fortunato"", ""Gustavo Alfaro"", ""Carlos García Cambón"", ""Jorge José Benítez""]",8779,39.89,True,structured_complete
+loft:qampari_128k:18,,"[""After the Rain"", ""Alice's Adventures in Wonderland"", ""An American in Paris"", ""Carousel"", ""Liturgy""]","TITLE: Liturgy (ballet) | ID: 278  
+TITLE: After the Rain (ballet) | ID: 482  
+TITLE: Alice's Adventures in Wonderland (ballet) | ID: 551  
+TITLE: Carousel (ballet) | ID: 709  
+TITLE: An American in Paris (ballet) | ID: 743  
+
+[""Liturgy (ballet)"", ""After the Rain (ballet)"", ""Alice's Adventures in Wonderland (ballet)"", ""Carousel (ballet)"", ""An American in Paris (ballet)""]  
+
+Final Answer: [""Liturgy (ballet)"", ""After the Rain (ballet)"", ""Alice's Adventures in Wonderland (ballet)"", ""Carousel (ballet)"", ""An American in Paris (ballet)""]",8505,28.91,True,structured_complete
+loft:qampari_128k:19,,"[""Custodio Parcon"", ""Domingo Deluana"", ""Herminigildo Yurong"", ""Lolinato To-ong"", ""Tomas Campo Jr.""]","TITLE: Lolinato To-ong | ID: 111  
+TITLE: Sance Battalion during the 2000 Philippine campaign against the Moro Islamic Liberation Front | ID: 111  
+TITLE: Domingo Deluana | ID: 305  
+TITLE: Domingo J. Deluana | ID: 305  
+TITLE: Tomas Campo Jr. | ID: 422  
+TITLE: Herminigildo Yurong | ID: 456  
+TITLE: Custodio Parcon | ID: 749  
+
+[""Lolinato G. To-ong"", ""Domingo J. Deluana"", ""Tomas V. Campo, Jr."", ""Herminigildo J. Yurong"", ""Custodio J. Parcon, Jr.""]
+
+Final Answer: [""Lolinato G. To-ong"", ""Domingo J. Deluana"", ""Tomas V. Campo, Jr."", ""Herminigildo J. Yurong"", ""Custodio J. Parcon, Jr.""]",9867,62.37,True,structured_complete
+loft:qampari_128k:20,,"[""Asterix and Cleopatra"", ""Asterix and the Chieftain's Shield"", ""Asterix and the Great Crossing"", ""Asterix in Belgium"", ""Obelix and Co.""]","TITLE: Asterix and Cleopatra | ID: 255  
+TITLE: Obelix and Co. | ID: 351  
+TITLE: Asterix and the Great Crossing | ID: 378  
+TITLE: Asterix and the Chieftain's Shield | ID: 404  
+TITLE: Asterix in Belgium | ID: 646  
+
+[""Asterix and Cleopatra"", ""Obelix and Co."", ""Asterix and the Great Crossing"", ""Asterix and the Chieftain's Shield"", ""Asterix in Belgium""]  
+
+Final Answer: [""Asterix and Cleopatra"", ""Obelix and Co."", ""Asterix and the Great Crossing"", ""Asterix and the Chieftain's Shield"", ""Asterix in Belgium""]",8138,20.94,True,structured_complete
+loft:qampari_128k:21,,"[""Battle Creek"", ""Better Call Saul"", ""Breaking Bad"", ""The Lone Gunmen"", ""The X-Files""]","TITLE: Better Call Saul (season 1) | ID: 226  
+TITLE: The X-Files | ID: 308  
+TITLE: The Lone Gunmen (TV series) | ID: 469  
+TITLE: Battle Creek (TV series) | ID: 525  
+TITLE: Battle Creek | ID: 525  
+TITLE: Breaking Bad | ID: 575  
+
+Final Answer: [""Breaking Bad"", ""The X-Files"", ""The Lone Gunmen (TV series)"", ""Battle Creek""]",8809,39.89,True,structured_complete
+loft:qampari_128k:22,,"[""Ivo Babuška"", ""Petr Vopěnka"", ""Vlastimil Dlab"", ""Věra Trnková"", ""Zdeněk Frolík""]","TITLE: Věra Trnková | ID: 79  
+TITLE: Ivo Babuška | ID: 254  
+TITLE: Petr Vopěnka | ID: 685  
+TITLE: Frolík's classes of topological spaces | ID: 739  
+
+Final Answer: [""Ivo Babuška"", ""Petr Vopěnka"", ""Frolík""]",7853,20.57,True,structured_complete
+loft:qampari_128k:23,,"[""MS European Seaway"", ""MS Pride of Burgundy"", ""MS Pride of Calais"", ""MS Pride of Dover"", ""MS Spirit of France""]","TITLE: MS Pride of Calais | ID: 324  
+TITLE: MS European Seaway | ID: 471  
+TITLE: ""European Seaway"" | ID: 471  
+TITLE: MS Spirit of France | ID: 515  
+TITLE: MS Spirit of France | ID: 515  
+TITLE: MS Pride of Burgundy | ID: 633  
+TITLE: MS Pride of Dover | ID: 673  
+
+Final Answer: [""MS Pride of Calais"", ""MS European Seaway"", ""MS Spirit of France"", ""MS Pride of Burgundy"", ""MS Pride of Dover""]",8449,33.01,True,structured_complete
+loft:qampari_128k:24,,"[""argon"", ""helium"", ""krypton"", ""neon"", ""xenon""]","TITLE: Krypton | ID: 261  
+William Ramsay discovered krypton in 1898 in residue left from evaporating nearly all components of liquid air.
+
+Final Answer: [""krypton""]",7488,9.25,True,structured_complete
+loft:qampari_128k:25,,"[""Detention River Christian Community"", ""Elmendorf Christian Community"", ""Milltown Hutterite Colony"", ""Owa Hutterite Colony"", ""Schmiedeleut""]","TITLE: Elmendorf Christian Community | ID: 18  
+TITLE: Milltown Hutterite Colony | ID: 1  
+TITLE: Schmiedeleut | ID: 82  
+TITLE: Owa Hutterite Colony | ID: 118  
+TITLE: Detention River Christian Community | ID: 481  
+
+Final Answer: [""Elmendorf Christian Community"", ""Milltown Hutterite Colony"", ""Schmiedeleut"", ""Owa Hutterite Colony"", ""Detention River Christian Community""]",8251,29.89,True,structured_complete
+loft:qampari_128k:26,,"[""Alice Lon"", ""Elena Jahn"", ""Paul Klee"", ""Perry DeAngelis"", ""Will Sampson""]","TITLE: Alice Lon | ID: 148  
+TITLE: Perry DeAngelis | ID: 682  
+TITLE: Elena Jahn | ID: 533  
+
+[""Alice Lon's cause of death was scleroderma"", ""Perry DeAngelis's cause of death was scleroderma"", ""Elena Jahn died of complications from scleroderma""]
+
+Final Answer: [""Alice Lon's cause of death was scleroderma"", ""Perry DeAngelis's cause of death was scleroderma"", ""Elena Jahn died of complications from scleroderma""]",8916,40.28,True,structured_complete
+loft:qampari_128k:27,,"[""2008 Pilot Pen Tennis – Men's Singles"", ""2009 Chennai Open – singles"", ""2010 Aircel Chennai Open – singles"", ""2010 PBZ Zagreb Indoors – singles"", ""2011 St. Petersburg Open – singles""]","[""2008 Pilot Pen Tennis – Men's Singles"", ""2010 Aircel Chennai Open – Singles"", ""2010 PBZ Zagreb Indoors – Singles"", ""2011 St. Petersburg Open – Singles"", ""2009 Chennai Open – Singles""]
+
+Final Answer: [""2008 Pilot Pen Tennis – Men's Singles"", ""2010 Aircel Chennai Open – Singles"", ""2010 PBZ Zagreb Indoors – Singles"", ""2011 St. Petersburg Open – Singles"", ""2009 Chennai Open – Singles""]",8261,27.45,True,structured_complete
+loft:qampari_128k:28,,"[""Agys Ramsaran Verma"", ""Lokendra Singh"", ""Mithlesh Kumar"", ""Mukund Lal Agrawal"", ""Virendra Singh""]","TITLE: Mithlesh Kumar | ID: 170  
+TITLE: Mukund Lal Agrawal | ID: 256  
+TITLE: Lokendra Singh (politician) | ID: 434  
+TITLE: Agys Ramsaran Verma | ID: 466  
+TITLE: Virendra Singh (politician) | ID: 581  
+
+[""Mithlesh Kumar"", ""Mukund Lal Agrawal"", ""Lokendra Singh"", ""Agys Ramsaran Verma"", ""Virendra Singh""]  
+Final Answer: [""Mithlesh Kumar"", ""Mukund Lal Agrawal"", ""Lokendra Singh"", ""Agys Ramsaran Verma"", ""Virendra Singh""]",8144,28.0,True,structured_complete
+loft:qampari_128k:29,,"[""Breakfast"", ""Rush TV"", ""Us Girls"", ""Wazzup Wazzup"", ""Y Speak""]","TITLE: Us Girls (TV program) | ID: 228  
+TITLE: Rush TV | ID: 528  
+TITLE: Breakfast (Philippine TV program) | ID: 556  
+TITLE: Y Speak | ID: 732  
+
+Final Answer: [""Us Girls"", ""Rush TV"", ""Breakfast"", ""Y Speak""]",8666,32.92,True,structured_complete
+loft:qampari_128k:30,,"[""Edward Kennion"", ""Eleanor Coade"", ""Theodora Cowan"", ""William Pether"", ""William Wynne Ryland""]","TITLE: Edward Kennion | ID: 195  
+TITLE: Eleanor Coade | ID: 353  
+TITLE: COADE, Miss Eleanor... Sculptor. Society of Artists. Artificial Stone Manufactory, Kings-Arms Stairs, Lambeth. Death and commemoration. | ID: 353  
+TITLE: Theodora Cowan | ID: 444  
+TITLE: William Wynne Ryland | ID: 549  
+TITLE: William Pether | ID: 596  
+
+[""Edward Kennion"", ""Eleanor Coade"", ""William Wynne Ryland"", ""William Pether""]
+
+Final Answer: [""Edward Kennion"", ""Eleanor Coade"", ""William Wynne Ryland"", ""William Pether""]",8211,26.03,True,structured_complete
+loft:qampari_128k:31,,"[""Nirel"", ""Oriyardori Asal"", ""Rang"", ""Sompa"", ""Suddha""]","TITLE: Suddha (film) | ID: 70  
+TITLE: Sompa (film) | ID: 164  
+TITLE: Nirel | ID: 197  
+TITLE: Oriyardori Asal | ID: 345  
+
+Final Answer: [""Suddha (film)"", ""Sompa (film)"", ""Nirel"", ""Oriyardori Asal""]",8796,33.71,True,structured_complete
+loft:qampari_128k:32,,"[""Bright Eyes"", ""Conor Oberst and the Mystic Valley Band"", ""Desaparecidos"", ""Monsters of Folk"", ""Park Ave.""]","TITLE: Monsters of Folk | ID: 245  
+TITLE: Conor Oberst and the Mystic Valley Band | ID: 379  
+TITLE: Bright Eyes (band) | ID: 459  
+TITLE: Records | ID: 599  
+TITLE: Desaparecidos (band) | ID: 662  
+
+[""Bright Eyes"", ""Conor Oberst and the Mystic Valley Band"", ""Monsters of Folk""]  
+
+Final Answer: [""Bright Eyes"", ""Conor Oberst and the Mystic Valley Band"", ""Monsters of Folk""]",8734,34.47,True,structured_complete
+loft:qampari_128k:33,,"[""1998 Asian Super Cup"", ""2015 King Cup Final"", ""2015 Saudi Super Cup"", ""2016 King Cup Final"", ""2017–18 Saudi Professional League""]","TITLE: 2015 King Cup Final | ID: 75  
+TITLE: 1998 Asian Super Cup | ID: 150  
+TITLE: 998 competition | ID: 150  
+TITLE: 2015 Saudi Super Cup | ID: 570  
+TITLE: 2016 King Cup Final | ID: 694  
+
+[""2015 King Cup Final"", ""1998 Asian Super Cup"", ""1997–98 Asian Cup Winners' Cup"", ""2015 Saudi Super Cup"", ""2016 King Cup Final""]",8960,35.99,True,structured_complete
+loft:qampari_128k:34,,"[""Baojun 510"", ""Baojun 530"", ""Baojun 630"", ""Baojun 730"", ""Baojun E300""]","[""Baojun 510"", ""Baojun 530"", ""Baojun E300"", ""Baojun 630"", ""Baojun 730""]",9161,38.4,True,structured_complete
+loft:qampari_128k:35,,"[""Bobby Hope"", ""Harold Bodle"", ""John Barton"", ""Kevin Poole"", ""Mick Walker""]","TITLE: Bobby Hope | ID: 42  
+TITLE: Matthew Harriott | ID: 158  
+TITLE: Kevin Poole | ID: 205  
+TITLE: Mick Walker (footballer, born 1940) | ID: 327  
+TITLE: John Barton (footballer, born 1953) | ID: 373  
+TITLE: Harold Bodle | ID: 534  
+TITLE: Arthur Mann | ID: 560  
+
+[""Bobby Hope"", ""Mick Walker (footballer, born 1940)"", ""John Barton (footballer, born 1953)"", ""Harold Bodle"", ""Arthur Mann""]  
+
+Final Answer: [""Bobby Hope"", ""Mick Walker (footballer, born 1940)"", ""John Barton (footballer, born 1953)"", ""Harold Bodle"", ""Arthur Mann""]",8496,31.93,True,structured_complete
+loft:qampari_128k:36,,"[""330 West 42nd Street"", ""Ideal House"", ""Ocean Forest Hotel"", ""Rockefeller Center"", ""Scranton Cultural Center""]","TITLE: Ocean Forest Hotel | ID: 21  
+TITLE: Ocean Forest | ID: 21  
+TITLE: Rockefeller Center | ID: 269  
+TITLE: 330 West 42nd Street | ID: 750  
+
+[""Ocean Forest Hotel"", ""Ocean Forest"", ""Rockefeller Center"", ""330 West 42nd Street""]
+
+Final Answer: [""Ocean Forest Hotel"", ""Ocean Forest"", ""Rockefeller Center"", ""330 West 42nd Street""]",7865,19.01,True,structured_complete
+loft:qampari_128k:37,,"[""Coppélia"", ""La Vivandière or Markitenka"", ""La source"", ""Pâquerette"", ""The Little Humpbacked Horse""]","TITLE: Coppélia | ID: 92  
+TITLE: The Little Humpbacked Horse (ballet) | ID: 213  
+TITLE: Pâquerette | ID: 358  
+TITLE: La source (Saint-Léon) | ID: 653  
+
+[""a comic ballet"", ""a ballet""]  
+
+Final Answer: [""a comic ballet"", ""a ballet""]",8013,17.65,True,structured_complete
+loft:qampari_128k:38,,"[""Amdo Tibetan"", ""Central Tibetan"", ""Khams Tibetan"", ""Ladakhi"", ""Tibetan""]","[""The Ladakhi language is a Tibetic language spoken in Ladakh, a region administered by India as a union territory. It is the predominant language in the Buddhist-dominated district of Leh. Though a member of the Tibetic family, Ladakhi is not mutually intelligible with Standard Tibetan. Ladakhi has approximately 30,000 speakers in India, and perhaps 20,000 speakers in the Tibet Autonomous Region of China, mostly in the Qiangtang region. Ladakhi has several dialects: 'Lehskat' after Leh, where it is spoken; 'Shamskat', spoken in the northwest of Leh; 'Stotskat', spoken in the Indus valley and which is tonal unlike the others; and 'Nubra', spoken in the north of Leh."", ""Lhasa Tibetan is the dialect spoken by educated Lhasa people. It is an official language of the Tibet Autonomous Region. In the traditional 'three-branched' classification of Tibetic languages, the Lhasa dialect belongs to the Central Tibetan branch (the other two being Khams Tibetan and Amdo Tibetan). In terms of mutual intelligibility, Khams could communicate at a basic level with Lhasa Tibetan, while Amdo could not.""]",9125,57.62,True,structured_complete
+loft:qampari_128k:39,,"[""Good Morning Britain"", ""Hey, Hey, It's Saturday!"", ""The Shoe People"", ""Wacaday"", ""Wide Awake Club""]","TITLE: Good Morning Britain (1983 TV programme) | ID: 338  
+[""Good Morning Britain""]  
+
+Final Answer: [""Good Morning Britain""]",7311,8.61,True,structured_complete
+loft:qampari_128k:40,,"[""Geita Gold Mine"", ""Sadiola Gold Mine"", ""Sunrise Dam Gold Mine"", ""TauTona Mine"", ""Yatela Mine""]","TITLE: TauTona Mine | ID: 73  
+TITLE: Geita Gold Mine | ID: 142  
+TITLE: Sunrise Dam Gold Mine | ID: 329  
+TITLE: Yatela Mine | ID: 547  
+
+Final Answer: [""TauTona Mine"", ""Geita Gold Mine"", ""Sunrise Dam Gold Mine"", ""Yatela Mine""]",8222,28.23,True,structured_complete
+loft:qampari_128k:41,,"[""Auguste Piccard"", ""Ben Franklin"", ""F.-A. Forel"", ""Goliath"", ""Titan""]","TITLE: Titan (Six Flags Over Texas) | ID: 12  
+TITLE: F.-A. Forel (PX-28) | ID: 248  
+TITLE: Goliath (Six Flags Magic Mountain) | ID: 268  
+TITLE: Auguste Piccard (PX-8) | ID: 463  
+
+[""Titan (Six Flags Over Texas)"", ""F.-A. Forel (PX-28) underwater submersible"", ""Goliath roller coaster"", ""Auguste Piccard mesoscaphe (Mésoscaphe)""]
+
+Final Answer: [""Titan (Six Flags Over Texas)"", ""F.-A. Forel (PX-28) underwater submersible"", ""Goliath roller coaster"", ""Auguste Piccard mesoscaphe (Mésoscaphe)""]",8298,32.72,True,structured_complete
+loft:qampari_128k:42,,"[""Adam Wakeman"", ""Geoff Nicholls"", ""Neil Murray"", ""Tony Martin"", ""Vinny Appice""]","TITLE: Geoff Nicholls | ID: 131  
+TITLE: Neil Murray (British musician) | ID: 183  
+TITLE: Tony Martin (British singer) | ID: 452  
+TITLE: Vinny Appice | ID: 651  
+
+Final Answer: [""Geoff Nicholls"", ""Philip Neil Murray"", ""Tony Martin"", ""Vinny Appice""]",8160,22.24,True,structured_complete
+loft:qampari_128k:43,,"[""633 Squadron"", ""The Great Escape"", ""The Satan Bug"", ""To Sir, with Love"", ""Walk Like a Dragon""]","TITLE: Walk Like a Dragon | ID: 144  
+TITLE: The Great Escape | ID: 204  
+TITLE: The Satan Bug | ID: 532  
+TITLE: fiction suspense film from United Artists, produced and directed by John Sturges, that stars George Maharis, Richard Basehart, Anne Francis, and Dana Andrews. The screenplay by James Clavell and Edward Anhalt was loosely based on the 1962 novel of the same name by Alistair MacLean, written under the pseudonym Ian Stuart. The film score was composed by Jerry Goldsmith. The film featured the first use of a stabilized camera mount, invented by Nelson Tyler, placed on a helicopter. | ID: 532  
+TITLE: To Sir, with Love | ID: 562  
+TITLE: The Great Escape (film) | ID: 744  
+
+[""Walk Like a Dragon"", ""The Great Escape"", ""The Satan Bug"", ""To Sir, with Love""]
+
+Final Answer: [""Walk Like a Dragon"", ""The Great Escape"", ""The Satan Bug"", ""To Sir, with Love""]",8641,37.77,True,structured_complete
+loft:qampari_128k:44,,"[""Bad Astronaut"", ""Joey Cape's Bad Loud"", ""Lagwagon"", ""Me First and the Gimme Gimmes"", ""The Playing Favorites""]","TITLE: Me First and the Gimme Gimmes | ID: 35  
+TITLE: Joey Cape's Bad Loud | ID: 265  
+TITLE: Lagwagon | ID: 574  
+TITLE: The Playing Favorites | ID: 600  
+TITLE: Bad Astronaut | ID: 630  
+
+[""Me First and the Gimme Gimmes"", ""Joey Cape's Bad Loud"", ""Lagwagon"", ""The Playing Favorites"", ""Bad Astronaut""]
+
+Final Answer: [""Me First and the Gimme Gimmes"", ""Joey Cape's Bad Loud"", ""Lagwagon"", ""The Playing Favorites"", ""Bad Astronaut""]",8552,34.65,True,structured_complete
+loft:qampari_128k:45,,"[""Blaine Island"", ""Magic Island"", ""Scotts Island"", ""Tyler Island"", ""Wilson Island (West Virginia)""]","TITLE: Magic Island (West Virginia) | ID: 135  
+TITLE: Kanawha Boulevard and Magic Island | ID: 135  
+TITLE: Tyler Island | ID: 156  
+TITLE: Scotts Island | ID: 169  
+TITLE: Wilson Island (West Virginia) | ID: 395  
+TITLE: Blaine Island | ID: 655  
+
+[""Magic Island (West Virginia)"", ""Tyler Island"", ""Scotts Island"", ""Wilson Island (West Virginia)"", ""Blaine Island""]
+
+Final Answer: [""Magic Island (West Virginia)"", ""Tyler Island"", ""Scotts Island"", ""Wilson Island (West Virginia)"", ""Blaine Island""]",9144,45.84,True,structured_complete
+loft:qampari_128k:46,,"[""Arthur Mann"", ""George Kerr"", ""Jimmy Cringan"", ""Ray O'Brien"", ""Rob Scott""]","TITLE: Rob Scott (footballer) | ID: 130  
+TITLE: George Kerr (footballer) | ID: 251  
+TITLE: Jimmy Cringan | ID: 314  
+TITLE: Arthur Mann | ID: 560  
+
+Final Answer: [""Rob Scott"", ""George Kerr"", ""Jimmy Cringan"", ""Arthur Mann""]",8009,20.98,True,structured_complete
+loft:qampari_128k:47,,"[""Colton Greene"", ""David Rice Atchison"", ""Frank James"", ""M. Jeff Thompson"", ""Sterling Price""]","TITLE: Colton Greene | ID: 17  
+TITLE: M. Jeff Thompson | ID: 233  
+TITLE: David Rice Atchison | ID: 478  
+TITLE: Alonzo W. Slayback | ID: 576  
+TITLE: Sterling Price | ID: 664  
+TITLE: Frank James | ID: 679  
+
+Final Answer: [""Colton Greene"", ""M. Jeff Thompson"", ""David Rice Atchison"", ""Alonzo W. Slayback"", ""Sterling Price"", ""Frank James""]",8375,40.46,True,structured_complete
+loft:qampari_128k:48,,"[""Death Stalks the Night"", ""Sleep No More"", ""Three Tales of Horror"", ""Who Knocks?"", ""Worse Things Waiting""]","TITLE: Three Tales of Horror | ID: 119  
+TITLE: Death Stalks the Night | ID: 168  
+TITLE: Who Knocks? | ID: 320  
+TITLE: rleth | ID: 320  
+TITLE: Worse Things Waiting | ID: 553  
+TITLE: Sleep No More (anthology) | ID: 636  
+
+Final Answer: [""Three Tales of Horror"", ""Death Stalks the Night"", ""Who Knocks?"", ""rleth"", ""Worse Things Waiting"", ""Sleep No More (anthology)""]",8584,34.18,True,structured_complete
+loft:qampari_128k:49,,"[""Black Thorn, White Rose"", ""Ruby Slippers, Golden Tears"", ""Salon Fantastique"", ""Snow White, Blood Red"", ""Year's Best Fantasy and Horror""]","TITLE: Salon Fantastique | ID: 27  
+TITLE: Snow White, Blood Red (book) | ID: 51  
+TITLE: Black Thorn, White Rose | ID: 128  
+TITLE: Ruby Slippers, Golden Tears | ID: 262  
+TITLE: Year's Best Fantasy and Horror | ID: 344  
+
+[""Salon Fantastique: Fifteen Original Tales of Fantasy"", ""Snow White, Blood Red (book)"", ""Black Thorn, White Rose"", ""Ruby Slippers, Golden Tears"", ""Year's Best Fantasy and Horror""]
+
+Final Answer: [""Salon Fantastique: Fifteen Original Tales of Fantasy"", ""Snow White, Blood Red (book)"", ""Black Thorn, White Rose"", ""Ruby Slippers, Golden Tears"", ""Year's Best Fantasy and Horror""]",8016,24.68,True,structured_complete
+loft:qampari_128k:50,,"[""Central Ojibwa"", ""Eastern Ojibwa"", ""Mohawk"", ""Northwestern Ojibwa"", ""Oneida""]","[""Central Ojibwa (also known as Central Ojibwe, Ojibway, Ojibwe)"", ""Ojibwe, specifically the Eastern Ojibwe dialect spoken in regions north of Lake Ontario and east of Georgian Bay"", ""Ojibwe, specifically the Northwestern Ojibwe dialect, which is spoken in Ontario and Manitoba, Canada"", ""the Mohawk language, which is spoken by around 3,500 people in southern Ontario"", ""the Oneida language, spoken by the Oneida people in the Canadian province of Ontario""]
+
+Final Answer: [""Central Ojibwa (also known as Central Ojibwe, Ojibway, Ojibwe)"", ""Ojibwe, specifically the Eastern Ojibwe dialect spoken in regions north of Lake Ontario and east of Georgian Bay"", ""Ojibwe, specifically the Northwestern Ojibwe dialect, which is spoken in Ontario and Manitoba, Canada"", ""the Mohawk language, which is spoken by around 3,500 people in southern Ontario"", ""the Oneida language, spoken by the Oneida people in the Canadian province of Ontario""]",8965,39.43,True,structured_complete
+loft:qampari_128k:51,,"[""Florida State Road 112"", ""Florida State Road 836"", ""Florida State Road 874"", ""Florida State Road 878"", ""Florida State Road 924""]","TITLE: Florida State Road 874 | ID: 77  
+TITLE: Airport Expressway | ID: 140  
+TITLE: Florida State Road 924 | ID: 656  
+TITLE: Florida State Road 878 | ID: 754  
+
+[""State Road 874"", ""Airport Expressway"", ""Gratigny Parkway (or simply, the Gratigny)"", ""Florida State Road 878 (Snapper Creek Expressway or Snapper Creek Tollway)""]  
+
+Final Answer: [""State Road 874"", ""Airport Expressway"", ""Gratigny Parkway (or simply, the Gratigny)"", ""Florida State Road 878 (Snapper Creek Expressway or Snapper Creek Tollway)""]",8559,38.3,True,structured_complete
+loft:qampari_128k:52,,"[""Aneroid Lake"", ""Bonny Lakes"", ""Dollar Lake"", ""Legore Lake"", ""Roger Lake""]","[""tarn"", ""mountain pond"", ""cirque valley"", ""Bonny Lakes basin""]",8796,32.83,True,structured_complete
+loft:qampari_128k:53,,"[""A Girl Worth Fighting For"", ""Beautiful Disaster"", ""Break My Stride"", ""Honor to Us All"", ""Mulan"", ""Reflection""]","TITLE: Rebekah Johnson | ID: 242  
+TITLE: Break My Stride | ID: 266  
+TITLE: Reflection (Mulan song) | ID: 285  
+TITLE: A Girl Worth Fighting For | ID: 436  
+TITLE: isney film ""Mulan"" | ID: 436  
+TITLE: Beautiful Disaster (Kelly Clarkson song) | ID: 445  
+
+[""Break My Stride"", ""Reflection"", ""A Girl Worth Fighting For"", ""Beautiful Disaster""]  
+
+Final Answer: [""Break My Stride"", ""Reflection"", ""A Girl Worth Fighting For"", ""Beautiful Disaster""]",8442,28.71,True,structured_complete
+loft:qampari_128k:54,,"[""Bee and PuppyCat"", ""Castlevania"", ""My Life as a Teenage Robot"", ""Oh Yeah! Cartoons"", ""Random! Cartoons""]","TITLE: My Life as a Teenage Robot | ID: 50  
+TITLE: Random! Cartoons | ID: 125  
+TITLE: Oh Yeah! Cartoons | ID: 458  
+TITLE: What A Cartoon! | ID: 458  
+TITLE: Too Cool! | ID: 458  
+TITLE: Castlevania (TV series) | ID: 641  
+TITLE: Dracula: Bloodlines | ID: 641  
+TITLE: Bee and PuppyCat | ID: 667  
+
+[""My Life as a Teenage Robot"", ""Random! Cartoons"", ""Oh Yeah! Cartoons"", ""What A Cartoon!"", ""Too Cool!"", ""Castlevania (TV series)"", ""Dracula: Bloodlines"", ""Bee and PuppyCat""]
+
+Final Answer: [""My Life as a Teenage Robot"", ""Random! Cartoons"", ""Oh Yeah! Cartoons"", ""What A Cartoon!"", ""Too Cool!"", ""Castlevania (TV series)"", ""Dracula: Bloodlines"", ""Bee and PuppyCat""]",9098,41.55,True,structured_complete

@@ -1,0 +1,128 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:quest_128k:0,,"[""A Case of Need""]","[""A Case of Need""]",1985,9.7,True,structured_complete
+loft:quest_128k:1,,"[""Five Point Someone"", ""One Night @ the Call Center"", ""The 3 Mistakes of My Life""]","[""Five Point Someone"", ""The 3 Mistakes of My Life""]",3075,23.55,True,structured_complete
+loft:quest_128k:2,,"[""Duel with Death"", ""Fly Away Home (2016 film)"", ""Sunshine (1999 film)""]","[""Sunshine (1999 film)""]",2270,11.55,True,structured_complete
+loft:quest_128k:3,,"[""Moomins and the Comet Chase"", ""Quest for a Heart"", ""Santa Claus and the Magic Drum""]","[""Quest for a Heart"", ""Moomins and the Comet Chase""]  
+Final Answer: [""Quest for a Heart"", ""Moomins and the Comet Chase""]",3321,30.93,True,structured_complete
+loft:quest_128k:4,,"[""At Night We Walk in Circles"", ""La reina de América"", ""Lost City Radio""]",,1355,0.53,True,abstained
+loft:quest_128k:5,,"[""One Way Trip 3D""]","[""The Deadly Game (1982 film)""]",2451,15.71,True,structured_complete
+loft:quest_128k:6,,"[""Lego Scooby-Doo! Blowout Beach Bash"", ""Scooby-Doo! and the Curse of the 13th Ghost"", ""The Magic Snowflake""]",,1143,0.55,True,abstained
+loft:quest_128k:7,,"[""Firecrest (novel)"", ""Lament for Leto""]","[""Firecrest (novel)""]",2590,16.27,True,structured_complete
+loft:quest_128k:8,,"[""Crisis of Conscience""]","TITLE: Crisis of Conscience | ID: 289
+
+Final Answer: [""Crisis of Conscience""]",2268,13.25,True,structured_complete
+loft:quest_128k:9,,"[""Demi-Gods and Semi-Devils"", ""The Adventures of Peregrine Pickle"", ""The History of Sir Charles Grandison""]",,1354,0.53,True,abstained
+loft:quest_128k:10,,"[""Chain of Attack"", ""The Final Nexus"", ""The Peacekeepers""]","TITLE: The Final Nexus | ID: 1  
+TITLE: Chain of Attack | ID: 32  
+TITLE: The Peacekeepers | ID: 33  
+
+[""Chain of Attack"", ""The Peacekeepers"", ""The Final Nexus""]
+
+Final Answer: [""Chain of Attack"", ""The Peacekeepers"", ""The Final Nexus""]",2541,17.37,True,structured_complete
+loft:quest_128k:11,,"[""Best Defense"", ""Red Dawn""]","[""Red Dawn""] 
+
+Final Answer: [""Red Dawn""]",2050,8.0,True,structured_complete
+loft:quest_128k:12,,"[""Seveneves""]","[""Nothing relevant""]",2073,9.35,True,structured_complete
+loft:quest_128k:13,,"[""Alega Gang: Public Enemy No.1 of Cebu"", ""Lapu-Lapu (2002 film)"", ""Patay na si Hesus""]","TITLE: Alega Gang: Public Enemy No.1 of Cebu | ID: 30  
+TITLE: Patay na si Hesus | ID: 291  
+
+Final Answer: [""Alega Gang: Public Enemy No.1 of Cebu"", ""Patay na si Hesus""]",2508,15.6,True,structured_complete
+loft:quest_128k:14,,"[""All She Was Worth"", ""Crossfire (novel)"", ""Out (novel)""]","[""""]  
+Final Answer: []",2037,5.55,True,structured_complete
+loft:quest_128k:15,,"[""Elizabeth (film)""]","[]
+
+Final Answer: []",1575,1.4,True,structured_complete
+loft:quest_128k:16,,"[""Personal Recollections of Joan of Arc""]","[""Personal Recollections of Joan of Arc""]  
+
+Final Answer:[""Personal Recollections of Joan of Arc""]",2227,10.92,True,structured_complete
+loft:quest_128k:17,,"[""Hitman's Wife's Bodyguard"", ""Red Notice (film)"", ""The King's Man""]","TITLE: Red Notice (film) | ID: 127
+
+[""Red Notice (film)""]
+
+Final Answer: [""Red Notice (film)""]",2011,7.03,True,structured_complete
+loft:quest_128k:18,,"[""The Way of the Scarlet Pimpernel""]","[""The Way of the Scarlet Pimpernel (ID: 186) is a history/adventure book about France, first published in 1933.""]",1996,6.12,True,structured_complete
+loft:quest_128k:19,,"[""Batman & Bill"", ""Batman & Robin (film)"", ""Batman (serial)""]","TITLE: Batman & Robin (film) | ID: 0
+
+Final Answer: [""Batman & Robin (film)""]",1862,6.47,True,structured_complete
+loft:quest_128k:20,,"[""Batman: The Killing Joke (film)"", ""Pérák: The Shadow over Prague"", ""The League of Extraordinary Gentlemen (film)""]","[""Batman: The Killing Joke (film) | ID: 56"", ""The League of Extraordinary Gentlemen (film) | ID: 102""]  
+Final Answer: [""Batman: The Killing Joke (film) | ID: 56"", ""The League of Extraordinary Gentlemen (film) | ID: 102""]",2251,12.21,True,structured_complete
+loft:quest_128k:21,,"[""Poison in Jest"", ""The Waxworks Murder""]",,1310,0.63,True,abstained
+loft:quest_128k:22,,"[""Battle Cry (Uris novel)"", ""Go Tell It on the Mountain (novel)"", ""Junkie (novel)""]","TITLE: Go Tell It on the Mountain (novel) | ID: 85  
+TITLE: Battle Cry (Uris novel) | ID: 275  
+
+Final Answer: [""Go Tell It on the Mountain (novel)"", ""Battle Cry (Uris novel)""]",2189,11.8,True,structured_complete
+loft:quest_128k:23,,"[""P4W: Prison for Women"", ""The Phantom (2021 film)"", ""Waseskun""]","[""Nothing relevant""]",1829,4.86,True,structured_complete
+loft:quest_128k:24,,"[""Mythago Wood"", ""Nights at the Circus""]","TITLE: Mythago Wood | ID: 41
+
+List:  
+- Title: Mythago Wood  
+- ID: 41  
+- It is a fantasy novel about the United Kingdom, published in 1984.  
+- Set in Herefordshire, England, within Ryhope Wood.  
+- Part of a fantasy series known as the Mythago Wood or Ryhope Wood cycle.
+
+Final Answer: [""Mythago Wood""]",2333,15.49,True,structured_complete
+loft:quest_128k:25,,"[""Laughing Gas (novel)""]",,1312,0.51,True,abstained
+loft:quest_128k:26,,"[""Hannibal Rising"", ""Jewel (novel)""]",,1290,0.59,True,abstained
+loft:quest_128k:27,,"[""Ryan (film)""]",,1254,0.57,True,abstained
+loft:quest_128k:28,,"[""Cavalleria rusticana (1982 film)"", ""The Deadly Game (1982 film)"", ""The Life of Verdi (miniseries)""]","TITLE: The Life of Verdi (miniseries) | ID: 264  
+List:  
+- The Life of Verdi (miniseries) is a 1982 Italian-language biographical television miniseries filmed on location in Italy.
+
+Final Answer: [""The Life of Verdi (miniseries) is a 1982 Italian-language biographical television miniseries filmed on location in Italy""]",1949,6.97,True,structured_complete
+loft:quest_128k:29,,"[""Hulk: Where Monsters Dwell"", ""Resident Evil: Vendetta""]",,1312,0.55,True,abstained
+loft:quest_128k:30,,"[""A Lingering Face"", ""Looking Up (film)"", ""Ni Jing: Thou Shalt Not Steal""]","[""""]
+
+Final Answer: [""""]",1991,7.66,True,structured_complete
+loft:quest_128k:31,,"[""Child Bride"", ""I Accuse My Parents"", ""The Devil's Sleep""]","TITLE: The Devil's Sleep | ID: 284  
+List:  
+- ""The Devil's Sleep (1949) is an exploitation film.""
+
+Final Answer: [""The Devil's Sleep (1949) is an exploitation film.""]",2177,24.03,True,structured_complete
+loft:quest_128k:32,,"[""Time and the Wind""]","[""Time and the Wind""]  
+Final Answer: [""Time and the Wind""]",2216,28.98,True,structured_complete
+loft:quest_128k:33,,"[""Midnight Sun (Meyer novel)"", ""New Moon (novel)"", ""Twilight (Meyer novel)""]",,1323,1.12,True,abstained
+loft:quest_128k:34,,"[""Boy at War"", ""The Changeover"", ""The Firebird Rocket""]",,1341,1.49,True,abstained
+loft:quest_128k:35,,"[""Killing Them Softly"", ""Mac & Devin Go to High School""]",,1326,1.3,True,abstained
+loft:quest_128k:36,,"[""My Uncle Napoleon"", ""Savushun"", ""The Blind Owl""]","[""The Blind Owl""]",2816,53.48,True,structured_complete
+loft:quest_128k:37,,"[""Doctor Zhivago (film)""]","[""Victory at Entebbe""]",3267,79.99,True,structured_complete
+loft:quest_128k:38,,"[""The Picturegoers"", ""The Violent Bear It Away""]","[""The Violent Bear It Away""]",2210,33.94,True,structured_complete
+loft:quest_128k:39,,"[""Undercover with the KKK""]","TITLE: Aerials (film) | ID: 230  
+- Aerials is a 2016 Emirati science fiction film set in Dubai, United Arab Emirates, featuring an alien invasion from outer space. It is the first science fiction film made in UAE and portrays Earth being invaded by aliens. The film involves a multiracial couple in Dubai who, after losing communication with the outside world, explore cultural and scientific differences to understand the alien invasion, only to face extraterrestrial encounters at home. It was released in UAE cinemas on June 16, 2016, and internationally on Netflix in May 2020.
+
+Final Answer: [""Aerials (film) is a 2016 Emirati science fiction film set in Dubai, United Arab Emirates, featuring an alien invasion from outer space. It is the first science fiction film made in UAE and portrays Earth being invaded by aliens. The film involves a multiracial couple in Dubai who, after losing communication with the outside world, explore cultural and scientific differences to understand the alien invasion, only to face extraterrestrial encounters at home. It was released in UAE cinemas on June 16, 2016, and internationally on Netflix in May 2020.""]",2612,62.78,True,structured_complete
+loft:quest_128k:40,,"[""An Obvious Situation"", ""That Night's Wife"", ""The Copper (1930 film)""]","TITLE: The Copper (1930 film) | ID: 92  
+TITLE: An Obvious Situation | ID: 203  
+
+List:  
+- ""The Copper""  
+- ""An Obvious Situation""  
+
+Final Answer: [""The Copper"", ""An Obvious Situation""]",2337,40.59,True,structured_complete
+loft:quest_128k:41,,"[""Ace Attorney (film)"", ""True Story (film)""]",Final Answer: [],2017,31.53,True,structured_complete
+loft:quest_128k:42,,"[""Le Grand Meaulnes"", ""The Mysteries of Paris"", ""The Mystery of the Yellow Room""]","[""Le Grand Meaulnes | 288"", ""The Mysteries of Paris | 321""]  
+Final Answer: [""Le Grand Meaulnes | 288"", ""The Mysteries of Paris | 321""]",2543,38.33,True,structured_complete
+loft:quest_128k:43,,"[""Casta Diva (1935 film)"", ""The Fire Devil"", ""Under Capricorn""]","[""Under Capricorn | 73""]",2052,27.65,True,structured_complete
+loft:quest_128k:44,,"[""First Invasion: The War of 1812"", ""Last of the Buccaneers"", ""Mohawk (2017 film)""]","[""First Invasion: The War of 1812""]",2082,18.84,True,structured_complete
+loft:quest_128k:45,,"[""Going Vertical"", ""Prefontaine (film)""]","[""Going Vertical (ID: 122) is a 2017 Russian sports drama film about the Soviet national basketball team's victory over the 1972 U.S. Olympic team at the Munich Summer Olympics. The film is set in 1972, focusing on the events of the Munich Summer Olympics, specifically the night of 9 to 10 September 1972. The story centers on the Soviet team's controversial win, which ended the U.S. team's 63-game winning streak.""]
+
+Final Answer: [""Going Vertical (ID: 122) is a 2017 Russian sports drama film about the Soviet national basketball team's victory over the 1972 U.S. Olympic team at the Munich Summer Olympics. The film is set in 1972, focusing on the events of the Munich Summer Olympics, specifically the night of 9 to 10 September 1972. The story centers on the Soviet team's controversial win, which ended the U.S. team's 63-game winning streak.""]",2676,59.68,True,structured_complete
+loft:quest_128k:46,,"[""Ilium (novel)"", ""Summer of Night"", ""The Fall of Hyperion (novel)""]","TITLE: Summer of Night | ID: 77  
+TITLE: Ilium (novel) | ID: 258  
+
+[""Summer of Night"", ""Ilium (novel)""]  
+
+Final Answer: [""Summer of Night"", ""Ilium (novel)""]",2573,51.88,True,structured_complete
+loft:quest_128k:47,,"[""We the Living""]",Final Answer: [],1714,3.0,True,structured_complete
+loft:quest_128k:48,,"[""Le Divorce"", ""Peppermint Soda"", ""Two English Girls""]","[""m"", ""Le Divorce""]  
+Final Answer: [""m"", ""Le Divorce""]",2511,39.51,True,structured_complete
+loft:quest_128k:49,,"[""Aftermath (1994 film)"", ""Amoklauf"", ""Aya: Imagined Autobiography""]",,1283,1.43,True,abstained
+loft:quest_128k:50,,"[""Circe (novel)"", ""Julian (novel)""]",,1328,1.34,True,abstained
+loft:quest_128k:51,,"[""Alice's Adventures in Wonderland"", ""Prince Caspian"", ""The Magician's Nephew""]","[""The Magician's Nephew | 147"", ""Prince Caspian | 206""]",3036,66.8,True,structured_complete
+loft:quest_128k:52,,"[""A.P.E.X.""]","[""A.P.E.X.""]  
+Final Answer: [""A.P.E.X.""]",2253,32.78,True,structured_complete
+loft:quest_128k:53,,"[""Babes in Toyland (1934 film)"", ""Mad Monster Party?""]","TITLE: Moomins and the Comet Chase | ID: 202  
+TITLE: Mad Monster Party? | ID: 313  
+
+Final Answer: [""Moomins and the Comet Chase"", ""Mad Monster Party?""]",3178,68.57,True,structured_complete
+loft:quest_128k:54,,"[""Come in Spinner"", ""The Thorn Birds"", ""Zuleika Dobson""]",,1350,1.31,True,abstained

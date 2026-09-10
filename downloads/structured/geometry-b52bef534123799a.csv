@@ -1,0 +1,134 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:musique_128k:0,,"[""Al - Aqsa Mosque""]",,891,1.07,True,abstained
+loft:musique_128k:1,,"[""Oriole Records.""]","TITLE: New York City | ID: 324
+
+Final Answer:",1246,2.03,True,structured_complete
+loft:musique_128k:2,,"[""Sales began worldwide in April 2012""]",Final Answer:,1154,0.76,True,structured_complete
+loft:musique_128k:3,,"[""1952""]",,911,0.3,True,abstained
+loft:musique_128k:4,,"[""Oriole Records.""]","TITLE: Hello, Larry | ID: 39  
+TITLE: ABC | ID: ?  
+TITLE: NBC | ID: ?  
+
+Final Answer: NOTHING RELEVANT",1475,3.58,True,structured_complete
+loft:musique_128k:5,,"[""1941""]","TITLE: Siddhi Savetsila | ID: 108  
+TITLE: Malaya and the British Straits Settlements | ID: 106  
+
+Final Answer:",1398,3.47,True,structured_complete
+loft:musique_128k:6,,"[""island Koh Phi Phi""]","TITLE: Siddhi Savetsila | ID: 108  
+TITLE: The Beach (film) | ID: 308  
+
+Final Answer: the Thai island",1760,6.07,True,structured_complete
+loft:musique_128k:7,,"[""Francisco Guterres""]","TITLE: Indonesia–Timor Leste Commission of Truth and Friendship | ID: 598  
+Final Answer: None of the provided documents mention the president of East Timor, so the query cannot be fully answered.",1599,4.75,True,structured_complete
+loft:musique_128k:8,,"[""the country of India""]","TITLE: y BCE inscription of Darius I mentions the province of Hi (n) dush, referring to northwestern India. The people of India were referred to as Hinduvān (Hindus) and hindavī was used as the adjective for Indian in the 8th century text Chachnama. The term 'Hindu' in these ancient records is an ethno - geographical term and did not refer to a religion. The Arabic equivalent Al - Hind likewise referred to the country of India. | ID: 540
+
+Final Answer: NOTHING RELEVANT",1997,8.83,True,structured_complete
+loft:musique_128k:9,,"[""1,400 years""]","TITLE: Zhejiang | ID: 14  
+1,400 years ago",1452,3.57,True,structured_complete
+loft:musique_128k:10,,"[""Rialto Bridge""]",,913,0.28,True,abstained
+loft:musique_128k:11,,"[""16th - century""]",,919,0.31,True,abstained
+loft:musique_128k:12,,"[""Francisco Guterres""]","TITLE: Indonesia–Timor Leste Commission of Truth and Friendship | ID: 598
+
+Final Answer: NOTHING RELEVANT",1126,2.65,True,structured_complete
+loft:musique_128k:13,,"[""Rialto Bridge""]","TITLE: Mandolin | ID: 565  
+Final Answer: NOTHING RELEVANT",1333,2.08,True,structured_complete
+loft:musique_128k:14,,"[""Toronto Coach Terminal""]",,857,0.27,True,abstained
+loft:musique_128k:15,,"[""Walter Sabo""]",,906,0.3,True,abstained
+loft:musique_128k:16,,"[""built on 16-bit architectures and offered improved graphics and sound""]",,638,0.17,True,abstained
+loft:musique_128k:17,,"[""built in the 15th century""]","TITLE: Gothic architecture | ID: 776  
+Final Answer: 15th century",1444,3.04,True,structured_complete
+loft:musique_128k:18,,"[""June 1941""]",,879,0.32,True,abstained
+loft:musique_128k:19,,"[""New York Yankees""]","TITLE: XWiki | ID: 218  
+TITLE: A Sunday in Kigali | ID: 217  
+TITLE: ung Award winner Cliff Lee spoiled the opening of the new stadium by winning 10 -- 2. Before the Yankees went to bat for the first time, the bat that Babe Ruth used to hit his first home run at the old Yankee Stadium in 1923 was placed momentarily on home plate. Jorge Posada hit the first Yankee home run in the new ballpark hitting his off Lee in the same game. Russell Branyan, while playing for the Seattle Mariners, was the first player to hit a home run off of the Mohegan Sun Restaurant in center field. | END ID: 216
+
+- The person who hit the first home run at the new stadium in South Bronx is Jorge Posada.  
+- Jorge Posada hit the first Yankee home run in the new ballpark.  
+- Jorge Posada hit his home run off Cliff Lee.  
+- Cliff Lee is associated with the Yankees (implied by ""the Yankees went to bat"" and ""Jorge Posada hit his off Lee"").  
+- Therefore, the team Jorge Posada plays for is the Yankees.  
+
+Final Answer: The Yankees",1840,9.08,True,structured_complete
+loft:musique_128k:20,,"[""1952""]",,623,0.17,True,abstained
+loft:musique_128k:21,,"[""Rialto Bridge""]",,882,0.3,True,abstained
+loft:musique_128k:22,,"[""1941""]",Final Answer:,1061,0.58,True,structured_complete
+loft:musique_128k:23,,"[""1941""]",,705,0.17,True,abstained
+loft:musique_128k:24,,"[""five""]","TITLE: Super Nintendo Entertainment System | ID: 821  
+- Nintendo's limit on games per developer per year for the Super Nintendo Entertainment System was five games.
+
+Final Answer: five",1479,3.92,True,structured_complete
+loft:musique_128k:25,,"[""the country of India""]","TITLE: Age of candidacy | ID: 579  
+Final Answer: Hinduism",1776,6.14,True,structured_complete
+loft:musique_128k:26,,"[""1905""]","TITLE: Allen, Arizona | ID: 315  
+Final Answer:",1359,2.33,True,structured_complete
+loft:musique_128k:27,,"[""five""]","TITLE: Pinball Quest | ID: 725  
+TITLE: Super Nintendo Entertainment System | ID: 821  
+
+- Nintendo's limit on games per developer per year on the NES platform was five games per year.  
+
+Final Answer: five games per year",1530,4.63,True,structured_complete
+loft:musique_128k:28,,"[""Oriole Records.""]",,899,0.3,True,abstained
+loft:musique_128k:29,,"[""Casa Loma""]",,880,0.32,True,abstained
+loft:musique_128k:30,,"[""the country of India""]","TITLE: Age of candidacy | ID: 579  
+- The meaning of the word for the majority religion in the area of British India that became India is Hinduism.  
+
+Final Answer: Hinduism",1908,7.43,True,structured_complete
+loft:musique_128k:31,,"[""Sales began worldwide in April 2012""]",Final Answer:,1360,2.8,True,structured_complete
+loft:musique_128k:32,,"[""Pete Rose""]","TITLE: Jim Wilson (first baseman) | ID: 23  
+TITLE: List of Major League Baseball career hits leaders | ID: 727  
+
+Final Answer: NOTHING RELEVANT",1670,5.27,True,structured_complete
+loft:musique_128k:33,,"[""Warner Music Group""]","TITLE: Arthur's Theme (Best That You Can Do) | ID: 759  
+- The singer of the theme song from the movie Arthur is Christopher Cross.  
+- The passage does not explicitly state the record label or its owner. Therefore, based solely on the provided information, we cannot identify the owner of the record label.  
+
+Final Answer: nothing relevant",1577,6.7,True,structured_complete
+loft:musique_128k:34,,"[""the Mississippi River Delta""]","TITLE: Write This Down (band) | ID: 405
+
+Final Answer: NOTHING RELEVANT",1424,3.26,True,structured_complete
+loft:musique_128k:35,,"[""Abu Musa Ashaari""]","TITLE: Southeast Asia | ID: 719
+
+Final Answer:",1282,2.66,True,structured_complete
+loft:musique_128k:36,,"[""Chris Harrison""]","TITLE: Who Wants to Be a Millionaire (American game show) | ID: 227
+
+Final Answer:",1293,2.19,True,structured_complete
+loft:musique_128k:37,,"[""Min Zhou""]",,845,0.25,True,abstained
+loft:musique_128k:38,,"[""Sea, Air, and Land""]","TITLE: USS Sable (IX-81) | ID: 573  
+Final Answer: NOTHING RELEVANT",1536,4.02,True,structured_complete
+loft:musique_128k:39,,"[""Toronto Coach Terminal""]","The provided notes do not contain any information about greyhound buses, the city where the performer of ""Born a Lion"" formed, or any relevant connection between these elements. Therefore, the query cannot be answered based on the given documents.
+
+Final Answer: []",1289,2.03,True,structured_complete
+loft:musique_128k:40,,"[""Sea, Air, and Land""]","TITLE: USS Jason (AR-8) | ID: 442  
+Final Answer: NOTHING RELEVANT",1417,3.21,True,structured_complete
+loft:musique_128k:41,,"[""1905""]","TITLE: Drexel Heights, Arizona | ID: 103  
+TITLE: Pima County, Arizona | ID: NOT PROVIDED  
+TITLE: ipitation | ID: 697  
+
+Final Answer: 1905",1527,3.76,True,structured_complete
+loft:musique_128k:42,,"[""for the conclave in Rome""]","TITLE: Pope John XXIII | ID: 228
+
+Final Answer: NOTHING RELEVANT",1333,2.23,True,structured_complete
+loft:musique_128k:43,,"[""22""]","TITLE: Black Death | ID: 656  
+Final Answer:",1172,2.4,True,structured_complete
+loft:musique_128k:44,,"[""1984""]","TITLE: Capital punishment in the United States
+ID: 675
+
+Final Answer: 1984",1155,1.55,True,structured_complete
+loft:musique_128k:45,,"[""2,548 sq mi""]",,911,0.31,True,abstained
+loft:musique_128k:46,,"[""Jiangsu Nangang Basketball Club""]","TITLE: Sino-Tibetan relations during the Ming dynasty | ID: 1  
+Final Answer:",1366,2.49,True,structured_complete
+loft:musique_128k:47,,"[""Jessie Woodrow Wilson""]",,683,0.15,True,abstained
+loft:musique_128k:48,,"[""The dynasty regrouped and defeated the Portuguese""]",,883,0.3,True,abstained
+loft:musique_128k:49,,"[""Medieval Latin""]",,833,0.28,True,abstained
+loft:musique_128k:50,,"[""Medieval Latin""]",,920,0.31,True,abstained
+loft:musique_128k:51,,"[""Medieval Latin""]","TITLE: Charlemagne | ID: 96  
+TITLE: Holy Roman Emperor | ID: 593  
+
+Final Answer: NOTHING RELEVANT",1527,4.07,True,structured_complete
+loft:musique_128k:52,,"[""1981""]","No relevant documents provide information about the opening dates of US assembly plants by the maker of the Acura Legend, the manufacturer of Toyopet Master, or Nissan.
+
+Final Answer: []",1135,1.1,True,structured_complete
+loft:musique_128k:53,,"[""1981""]","No relevant documents provide information about the maker of the Acura Legend, Katsuaki Watanabe's employer, or Nissan opening US assembly plants. Therefore, the query cannot be answered based on the given notes.
+
+Final Answer: []",1151,1.37,True,structured_complete
+loft:musique_128k:54,,"[""Medieval Latin""]",,613,0.17,True,abstained

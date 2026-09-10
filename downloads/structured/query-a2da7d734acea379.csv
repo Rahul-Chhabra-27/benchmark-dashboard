@@ -1,0 +1,116 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:quest_128k:0,,"[""A Case of Need""]","[""The Zodiac (ID: 103) is a novel set in Boston, involving a family (the Gallaghers) and environmental issues in Boston Harbor, which is in New England.""]",9681,66.71,True,structured_complete
+loft:quest_128k:1,,"[""Five Point Someone"", ""One Night @ the Call Center"", ""The 3 Mistakes of My Life""]","[""Five Point Someone"", ""The 3 Mistakes of My Life"", ""One Night @ the Call Center""]
+
+Final Answer: [""Five Point Someone"", ""The 3 Mistakes of My Life"", ""One Night @ the Call Center""]",9561,61.89,True,structured_complete
+loft:quest_128k:2,,"[""Duel with Death"", ""Fly Away Home (2016 film)"", ""Sunshine (1999 film)""]","[""The film 'Sunshine (1999 film)' includes a storyline set during and after the Hungarian Revolution of 1956. The film is a historical drama that covers the period from the creation of the Austro-Hungarian Empire to the aftermath of the 1956 Revolution. It features a Hungarian Jewish family whose story spans multiple generations, including the 1956 Revolution. The film is not about the Austrian War, but it is set in the historical context of Hungary and the Austro-Hungarian Empire."", ""TITLE: Duel with Death | ID: 224\n'Duel with Death' is a 1949 Austrian war drama film directed by Paul May and starring Rolf von Nauckhoff, Annelies Reinhold, and Fritz Hinz-Fabricius. The film portrays the Austrian resistance to Nazi Germany during the Second World War. The film's sets were designed by the art director Otto Pischinger. It premiered at the Locarno Film Festival in July 1949 before going on general release in Austria that December.""]
+
+Final Answer: [""The film 'Sunshine (1999 film)' includes a storyline set during and after the Hungarian Revolution of 1956. The film is a historical drama that covers the period from the creation of the Austro-Hungarian Empire to the aftermath of the 1956 Revolution. It features a Hungarian Jewish family whose story spans multiple generations, including the 1956 Revolution. The film is not about the Austrian War, but it is set in the historical context of Hungary and the Austro-Hungarian Empire."", ""TITLE: Duel with Death | ID: 224\n'Duel with Death' is a 1949 Austrian war drama film directed by Paul May and starring Rolf von Nauckhoff, Annelies Reinhold, and Fritz Hinz-Fabricius. The film portrays the Austrian resistance to Nazi Germany during the Second World War. The film's sets were designed by the art director Otto Pischinger. It premiered at the Locarno Film Festival in July 1949 before going on general release in Austria that December.""]",8680,50.89,True,structured_complete
+loft:quest_128k:3,,"[""Moomins and the Comet Chase"", ""Quest for a Heart"", ""Santa Claus and the Magic Drum""]","[""Santa Claus and the Magic Drum"", ""Quest for a Heart"", ""Moomins and the Comet Chase""]
+Final Answer: [""Santa Claus and the Magic Drum"", ""Quest for a Heart"", ""Moomins and the Comet Chase""]",10336,87.39,True,structured_complete
+loft:quest_128k:4,,"[""At Night We Walk in Circles"", ""La reina de América"", ""Lost City Radio""]","TITLE: 'Eina de América' (The Queen of America) | ID: 89
+
+Final Answer: [""'Eina de América' (The Queen of America) | ID: 89""]",7750,21.41,True,structured_complete
+loft:quest_128k:5,,"[""One Way Trip 3D""]","[""One Way Trip 3D | ID: 19"", ""The Deadly Game (1982 film) | ID: 176""]",8422,32.01,True,structured_complete
+loft:quest_128k:6,,"[""Lego Scooby-Doo! Blowout Beach Bash"", ""Scooby-Doo! and the Curse of the 13th Ghost"", ""The Magic Snowflake""]",,6487,2.7,True,abstained
+loft:quest_128k:7,,"[""Firecrest (novel)"", ""Lament for Leto""]","[""Firecrest (novel)"", ""Lament for Leto""]  
+
+Final Answer: [""Firecrest (novel)"", ""Lament for Leto""]",9355,54.15,True,structured_complete
+loft:quest_128k:8,,"[""Crisis of Conscience""]","[""Crisis of Conscience""]",7508,21.24,True,structured_complete
+loft:quest_128k:9,,"[""Demi-Gods and Semi-Devils"", ""The Adventures of Peregrine Pickle"", ""The History of Sir Charles Grandison""]",,6873,2.94,True,abstained
+loft:quest_128k:10,,"[""Chain of Attack"", ""The Final Nexus"", ""The Peacekeepers""]","TITLE: The Final Nexus | ID: 1  
+TITLE: Chain of Attack | ID: 32  
+TITLE: The Peacekeepers | ID: 33  
+
+[""The Final Nexus"", ""Chain of Attack"", ""The Peacekeepers""]  
+Final Answer: [""The Final Nexus"", ""Chain of Attack"", ""The Peacekeepers""]",7805,25.89,True,structured_complete
+loft:quest_128k:11,,"[""Best Defense"", ""Red Dawn""]",Final Answer: [],7919,24.21,True,structured_complete
+loft:quest_128k:12,,"[""Seveneves""]",Final Answer: [],7215,14.3,True,structured_complete
+loft:quest_128k:13,,"[""Alega Gang: Public Enemy No.1 of Cebu"", ""Lapu-Lapu (2002 film)"", ""Patay na si Hesus""]","[""Alega Gang: Public Enemy No.1 of Cebu""] 
+
+Final Answer: [""Alega Gang: Public Enemy No.1 of Cebu""]",8358,32.34,True,structured_complete
+loft:quest_128k:14,,"[""All She Was Worth"", ""Crossfire (novel)"", ""Out (novel)""]","[""Out (novel) - ID: 255""]",7984,21.8,True,structured_complete
+loft:quest_128k:15,,"[""Elizabeth (film)""]",,6632,2.85,True,abstained
+loft:quest_128k:16,,"[""Personal Recollections of Joan of Arc""]","TITLE: Personal Recollections of Joan of Arc | ID: 259  
+TITLE: Rupert of Hentzau | ID: 277
+
+Final Answer: [""'Personal Recollections of Joan of Arc'"", ""'Rupert of Hentzau'""]",8993,42.21,True,structured_complete
+loft:quest_128k:17,,"[""Hitman's Wife's Bodyguard"", ""Red Notice (film)"", ""The King's Man""]","TITLE: Hitman's Wife's Bodyguard | ID: 21  
+TITLE: Red Notice (film) | ID: 127  
+
+Final Answer: [""'Hitman's Wife's Bodyguard' (2021)"", ""'Red Notice' (film) (2021)""]",10069,73.95,True,structured_complete
+loft:quest_128k:18,,"[""The Way of the Scarlet Pimpernel""]","TITLE: The Way of the Scarlet Pimpernel | ID: 186  
+- The Way of the Scarlet Pimpernel (1933) is an adventure book about France.
+
+Final Answer: [""The Way of the Scarlet Pimpernel (1933) is an adventure book about France.""]",7844,20.9,True,structured_complete
+loft:quest_128k:19,,"[""Batman & Bill"", ""Batman & Robin (film)"", ""Batman (serial)""]","TITLE: Batman & Robin (film) | ID: 0
+TITLE: Batman & Bill | ID: 65
+
+Final Answer: [""'Batman & Robin (film)'"", ""'Batman & Bill'""]",7895,28.73,True,structured_complete
+loft:quest_128k:20,,"[""Batman: The Killing Joke (film)"", ""Pérák: The Shadow over Prague"", ""The League of Extraordinary Gentlemen (film)""]","[""Batman: The Killing Joke (film) | 56"", ""The League of Extraordinary Gentlemen (film) | 102"", ""Pérák: The Shadow over Prague | 324""]",9447,54.17,True,structured_complete
+loft:quest_128k:21,,"[""Poison in Jest"", ""The Waxworks Murder""]","[""Poison in Jest | 121""]",7883,27.26,True,structured_complete
+loft:quest_128k:22,,"[""Battle Cry (Uris novel)"", ""Go Tell It on the Mountain (novel)"", ""Junkie (novel)""]","TITLE: Go Tell It on the Mountain (novel) | ID: 85  
+TITLE: Junkie (novel) | ID: 221  
+TITLE: Battle Cry (Uris novel) | ID: 275  
+
+Final Answer: [""Go Tell It on the Mountain (novel)"", ""Junkie (novel)"", ""Battle Cry (Uris novel)""]",8571,43.14,True,structured_complete
+loft:quest_128k:23,,"[""P4W: Prison for Women"", ""The Phantom (2021 film)"", ""Waseskun""]","[""Nothing relevant""]",7780,25.86,True,structured_complete
+loft:quest_128k:24,,"[""Mythago Wood"", ""Nights at the Circus""]","[""Mythago Wood"", ""41""]",8234,40.98,True,structured_complete
+loft:quest_128k:25,,"[""Laughing Gas (novel)""]","[""""]
+
+Final Answer: [""""]",7429,19.02,True,structured_complete
+loft:quest_128k:26,,"[""Hannibal Rising"", ""Jewel (novel)""]","[""Summer of Night"", ""The Eldorado Network"", ""The Fire Devil""]  
+Final Answer: []",8258,33.91,True,structured_complete
+loft:quest_128k:27,,"[""Ryan (film)""]","[""Ryan (film) | 314""]",8838,45.45,True,structured_complete
+loft:quest_128k:28,,"[""Cavalleria rusticana (1982 film)"", ""The Deadly Game (1982 film)"", ""The Life of Verdi (miniseries)""]","[""Cavalleria rusticana (1982 film)""]",7539,15.5,True,structured_complete
+loft:quest_128k:29,,"[""Hulk: Where Monsters Dwell"", ""Resident Evil: Vendetta""]","[""Nothing relevant""]",7414,19.49,True,structured_complete
+loft:quest_128k:30,,"[""A Lingering Face"", ""Looking Up (film)"", ""Ni Jing: Thou Shalt Not Steal""]","Final Answer: [""Ni Jing: No Robarás | 218""]",8721,38.81,True,structured_complete
+loft:quest_128k:31,,"[""Child Bride"", ""I Accuse My Parents"", ""The Devil's Sleep""]","[""I Accuse My Parents""]  
+Final Answer: [""I Accuse My Parents""]",9299,44.7,True,structured_complete
+loft:quest_128k:32,,"[""Time and the Wind""]","[""Time and the Wind""]  
+Final Answer: [""Time and the Wind""]",7240,12.19,True,structured_complete
+loft:quest_128k:33,,"[""Midnight Sun (Meyer novel)"", ""New Moon (novel)"", ""Twilight (Meyer novel)""]",Final Answer: [],8290,32.42,True,structured_complete
+loft:quest_128k:34,,"[""Boy at War"", ""The Changeover"", ""The Firebird Rocket""]","[""The Midnight Zoo"", ""Twilight (Meyer novel)""]",7905,29.53,True,structured_complete
+loft:quest_128k:35,,"[""Killing Them Softly"", ""Mac & Devin Go to High School""]",,6703,4.27,True,abstained
+loft:quest_128k:36,,"[""My Uncle Napoleon"", ""Savushun"", ""The Blind Owl""]","[""The Blind Owl | ID: 35""]",9469,55.24,True,structured_complete
+loft:quest_128k:37,,"[""Doctor Zhivago (film)""]","[""Victory at Entebbe"", ""Time and the Wind""]
+
+Final Answer: [""Victory at Entebbe"", ""Time and the Wind""]",10290,65.27,True,structured_complete
+loft:quest_128k:38,,"[""The Picturegoers"", ""The Violent Bear It Away""]","[""The Violent Bear It Away""]",7741,19.73,True,structured_complete
+loft:quest_128k:39,,"[""Undercover with the KKK""]","TITLE: Stargate: The Ark of Truth | ID: 171  
+TITLE: Aerials (film) | ID: 230  
+
+Final Answer: [""Stargate: The Ark of Truth""]",8876,33.94,True,structured_complete
+loft:quest_128k:40,,"[""An Obvious Situation"", ""That Night's Wife"", ""The Copper (1930 film)""]","TITLE: The Copper (1930 film) | ID: 92  
+TITLE: That Night's Wife | ID: 231
+
+Final Answer: [""'The Copper (1930 film)'"", ""'That Night's Wife'""]",8697,37.33,True,structured_complete
+loft:quest_128k:41,,"[""Ace Attorney (film)"", ""True Story (film)""]","[""Ace Attorney (film)""]  
+Final Answer: [""Ace Attorney (film)""]",8664,42.35,True,structured_complete
+loft:quest_128k:42,,"[""Le Grand Meaulnes"", ""The Mysteries of Paris"", ""The Mystery of the Yellow Room""]","[""Le Grand Meaulnes"", ""The Mysteries of Paris""]",10028,54.58,True,structured_complete
+loft:quest_128k:43,,"[""Casta Diva (1935 film)"", ""The Fire Devil"", ""Under Capricorn""]","TITLE: Casta Diva (1935 film) | ID: 17  
+TITLE: Under Capricorn | ID: 73  
+
+Final Answer: [""Casta Diva (1935 film)"", ""Under Capricorn""]",7526,14.77,True,structured_complete
+loft:quest_128k:44,,"[""First Invasion: The War of 1812"", ""Last of the Buccaneers"", ""Mohawk (2017 film)""]","[""Last of the Buccaneers | 115"", ""First Invasion: The War of 1812 | 168""]",9899,49.31,True,structured_complete
+loft:quest_128k:45,,"[""Going Vertical"", ""Prefontaine (film)""]","TITLE: Going Vertical | ID: 122  
+List:
+- ""Going Vertical"" (2017 Russian sports drama film about the Soviet national basketball team's victory over the 1972 U.S. Olympic team at the Munich Summer Olympics)
+
+Final Answer: [""Going Vertical""]",7661,15.56,True,structured_complete
+loft:quest_128k:46,,"[""Ilium (novel)"", ""Summer of Night"", ""The Fall of Hyperion (novel)""]","[""Summer of Night"", ""Children of the Night"", ""Fires of Eden"", ""A Winter Haunting"", ""The Fall of Hyperion"", ""Ilium""]  
+
+Final Answer: [""Summer of Night"", ""Children of the Night"", ""Fires of Eden"", ""A Winter Haunting"", ""The Fall of Hyperion"", ""Ilium""]",9954,54.19,True,structured_complete
+loft:quest_128k:47,,"[""We the Living""]",Final Answer: [],6916,3.36,True,structured_complete
+loft:quest_128k:48,,"[""Le Divorce"", ""Peppermint Soda"", ""Two English Girls""]","[""Peppermint Soda"", ""Le Divorce""]",8759,31.94,True,structured_complete
+loft:quest_128k:49,,"[""Aftermath (1994 film)"", ""Amoklauf"", ""Aya: Imagined Autobiography""]","[""Aya: Imagined Autobiography"", ""Aftermath (1994 film)""]  
+Final Answer: [""Aya: Imagined Autobiography"", ""Aftermath (1994 film)""]",8396,27.51,True,structured_complete
+loft:quest_128k:50,,"[""Circe (novel)"", ""Julian (novel)""]",,6594,2.37,True,abstained
+loft:quest_128k:51,,"[""Alice's Adventures in Wonderland"", ""Prince Caspian"", ""The Magician's Nephew""]","[""The Magician's Nephew | 147"", ""Prince Caspian | 206""]",9459,43.77,True,structured_complete
+loft:quest_128k:52,,"[""A.P.E.X.""]","[""A.P.E.X. (ID: 22)""]
+
+Final Answer: [""A.P.E.X. (ID: 22)""]",7680,14.82,True,structured_complete
+loft:quest_128k:53,,"[""Babes in Toyland (1934 film)"", ""Mad Monster Party?""]","TITLE: Mad Monster Party? | ID: 313
+
+Final Answer: [""'Mad Monster Party?'""]",9897,54.14,True,structured_complete
+loft:quest_128k:54,,"[""Come in Spinner"", ""The Thorn Birds"", ""Zuleika Dobson""]","[""Zuleika Dobson"", ""The Thorn Birds""]",9175,37.43,True,structured_complete

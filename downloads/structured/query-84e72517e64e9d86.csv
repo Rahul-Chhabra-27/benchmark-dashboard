@@ -1,0 +1,119 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:quest_128k:0,,"[""A Case of Need""]",,3040,5.47,True,abstained
+loft:quest_128k:1,,"[""Five Point Someone"", ""One Night @ the Call Center"", ""The 3 Mistakes of My Life""]","[""Five Point Someone""]",4747,66.67,True,structured_complete
+loft:quest_128k:2,,"[""Duel with Death"", ""Fly Away Home (2016 film)"", ""Sunshine (1999 film)""]","[""Nothing relevant""]",3626,16.76,True,structured_complete
+loft:quest_128k:3,,"[""Moomins and the Comet Chase"", ""Quest for a Heart"", ""Santa Claus and the Magic Drum""]","[""Santa Claus and the Magic Drum""]  
+
+Final Answer: [""Santa Claus and the Magic Drum""]",3583,14.38,True,structured_complete
+loft:quest_128k:4,,"[""At Night We Walk in Circles"", ""La reina de América"", ""Lost City Radio""]",,3043,2.98,True,abstained
+loft:quest_128k:5,,"[""One Way Trip 3D""]","[""The Deadly Game (1982 film)""]  
+Final Answer: [""The Deadly Game (1982 film)""]",3939,41.76,True,structured_complete
+loft:quest_128k:6,,"[""Lego Scooby-Doo! Blowout Beach Bash"", ""Scooby-Doo! and the Curse of the 13th Ghost"", ""The Magic Snowflake""]","Nothing relevant in the provided passage matches the query about 2010s supernatural children's animated films.
+
+Final Answer: []",3648,18.9,True,structured_complete
+loft:quest_128k:7,,"[""Firecrest (novel)"", ""Lament for Leto""]","[""Title: Firecrest (novel)"", ""ID: 204""]  
+Final Answer: [""Title: Firecrest (novel)"", ""ID: 204""]",3898,34.19,True,structured_complete
+loft:quest_128k:8,,"[""Crisis of Conscience""]","TITLE: Crisis of Conscience | ID: 289
+
+Final Answer: [""Crisis of Conscience""]",4050,40.34,True,structured_complete
+loft:quest_128k:9,,"[""Demi-Gods and Semi-Devils"", ""The Adventures of Peregrine Pickle"", ""The History of Sir Charles Grandison""]",,3100,5.4,True,abstained
+loft:quest_128k:10,,"[""Chain of Attack"", ""The Final Nexus"", ""The Peacekeepers""]","TITLE: The Final Nexus | ID: 1  
+TITLE: Chain of Attack | ID: 32  
+TITLE: The Peacekeepers | ID: 33  
+
+[""Chain of Attack"", ""The Peacekeepers"", ""The Final Nexus""]
+
+Final Answer: [""Chain of Attack"", ""The Peacekeepers"", ""The Final Nexus""]",4271,59.86,True,structured_complete
+loft:quest_128k:11,,"[""Best Defense"", ""Red Dawn""]","[""Chain of Attack"", ""The Samovar Girl""]",4310,38.14,True,structured_complete
+loft:quest_128k:12,,"[""Seveneves""]","[""Red Dawn | 80""]",4319,55.21,True,structured_complete
+loft:quest_128k:13,,"[""Alega Gang: Public Enemy No.1 of Cebu"", ""Lapu-Lapu (2002 film)"", ""Patay na si Hesus""]",,3030,4.59,True,abstained
+loft:quest_128k:14,,"[""All She Was Worth"", ""Crossfire (novel)"", ""Out (novel)""]",,3005,3.05,True,abstained
+loft:quest_128k:15,,"[""Elizabeth (film)""]",,3040,3.68,True,abstained
+loft:quest_128k:16,,"[""Personal Recollections of Joan of Arc""]",,3068,4.15,True,abstained
+loft:quest_128k:17,,"[""Hitman's Wife's Bodyguard"", ""Red Notice (film)"", ""The King's Man""]","TITLE: Red Notice (film) | ID: 127
+
+[""Red Notice (film)""]
+
+Final Answer: [""Red Notice (film)""]",3737,22.1,True,structured_complete
+loft:quest_128k:18,,"[""The Way of the Scarlet Pimpernel""]",,3075,4.45,True,abstained
+loft:quest_128k:19,,"[""Batman & Bill"", ""Batman & Robin (film)"", ""Batman (serial)""]","TITLE: Batman & Robin (film) | ID: 0
+
+Final Answer: [""Batman & Robin (film)""]",3678,16.02,True,structured_complete
+loft:quest_128k:20,,"[""Batman: The Killing Joke (film)"", ""Pérák: The Shadow over Prague"", ""The League of Extraordinary Gentlemen (film)""]","[""Batman: The Killing Joke (film) | ID: 56""]",3711,16.16,True,structured_complete
+loft:quest_128k:21,,"[""Poison in Jest"", ""The Waxworks Murder""]",,3068,3.21,True,abstained
+loft:quest_128k:22,,"[""Battle Cry (Uris novel)"", ""Go Tell It on the Mountain (novel)"", ""Junkie (novel)""]","[]
+
+Final Answer: []",3334,6.16,True,structured_complete
+loft:quest_128k:23,,"[""P4W: Prison for Women"", ""The Phantom (2021 film)"", ""Waseskun""]",Final Answer: [],3844,21.13,True,structured_complete
+loft:quest_128k:24,,"[""Mythago Wood"", ""Nights at the Circus""]","TITLE: Mythago Wood | ID: 41
+
+List:  
+- Title: Mythago Wood  
+- ID: 41  
+- It is a fantasy novel about the United Kingdom, published in 1984.  
+- Set in Herefordshire, England, within Ryhope Wood.  
+- Part of a fantasy series known as the Mythago Wood or Ryhope Wood cycle.
+
+Final Answer: [""Mythago Wood""]",4081,46.25,True,structured_complete
+loft:quest_128k:25,,"[""Laughing Gas (novel)""]",,3043,3.27,True,abstained
+loft:quest_128k:26,,"[""Hannibal Rising"", ""Jewel (novel)""]",,3040,3.15,True,abstained
+loft:quest_128k:27,,"[""Ryan (film)""]",,3040,2.77,True,abstained
+loft:quest_128k:28,,"[""Cavalleria rusticana (1982 film)"", ""The Deadly Game (1982 film)"", ""The Life of Verdi (miniseries)""]",,3087,3.1,True,abstained
+loft:quest_128k:29,,"[""Hulk: Where Monsters Dwell"", ""Resident Evil: Vendetta""]",,3033,2.51,True,abstained
+loft:quest_128k:30,,"[""A Lingering Face"", ""Looking Up (film)"", ""Ni Jing: Thou Shalt Not Steal""]","TITLE: A Chinese Ghost Story (2011 film)  
+ID: 68  
+
+List:  
+- ""A Chinese Ghost Story (2011 film) – ID: 68""
+
+Final Answer: [""A Chinese Ghost Story (2011 film) – ID: 68""]",3567,18.31,True,structured_complete
+loft:quest_128k:31,,"[""Child Bride"", ""I Accuse My Parents"", ""The Devil's Sleep""]","[""Now Hare This""]",3450,9.12,True,structured_complete
+loft:quest_128k:32,,"[""Time and the Wind""]","[""Time and the Wind""]  
+Final Answer: [""Time and the Wind""]",3958,24.02,True,structured_complete
+loft:quest_128k:33,,"[""Midnight Sun (Meyer novel)"", ""New Moon (novel)"", ""Twilight (Meyer novel)""]","[""The Magician's Nephew | ID: 147""]  
+
+Final Answer: [""The Magician's Nephew | ID: 147""]",4290,57.76,True,structured_complete
+loft:quest_128k:34,,"[""Boy at War"", ""The Changeover"", ""The Firebird Rocket""]","[""""]  
+Final Answer: []",3524,17.55,True,structured_complete
+loft:quest_128k:35,,"[""Killing Them Softly"", ""Mac & Devin Go to High School""]",,3104,4.8,True,abstained
+loft:quest_128k:36,,"[""My Uncle Napoleon"", ""Savushun"", ""The Blind Owl""]",,3048,4.6,True,abstained
+loft:quest_128k:37,,"[""Doctor Zhivago (film)""]",,3070,4.02,True,abstained
+loft:quest_128k:38,,"[""The Picturegoers"", ""The Violent Bear It Away""]","TITLE: The Violent Bear It Away | ID: 177  
+Answer: ""The Violent Bear It Away""
+
+Final Answer: [""The Violent Bear It Away""]",3540,16.77,True,structured_complete
+loft:quest_128k:39,,"[""Undercover with the KKK""]",,3079,4.67,True,abstained
+loft:quest_128k:40,,"[""An Obvious Situation"", ""That Night's Wife"", ""The Copper (1930 film)""]","TITLE: The Copper (1930 film) | ID: 92
+
+Final Answer: [""'The Copper (1930 film)'""]",4075,44.17,True,structured_complete
+loft:quest_128k:41,,"[""Ace Attorney (film)"", ""True Story (film)""]","[""The Documentary Focuses on Bill Finger's Role in Creating Batman""]",3987,38.57,True,structured_complete
+loft:quest_128k:42,,"[""Le Grand Meaulnes"", ""The Mysteries of Paris"", ""The Mystery of the Yellow Room""]","[""The Mysteries of Paris | ID: 321""]
+
+Final Answer:[""The Mysteries of Paris | ID: 321""]",3752,24.8,True,structured_complete
+loft:quest_128k:43,,"[""Casta Diva (1935 film)"", ""The Fire Devil"", ""Under Capricorn""]","TITLE: Under Capricorn | ID: 73  
+The film ""Under Capricorn"" is set in 1831.
+
+Final Answer: [""Under Capricorn""]",3513,17.49,True,structured_complete
+loft:quest_128k:44,,"[""First Invasion: The War of 1812"", ""Last of the Buccaneers"", ""Mohawk (2017 film)""]","[""First Invasion: The War of 1812 | ID: 168""]",4167,45.83,True,structured_complete
+loft:quest_128k:45,,"[""Going Vertical"", ""Prefontaine (film)""]",,3065,3.25,True,abstained
+loft:quest_128k:46,,"[""Ilium (novel)"", ""Summer of Night"", ""The Fall of Hyperion (novel)""]","[""Summer of Night""]",3440,8.23,True,structured_complete
+loft:quest_128k:47,,"[""We the Living""]",Final Answer: [],3350,5.29,True,structured_complete
+loft:quest_128k:48,,"[""Le Divorce"", ""Peppermint Soda"", ""Two English Girls""]","[""Le Divorce""]
+
+
+Final Answer: [""Le Divorce""]",3621,21.74,True,structured_complete
+loft:quest_128k:49,,"[""Aftermath (1994 film)"", ""Amoklauf"", ""Aya: Imagined Autobiography""]",,3122,4.87,True,abstained
+loft:quest_128k:50,,"[""Circe (novel)"", ""Julian (novel)""]",,3078,2.68,True,abstained
+loft:quest_128k:51,,"[""Alice's Adventures in Wonderland"", ""Prince Caspian"", ""The Magician's Nephew""]","[""The Magician's Nephew | ID: 147"", ""Prince Caspian | ID: 206""]  
+Final Answer: [""The Magician's Nephew | ID: 147"", ""Prince Caspian | ID: 206""]",4865,60.27,True,structured_complete
+loft:quest_128k:52,,"[""A.P.E.X.""]",,3060,2.38,True,abstained
+loft:quest_128k:53,,"[""Babes in Toyland (1934 film)"", ""Mad Monster Party?""]","TITLE: Moomins and the Comet Chase | ID: 202  
+- Moomins and the Comet Chase (2010) is a 3D stop motion animated fantasy adventure comedy family film.  
+- It is based on the ""Comet in Moominland"" episodes of the 1977–1982 ""The Moomins"" TV series.  
+- It was animated at Se-ma-for in Poland, restored, and re-soundtracked with multiple voice actors.  
+- It is the second Moomin film by Filmkompaniet and the first converted to stereoscopic 3D.  
+- The same novel was adapted before in 1978 (Russian stop motion serial ""Mumi-troll"") and 1992 (Japanese traditional animation ""Comet in Moominland"").  
+- The international version features Swedish actors Stellan Skarsgård, Peter Stormare, and Alexander Skarsgård.  
+
+Final Answer: [""Moomins and the Comet Chase (2010) is a 3D stop motion animated fantasy adventure comedy family film""]",4657,73.41,True,structured_complete
+loft:quest_128k:54,,"[""Come in Spinner"", ""The Thorn Birds"", ""Zuleika Dobson""]",,3123,5.88,True,abstained

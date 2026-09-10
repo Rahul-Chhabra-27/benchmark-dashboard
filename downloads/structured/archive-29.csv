@@ -1,0 +1,68 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:nq_128k:5,,"[""Nala""]",,20635,49.18,True,abstained
+loft:nq_128k:10,,"[""at least seven"", ""at least seven players"", ""seven""]",,1698,8.8,True,abstained
+loft:nq_128k:11,,"[""September 1972""]",The Waltons first aired in September 1972.,8485,12.87,True,final_called
+loft:nq_128k:13,,"[""2011""]",,8803,25.56,True,abstained
+loft:nq_128k:14,,"[""the summit of Cadillac Mountain""]","The sun hits the US first in the eastern part, specifically near Lake Michigan north of Milwaukee, in document ID 540 titled ""Sunset Towers"".",5130,16.02,True,final_called
+loft:nq_128k:15,,"[""Indian government""]",Ministry of Corporate Affairs,3483,8.88,True,final_called
+loft:nq_128k:17,,"[""Ledger""]",Heath Ledger plays the Joker in Batman: The Dark Knight.,9651,42.19,True,final_called
+loft:nq_128k:19,,"[""The Lykan Hypersport""]","TITLE: an Hypersport  
+ID: 158",19377,24.4,True,repetition_broken
+loft:nq_128k:20,,"[""Jack Lord"", ""John Joseph Patrick Ryan""]",Jack Lord played the original Steve McGarrett on Hawaii Five-O.,1739,8.77,True,final_called
+loft:nq_128k:27,,"[""cell nucleus"", ""in the cell nucleus""]",The protein is made in the cytosol.,7405,16.14,True,final_called
+loft:nq_128k:30,,"[""9 to 25 February 2018""]","The text does not mention Mexico playing in the Winter Olympics, nor does it provide a date for such an event. Therefore, there is no valid date to extract.",3972,18.02,True,final_called
+loft:nq_128k:32,,"[""Grisha""]",,11099,50.55,True,abstained
+loft:nq_128k:33,,"[""Serous Membrane"", ""the visceral membrane""]","The text provided does not mention the membrane on the surface of the stomach. Therefore, based on the given information, the question cannot be answered.",3997,22.8,True,final_called
+loft:nq_128k:34,,"[""June 22, 1942""]","The text does not mention when it became law to stand for the national anthem. Therefore, no date can be provided based on the given information.",9266,30.25,True,final_called
+loft:nq_128k:39,,"[""David Ben-Gurion""]","Final Answer: Title: Dexter (season 3) | CONTENT: While stalking a murderous drug dealer, ""Freebo"", Dext, ID: 880, First Signatory: The first signatory of the Israeli Declaration of Independence was David Ben-Gurion.",4994,14.93,True,final_called
+loft:nq_128k:41,,"[""February 27, 2015"", ""February 27, 2015""]",,35825,37.09,False,max_steps
+loft:nq_128k:42,,"[""produced by Quincy Jones""]","{'TITLE': 'We Are the World', 'ID': 130, 'WRITERS': 'Michael Jackson and Lionel Richie'}",9589,12.72,True,final_called
+loft:nq_128k:44,,"[""Jakkur, Bangalore, India""]",,29522,20.37,False,max_steps
+loft:nq_128k:45,,"[""condense the steam""]","The reason cooling water runs through the condenser is to condense the steam coming out of the cylinders or turbines, which reduces back pressure and decreases steam and fuel consumption while increasing power output and recycling boiler water.",3299,8.08,True,final_called
+loft:nq_128k:47,,"[""coffee"", ""honey"", ""livestock"", ""macadamia nuts"", ""pineapple"", ""sugarcane""]","The provided text does not mention Hawaii's primary export to the United States. Therefore, based on the given information, the question cannot be answered.",1497,5.85,True,final_called
+loft:nq_128k:48,,"[""imperial rule""]","Final Answer: The provided text does not specify the type of government the Ming dynasty had. It only mentions that the Ming dynasty's economy was the largest in the world and highlights aspects like merchant influence and technological advances. Therefore, based on the given information, the type of government is not stated.",3581,9.11,True,final_called
+loft:nq_128k:51,,"[""Coire"", ""Corey"", ""Corie"", ""Correy"", ""Corrie"", ""Cory"", ""Khouri"", ""Kori"", ""Kory""]","['Corey', 'Coire', 'Corie', 'Corrie', 'Correy', 'Kory', 'Khouri', 'Kori']",5522,11.6,True,final_called
+loft:hotpotqa_128k:2,,"[""in 2000""]",,3546,12.53,True,abstained
+loft:hotpotqa_128k:4,,"[""Parliamentarians (\""Roundheads\"") and Royalists (\""Cavaliers\"")""]",Not found,24732,49.95,True,final_called
+loft:hotpotqa_128k:7,,"[""Obsession""]","TITLE: Obsession (board game) | ID: 678  
+TITLE: Battle Sheep | ID: 702  
+
+- Obsession was released in 1977.  
+- Battle Sheep was released in 2010.  
+
+Obsession has been around longer than Battle Sheep.",10920,17.28,True,repetition_broken
+loft:hotpotqa_128k:8,,"[""Eli Roth""]",RZA,5753,18.51,True,final_called
+loft:hotpotqa_128k:11,,"[""1940""]",1940 to 1944,14140,37.34,True,final_called
+loft:hotpotqa_128k:12,,"[""The Galtür avalanche""]",1999 Galtür avalanche,4703,7.9,True,final_called
+loft:hotpotqa_128k:15,,"[""England""]",Not mentioned,3862,12.86,True,final_called
+loft:hotpotqa_128k:16,,"[""Morgan Llywelyn""]",Final Answer: Morgan Llywelyn,6859,25.7,True,final_called
+loft:hotpotqa_128k:20,,"[""Cambridge University""]","Smiljan Radic, Catholic University of Chile",4101,21.33,True,final_called
+loft:hotpotqa_128k:21,,"[""25 million copies""]",The text does not contain information about the number of copies sold for the Big Daddy character.,1931,15.04,True,final_called
+loft:hotpotqa_128k:22,,"[""Ellie Kemper""]","The text provided does not mention the actress who stars in the title role of 'Unbreakable Kimmy Schmidt'. Therefore, based on the given information, the answer cannot be determined.",3859,10.82,True,final_called
+loft:hotpotqa_128k:23,,"[""The R-8 Human Rhythm Composer""]",,3298,10.49,True,abstained
+loft:hotpotqa_128k:24,,"[""The Vanishing""]",The Vanishing,2150,16.83,True,final_called
+loft:hotpotqa_128k:25,,"[""Michael Bruce Fiers""]",,5846,43.41,True,abstained
+loft:hotpotqa_128k:27,,"[""Justin Spitzer""]","The text provided does not mention the creator of the NBC sitcom ""Superstore"" in which Johnny Pemberton appears as Bo Thompson. Therefore, based on the given information, the creator cannot be determined.",1883,7.28,True,final_called
+loft:hotpotqa_128k:28,,"[""no""]","Yes. Götterdämmerung is an opera by Richard Wagner, and Dafne is the earliest known work that, by modern standards, could be considered an opera. Both are classified as operas based on the provided context.",3646,10.88,True,final_called
+loft:hotpotqa_128k:29,,"[""Rome""]",Rome,10442,9.47,True,final_called
+loft:hotpotqa_128k:30,,"[""Koninklijke Ahold N.V.""]","Albert Heijn started up Ahold, which eventually merged with the Delhaize Group.",8332,56.29,True,final_called
+loft:hotpotqa_128k:33,,"[""world wushu tournament""]",world wushu tournament,5887,15.83,True,final_called
+loft:hotpotqa_128k:34,,"[""Turkey""]",Istanbul,11582,17.39,True,final_called
+loft:hotpotqa_128k:37,,"[""Afro-Russian""]","African ethnic group, specifically Beninese",3596,5.54,True,final_called
+loft:hotpotqa_128k:39,,"[""8 November 1978""]",8 November 1978,8412,9.06,True,final_called
+loft:hotpotqa_128k:41,,"[""genus""]",genus level,5338,8.86,True,final_called
+loft:hotpotqa_128k:44,,"[""Jamnagar""]",India,1538,6.66,True,final_called
+loft:hotpotqa_128k:48,,"[""photographer""]",fashion photographer,3997,8.52,True,final_called
+loft:hotpotqa_128k:49,,"[""eight""]",8,2088,4.88,True,final_called
+loft:hotpotqa_128k:51,,"[""no""]","TITLE: Isaac Asimov is American: Yes, Isaac Asimov is described as an American writer.  
+ID: 1  
+
+TITLE: Michael Cunningham is American: Yes, Michael Cunningham is described as a U.S. novelist and screenwriter, which indicates he is an American writer.  
+ID: 2  
+
+Answer:  
+- Isaac Asimov is an American writer.  
+- Michael Cunningham is an American writer.  
+Thus, both Isaac Asimov and Michael Cunningham are American writers.",6919,11.18,True,repetition_broken
+loft:hotpotqa_128k:52,,"[""yes""]",No,5659,21.54,True,final_called
+loft:hotpotqa_128k:53,,"[""North End Football Club""]",Football League,15015,23.7,True,final_called

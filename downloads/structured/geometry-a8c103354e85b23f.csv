@@ -1,0 +1,238 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:hotpotqa_128k:0,,"[""Dan Bilzerian""]",,3186,1.36,True,abstained
+loft:hotpotqa_128k:1,,"[""Laura's Star""]",,2952,0.63,True,abstained
+loft:hotpotqa_128k:2,,"[""in 2000""]","TITLE: Kenneth P. LaValle Stadium | ID: 809  
+TITLE: 2013 America East Men's Lacrosse Tournament | ID: 1209  
+
+Final Answer: 2000",7482,6.43,True,structured_complete
+loft:hotpotqa_128k:3,,"[""Araminta Ross""]","TITLE: A Woman Called Moses | ID: 970  
+TITLE: Harriet Tubman | ID: 361  
+TITLE: Aud Wilken | ID: 1177  
+
+List:  
+- Araminta Ross
+
+Final Answer: Araminta Ross",7159,6.66,True,structured_complete
+loft:hotpotqa_128k:4,,"[""Parliamentarians (\""Roundheads\"") and Royalists (\""Cavaliers\"")""]",Final Answer:,7338,4.36,True,structured_complete
+loft:hotpotqa_128k:5,,"[""Adolfo Rodríguez Saá""]","TITLE: Adolfo Rodríguez Saá | ID: 1026  
+TITLE: Ricardo Rodríguez Saá | ID: 148  
+
+Final Answer: Adolfo Rodríguez Saá",7571,7.82,True,structured_complete
+loft:hotpotqa_128k:6,,"[""1976""]","TITLE: Georgia World Congress Center | ID: 684  
+TITLE: Georgia International Convention Center | ID: 720  
+
+Final Answer: 1976",7550,6.99,True,structured_complete
+loft:hotpotqa_128k:7,,"[""Obsession""]","TITLE: Obsession (board game) | ID: 678  
+TITLE: Battle Sheep | ID: 702  
+TITLE: Obsession | ID: 1098  
+TITLE: Battle Sheep | ID: 1098  
+
+Final Answer: Obsession",7436,7.66,True,structured_complete
+loft:hotpotqa_128k:8,,"[""Eli Roth""]","TITLE: Eli Roth | ID: 727
+TITLE: The Man with the Iron Fists | ID: 818
+
+Final Answer: Eli Roth",8961,17.59,True,structured_complete
+loft:hotpotqa_128k:9,,"[""Washington State""]","TITLE: Mike Leach (American football coach) | ID: 817  
+Final Answer: Washington State",6866,2.91,True,structured_complete
+loft:hotpotqa_128k:10,,"[""Love Drunk""]","TITLE: Love Drunk | ID: 334  
+TITLE: Two Is Better Than One | ID: 221  
+
+Final Answer: Love Drunk",7701,8.29,True,structured_complete
+loft:hotpotqa_128k:11,,"[""1940""]",,2968,0.63,True,abstained
+loft:hotpotqa_128k:12,,"[""The Galtür avalanche""]","TITLE: 1999 Galtür avalanche | ID: 967  
+TITLE: Rigopiano avalanche | ID: 1050  
+
+- The 1999 Galtür avalanche happened first.  
+
+Final Answer: The 1999 Galtür avalanche happened first.",7500,5.55,True,structured_complete
+loft:hotpotqa_128k:13,,"[""Ali Qushji""]","TITLE: Ali Qushji | ID: 539  
+- Ali Qushji
+
+Final Answer: Ali Qushji",8095,9.08,True,structured_complete
+loft:hotpotqa_128k:14,,"[""December 1974""]","TITLE: Métal hurlant | ID: 1074  
+- The anthology was created in December 1974.
+
+Final Answer: December 1974",7310,5.01,True,structured_complete
+loft:hotpotqa_128k:15,,"[""England""]","TITLE: Nike Hypervenom | ID: 413  
+
+Final Answer: None of the international football teams can be identified from the provided information.",7841,6.81,True,structured_complete
+loft:hotpotqa_128k:16,,"[""Morgan Llywelyn""]","TITLE: Morgan Llywelyn | ID: 556  
+TITLE: Robert Jordan | ID: NOT FOUND  
+
+Final Answer: Morgan Llywelyn",7567,6.37,True,structured_complete
+loft:hotpotqa_128k:17,,"[""Ten Walls""]","TITLE: Walking with Elephants | ID: 1213  
+TITLE: Ten Walls | ID: 373  
+
+Final Answer: Ten Walls",7989,8.1,True,structured_complete
+loft:hotpotqa_128k:18,,"[""Caesars Palace Grand Prix""]","TITLE: Jeff Wood (racing driver) | ID: 957  
+TITLE: Caesars Palace Grand Prix | ID: 888  
+
+- Jeff Wood made his CART debut in 1983 at the Caesars Palace Grand Prix driving for Dan Gurney.  
+- The Caesars Palace Grand Prix was a car race held between 1981 and 1984. For the first two years, the race was part of the Formula One World Championship, before becoming a round of the CART series in 1983. Nissan/Datsun was a presenting sponsor of both races.  
+
+Final Answer: Caesars Palace Grand Prix",7305,6.8,True,structured_complete
+loft:hotpotqa_128k:19,,"[""The Suite Life of Zack & Cody""]","TITLE: Candace Flynn | ID: 597  
+TITLE: Ashley Tisdale | ID: 980  
+TITLE: Phineas and Ferb | ID: 597  
+TITLE: Melissa Rauch | ID: 1140  
+
+- Ashley Tisdale achieved mainstream success on ""The Suite Life of Zack & Cody"".
+
+Final Answer: The Suite Life of Zack & Cody",7777,10.03,True,structured_complete
+loft:hotpotqa_128k:20,,"[""Cambridge University""]","TITLE: Governor's House, Knutsford | ID: 711  
+TITLE: Edmund Sharpe | ID: 399  
+
+Final Answer: Cambridge University",7149,3.95,True,structured_complete
+loft:hotpotqa_128k:21,,"[""25 million copies""]","TITLE: Morgan Llywelyn | ID: 556  
+TITLE: BioShock (series) | ID: 995  
+
+- A Big Daddy is a fictional character in a series that has sold more than 40 million copies.  
+- A Big Daddy is a fictional character in a series that has sold more than 25 million copies.  
+
+Final Answer: 40 million",6724,5.81,True,structured_complete
+loft:hotpotqa_128k:22,,"[""Ellie Kemper""]","TITLE: Unbreakable Kimmy Schmidt | ID: 451  
+TITLE: Nick Bernardone | ID: 351  
+
+Final Answer: Ellie Kemper",7752,7.85,True,structured_complete
+loft:hotpotqa_128k:23,,"[""The R-8 Human Rhythm Composer""]","TITLE: Roland R-8  
+ID: 773  
+
+Final Answer: Roland R-8",7238,2.95,True,structured_complete
+loft:hotpotqa_128k:24,,"[""The Vanishing""]","TITLE: The Vanishing (1988 film) | ID: 255  
+TITLE: The Golden Egg | ID: 1119  
+
+Final Answer: The Vanishing (1988 film)",7982,9.62,True,structured_complete
+loft:hotpotqa_128k:25,,"[""Michael Bruce Fiers""]","TITLE: Nova Southeastern Sharks baseball | ID: 621  
+TITLE: Fiers | ID: 1086  
+TITLE: Mike Fiers | ID: 1086  
+
+Final Answer: None of the players mentioned in the documents played for all three teams (Nova Southeastern Sharks, Milwaukee Brewers, and Houston Astros). Mike Fiers played for the Milwaukee Brewers and Houston Astros, but there is no information confirming his connection to the Nova Southeastern Sharks. Therefore, the query cannot be answered based on the provided documents.",8023,9.89,True,structured_complete
+loft:hotpotqa_128k:26,,"[""Scapegoat Mountain""]","TITLE: Lewis and Clark County, Montana | ID: 392  
+TITLE: Lewis and Clark County, Montana | ID: 392  
+TITLE: Lewis and Clark County, Montana | ID: 392  
+
+Final Answer: nothing",7652,6.57,True,structured_complete
+loft:hotpotqa_128k:27,,"[""Justin Spitzer""]","TITLE: Superstore | ID: 497  
+TITLE: Johnny Pemberton | ID: 32  
+
+Final Answer: Justin Spitzer",7907,10.62,True,structured_complete
+loft:hotpotqa_128k:28,,"[""no""]","TITLE: Götterdämmerung | ID: 522  
+TITLE: Dafne | ID: 622  
+
+Final Answer: - Götterdämmerung is an opera. - Dafne is considered an opera.",7807,8.39,True,structured_complete
+loft:hotpotqa_128k:29,,"[""Rome""]","TITLE: Tosca (1956 film) | ID: 437  
+TITLE: Franco Corelli | ID: 1107  
+
+List:  
+- Rome
+
+Final Answer: Rome",7873,8.67,True,structured_complete
+loft:hotpotqa_128k:30,,"[""Koninklijke Ahold N.V.""]",,3340,0.69,True,abstained
+loft:hotpotqa_128k:31,,"[""Unbreakable""]","TITLE: Blinding Edge Pictures | ID: 292  
+TITLE: Unbreakable (film) | ID: 543  
+
+Final Answer: Unbreakable",7678,8.32,True,structured_complete
+loft:hotpotqa_128k:32,,"[""directed by Shane Meadows""]","TITLE: Stephen Graham | ID: 526  
+Final Answer: nothing relevant",7390,4.59,True,structured_complete
+loft:hotpotqa_128k:33,,"[""world wushu tournament""]","TITLE: Wing Chun (film)  
+ID: 469  
+TITLE: Donnie Yen  
+ID: 925  
+
+Final Answer: Donnie Yen",6953,5.35,True,structured_complete
+loft:hotpotqa_128k:34,,"[""Turkey""]","TITLE: Column of the Goths | ID: 1008  
+TITLE: Gül Mosque | ID: Not present in provided documents  
+
+Final Answer: nothing",7498,4.6,True,structured_complete
+loft:hotpotqa_128k:35,,"[""Omega SA""]","TITLE: Joseph Reiser | ID: 76  
+TITLE: Omega SA | ID: 618  
+
+- Omega",7960,8.94,True,structured_complete
+loft:hotpotqa_128k:36,,"[""five""]","TITLE: Don Quichotte | ID: 832  
+TITLE: Luisa Miller | ID: 1182  
+
+Final Answer: 5",7500,7.14,True,structured_complete
+loft:hotpotqa_128k:37,,"[""Afro-Russian""]","TITLE: Jean Sagbo | ID: 107  
+TITLE: Afro-Russian | ID: 999  
+
+Final Answer: Afro-Russian",7788,7.31,True,structured_complete
+loft:hotpotqa_128k:38,,"[""Lawton Chiles""]","TITLE: Lawton Chiles  
+ID: 1141  
+
+Final Answer: Lawton Chiles",8002,6.69,True,structured_complete
+loft:hotpotqa_128k:39,,"[""8 November 1978""]","TITLE: Farshid Karimi | ID: 486  
+Final Answer: None of the documents provide the birth date of the younger brother of Farshid Karimi.",7145,4.16,True,structured_complete
+loft:hotpotqa_128k:40,,"[""Nye County""]","TITLE: Nevada Test Site | ID: 64  
+Final Answer: Nye County",7363,9.45,True,structured_complete
+loft:hotpotqa_128k:41,,"[""genus""]","TITLE: Mitella | ID: 981  
+TITLE: Phaedranassa | ID: 942  
+
+Final Answer: genus",7383,8.41,True,structured_complete
+loft:hotpotqa_128k:42,,"[""yes""]","TITLE: Rod Lurie | ID: 260  
+TITLE: Anja Salomonowitz | ID: 1128  
+
+- Anja Salomonowitz is a film director.  
+- Rod Lurie is a director.  
+- However, the documents do not provide enough information to confirm that both are directors simultaneously, as the query requires confirmation of both.  
+
+Final Answer:  
+- Anja Salomonowitz is a director.  
+- Rod Lurie is a director.  
+- Therefore, both are directors based on the documents.",7812,8.38,True,structured_complete
+loft:hotpotqa_128k:43,,"[""Shawnee""]","TITLE: Keokuk Falls, Oklahoma | ID: 324  
+TITLE: Shawnee, Oklahoma | ID: 725  
+
+List:  
+- The county seat of Pottawatomie County, Oklahoma is Shawnee.
+
+Final Answer: Shawnee",7860,10.17,True,structured_complete
+loft:hotpotqa_128k:44,,"[""Jamnagar""]","TITLE: Poonamben Maadam | ID: 584  
+TITLE: Mata no Madh | ID: 535  
+TITLE: Poonamben Maadam | ID: 584  
+
+List:  
+- India  
+
+Final Answer: India",7737,7.06,True,structured_complete
+loft:hotpotqa_128k:45,,"[""Viscount Cranborne""]","TITLE: William Pery, 3rd Earl of Limerick | ID: 820  
+Answer: NOTHING RELEVANT  
+
+Final Answer: NOTHING RELEVANT",7685,5.41,True,structured_complete
+loft:hotpotqa_128k:46,,"[""The Most Dangerous Game""]","TITLE: The Most Dangerous Game  
+ID: 793  
+
+Final Answer: The Most Dangerous Game was also published as ""The Hounds of Zaroff"".",7850,7.1,True,structured_complete
+loft:hotpotqa_128k:47,,"[""John M. Dowd""]","TITLE: John M. Dowd | ID: 236  
+TITLE: Dowd Report | ID: 943  
+
+Final Answer: John M. Dowd",7714,6.87,True,structured_complete
+loft:hotpotqa_128k:48,,"[""photographer""]","TITLE: Howell Conant  
+ID: 651  
+
+Final Answer: fashion photographer",6909,2.93,True,structured_complete
+loft:hotpotqa_128k:49,,"[""eight""]","TITLE: Karl Kraepelin | ID: 1093  
+TITLE: Scorpion | ID: 491  
+
+8 legs
+
+Final Answer: 8 legs",7389,5.5,True,structured_complete
+loft:hotpotqa_128k:50,,"[""Philadelphia""]","TITLE: The Dead Milkmen | ID: 266  
+TITLE: Not Richard, But Dick | ID: 1214  
+
+Final Answer: Philadelphia, Pennsylvania",6715,4.04,True,structured_complete
+loft:hotpotqa_128k:51,,"[""no""]","TITLE: Isaac Asimov | ID: 1130  
+TITLE: Michael Cunningham | ID: 1164  
+
+Final Answer: Michael Cunningham is an American writer, but Isaac Asimov is not mentioned in the documents. Thus, the query cannot be fully answered with the provided information.",7155,6.56,True,structured_complete
+loft:hotpotqa_128k:52,,"[""yes""]","TITLE: Tonka (film) | ID: 338  
+TITLE: Ten Who Dared | ID: 860  
+
+Final Answer: cannot be determined",7598,6.32,True,structured_complete
+loft:hotpotqa_128k:53,,"[""North End Football Club""]","TITLE: Preston North End F.C. | ID: 845  
+TITLE: Steve Uzelac | ID: 912  
+List:  
+- Steve Uzelac played in the Football League for Preston North End, which is located in Preston, Lancashire.  
+
+Final Answer: Football League",7650,5.78,True,structured_complete
+loft:hotpotqa_128k:54,,"[""Mercury Prize""]","TITLE: Sampha | ID: 12  
+Final Answer: the 2017 Mercury Prize",7224,5.53,True,structured_complete

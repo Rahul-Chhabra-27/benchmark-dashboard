@@ -1,0 +1,63 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:nq_128k:5,,"[""Nala""]",,241155,52.71,False,max_steps
+loft:nq_128k:10,,"[""at least seven"", ""at least seven players"", ""seven""]","No document provides information on the number of players on the line of scrimmage in American football. Therefore, no TITLE and ID can be provided to answer the query.",6622,5.1,True,unproductive_broken
+loft:nq_128k:11,,"[""September 1972""]",['September 1972'],33484,11.27,True,final_called
+loft:nq_128k:13,,"[""2011""]",Final Answer: [],13900,6.26,True,unproductive_broken
+loft:nq_128k:14,,"[""the summit of Cadillac Mountain""]","TITLE: Cadillac Mountain | ID: 716  
+Final Answer: ['Mars Hill', 'West Quoddy Head']",89499,30.07,True,repetition_broken
+loft:nq_128k:15,,"[""Indian government""]",Government of India,6871,7.51,True,final_called
+loft:nq_128k:17,,"[""Ledger""]",['Heath Ledger'],103042,39.68,True,final_called
+loft:nq_128k:19,,"[""The Lykan Hypersport""]",Final Answer: [],14290,6.82,True,unproductive_broken
+loft:nq_128k:20,,"[""Jack Lord"", ""John Joseph Patrick Ryan""]",,46920,22.35,True,abstained
+loft:nq_128k:27,,"[""cell nucleus"", ""in the cell nucleus""]",Final Answer: [],74133,17.78,True,unproductive_broken
+loft:nq_128k:30,,"[""9 to 25 February 2018""]",Final Answer: [],13788,5.55,True,unproductive_broken
+loft:nq_128k:32,,"[""Grisha""]",G stands for Grisha Alekandrovich Nikolaev,34695,17.39,True,final_called
+loft:nq_128k:33,,"[""Serous Membrane"", ""the visceral membrane""]",,95705,21.14,True,abstained
+loft:nq_128k:34,,"[""June 22, 1942""]",,184870,29.17,False,max_steps
+loft:nq_128k:39,,"[""David Ben-Gurion""]",David Ben-Gurion,26190,11.71,True,final_called
+loft:nq_128k:41,,"[""February 27, 2015"", ""February 27, 2015""]",,5325,6.71,True,abstained
+loft:nq_128k:42,,"[""produced by Quincy Jones""]","TITLE: We Are the World | ID: 130  
+Final Answer: ['Michael Jackson and Lionel Richie']",24366,11.05,True,unproductive_broken
+loft:nq_128k:44,,"[""Jakkur, Bangalore, India""]","Jawaharlal Nehru Centre for Advanced Scientific Research | CONTENT: The Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR) is a multidisciplinary research institute located at Jakkur, Bangalore, India. It was established by the Department of Science and Technology of the Government of India, to mark the birth centenary of Pandit Jawaharlal Nehru. | END ID: 809",11565,9.76,True,final_called
+loft:nq_128k:45,,"[""condense the steam""]",,143459,36.4,False,max_steps
+loft:nq_128k:47,,"[""coffee"", ""honey"", ""livestock"", ""macadamia nuts"", ""pineapple"", ""sugarcane""]",,117572,62.55,False,max_steps
+loft:nq_128k:48,,"[""imperial rule""]",Final Answer: [],34905,11.76,True,unproductive_broken
+loft:nq_128k:51,,"[""Coire"", ""Corey"", ""Corie"", ""Correy"", ""Corrie"", ""Cory"", ""Khouri"", ""Kori"", ""Kory""]","TITLE: Cory | ID: 554  
+Final Answer: ['Corey', 'Coire', 'Corie', 'Corrie', 'Curry (surname)', 'Correy', 'Kory', 'Khouri', 'Kori']",30657,12.71,True,unproductive_broken
+loft:hotpotqa_128k:2,,"[""in 2000""]",2000,24603,10.94,True,final_called
+loft:hotpotqa_128k:4,,"[""Parliamentarians (\""Roundheads\"") and Royalists (\""Cavaliers\"")""]",,100347,39.47,True,abstained
+loft:hotpotqa_128k:7,,"[""Obsession""]","TITLE: Obsession (board game) | ID: 678  
+TITLE: Battle Sheep | ID: 702  
+
+Final Answer: ['Obsession']",91567,26.06,True,repetition_broken
+loft:hotpotqa_128k:8,,"[""Eli Roth""]",,118274,51.23,False,max_steps
+loft:hotpotqa_128k:11,,"[""1940""]",,126458,53.94,False,max_steps
+loft:hotpotqa_128k:12,,"[""The Galtür avalanche""]",1999 Galtür avalanche,28614,13.6,True,final_called
+loft:hotpotqa_128k:15,,"[""England""]",,105970,51.98,True,abstained
+loft:hotpotqa_128k:16,,"[""Morgan Llywelyn""]","No document provides information about the birth dates of Morgan Llywelyn or Robert Jordan. Therefore, the query cannot be answered based on the given material.",6540,4.56,True,unproductive_broken
+loft:hotpotqa_128k:20,,"[""Cambridge University""]",,85854,27.66,True,abstained
+loft:hotpotqa_128k:21,,"[""25 million copies""]","TITLE: Big Daddy (BioShock) | ID: 527  
+Final Answer: ['431728']",33203,12.05,True,unproductive_broken
+loft:hotpotqa_128k:22,,"[""Ellie Kemper""]",,150363,23.69,False,max_steps
+loft:hotpotqa_128k:23,,"[""The R-8 Human Rhythm Composer""]",['Roland R-8'],27333,11.39,True,final_called
+loft:hotpotqa_128k:24,,"[""The Vanishing""]",,125149,53.63,False,max_steps
+loft:hotpotqa_128k:25,,"[""Michael Bruce Fiers""]",,5336,7.16,True,abstained
+loft:hotpotqa_128k:27,,"[""Justin Spitzer""]",,139174,29.12,False,max_steps
+loft:hotpotqa_128k:28,,"[""no""]",['yes'],21063,9.29,True,final_called
+loft:hotpotqa_128k:29,,"[""Rome""]",Final Answer: [],91651,20.45,True,unproductive_broken
+loft:hotpotqa_128k:30,,"[""Koninklijke Ahold N.V.""]",['Ahold'],38580,10.79,True,final_called
+loft:hotpotqa_128k:33,,"[""world wushu tournament""]",,121655,27.38,False,max_steps
+loft:hotpotqa_128k:34,,"[""Turkey""]",['Istanbul'],131506,59.3,True,final_called
+loft:hotpotqa_128k:37,,"[""Afro-Russian""]",,126994,34.31,True,abstained
+loft:hotpotqa_128k:39,,"[""8 November 1978""]",['8 November 1978'],62165,20.01,True,final_called
+loft:hotpotqa_128k:41,,"[""genus""]","TITLE: Phaedranassa | ID: 942  
+TITLE: Mitella | ID: 981  
+
+Final Answer: ['genus']",57885,21.47,True,repetition_broken
+loft:hotpotqa_128k:44,,"[""Jamnagar""]",India,49695,13.99,True,final_called
+loft:hotpotqa_128k:48,,"[""photographer""]",fashion photographer,27829,12.64,True,final_called
+loft:hotpotqa_128k:49,,"[""eight""]","TITLE: Scorpion | ID: 491  
+Final Answer: ['8']",86301,27.93,True,repetition_broken
+loft:hotpotqa_128k:51,,"[""no""]",['Isaac Asimov is American and Michael Cunningham is American'],29597,8.84,True,final_called
+loft:hotpotqa_128k:52,,"[""yes""]",Final Answer: [],34068,22.06,True,unproductive_broken
+loft:hotpotqa_128k:53,,"[""North End Football Club""]",['Football League'],47252,12.57,True,final_called

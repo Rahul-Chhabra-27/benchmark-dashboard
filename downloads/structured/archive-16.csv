@@ -1,0 +1,27 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:nq_128k:5,,"[""Nala""]",,7287,3.37,True,abstained
+loft:nq_128k:10,,"[""at least seven"", ""at least seven players"", ""seven""]",7,7226,2.19,True,final_called
+loft:nq_128k:11,,"[""September 1972""]","September 15, 1972",12327,3.54,True,final_called
+loft:nq_128k:13,,"[""2011""]",,40571,31.83,False,max_steps
+loft:nq_128k:14,,"[""the summit of Cadillac Mountain""]",The sun hits the US first at Cadillac Mountain in Maine.,7543,4.34,True,final_called
+loft:nq_128k:15,,"[""Indian government""]",Government of India,7417,3.8,True,final_called
+loft:nq_128k:17,,"[""Ledger""]",,39603,25.8,False,max_steps
+loft:nq_128k:19,,"[""The Lykan Hypersport""]","No relevant document found for the query ""fast and furious 7 red car abu dhabi"".",31917,11.17,True,unproductive_broken
+loft:nq_128k:20,,"[""Jack Lord"", ""John Joseph Patrick Ryan""]",,37826,10.8,False,max_steps
+loft:nq_128k:27,,"[""cell nucleus"", ""in the cell nucleus""]",,7572,5.76,True,abstained
+loft:nq_128k:30,,"[""9 to 25 February 2018""]",,36242,7.02,False,max_steps
+loft:nq_128k:32,,"[""Grisha""]",G. Callen,7300,3.03,True,final_called
+loft:nq_128k:33,,"[""Serous Membrane"", ""the visceral membrane""]",serosa,7601,4.17,True,final_called
+loft:nq_128k:34,,"[""June 22, 1942""]","July 7, 1976",7217,3.38,True,final_called
+loft:nq_128k:39,,"[""David Ben-Gurion""]",,36959,14.53,False,max_steps
+loft:nq_128k:41,,"[""February 27, 2015"", ""February 27, 2015""]",,7414,3.47,True,abstained
+loft:nq_128k:42,,"[""produced by Quincy Jones""]",United Support of Artists (USA) for Africa,7257,2.67,True,final_called
+loft:nq_128k:44,,"[""Jakkur, Bangalore, India""]",,15877,6.2,False,ungrounded_final
+loft:nq_128k:45,,"[""condense the steam""]","TITLE: None provided  
+ID: None provided  
+
+Answer:  
+- Cooling water runs through the condenser to condense steam or vapor, absorbing heat and causing the steam to turn into liquid. This reduces back pressure in steam engines or turbines, improves efficiency, and recycles boiler water.",12274,9.91,True,repetition_broken
+loft:nq_128k:47,,"[""coffee"", ""honey"", ""livestock"", ""macadamia nuts"", ""pineapple"", ""sugarcane""]",tourism,7242,2.13,True,final_called
+loft:nq_128k:48,,"[""imperial rule""]",,37717,7.26,False,max_steps
+loft:nq_128k:51,,"[""Coire"", ""Corey"", ""Corie"", ""Correy"", ""Corrie"", ""Cory"", ""Khouri"", ""Kori"", ""Kory""]",,39895,10.14,False,max_steps

@@ -1,0 +1,236 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:hotpotqa_128k:0,,"[""Dan Bilzerian""]",,7013,8.28,True,abstained
+loft:hotpotqa_128k:1,,"[""Laura's Star""]","TITLE: Wonder Woman (2009 film) | ID: 329  
+TITLE: Laura's Star | ID: 605  
+
+Final Answer: Cannot determine which film was released first because the release date of ""Wonder Woman"" is not mentioned in the documents. Only ""Laura's Star"" is mentioned with a known release year (2004), but no information is provided about ""Wonder Woman"".",8015,37.23,True,structured_complete
+loft:hotpotqa_128k:2,,"[""in 2000""]","TITLE: Kenneth P. LaValle Stadium | ID: 809  
+- The year construction began on the stadium where the 2013 America East Men's Lacrosse Tournament was held is 2000.
+
+Final Answer: 2000",8068,26.1,True,structured_complete
+loft:hotpotqa_128k:3,,"[""Araminta Ross""]","TITLE: A Woman Called Moses | ID: 970  
+Birth name of the woman that ""A Woman Called Moses"" is based on: Harriet Tubman
+
+Final Answer: Harriet Tubman",7579,14.22,True,structured_complete
+loft:hotpotqa_128k:4,,"[""Parliamentarians (\""Roundheads\"") and Royalists (\""Cavaliers\"")""]",Final Answer:,7271,9.7,True,structured_complete
+loft:hotpotqa_128k:5,,"[""Adolfo Rodríguez Saá""]","TITLE: Ricardo Rodríguez Saá | ID: 148  
+TITLE: Adolfo Rodríguez Saá | ID: 1026  
+
+Final Answer: Adolfo Rodríguez Saá",8070,32.11,True,structured_complete
+loft:hotpotqa_128k:6,,"[""1976""]","TITLE: Georgia World Congress Center | ID: 684  
+Final Answer: 1976",7798,32.06,True,structured_complete
+loft:hotpotqa_128k:7,,"[""Obsession""]","TITLE: Obsession (board game) | ID: 678  
+TITLE: Battle Sheep | ID: 702  
+
+Final Answer: Nothing can be concluded about Battle Sheep, and no comparison date is available. Thus, the query cannot be answered with certainty from the provided documents.",7813,25.45,True,structured_complete
+loft:hotpotqa_128k:8,,"[""Eli Roth""]","TITLE: Eli Roth | ID: 727  
+TITLE: The Man with the Iron Fists | ID: 818  
+
+Final Answer: NOTHING RELEVANT",8934,48.96,True,structured_complete
+loft:hotpotqa_128k:9,,"[""Washington State""]","TITLE: Mike Leach (American football coach) | ID: 817  
+TITLE: e is the head coach of the Washington State Cougars football team. Previously, he was head coach of the Texas Tech Red Raiders football team, leading the Red Raiders to winning seasons in every year of his tenure. | ID: 817
+
+Final Answer: Washington State Cougars football team",7877,27.75,True,structured_complete
+loft:hotpotqa_128k:10,,"[""Love Drunk""]","TITLE: Love Drunk | ID: 334
+
+Final Answer: Love Drunk",9149,70.54,True,structured_complete
+loft:hotpotqa_128k:11,,"[""1940""]","TITLE: Herbert Matthews | ID: 1047  
+Final Answer: nothing",7911,20.73,True,structured_complete
+loft:hotpotqa_128k:12,,"[""The Galtür avalanche""]","TITLE: 1999 Galtür avalanche | ID: 967  
+TITLE: Rigopiano avalanche | ID: 1050  
+
+Final Answer: 1999 Galtür avalanche",7753,22.71,True,structured_complete
+loft:hotpotqa_128k:13,,"[""Ali Qushji""]","- TITLE: Ali Qushji | ID: 539
+
+Final Answer: Ali Qushji",7754,14.96,True,structured_complete
+loft:hotpotqa_128k:14,,"[""December 1974""]","TITLE: Métal hurlant | ID: 1074
+
+Final Answer: December 1974",8205,35.35,True,structured_complete
+loft:hotpotqa_128k:15,,"[""England""]","TITLE: Nike Hypervenom | ID: 413  
+
+Final Answer: None of the international football teams can be identified from the provided information.",7876,26.66,True,structured_complete
+loft:hotpotqa_128k:16,,"[""Morgan Llywelyn""]","TITLE: Morgan Llywelyn | ID: 556  
+TITLE: Robert Jordan | ID: NOT FOUND  
+
+Final Answer: cannot be determined",7672,14.57,True,structured_complete
+loft:hotpotqa_128k:17,,"[""Ten Walls""]","TITLE: Ten Walls  
+ID: 373  
+
+TITLE: Walking with Elephants  
+ID: 1213  
+
+Final Answer: Ten Walls",7943,20.02,True,structured_complete
+loft:hotpotqa_128k:18,,"[""Caesars Palace Grand Prix""]","TITLE: Caesars Palace Grand Prix | ID: 888  
+TITLE: Jeff Wood (racing driver) | ID: 957  
+
+Final Answer: Caesars Palace Grand Prix",8021,22.33,True,structured_complete
+loft:hotpotqa_128k:19,,"[""The Suite Life of Zack & Cody""]","TITLE: Candace Flynn | ID: 597  
+TITLE: Phineas and Ferb | ID: 597  
+TITLE: Ashley Tisdale | ID: 980  
+
+- Ashley Tisdale achieved mainstream success on ""The Suite Life of Zack & Cody"".
+
+Final Answer: The Suite Life of Zack & Cody",8065,24.25,True,structured_complete
+loft:hotpotqa_128k:20,,"[""Cambridge University""]","TITLE: Edmund Sharpe | ID: 399  
+TITLE: Governor's House, Knutsford | ID: 711  
+
+Final Answer: Cambridge University",7732,12.97,True,structured_complete
+loft:hotpotqa_128k:21,,"[""25 million copies""]","TITLE: Morgan Llywelyn | ID: 556  
+- A Big Daddy is a fictional character in a series that has sold more than 40 million copies.
+
+Final Answer: 40 million",8173,25.1,True,structured_complete
+loft:hotpotqa_128k:22,,"[""Ellie Kemper""]","TITLE: Nick Bernardone | ID: 351  
+TITLE: Unbreakable Kimmy Schmidt | ID: 451  
+
+List:  
+- Ellie Kemper  
+
+Final Answer: Ellie Kemper",8030,18.79,True,structured_complete
+loft:hotpotqa_128k:23,,"[""The R-8 Human Rhythm Composer""]","TITLE: Roland R-8  
+ID: 773  
+
+Final Answer: Roland R-8",7578,7.49,True,structured_complete
+loft:hotpotqa_128k:24,,"[""The Vanishing""]","TITLE: The Vanishing (1988 film) | ID: 255  
+TITLE: The Golden Egg | ID: 1119  
+
+Final Answer: The Vanishing (1988 film)",8630,28.82,True,structured_complete
+loft:hotpotqa_128k:25,,"[""Michael Bruce Fiers""]","TITLE: Nova Southeastern Sharks baseball | ID: 621  
+TITLE: Mike Fiers | ID: 1086  
+TITLE: Fiers | ID: 1086  
+
+Final Answer: None",8207,23.07,True,structured_complete
+loft:hotpotqa_128k:26,,"[""Scapegoat Mountain""]","TITLE: Lewis and Clark County, Montana | ID: 392  
+Final Answer: The summit located in the county whose county seat is Helena is not mentioned in the provided documents. Therefore, no summit can be identified based on the information given.",7741,17.4,True,structured_complete
+loft:hotpotqa_128k:27,,"[""Justin Spitzer""]","TITLE: Johnny Pemberton | ID: 32  
+TITLE: Superstore (TV series) | ID: 497  
+
+- Creator of the NBC sitcom that Johnny Pemberton appears in as Bo Thompson: Justin Spitzer  
+
+Final Answer: Justin Spitzer",7898,27.33,True,structured_complete
+loft:hotpotqa_128k:28,,"[""no""]","TITLE: Götterdämmerung | ID: 522  
+TITLE: Dafne | ID: 622  
+
+Final Answer: No",8075,27.44,True,structured_complete
+loft:hotpotqa_128k:29,,"[""Rome""]","TITLE: Tosca (1956 film) | ID: 437  
+TITLE: Franco Corelli | ID: 1107  
+
+List:  
+- Rome
+
+Final Answer: Rome",8186,21.61,True,structured_complete
+loft:hotpotqa_128k:30,,"[""Koninklijke Ahold N.V.""]",,7231,4.69,True,abstained
+loft:hotpotqa_128k:31,,"[""Unbreakable""]","TITLE: Blinding Edge Pictures | ID: 292  
+TITLE: Unbreakable (film) | ID: 543  
+
+Final Answer: Unbreakable",8123,30.39,True,structured_complete
+loft:hotpotqa_128k:32,,"[""directed by Shane Meadows""]","TITLE: Stephen Graham | ID: 526  
+Final Answer: nothing relevant",7666,12.72,True,structured_complete
+loft:hotpotqa_128k:33,,"[""world wushu tournament""]","TITLE: Donnie Yen | ID: 925  
+TITLE: Donnie Yen | ID: 925  
+
+Final Answer: world wushu tournament",8360,31.86,True,structured_complete
+loft:hotpotqa_128k:34,,"[""Turkey""]","TITLE: Column of the Goths | ID: 1008  
+TITLE: Gül Mosque | ID: Not present in the provided documents  
+
+Final Answer: nothing",7670,15.59,True,structured_complete
+loft:hotpotqa_128k:35,,"[""Omega SA""]","TITLE: Joseph Reiser | ID: 76  
+TITLE: Omega SA | ID: 618  
+
+Final Answer:  
+- Omega",8229,25.56,True,structured_complete
+loft:hotpotqa_128k:36,,"[""five""]","TITLE: Don Quichotte | ID: 832  
+TITLE: Luisa Miller | ID: 1182  
+
+Final Answer: 5",8009,20.44,True,structured_complete
+loft:hotpotqa_128k:37,,"[""Afro-Russian""]","TITLE: Jean Sagbo | ID: 107  
+TITLE: Jean Sagbo | ID: 107  
+TITLE: who are perceived to be dark-skinned compared to other given populations that have migrated to and settled in Russia. The Metis Foundation estimates that there are about 40,000 Afro-Russians. | ID: 999  
+
+Final Answer: Afro-Russian",8200,21.93,True,structured_complete
+loft:hotpotqa_128k:38,,"[""Lawton Chiles""]","TITLE: Lawton Chiles  
+ID: 1141  
+
+Final Answer: NOTHING RELEVANT",8106,17.75,True,structured_complete
+loft:hotpotqa_128k:39,,"[""8 November 1978""]","TITLE: Farshid Karimi | ID: 486  
+TITLE: Farshid Karimi | ID: 486  
+TITLE: Jason Maxiell | ID: 580  
+TITLE: Bernard Takawira | ID: 632  
+
+Final Answer: nothing",8271,28.47,True,structured_complete
+loft:hotpotqa_128k:40,,"[""Nye County""]","TITLE: Operation Buster–Jangle | ID: 747  
+TITLE: Buster–Jangle | ID: 747  
+
+Final Answer:",7819,21.37,True,structured_complete
+loft:hotpotqa_128k:41,,"[""genus""]","TITLE: Phaedranassa | ID: 942  
+TITLE: Mitella | ID: 943  
+TITLE: Mitella | ID: 981  
+
+Final Answer: NOTHING RELEVANT",8238,26.67,True,structured_complete
+loft:hotpotqa_128k:42,,"[""yes""]","TITLE: Rod Lurie | ID: 260  
+TITLE: Anja Salomonowitz | ID: 1128  
+
+- Anja Salomonowitz: Yes, she is a film director.  
+- Rod Lurie: Yes, he is a director.  
+Thus, both Anja Salomonowitz and Rod Lurie are directors.  
+
+Final Answer: both are directors",7978,20.23,True,structured_complete
+loft:hotpotqa_128k:43,,"[""Shawnee""]","TITLE: Keokuk Falls, Oklahoma | ID: 324  
+TITLE: Keokuk Falls, Oklahoma | ID: 324  
+
+List:  
+- The county seat of Pottawatomie County, Oklahoma is Shawnee.  
+
+Final Answer: Shawnee",8010,25.02,True,structured_complete
+loft:hotpotqa_128k:44,,"[""Jamnagar""]","TITLE: Poonamben Maadam | ID: 584  
+List:  
+- India  
+
+Final Answer:  
+- India",7857,20.05,True,structured_complete
+loft:hotpotqa_128k:45,,"[""Viscount Cranborne""]","TITLE: William Pery, 3rd Earl of Limerick | ID: 820  
+Final Answer: NOTHING RELEVANT",7903,13.47,True,structured_complete
+loft:hotpotqa_128k:46,,"[""The Most Dangerous Game""]","TITLE: Seven Faces | ID: 257  
+TITLE: The Most Dangerous Game | ID: 793  
+
+Final Answer: The Most Dangerous Game",8010,19.66,True,structured_complete
+loft:hotpotqa_128k:47,,"[""John M. Dowd""]","TITLE: John M. Dowd | ID: 236  
+TITLE: Dowd Report | ID: 943  
+
+List:  
+- John M. Dowd  
+
+Final Answer: John M. Dowd",8295,28.01,True,structured_complete
+loft:hotpotqa_128k:48,,"[""photographer""]","TITLE: Howell Conant  
+ID: 651  
+
+TITLE: Howell Conant | ID: 651  
+
+Answer: fashion photographer  
+
+Final Answer: fashion photographer",7584,11.74,True,structured_complete
+loft:hotpotqa_128k:49,,"[""eight""]","TITLE: Scorpion | ID: 491  
+TITLE: Karl Kraepelin | ID: 1093  
+
+Final Answer: 8",7749,11.35,True,structured_complete
+loft:hotpotqa_128k:50,,"[""Philadelphia""]","TITLE: Nada Surf | ID: 553  
+TITLE: Not Richard, But Dick | ID: 1214  
+
+Final Answer: New York City",7575,13.13,True,structured_complete
+loft:hotpotqa_128k:51,,"[""no""]","TITLE: Isaac Asimov | ID: 1130  
+TITLE: Michael Cunningham | ID: 1164  
+
+Final Answer: Michael Cunningham is an American writer, but Isaac Asimov is not mentioned in the documents. Thus, the query cannot be fully answered with the provided information.",7743,17.61,True,structured_complete
+loft:hotpotqa_128k:52,,"[""yes""]","TITLE: Tonka (film) | ID: 338  
+TITLE: Ten Who Dared | ID: 860  
+
+Final Answer: cannot be determined",7916,17.17,True,structured_complete
+loft:hotpotqa_128k:53,,"[""North End Football Club""]","TITLE: Preston North End F.C. | ID: 845  
+TITLE: Steve Uzelac | ID: 912  
+List:  
+- League: Football League  
+
+Final Answer: Football League",7769,15.17,True,structured_complete
+loft:hotpotqa_128k:54,,"[""Mercury Prize""]","TITLE: Sampha | ID: 12  
+TITLE: Hold On (SBTRKT song) | ID: 529  
+
+Final Answer: The Mercury Prize",7911,17.31,True,structured_complete

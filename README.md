@@ -26,32 +26,52 @@ budget chips are labelled in GB (`2GB x4`) rather than the fixed-chunk grid's MB
 so the two RLM campaigns never share a chip -- their budget conversions are not
 verified against each other here.
 
-The `Structured RLM` tab (2026-09-08 campaign, source commit `24f54e4`) is the
-second CSV-backed exception, rebuilt from `data/structured_rlm_loft128k.csv` by
-`splice_structured_rlm.py`. Read it with three caveats:
+The **Structured RLM** tab now has one explorer for the September 10 query-selection
+study (84 runs), September 9 geometry study (117 completed runs), and five historical
+comparison groups (34 summaries). The historical groups keep their different sample
+sets separate. Eleven incomplete geometry settings and the unrun notes/holdout
+answering experiments are explicitly identified.
 
-- Its **chips are arms, not KV budgets**. No arm runs a press, so the KV-removed
-  and KV-retained columns stay empty; "Retained tokens" is mean peak *root*
-  context, the axis the campaign actually measures.
-- It publishes **`primary_score` as `subspan_em`** -- LOFT's own headline for
-  these tasks. f1 was never computed for this campaign, which is why the tab is
-  its own group: the metric dropdown is the intersection across the sources
-  selected in a group, so putting a short metric list beside the LOFT-128K
-  sources would strip f1 and coverage from all of them.
-- Its **baseline chip is a different row set**. `vanilla · whole 128k in-window ·
-  no RLM` comes from the 2026-08-27 arms 1-3 campaign at **n=110** (LOFT dev 10 +
-  test 100); every other chip in the tab is 55 test rows. It is a reference line,
-  not a paired comparison. Its "Retained tokens" is the document measured with
-  the Qwen3-4B-Instruct-2507 tokenizer, not a figure from that run's metrics.
-- It is **five sources, not one**, because the campaign scored several different
-  row sets: all 55 rows per subset, the 51-row hard slice, and two pooled-only
-  ablations. They are kept apart so no single task label ever mixes denominators.
-  The hard-slice sources are selected on arm B answering wrongly, which
-  disadvantages the arm sharing B's chunks by construction -- the per-source
-  provenance line says so in the dashboard itself.
+- Filter by campaign, subset, selection method and read depth. The default compares
+  corrected BM25 against exhaustive reading. “Question-independent” describes window
+  selection only: the reader still receives the question.
+- Chart score, mean tokens per query, or score versus tokens on a logarithmic token
+  axis. The table includes per-query and whole-run token use, latency, and mean peak
+  root context as distinct quantities. No structured arm is labelled as a KV budget.
+- Qampari/Quest use answer coverage; the other subsets use subspan EM. Select a run
+  for its configuration and prediction preview. All 233 runs with recovered
+  checkpoints have CSV downloads with per-query tokens; the two vanilla reference
+  rows have no usage measurement and display a dash.
+- Notes indexes are complete but their answering results are pending. Historical
+  structured-versus-agentic comparisons used different retrieval-query formulations
+  and should not be treated as a clean pipeline comparison.
 
-The record of truth behind that CSV is `evaluation/rlm/STRUCTURED_RESULTS.md` in
-the benchmark repo, whose tables were re-derived from `metrics.json`.
+The explorer reads `data/structured_results.json`, with a flat export at
+`data/structured_results.csv`. Its scripts and styles are in `assets/`. The original
+26-source `DATA` payload remains intact for legacy tabs and archival consumers.
+
+Update **only** this explorer safely from any checkout:
+
+```bash
+# Render template changes using committed data; standard-library Python only.
+python3 update_structured_dashboard.py
+
+# Import a freshly downloaded InfoLabs snapshot (requires PyYAML).
+python3 update_structured_dashboard.py --snapshot /path/to/infolabs/raw
+
+# Check sample counts, downloads, usage aggregates and exhaustive-read invariants.
+python3 -m unittest test_structured_data.py
+```
+
+The import expects `qagnostic/results`, `structured_grid`, `loft128k_main`,
+`structured_main`, `structured_main_r2`, `structured_ablation` and
+`structured_ablation2` beneath the snapshot. It reads metrics/configs/checkpoints;
+retries are deduplicated by example ID. Importing asserts that token sums match the
+reported mean usage. Updating the explorer never invokes the older generator or
+removes unrelated sources/downloads.
+
+Direct link: [Structured RLM](https://rahul-chhabra-27.github.io/benchmark-dashboard/#structured).
+Filter choices are retained in the URL for sharing.
 
 Regenerate after evaluations finish:
 

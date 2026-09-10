@@ -1,0 +1,214 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:hotpotqa_128k:0,,"[""Dan Bilzerian""]","TITLE: Extraction (film) | ID: 742  
+Final Answer: NOTHING RELEVANT",3911,3.79,True,structured_complete
+loft:hotpotqa_128k:1,,"[""Laura's Star""]","TITLE: Wonder Woman (2009 film) | ID: 329  
+TITLE: Laura's Star | ID: 605  
+
+Final Answer: Laura's Star",4222,4.19,True,structured_complete
+loft:hotpotqa_128k:2,,"[""in 2000""]","TITLE: Kenneth P. LaValle Stadium | ID: 809  
+TITLE: 2013 America East Men's Lacrosse Tournament | ID: 1209  
+
+Final Answer: 2000",4335,7.0,True,structured_complete
+loft:hotpotqa_128k:3,,"[""Araminta Ross""]","TITLE: A Woman Called Moses | ID: 970  
+[""Harriet Tubman""]
+
+Final Answer: Harriet Tubman",4017,2.31,True,structured_complete
+loft:hotpotqa_128k:4,,"[""Parliamentarians (\""Roundheads\"") and Royalists (\""Cavaliers\"")""]",,3378,1.0,True,abstained
+loft:hotpotqa_128k:5,,"[""Adolfo Rodríguez Saá""]","TITLE: Adolfo Rodríguez Saá | ID: 1026
+
+Final Answer: Adolfo Rodríguez Saá",4414,7.73,True,structured_complete
+loft:hotpotqa_128k:6,,"[""1976""]","TITLE: Georgia World Congress Center | ID: 684  
+Final Answer: 1976",4270,6.56,True,structured_complete
+loft:hotpotqa_128k:7,,"[""Obsession""]","TITLE: Obsession (board game) | ID: 678  
+TITLE: Battle Sheep | ID: 702  
+
+Final Answer: Nothing can be concluded about Battle Sheep, and no comparison date is available. Thus, the query cannot be fully answered with the provided information.",4182,6.15,True,structured_complete
+loft:hotpotqa_128k:8,,"[""Eli Roth""]","TITLE: Eli Roth  
+ID: 727  
+
+TITLE: The Man with the Iron Fists  
+ID: 818  
+
+Final Answer: RZA",5097,10.94,True,structured_complete
+loft:hotpotqa_128k:9,,"[""Washington State""]","TITLE: Mike Leach (American football coach) | ID: 817  
+Final Answer: Washington State",3879,2.67,True,structured_complete
+loft:hotpotqa_128k:10,,"[""Love Drunk""]","TITLE: Love Drunk | ID: 334
+
+Final Answer: Love Drunk",4513,10.41,True,structured_complete
+loft:hotpotqa_128k:11,,"[""1940""]",,3613,0.99,True,abstained
+loft:hotpotqa_128k:12,,"[""The Galtür avalanche""]","TITLE: 1999 Galtür avalanche | ID: 967  
+TITLE: Rigopiano avalanche | ID: 1050  
+
+- The 1999 Galtür avalanche happened first.  
+
+Final Answer: The 1999 Galtür avalanche happened first.",3867,5.23,True,structured_complete
+loft:hotpotqa_128k:13,,"[""Ali Qushji""]","TITLE: Ali Qushji | ID: 539  
+Final Answer: Ali Qushji",4065,4.09,True,structured_complete
+loft:hotpotqa_128k:14,,"[""December 1974""]","TITLE: The Incal | ID: 230  
+TITLE: Métal hurlant | ID: 1074  
+
+Final Answer: December 1974",4225,5.98,True,structured_complete
+loft:hotpotqa_128k:15,,"[""England""]",,3688,1.16,True,abstained
+loft:hotpotqa_128k:16,,"[""Morgan Llywelyn""]","TITLE: Morgan Llywelyn | ID: 556  
+TITLE: Robert Jordan | ID: NOT FOUND  
+
+Final Answer: cannot determine",4238,6.12,True,structured_complete
+loft:hotpotqa_128k:17,,"[""Ten Walls""]","TITLE: Walking with Elephants | ID: 1213
+
+Final Answer: Ten Walls",4054,3.51,True,structured_complete
+loft:hotpotqa_128k:18,,"[""Caesars Palace Grand Prix""]","TITLE: Caesars Palace Grand Prix | ID: 888  
+TITLE: Jeff Wood (racing driver) | ID: 957  
+Final Answer: Caesars Palace Grand Prix",3957,5.95,True,structured_complete
+loft:hotpotqa_128k:19,,"[""The Suite Life of Zack & Cody""]","TITLE: Candace Flynn | ID: 597  
+TITLE: Ashley Tisdale | ID: 980  
+
+- The actress who voiced Candace Flynn, Ashley Tisdale, achieved mainstream success on ""The Suite Life of Zack & Cody"".  
+
+Final Answer: The Suite Life of Zack & Cody",4403,10.38,True,structured_complete
+loft:hotpotqa_128k:20,,"[""Cambridge University""]","TITLE: Edmund Sharpe | ID: 399  
+TITLE: Governor's House, Knutsford | ID: 711  
+
+Final Answer: Cambridge University",4165,4.37,True,structured_complete
+loft:hotpotqa_128k:21,,"[""25 million copies""]","TITLE: Big Daddy (BioShock) | ID: 527
+
+Final Answer:",3772,2.41,True,structured_complete
+loft:hotpotqa_128k:22,,"[""Ellie Kemper""]","TITLE: Nick Bernardone | ID: 351  
+TITLE: Unbreakable Kimmy Schmidt | ID: 451  
+
+Final Answer: Ellie Kemper",4748,8.83,True,structured_complete
+loft:hotpotqa_128k:23,,"[""The R-8 Human Rhythm Composer""]","TITLE: Roland R-8 | ID: 773  
+- The R-8 Human Rhythm Composer is an electronic drum machine introduced in 1989 by Roland Corporation.  
+- The R-8 features 32-voice polyphony.
+
+Final Answer: Roland R-8",4126,3.62,True,structured_complete
+loft:hotpotqa_128k:24,,"[""The Vanishing""]","TITLE: The Vanishing (1988 film) | ID: 255  
+TITLE: The Golden Egg | ID: 1119  
+
+Final Answer: The Vanishing (1988 film)",4754,9.99,True,structured_complete
+loft:hotpotqa_128k:25,,"[""Michael Bruce Fiers""]","TITLE: Nova Southeastern Sharks baseball | ID: 621  
+TITLE: Mike Fiers | ID: 1086  
+
+List:  
+- Mike Fiers played for the Houston Astros and Milwaukee Brewers.  
+
+Final Answer: Mike Fiers",3952,5.21,True,structured_complete
+loft:hotpotqa_128k:26,,"[""Scapegoat Mountain""]","TITLE: Lewis and Clark County, Montana | ID: 392  
+Final Answer: The summit located in the county whose county seat is Helena is not mentioned in the provided documents. Therefore, based on the information given, the query cannot be answered.",4199,4.19,True,structured_complete
+loft:hotpotqa_128k:27,,"[""Justin Spitzer""]","TITLE: Superstore | ID: 32  
+TITLE: Johnny Pemberton | ID: 32  
+
+Final Answer: NOTHING RELEVANT",4498,6.91,True,structured_complete
+loft:hotpotqa_128k:28,,"[""no""]","TITLE: Götterdämmerung | ID: 522  
+TITLE: Dafne | ID: 622  
+
+List:  
+- Dafne: yes  
+- Götterdämmerung: unknown  
+
+Final Answer: - Dafne: yes - Götterdämmerung: unknown",4708,9.22,True,structured_complete
+loft:hotpotqa_128k:29,,"[""Rome""]","TITLE: Tosca (1956 film) | ID: 437  
+TITLE: Franco Corelli | ID: 1107  
+
+Final Answer: Rome",4432,5.85,True,structured_complete
+loft:hotpotqa_128k:30,,"[""Koninklijke Ahold N.V.""]","TITLE: Ahold | ID: 1015  
+Final Answer: Ahold",4009,3.46,True,structured_complete
+loft:hotpotqa_128k:31,,"[""Unbreakable""]","TITLE: Blinding Edge Pictures | ID: 292  
+Final Answer: None",4149,3.52,True,structured_complete
+loft:hotpotqa_128k:32,,"[""directed by Shane Meadows""]","TITLE: Stephen Graham | ID: 526  
+Final Answer: NOTHING RELEVANT",4080,2.76,True,structured_complete
+loft:hotpotqa_128k:33,,"[""world wushu tournament""]","TITLE: Wing Chun (film)  
+ID: 469  
+TITLE: Donnie Yen  
+ID: 925  
+
+Final Answer: world wushu tournament",4194,6.17,True,structured_complete
+loft:hotpotqa_128k:34,,"[""Turkey""]","TITLE: Column of the Goths | ID: 1008  
+TITLE: Gül Mosque | ID: NOT PRESENT  
+
+Final Answer: nothing relevant",4008,4.54,True,structured_complete
+loft:hotpotqa_128k:35,,"[""Omega SA""]","TITLE: Joseph Reiser | ID: 76  
+TITLE: Omega SA | ID: 618  
+
+Final Answer:  
+- Omega",4203,6.31,True,structured_complete
+loft:hotpotqa_128k:36,,"[""five""]","TITLE: Don Quichotte | ID: 832  
+Final Answer: 5",3803,4.02,True,structured_complete
+loft:hotpotqa_128k:37,,"[""Afro-Russian""]","TITLE: Jean Sagbo | ID: 107  
+TITLE: Afro-Russian | ID: 999  
+Afro-Russians
+
+Final Answer: Afro-Russians",4177,5.04,True,structured_complete
+loft:hotpotqa_128k:38,,"[""Lawton Chiles""]","TITLE: Lawton Chiles | ID: 1141  
+Final Answer: Lawton Chiles",4364,4.02,True,structured_complete
+loft:hotpotqa_128k:39,,"[""8 November 1978""]","TITLE: Farshid Karimi | ID: 486  
+Final Answer: nothing relevant",3974,4.32,True,structured_complete
+loft:hotpotqa_128k:40,,"[""Nye County""]","TITLE: Operation Buster–Jangle | ID: 747  
+TITLE: Ignacewo, Kościan County | ID: 1  
+
+Final Answer: []",3635,4.65,True,structured_complete
+loft:hotpotqa_128k:41,,"[""genus""]","TITLE: Phaedranassa | ID: 942  
+TITLE: Mitella | ID: 981  
+
+List:  
+- Phaedranassa is classified at the genus level.  
+- Mitella is classified at the genus level.  
+
+Final Answer:  
+- Phaedranassa is classified at the genus level.  
+- Mitella is classified at the genus level.",4319,9.19,True,structured_complete
+loft:hotpotqa_128k:42,,"[""yes""]","TITLE: Anja Salomonowitz | ID: 1128  
+- Anja Salomonowitz is a film director.  
+- Rod Lurie is not mentioned.  
+
+Final Answer: No",3971,4.79,True,structured_complete
+loft:hotpotqa_128k:43,,"[""Shawnee""]","TITLE: Keokuk Falls, Oklahoma | ID: 324  
+TITLE: Shawnee, Oklahoma | ID: 725  
+
+Final Answer: Shawnee",4812,8.96,True,structured_complete
+loft:hotpotqa_128k:44,,"[""Jamnagar""]","TITLE: Poonamben Maadam | ID: 584  
+- Country: India  
+
+Final Answer: India",4136,3.13,True,structured_complete
+loft:hotpotqa_128k:45,,"[""Viscount Cranborne""]","TITLE: William Pery, 3rd Earl of Limerick | ID: 820  
+Final Answer:",4358,4.47,True,structured_complete
+loft:hotpotqa_128k:46,,"[""The Most Dangerous Game""]","TITLE: The Most Dangerous Game | ID: 793  
+TITLE: Seven Faces | ID: 257  
+
+[""The Most Dangerous Game""]  
+
+Final Answer: The Most Dangerous Game",4404,5.75,True,structured_complete
+loft:hotpotqa_128k:47,,"[""John M. Dowd""]","TITLE: John M. Dowd | ID: 236  
+TITLE: Dowd Report | ID: 943  
+
+Final Answer: John M. Dowd",4517,7.44,True,structured_complete
+loft:hotpotqa_128k:48,,"[""photographer""]","TITLE: Howell Conant  
+ID: 651  
+
+Final Answer: fashion photographer",3603,2.4,True,structured_complete
+loft:hotpotqa_128k:49,,"[""eight""]","TITLE: Scorpion | ID: 491  
+TITLE: Karl Kraepelin | ID: 1093  
+
+8",4037,4.2,True,structured_complete
+loft:hotpotqa_128k:50,,"[""Philadelphia""]","TITLE: Nada Surf | ID: 553  
+TITLE: Not Richard, But Dick | ID: 1214  
+
+Final Answer: New York City",4375,5.66,True,structured_complete
+loft:hotpotqa_128k:51,,"[""no""]","TITLE: Isaac Asimov | ID: 1130  
+TITLE: Michael Cunningham | ID: 1164  
+
+Final Answer:  
+- Isaac Asimov is a Russian-American writer.  
+- Michael Cunningham is an American writer.  
+- Therefore, both are not solely American writers; Asimov is Russian-American, and Cunningham is American. The claim that both are American writers is not fully accurate based on the documents.",4514,11.85,True,structured_complete
+loft:hotpotqa_128k:52,,"[""yes""]","TITLE: Tonka (film) | ID: 338  
+TITLE: Ten Who Dared | ID: 860  
+
+Final Answer: cannot be determined",4381,6.37,True,structured_complete
+loft:hotpotqa_128k:53,,"[""North End Football Club""]","TITLE: Preston North End F.C. | ID: 845  
+TITLE: Steve Uzelac | ID: 912  
+
+Final Answer: Championship",4120,5.2,True,structured_complete
+loft:hotpotqa_128k:54,,"[""Mercury Prize""]","TITLE: Process | ID: 12  
+TITLE: Hold On (SBTRKT song) | ID: 529  
+
+Final Answer: Mercury Prize",4512,6.55,True,structured_complete

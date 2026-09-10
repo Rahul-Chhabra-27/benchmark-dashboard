@@ -1,0 +1,66 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:nq_128k:5,,"[""Nala""]",,1057,1.62,True,abstained
+loft:nq_128k:10,,"[""at least seven"", ""at least seven players"", ""seven""]","TITLE: Eligible receiver  
+ID: 64  
+
+Final Answer: at least seven",1576,6.33,True,structured_complete
+loft:nq_128k:11,,"[""September 1972""]","TITLE: The Waltons | ID: 79  
+Final Answer: September 1972",1110,4.69,True,structured_complete
+loft:nq_128k:13,,"[""2011""]","TITLE: New York Giants | ID: 511  
+Answer: 2011
+
+Final Answer: 2011",1275,7.44,True,structured_complete
+loft:nq_128k:14,,"[""the summit of Cadillac Mountain""]","TITLE: Cadillac Mountain | ID: 716  
+Final Answer: Mars Hill, West Quoddy Head",1623,6.92,True,structured_complete
+loft:nq_128k:15,,"[""Indian government""]","TITLE: Ministry of Corporate Affairs | ID: 354  
+Final Answer: The Ministry of Corporate Affairs, which is an Indian government ministry.",1192,7.19,True,structured_complete
+loft:nq_128k:17,,"[""Ledger""]","TITLE: Heath Ledger | ID: 48  
+List:  
+- Heath Ledger plays The Joker in Batman: The Dark Knight.  
+
+Final Answer: Heath Ledger",1001,3.55,True,structured_complete
+loft:nq_128k:19,,"[""The Lykan Hypersport""]","TITLE: Lykan HyperSport | ID: 158  
+List:  
+- The Lykan HyperSport is a supercar featured in Fast and Furious 7 and the second Fate of the Furious trailer.  
+- The Lykan HyperSport is the first supercar produced in the Middle East and the first designed and produced indigenously in the Arab World.  
+
+Final Answer: The Lykan HyperSport is a supercar featured in Fast and Furious 7 and the second Fate of the Furious trailer. The Lykan HyperSport is the first supercar produced in the Middle East and the first designed and produced indigenously in the Arab World.",1973,14.2,True,structured_complete
+loft:nq_128k:20,,"[""Jack Lord"", ""John Joseph Patrick Ryan""]","TITLE: Jack Lord | ID: 125  
+Final Answer: Jack Lord",1177,4.91,True,structured_complete
+loft:nq_128k:27,,"[""cell nucleus"", ""in the cell nucleus""]","TITLE: Protein biosynthesis | ID: 391  
+Final Answer: NOTHING RELEVANT",1620,6.24,True,structured_complete
+loft:nq_128k:30,,"[""9 to 25 February 2018""]","TITLE: Mexico at the 2018 Winter Olympics | ID: 386  
+Mexico played in the Winter Olympics from 9 to 25 February 2018.
+
+Final Answer: 9 to 25 February 2018",1085,4.22,True,structured_complete
+loft:nq_128k:32,,"[""Grisha""]","TITLE: G. Callen  
+ID: 373  
+Final Answer: Grisha Alekandrovich Nikolaev",1054,3.06,True,structured_complete
+loft:nq_128k:33,,"[""Serous Membrane"", ""the visceral membrane""]","TITLE: Serous membrane  
+ID: 269  
+
+Final Answer: serous membrane",1215,5.78,True,structured_complete
+loft:nq_128k:34,,"[""June 22, 1942""]","TITLE: The Star-Spangled Banner | ID: 855  
+Final Answer: 1932",1795,10.35,True,structured_complete
+loft:nq_128k:39,,"[""David Ben-Gurion""]","TITLE: Israeli Declaration of Independence | ID: 880  
+Final Answer: David Ben-Gurion",1297,2.12,True,structured_complete
+loft:nq_128k:41,,"[""February 27, 2015"", ""February 27, 2015""]","TITLE: Where Are Ü Now  
+ID: 550  
+Final Answer: February 27, 2015",1572,5.18,True,structured_complete
+loft:nq_128k:42,,"[""produced by Quincy Jones""]","TITLE: We Are the World | ID: 130  
+Final Answer: Michael Jackson and Lionel Richie",1062,4.46,True,structured_complete
+loft:nq_128k:44,,"[""Jakkur, Bangalore, India""]","TITLE: Jawaharlal Nehru Centre for Advanced Scientific Research  
+ID: 809  
+
+Final Answer: TITLE: Jawaharlal Nehru Centre for Advanced Scientific Research  
+ID: 809",1535,4.82,True,structured_complete
+loft:nq_128k:45,,"[""condense the steam""]","TITLE: Cooling tower | ID: 429
+
+Final Answer: Cooling water runs through the condenser to condense steam coming out of the cylinders or turbines, reducing back pressure and steam consumption, increasing power, and recycling boiler water. The condensers require an ample supply of cooling water, as without it they are impractical.",1322,9.74,True,structured_complete
+loft:nq_128k:47,,"[""coffee"", ""honey"", ""livestock"", ""macadamia nuts"", ""pineapple"", ""sugarcane""]","TITLE: Hawaii | ID: 746  
+Final Answer: NOTHING RELEVANT",1545,5.08,True,structured_complete
+loft:nq_128k:48,,"[""imperial rule""]",,688,0.27,True,abstained
+loft:nq_128k:51,,"[""Coire"", ""Corey"", ""Corie"", ""Correy"", ""Corrie"", ""Cory"", ""Khouri"", ""Kori"", ""Kory""]","TITLE: Cory | ID: 554  
+[""Corey"", ""Coire"", ""Corie"", ""Corrie"", ""Curry (surname)"", ""Correy"", ""Kory"", ""Khouri"", ""Kori""]
+
+Final Answer: [""Corey"", ""Coire"", ""Corie"", ""Corrie"", ""Curry (surname)"", ""Correy"", ""Kory"", ""Khouri"", ""Kori""]",1453,4.92,True,structured_complete

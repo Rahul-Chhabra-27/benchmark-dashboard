@@ -1,0 +1,312 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:qampari_128k:0,,"[""2018 Kentucky Bank Tennis Championships – Men's Singles"", ""2018 Kunming Open – Men's Doubles"", ""2018 Stockton Challenger – Men's Singles"", ""2019 Burnie International – Men's Doubles"", ""2019 Launceston Tennis International – Men's Singles""]","TITLE: 2019 Launceston Tennis International – Men's Singles | ID: 98  
+TITLE: 2018 Stockton Challenger – Men's Singles | ID: 578  
+
+[""2019 Launceston Tennis International – Men's Singles"", ""2018 Stockton Challenger – Men's Singles""]  
+
+Final Answer: [""2019 Launceston Tennis International – Men's Singles"", ""2018 Stockton Challenger – Men's Singles""]",4183,6.85,True,structured_complete
+loft:qampari_128k:1,,"[""Dead Heavens"", ""Gorilla Biscuits"", ""Quicksand"", ""Rival Schools"", ""Walking Concert""]","TITLE: Rival Schools | ID: 25  
+TITLE: Gorilla Biscuits | ID: 91  
+TITLE: Walking Concert | ID: 113  
+TITLE: Quicksand (American band) | ID: 752  
+
+[""Rival Schools"", ""Gorilla Biscuits"", ""Walking Concert"", ""Quicksand""]  
+
+Final Answer: [""Rival Schools"", ""Gorilla Biscuits"", ""Walking Concert"", ""Quicksand""]",4812,10.56,True,structured_complete
+loft:qampari_128k:2,,"[""Arabsat-1A"", ""Arabsat-1B"", ""Arabsat-5A"", ""Badr-4"", ""INSAT-2DT""]","[""Badr-4 (a.k.a. Arabsat 4B)"", ""Arabsat-1A"", ""Arabsat-1B"", ""INSAT-2DT (previously known as Arabsat-1C)""]
+
+Final Answer: [""Badr-4 (a.k.a. Arabsat 4B)"", ""Arabsat-1A"", ""Arabsat-1B"", ""INSAT-2DT (previously known as Arabsat-1C)""]",4388,8.92,True,structured_complete
+loft:qampari_128k:3,,"[""Diplopedia"", ""RationalWiki"", ""Uncyclopedia"", ""Veropedia"", ""Wiktionary""]",,3643,1.35,True,abstained
+loft:qampari_128k:4,,"[""Chris McCormack"", ""Chrissie Wellington"", ""Helen Jenkins"", ""Magali Messmer"", ""Pete Jacobs""]","TITLE: Pete Jacobs (triathlete) | ID: 592  
+[""Pete Jacobs""]  
+
+Final Answer: [""Pete Jacobs""]",4003,4.69,True,structured_complete
+loft:qampari_128k:5,,"[""Ammonia"", ""Collins reagent"", ""Dimethylformamide"", ""Ethanol"", ""Sodium azide""]","TITLE: Collins reagent | ID: 216  
+- Collins reagent can be used as an alternative to the Jones reagent and pyridinium chlorochromate (PCC) when oxidizing secondary alcohols to ketones.  
+- PCC and pyridinium dichromate (PDC) oxidations have largely supplanted Collins oxidation.  
+
+Answer list:  
+- Collins reagent  
+- Jones reagent  
+- pyridinium chlorochromate (PCC)  
+- pyridinium dichromate (PDC)
+
+Final Answer: [""Collins reagent"", ""Jones reagent"", ""pyridinium chlorochromate (PCC)"", ""pyridinium dichromate (PDC)""]",4418,7.43,True,structured_complete
+loft:qampari_128k:6,,"[""Byeongsan Seowon"", ""Dosan Seowon"", ""Oksan Seowon"", ""Seoak Seowon"", ""Sosu Seowon""]",,3385,1.1,True,abstained
+loft:qampari_128k:7,,"[""2015 Wimbledon Championships – Boys' Singles"", ""2016 Charlottesville Men's Pro Challenger – singles"", ""2018 BNP Paribas Primrose Bordeaux – singles"", ""2018 JSM Challenger of Champaign–Urbana – singles"", ""2018 Knoxville Challenger – singles""]","TITLE: 2015 Wimbledon Championships – Boys' Singles | ID: 318  
+TITLE: 2018 JSM Challenger of Champaign–Urbana – Singles | ID: 531  
+TITLE: 2018 BNP Paribas Primrose Bordeaux – Singles | ID: 717  
+
+[""2015 Wimbledon Championships – Boys' Singles"", ""2018 JSM Challenger of Champaign–Urbana – Singles"", ""2018 BNP Paribas Primrose Bordeaux – Singles""]  
+Final Answer: [""2015 Wimbledon Championships – Boys' Singles"", ""2018 JSM Challenger of Champaign–Urbana – Singles"", ""2018 BNP Paribas Primrose Bordeaux – Singles""]",5032,11.11,True,structured_complete
+loft:qampari_128k:8,,"[""Christian Peter"", ""Howard Barbieri"", ""Jeff Kunkel"", ""Knowshon Moreno"", ""Melanie McGuire""]","[""Knowshon Rockwell Moreno"", ""Jeff Kunkel""]
+
+Final Answer: [""Knowshon Rockwell Moreno"", ""Jeff Kunkel""]",4166,5.05,True,structured_complete
+loft:qampari_128k:9,,"[""2015 Città di Caltanissetta – singles"", ""2016 Open Città della Disfida – singles"", ""2016 Stockholm Open – doubles"", ""2017 Internationaux de Tennis de Vendée – singles"", ""2017 Internazionali di Tennis del Friuli Venezia Giulia – singles""]","TITLE: 2017 Internazionali di Tennis del Friuli Venezia Giulia – Singles | ID: 291  
+TITLE: 2016 Stockholm Open – Doubles | ID: 448  
+TITLE: 2017 Internationaux de Tennis de Vendée – Singles | ID: 614  
+
+[""2017 Internazionali di Tennis del Friuli Venezia Giulia – Singles"", ""2016 Stockholm Open – Doubles"", ""2017 Internationaux de Tennis de Vendée – Singles""]  
+Final Answer: [""2017 Internazionali di Tennis del Friuli Venezia Giulia – Singles"", ""2016 Stockholm Open – Doubles"", ""2017 Internationaux de Tennis de Vendée – Singles""]",4571,8.35,True,structured_complete
+loft:qampari_128k:10,,"[""Antonio London"", ""Bryan Morris"", ""Dewon Brazelton"", ""Dustin Lynch"", ""Jordan Sheffield""]","TITLE: TENT | ID: 347  
+TITLE: Antonio London | ID: 643  
+TITLE: Dewon Brazelton | ID: 663  
+
+[""Dustin Charles Lynch"", ""Antonio Monte \""Stick\"" London"", ""Dewon Cortez Brazelton""]  
+Final Answer: [""Dustin Charles Lynch"", ""Antonio Monte \""Stick\"" London"", ""Dewon Cortez Brazelton""]",4459,6.9,True,structured_complete
+loft:qampari_128k:11,,"[""Conditional release"", ""Ghost"", ""The Bright Day"", ""The Sale"", ""The Traces of Light""]","[""Conditional Release (2016)""]  
+Final Answer: [""Conditional Release (2016)""]",4373,5.21,True,structured_complete
+loft:qampari_128k:12,,"[""Ego Ferguson"", ""Jerry Janes"", ""Ron Rivera"", ""Roquan Smith"", ""Will Sutton""]","[""Jerry C. Janes"", ""Ron Rivera""]  
+Final Answer: [""Jerry C. Janes"", ""Ron Rivera""]",4467,6.78,True,structured_complete
+loft:qampari_128k:13,,"[""Chamarajendra Wadiyar X"", ""Kanthirava Narasaraja I"", ""Kanthirava Narasaraja II"", ""Krishnaraja Wadiyar II"", ""Krishnaraja Wadiyar III"", ""Mir Ghulam Ali""]","TITLE: Krishnaraja Wadiyar II | ID: 698  
+TITLE: Chamarajendra Wadiyar X | ID: 706  
+
+[""Krishnaraja Wadiyar II habitated the Kingdom of Mysore from 1734 to 1766."", ""Maharaja Chamarajendra Wadiyar X habitated the Kingdom of Mysore from 1868 to 1894.""]
+
+Final Answer: [""Krishnaraja Wadiyar II habitated the Kingdom of Mysore from 1734 to 1766."", ""Maharaja Chamarajendra Wadiyar X habitated the Kingdom of Mysore from 1868 to 1894.""]",4621,10.61,True,structured_complete
+loft:qampari_128k:14,,"[""Gourdou-Leseurre GL-812 HY"", ""Gourdou-Leseurre GL-832 HY"", ""Gourdou-Leseurre GL.2"", ""Gourdou-Leseurre GL.30"", ""Gourdou-Leseurre GL.50""]","TITLE: Leseurre GL.2 | ID: 44  
+TITLE: Gourdou-Leseurre GL-812 HY | ID: 258  
+TITLE: Gourdou-Leseurre GL-832 HY | ID: 332  
+TITLE: The Gourdou-Leseurre GL.50, also known as the Gourdou-Leseurre Type F, was a French fighter prototype of the early 1920s. | ID: 494  
+TITLE: Gourdou-Leseurre GL.30 | ID: 569  
+
+[""Gourdou-Leseurre produced the GL.2, a French fighter aircraft that made its maiden flight in 1918."", ""Gourdou-Leseurre produced the GL-812 HY, a 3-seat reconnaissance floatplane built in 1926-27."", ""Gourdou-Leseurre produced the GL-832 HY, a 1930s French light shipboard reconnaissance floatplane for the French Navy."", ""Gourdou-Leseurre produced the GL.50, also known as the Gourdou-Leseurre Type F, a French fighter prototype of the early 1920s."", ""Gourdou-Leseurre produced the GL.30, a racing aircraft built in France in 1920 which formed the basis for a highly successful family of fighter aircraft.""]
+
+Final Answer: [""Gourdou-Leseurre produced the GL.2, a French fighter aircraft that made its maiden flight in 1918."", ""Gourdou-Leseurre produced the GL-812 HY, a 3-seat reconnaissance floatplane built in 1926-27."", ""Gourdou-Leseurre produced the GL-832 HY, a 1930s French light shipboard reconnaissance floatplane for the French Navy."", ""Gourdou-Leseurre produced the GL.50, also known as the Gourdou-Leseurre Type F, a French fighter prototype of the early 1920s."", ""Gourdou-Leseurre produced the GL.30, a racing aircraft built in France in 1920 which formed the basis for a highly successful family of fighter aircraft.""]",6244,26.32,True,structured_complete
+loft:qampari_128k:15,,"[""Charles Eastman"", ""Little Crow"", ""Sitting Bull"", ""Spotted Elk"", ""Zitkala-Sa""]",,3429,1.01,True,abstained
+loft:qampari_128k:16,,"[""Amy Fote"", ""Connor Walsh"", ""Jun Shuang Huang"", ""Simon Ball"", ""Stanton Welch""]","TITLE: The Artistic Director of the Houston Ballet | ID: 187  
+TITLE: Herminigildo Yurong | ID: 456  
+TITLE: Houston Ballet | ID: 455  
+TITLE: Jun Shuang Huang | ID: 573  
+
+[""69) is an Australian dancer and choreographer. He currently serves as the Artistic Director of the Houston Ballet."", ""Constance Walsh is employed by the Houston Ballet."", ""Jun Shuang Huang is a Chinese professional ballet dancer who was formerly a principal with the Houston Ballet.""]
+
+Final Answer: [""69) is an Australian dancer and choreographer. He currently serves as the Artistic Director of the Houston Ballet."", ""Constance Walsh is employed by the Houston Ballet."", ""Jun Shuang Huang is a Chinese professional ballet dancer who was formerly a principal with the Houston Ballet.""]",4376,7.61,True,structured_complete
+loft:qampari_128k:17,,"[""Carlos García Cambón"", ""Gustavo Alfaro"", ""Jorge José Benítez"", ""Mario Fortunato"", ""Miguel Ángel Russo""]","[""Mario Fortunato""]",5037,11.43,True,structured_complete
+loft:qampari_128k:18,,"[""After the Rain"", ""Alice's Adventures in Wonderland"", ""An American in Paris"", ""Carousel"", ""Liturgy""]","TITLE: After the Rain (ballet)  
+ID: 482  
+
+TITLE: Alice's Adventures in Wonderland (ballet)  
+ID: 551  
+
+TITLE: Carousel (ballet)  
+ID: 709  
+
+TITLE: An American in Paris (ballet)  
+ID: 743  
+
+Final Answer: [""After the Rain (ballet)"", ""Alice's Adventures in Wonderland (ballet)"", ""Carousel (ballet)"", ""An American in Paris (ballet)""]",4596,11.39,True,structured_complete
+loft:qampari_128k:19,,"[""Custodio Parcon"", ""Domingo Deluana"", ""Herminigildo Yurong"", ""Lolinato To-ong"", ""Tomas Campo Jr.""]","TITLE: Lolinato To-ong  
+ID: 111  
+
+TITLE: Domingo Deluana | ID: 305  
+
+TITLE: Medal of Valor citation | ID: 422  
+
+TITLE: Herminigildo J. Yurong | ID: 456  
+
+TITLE: Custodio Parcon | ID: 749  
+
+Answer: Lolinato G. To-ong was a famous person remembered for serving in the Philippine Marine Corps.  
+Answer: The famous person remembered for serving in the Philippine Marine Corps is Custodio J. Parcon, Jr.
+
+Final Answer: [""Lolinato G. To-ong"", ""Custodio J. Parcon, Jr.""]",5579,17.55,True,structured_complete
+loft:qampari_128k:20,,"[""Asterix and Cleopatra"", ""Asterix and the Chieftain's Shield"", ""Asterix and the Great Crossing"", ""Asterix in Belgium"", ""Obelix and Co.""]","TITLE: Obelix and Co. | ID: 351  
+TITLE: Asterix and the Great Crossing | ID: 378  
+TITLE: Asterix and the Chieftain's Shield | ID: 404  
+TITLE: Asterix in Belgium | ID: 646  
+
+[""Obelix and Co."", ""Asterix and the Great Crossing"", ""Asterix and the Chieftain's Shield"", ""Asterix in Belgium""]  
+Final Answer: [""Obelix and Co."", ""Asterix and the Great Crossing"", ""Asterix and the Chieftain's Shield"", ""Asterix in Belgium""]",4042,6.21,True,structured_complete
+loft:qampari_128k:21,,"[""Battle Creek"", ""Better Call Saul"", ""Breaking Bad"", ""The Lone Gunmen"", ""The X-Files""]","TITLE: Better Call Saul (season 1) | ID: 226  
+TITLE: The Lone Gunmen (TV series) | ID: 469  
+TITLE: Battle Creek | ID: 525  
+TITLE: Breaking Bad | ID: 575  
+
+Final Answer: [""Better Call Saul"", ""The Lone Gunmen (TV series)"", ""Battle Creek"", ""Breaking Bad""]",4900,11.83,True,structured_complete
+loft:qampari_128k:22,,"[""Ivo Babuška"", ""Petr Vopěnka"", ""Vlastimil Dlab"", ""Věra Trnková"", ""Zdeněk Frolík""]","TITLE: Věra Trnková | ID: 79  
+TITLE: Ivo Babuška | ID: 254  
+TITLE: Dlab | ID: 311  
+
+Answer: Eduard Čech was the doctoral advisor to Věra Trnková and Ivo Babuška.
+
+Final Answer: [""Věra Trnková"", ""Ivo Babuška""]",4248,5.89,True,structured_complete
+loft:qampari_128k:23,,"[""MS European Seaway"", ""MS Pride of Burgundy"", ""MS Pride of Calais"", ""MS Pride of Dover"", ""MS Spirit of France""]","TITLE: MS Pride of Dover | ID: 673
+
+Final Answer: [""MS Pride of Dover""]",4300,5.34,True,structured_complete
+loft:qampari_128k:24,,"[""argon"", ""helium"", ""krypton"", ""neon"", ""xenon""]",,3641,1.32,True,abstained
+loft:qampari_128k:25,,"[""Detention River Christian Community"", ""Elmendorf Christian Community"", ""Milltown Hutterite Colony"", ""Owa Hutterite Colony"", ""Schmiedeleut""]","TITLE: Schmiedeleut | ID: 82
+
+Final Answer: [""Schmiedeleut""]",4152,3.65,True,structured_complete
+loft:qampari_128k:26,,"[""Alice Lon"", ""Elena Jahn"", ""Paul Klee"", ""Perry DeAngelis"", ""Will Sampson""]","[""Alice Lon"", ""Elena Jahn""]
+
+Final Answer: [""Alice Lon"", ""Elena Jahn""]",4357,6.85,True,structured_complete
+loft:qampari_128k:27,,"[""2008 Pilot Pen Tennis – Men's Singles"", ""2009 Chennai Open – singles"", ""2010 Aircel Chennai Open – singles"", ""2010 PBZ Zagreb Indoors – singles"", ""2011 St. Petersburg Open – singles""]","[""2008 Pilot Pen Tennis – Men's Singles"", ""2011 St. Petersburg Open – Singles""]
+
+Final Answer: [""2008 Pilot Pen Tennis – Men's Singles"", ""2011 St. Petersburg Open – Singles""]",4260,3.92,True,structured_complete
+loft:qampari_128k:28,,"[""Agys Ramsaran Verma"", ""Lokendra Singh"", ""Mithlesh Kumar"", ""Mukund Lal Agrawal"", ""Virendra Singh""]","TITLE: Lokendra Singh (politician) | ID: 434  
+[""Lokendra Singh""]  
+
+Final Answer: [""Lokendra Singh""]",4142,3.7,True,structured_complete
+loft:qampari_128k:29,,"[""Breakfast"", ""Rush TV"", ""Us Girls"", ""Wazzup Wazzup"", ""Y Speak""]","TITLE: Us Girls (TV program)  
+ID: 228  
+
+TITLE: Rush TV  
+ID: 528  
+
+TITLE: Breakfast (Philippine TV program)  
+ID: 556  
+
+TITLE: Y Speak  
+ID: 732  
+
+Final Answer: [""Us Girls"", ""Rush TV"", ""Breakfast"", ""Y Speak""]",4890,10.32,True,structured_complete
+loft:qampari_128k:30,,"[""Edward Kennion"", ""Eleanor Coade"", ""Theodora Cowan"", ""William Pether"", ""William Wynne Ryland""]","TITLE: Edward Kennion | ID: 195  
+TITLE: Eleanor Coade | ID: 353  
+TITLE: William Pether | ID: 596  
+
+Final Answer: [""Edward Kennion"", ""Eleanor Coade""]",3875,5.12,True,structured_complete
+loft:qampari_128k:31,,"[""Nirel"", ""Oriyardori Asal"", ""Rang"", ""Sompa"", ""Suddha""]","TITLE: Suddha (film) | ID: 70  
+TITLE: Nirel | ID: 197  
+TITLE: Oriyardori Asal | ID: 345  
+
+Final Answer: [""Suddha (film)"", ""Nirel"", ""Oriyardori Asal""]",4569,10.89,True,structured_complete
+loft:qampari_128k:32,,"[""Bright Eyes"", ""Conor Oberst and the Mystic Valley Band"", ""Desaparecidos"", ""Monsters of Folk"", ""Park Ave.""]","TITLE: Conor Oberst and the Mystic Valley Band | ID: 379  
+TITLE: Bright Eyes (band) | ID: 459  
+TITLE: Records | ID: 599  
+TITLE: The Playing Favorites | ID: 600  
+
+List:  
+- Bright Eyes  
+- High Up  
+
+Final Answer: [""Bright Eyes"", ""High Up""]",4245,9.44,True,structured_complete
+loft:qampari_128k:33,,"[""1998 Asian Super Cup"", ""2015 King Cup Final"", ""2015 Saudi Super Cup"", ""2016 King Cup Final"", ""2017–18 Saudi Professional League""]","TITLE: 2015 King Cup Final | ID: 75  
+TITLE: winners of the previous season's Saudi Pro League and King's Cup competitions | ID: 570  
+TITLE: 2016 King Cup Final | ID: 694  
+
+[""2015 King Cup Final"", ""Saudi Pro League"", ""2016 King Cup Final""]  
+
+Final Answer: [""2015 King Cup Final"", ""Saudi Pro League"", ""2016 King Cup Final""]",4762,10.88,True,structured_complete
+loft:qampari_128k:34,,"[""Baojun 510"", ""Baojun 530"", ""Baojun 630"", ""Baojun 730"", ""Baojun E300""]","TITLE: Baojun E300 | ID: 134  
+TITLE: Baojun 630 | ID: 451  
+TITLE: Baojun 510 | ID: 686  
+TITLE: Baojun 730 | ID: 711  
+
+[""Baojun E300"", ""Baojun 630"", ""Baojun 510"", ""Baojun 730""]
+
+Final Answer: [""Baojun E300"", ""Baojun 630"", ""Baojun 510"", ""Baojun 730""]",5659,17.83,True,structured_complete
+loft:qampari_128k:35,,"[""Bobby Hope"", ""Harold Bodle"", ""John Barton"", ""Kevin Poole"", ""Mick Walker""]","TITLE: ton Wanderers, having also appeared in England's First Division for Aston Villa before the formation of the Premiership. He also featured for Northampton Town, Middlesbrough, Hartlepool United, Birmingham City and Derby County, before signing for Burton Albion in 2006, aged 43. Latterly employed as goalkeeping coach in addition to being registered as a player, Poole made his final appearance for Burton in 2010. | ID: 205  
+TITLE: Mick Walker (footballer, born 1940) | ID: 327  
+
+[""Poole"", ""Mick Walker""]  
+
+Final Answer: [""Poole"", ""Mick Walker""]",4648,9.57,True,structured_complete
+loft:qampari_128k:36,,"[""330 West 42nd Street"", ""Ideal House"", ""Ocean Forest Hotel"", ""Rockefeller Center"", ""Scranton Cultural Center""]","TITLE: Ocean Forest | ID: 21  
+TITLE: Ideal House, London | ID: 23  
+TITLE: Rockefeller Center | ID: 269  
+
+[""Ocean Forest"", ""Ideal House, London"", ""Rockefeller Center""]  
+
+Final Answer: [""Ocean Forest"", ""Ideal House, London"", ""Rockefeller Center""]",3961,4.92,True,structured_complete
+loft:qampari_128k:37,,"[""Coppélia"", ""La Vivandière or Markitenka"", ""La source"", ""Pâquerette"", ""The Little Humpbacked Horse""]","TITLE: Coppélia | ID: 92  
+TITLE: The Little Humpbacked Horse (ballet) | ID: 213  
+TITLE: La source (Saint-Léon) | ID: 653  
+
+[""comic ballet"", ""ballet"", ""ballet""]  
+
+Final Answer: [""comic ballet"", ""ballet"", ""ballet""]",4320,7.87,True,structured_complete
+loft:qampari_128k:38,,"[""Amdo Tibetan"", ""Central Tibetan"", ""Khams Tibetan"", ""Ladakhi"", ""Tibetan""]","[]
+
+Final Answer: []",4080,3.43,True,structured_complete
+loft:qampari_128k:39,,"[""Good Morning Britain"", ""Hey, Hey, It's Saturday!"", ""The Shoe People"", ""Wacaday"", ""Wide Awake Club""]","TITLE: The Lone Gunmen (TV series) | ID: 469
+
+Final Answer: [""The Lone Gunmen (TV series)""]",4196,4.45,True,structured_complete
+loft:qampari_128k:40,,"[""Geita Gold Mine"", ""Sadiola Gold Mine"", ""Sunrise Dam Gold Mine"", ""TauTona Mine"", ""Yatela Mine""]","TITLE: Yatela Mine | ID: 547  
+AngloGold Ashanti owns the Yatela Mine and the Morila Gold Mine in Mali.
+
+Final Answer: [""Yatela Mine"", ""Morila Gold Mine""]",4142,5.8,True,structured_complete
+loft:qampari_128k:41,,"[""Auguste Piccard"", ""Ben Franklin"", ""F.-A. Forel"", ""Goliath"", ""Titan""]","TITLE: Titan (Six Flags Over Texas) | ID: 12  
+[""Titan""]  
+
+Final Answer: [""Titan""]",3965,2.85,True,structured_complete
+loft:qampari_128k:42,,"[""Adam Wakeman"", ""Geoff Nicholls"", ""Neil Murray"", ""Tony Martin"", ""Vinny Appice""]","TITLE: Black Sabbath member information  
+ID: 131  
+
+TITLE: Vinny Appice | ID: 651  
+
+[""Geoffrey James Nicholls"", ""Vinny Appice""]  
+
+Final Answer: [""Geoffrey James Nicholls"", ""Vinny Appice""]",4180,4.46,True,structured_complete
+loft:qampari_128k:43,,"[""633 Squadron"", ""The Great Escape"", ""The Satan Bug"", ""To Sir, with Love"", ""Walk Like a Dragon""]","TITLE: Walk Like a Dragon | ID: 144  
+TITLE: The Satan Bug | ID: 532  
+
+[""Walk Like a Dragon"", ""The Satan Bug""]  
+
+Final Answer: [""Walk Like a Dragon"", ""The Satan Bug""]",4396,11.19,True,structured_complete
+loft:qampari_128k:44,,"[""Bad Astronaut"", ""Joey Cape's Bad Loud"", ""Lagwagon"", ""Me First and the Gimme Gimmes"", ""The Playing Favorites""]","TITLE: Me First and the Gimme Gimmes | ID: 35  
+TITLE: Joey Cape's Bad Loud | ID: 265  
+TITLE: The Playing Favorites | ID: 600  
+TITLE: Bad Astronaut | ID: 630  
+
+Final Answer: [""Me First and the Gimme Gimmes"", ""Joey Cape's Bad Loud"", ""The Playing Favorites"", ""Bad Astronaut""]",4670,8.86,True,structured_complete
+loft:qampari_128k:45,,"[""Blaine Island"", ""Magic Island"", ""Scotts Island"", ""Tyler Island"", ""Wilson Island (West Virginia)""]","TITLE: Magic Island (West Virginia) | ID: 135  
+TITLE: Tyler Island | ID: 156  
+TITLE: Wilson Island (West Virginia) | ID: 395  
+
+[""Elk River"", ""Tyler Island"", ""Wilson Island""]  
+
+Final Answer: [""Elk River"", ""Tyler Island"", ""Wilson Island""]",4168,6.56,True,structured_complete
+loft:qampari_128k:46,,"[""Arthur Mann"", ""George Kerr"", ""Jimmy Cringan"", ""Ray O'Brien"", ""Rob Scott""]","TITLE: George Kerr (footballer) | ID: 251  
+TITLE: Arthur Mann | ID: 560  
+
+Final Answer: [""George Adams McDonald Kerr"", ""Arthur Mann""]",4349,6.11,True,structured_complete
+loft:qampari_128k:47,,"[""Colton Greene"", ""David Rice Atchison"", ""Frank James"", ""M. Jeff Thompson"", ""Sterling Price""]","TITLE: David Rice Atchison | ID: 478  
+TITLE: Slayback's Missouri Cavalry Regiment | ID: 576  
+TITLE: Sterling Price | ID: 664  
+TITLE: Frank James | ID: 679  
+
+[""David Rice Atchison"", ""Alonzo W. Slayback"", ""Sterling Price"", ""Private Frank James""]  
+Final Answer: [""David Rice Atchison"", ""Alonzo W. Slayback"", ""Sterling Price"", ""Private Frank James""]",4542,11.12,True,structured_complete
+loft:qampari_128k:48,,"[""Death Stalks the Night"", ""Sleep No More"", ""Three Tales of Horror"", ""Who Knocks?"", ""Worse Things Waiting""]","TITLE: Three Tales of Horror | ID: 119  
+TITLE: Death Stalks the Night | ID: 168  
+TITLE: Worse Things Waiting | ID: 553  
+TITLE: Sleep No More | ID: 636  
+
+Final Answer: [""Three Tales of Horror"", ""Death Stalks the Night"", ""Worse Things Waiting"", ""Sleep No More""]",4281,7.27,True,structured_complete
+loft:qampari_128k:49,,"[""Black Thorn, White Rose"", ""Ruby Slippers, Golden Tears"", ""Salon Fantastique"", ""Snow White, Blood Red"", ""Year's Best Fantasy and Horror""]","TITLE: Black Thorn, White Rose | ID: 128  
+TITLE: Year's Best Fantasy and Horror | ID: 344  
+
+[""Black Thorn, White Rose"", ""Year's Best Fantasy and Horror""]  
+
+Final Answer: [""Black Thorn, White Rose"", ""Year's Best Fantasy and Horror""]",3975,4.16,True,structured_complete
+loft:qampari_128k:50,,"[""Central Ojibwa"", ""Eastern Ojibwa"", ""Mohawk"", ""Northwestern Ojibwa"", ""Oneida""]","TITLE: Central Ojibwa language | ID: 120  
+TITLE: Oneida language | ID: 499  
+
+[""Central Ojibwa language"", ""Oneida language""]  
+
+Final Answer: [""Central Ojibwa language"", ""Oneida language""]",4061,6.46,True,structured_complete
+loft:qampari_128k:51,,"[""Florida State Road 112"", ""Florida State Road 836"", ""Florida State Road 874"", ""Florida State Road 878"", ""Florida State Road 924""]","TITLE: Florida State Road 874 | ID: 77  
+TITLE: Airport Expressway | ID: 140  
+TITLE: Florida State Road 924 | ID: 656  
+
+[""South Miami Dade Don Shula Expressway (State Road 874)"", ""Airport Expressway"", ""Gratigny Parkway (or simply, the Gratigny)""]  
+
+Final Answer: [""South Miami Dade Don Shula Expressway (State Road 874)"", ""Airport Expressway"", ""Gratigny Parkway (or simply, the Gratigny)""]",4399,12.03,True,structured_complete
+loft:qampari_128k:52,,"[""Aneroid Lake"", ""Bonny Lakes"", ""Dollar Lake"", ""Legore Lake"", ""Roger Lake""]","TITLE: Eagle Cap Wilderness Landform | ID: 76  
+TITLE: Aneroid Lake | ID: 83  
+TITLE: Bonny Lakes | ID: 85  
+TITLE: Dollar Lake (Wallowa County, Oregon) | ID: 222  
+
+Final Answer: [""cirque valley"", ""mountain ponds""]",4401,10.41,True,structured_complete
+loft:qampari_128k:53,,"[""A Girl Worth Fighting For"", ""Beautiful Disaster"", ""Break My Stride"", ""Honor to Us All"", ""Mulan"", ""Reflection""]","TITLE: A Girl Worth Fighting For | ID: 436  
+List:  
+- ""A Girl Worth Fighting For""
+
+Final Answer: [""A Girl Worth Fighting For""]",3828,2.58,True,structured_complete
+loft:qampari_128k:54,,"[""Bee and PuppyCat"", ""Castlevania"", ""My Life as a Teenage Robot"", ""Oh Yeah! Cartoons"", ""Random! Cartoons""]","TITLE: Castlevania (TV series) | ID: 641  
+TITLE: The show is produced by Frederator Studios and is animated by Dong Woo Animation in South Korea and OLM, Inc. in Japan. The series originated with a web pilot in 2013, followed by a Kickstarter supported first season which was released from 2014–16. It will continue with a second season titled ""Bee and PuppyCat: Lazy in Space"". The first Season 2 episode made its debut at Samari the Ottawa International Animation Festival on September 26, 2019. KaBoom! Studios published a comic book adaptation from 2014–16. | ID: 667  
+
+[""Castlevania"", ""Bee and PuppyCat""]  
+
+Final Answer: [""Castlevania"", ""Bee and PuppyCat""]",4916,14.95,True,structured_complete

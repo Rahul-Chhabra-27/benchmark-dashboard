@@ -1,0 +1,3 @@
+# Model output inside quoted CSV fields retains its original whitespace.
+downloads/structured/*.csv -whitespace linguist-generated=true
+data/structured_results.json linguist-generated=true

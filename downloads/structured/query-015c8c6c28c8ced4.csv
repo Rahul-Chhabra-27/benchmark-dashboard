@@ -1,0 +1,82 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:quest_128k:0,,"[""A Case of Need""]",,6247,3.73,True,abstained
+loft:quest_128k:1,,"[""Five Point Someone"", ""One Night @ the Call Center"", ""The 3 Mistakes of My Life""]",,6317,2.36,True,abstained
+loft:quest_128k:2,,"[""Duel with Death"", ""Fly Away Home (2016 film)"", ""Sunshine (1999 film)""]",,6297,2.41,True,abstained
+loft:quest_128k:3,,"[""Moomins and the Comet Chase"", ""Quest for a Heart"", ""Santa Claus and the Magic Drum""]","[""Princess Goldilocks"", ""Blinky Bill the Movie"", ""Time and the Wind""]",7440,19.22,True,structured_complete
+loft:quest_128k:4,,"[""At Night We Walk in Circles"", ""La reina de América"", ""Lost City Radio""]","[""Time and the Wind | 185""]",7063,12.47,True,structured_complete
+loft:quest_128k:5,,"[""One Way Trip 3D""]","[]
+
+Final Answer: []",6469,3.33,True,structured_complete
+loft:quest_128k:6,,"[""Lego Scooby-Doo! Blowout Beach Bash"", ""Scooby-Doo! and the Curse of the 13th Ghost"", ""The Magic Snowflake""]",Final Answer: [],7401,16.8,True,structured_complete
+loft:quest_128k:7,,"[""Firecrest (novel)"", ""Lament for Leto""]","[""""]  
+Final Answer: []",6940,10.8,True,structured_complete
+loft:quest_128k:8,,"[""Crisis of Conscience""]","[""Zuleika Dobson is a critical Jehovah's Witness book? No evidence in the text supports this."", ""The text does not mention any book by Jehovah's Witnesses."", ""NOTHING RELEVANT""]",7266,17.68,True,structured_complete
+loft:quest_128k:9,,"[""Demi-Gods and Semi-Devils"", ""The Adventures of Peregrine Pickle"", ""The History of Sir Charles Grandison""]",,6387,2.76,True,abstained
+loft:quest_128k:10,,"[""Chain of Attack"", ""The Final Nexus"", ""The Peacekeepers""]","[""Nothing relevant""]",7820,24.66,True,structured_complete
+loft:quest_128k:11,,"[""Best Defense"", ""Red Dawn""]",,6307,2.62,True,abstained
+loft:quest_128k:12,,"[""Seveneves""]",,6327,2.37,True,abstained
+loft:quest_128k:13,,"[""Alega Gang: Public Enemy No.1 of Cebu"", ""Lapu-Lapu (2002 film)"", ""Patay na si Hesus""]","[""Princess Goldilocks"", ""Blinky Bill the Movie"", ""Time and the Wind"", ""Aftermath (1994 film)""]
+
+Final Answer: [""Princess Goldilocks"", ""Blinky Bill the Movie"", ""Time and the Wind"", ""Aftermath (1994 film)""]",7952,26.57,True,structured_complete
+loft:quest_128k:14,,"[""All She Was Worth"", ""Crossfire (novel)"", ""Out (novel)""]",,6197,2.37,True,abstained
+loft:quest_128k:15,,"[""Elizabeth (film)""]",,6317,2.64,True,abstained
+loft:quest_128k:16,,"[""Personal Recollections of Joan of Arc""]","TITLE: Personal Recollections of Joan of Arc  
+ID: 259  
+
+Final Answer: [""'Personal Recollections of Joan of Arc'""""]",6832,7.26,True,structured_complete
+loft:quest_128k:17,,"[""Hitman's Wife's Bodyguard"", ""Red Notice (film)"", ""The King's Man""]","[]
+
+Final Answer: []",6530,2.96,True,structured_complete
+loft:quest_128k:18,,"[""The Way of the Scarlet Pimpernel""]",,6267,2.5,True,abstained
+loft:quest_128k:19,,"[""Batman & Bill"", ""Batman & Robin (film)"", ""Batman (serial)""]","TITLE: Batman & Robin (film) | ID: 0
+TITLE: Princess Goldilocks | ID: 38
+
+Final Answer: [""Batman & Robin (film)""]",6947,8.89,True,structured_complete
+loft:quest_128k:20,,"[""Batman: The Killing Joke (film)"", ""Pérák: The Shadow over Prague"", ""The League of Extraordinary Gentlemen (film)""]","[""Princess Goldilocks""]  
+
+Final Answer: [""Princess Goldilocks""]",6905,7.54,True,structured_complete
+loft:quest_128k:21,,"[""Poison in Jest"", ""The Waxworks Murder""]",,6297,2.51,True,abstained
+loft:quest_128k:22,,"[""Battle Cry (Uris novel)"", ""Go Tell It on the Mountain (novel)"", ""Junkie (novel)""]",,6247,2.58,True,abstained
+loft:quest_128k:23,,"[""P4W: Prison for Women"", ""The Phantom (2021 film)"", ""Waseskun""]","[""nothing relevant""]",7330,15.16,True,structured_complete
+loft:quest_128k:24,,"[""Mythago Wood"", ""Nights at the Circus""]",Final Answer: [],7416,16.79,True,structured_complete
+loft:quest_128k:25,,"[""Laughing Gas (novel)""]",,6247,2.51,True,abstained
+loft:quest_128k:26,,"[""Hannibal Rising"", ""Jewel (novel)""]",,6267,2.37,True,abstained
+loft:quest_128k:27,,"[""Ryan (film)""]",,6207,2.41,True,abstained
+loft:quest_128k:28,,"[""Cavalleria rusticana (1982 film)"", ""The Deadly Game (1982 film)"", ""The Life of Verdi (miniseries)""]",,6277,2.35,True,abstained
+loft:quest_128k:29,,"[""Hulk: Where Monsters Dwell"", ""Resident Evil: Vendetta""]","[""""]
+
+
+Final Answer: []",6703,5.34,True,structured_complete
+loft:quest_128k:30,,"[""A Lingering Face"", ""Looking Up (film)"", ""Ni Jing: Thou Shalt Not Steal""]","[""none""]",6724,6.53,True,structured_complete
+loft:quest_128k:31,,"[""Child Bride"", ""I Accuse My Parents"", ""The Devil's Sleep""]",,6247,2.43,True,abstained
+loft:quest_128k:32,,"[""Time and the Wind""]","[""Time and the Wind""] 
+
+Final Answer: [""Time and the Wind""]",6767,6.98,True,structured_complete
+loft:quest_128k:33,,"[""Midnight Sun (Meyer novel)"", ""New Moon (novel)"", ""Twilight (Meyer novel)""]",,6247,2.35,True,abstained
+loft:quest_128k:34,,"[""Boy at War"", ""The Changeover"", ""The Firebird Rocket""]",,6297,2.54,True,abstained
+loft:quest_128k:35,,"[""Killing Them Softly"", ""Mac & Devin Go to High School""]",,6317,2.57,True,abstained
+loft:quest_128k:36,,"[""My Uncle Napoleon"", ""Savushun"", ""The Blind Owl""]",,6257,2.56,True,abstained
+loft:quest_128k:37,,"[""Doctor Zhivago (film)""]","[""Time and the Wind | 185"", ""Doctor Zhivago (film) | 296""]",7804,22.46,True,structured_complete
+loft:quest_128k:38,,"[""The Picturegoers"", ""The Violent Bear It Away""]",,6227,2.45,True,abstained
+loft:quest_128k:39,,"[""Undercover with the KKK""]",,6267,2.6,True,abstained
+loft:quest_128k:40,,"[""An Obvious Situation"", ""That Night's Wife"", ""The Copper (1930 film)""]","[""nothing relevant""]",7404,16.39,True,structured_complete
+loft:quest_128k:41,,"[""Ace Attorney (film)"", ""True Story (film)""]","[]
+
+Final Answer: []",6685,5.18,True,structured_complete
+loft:quest_128k:42,,"[""Le Grand Meaulnes"", ""The Mysteries of Paris"", ""The Mystery of the Yellow Room""]",,6337,2.5,True,abstained
+loft:quest_128k:43,,"[""Casta Diva (1935 film)"", ""The Fire Devil"", ""Under Capricorn""]","[""none""]",6832,6.8,True,structured_complete
+loft:quest_128k:44,,"[""First Invasion: The War of 1812"", ""Last of the Buccaneers"", ""Mohawk (2017 film)""]","[""Princess Goldilocks"", ""Blinky Bill the Movie"", ""Time and the Wind""]",7595,18.86,True,structured_complete
+loft:quest_128k:45,,"[""Going Vertical"", ""Prefontaine (film)""]","[""none""]",6797,6.79,True,structured_complete
+loft:quest_128k:46,,"[""Ilium (novel)"", ""Summer of Night"", ""The Fall of Hyperion (novel)""]",,6177,2.53,True,abstained
+loft:quest_128k:47,,"[""We the Living""]",,6277,2.51,True,abstained
+loft:quest_128k:48,,"[""Le Divorce"", ""Peppermint Soda"", ""Two English Girls""]",Final Answer: [],6803,7.82,True,structured_complete
+loft:quest_128k:49,,"[""Aftermath (1994 film)"", ""Amoklauf"", ""Aya: Imagined Autobiography""]","[""Aftermath (1994 film)""]  
+Final Answer: [""Aftermath (1994 film)""]",7590,18.9,True,structured_complete
+loft:quest_128k:50,,"[""Circe (novel)"", ""Julian (novel)""]",,6317,2.39,True,abstained
+loft:quest_128k:51,,"[""Alice's Adventures in Wonderland"", ""Prince Caspian"", ""The Magician's Nephew""]",,6417,2.29,True,abstained
+loft:quest_128k:52,,"[""A.P.E.X.""]","[]
+
+Final Answer: []",6552,3.45,True,structured_complete
+loft:quest_128k:53,,"[""Babes in Toyland (1934 film)"", ""Mad Monster Party?""]","[""Princess Goldilocks"", ""Blinky Bill the Movie""]  
+Final Answer: []",7286,15.16,True,structured_complete
+loft:quest_128k:54,,"[""Come in Spinner"", ""The Thorn Birds"", ""Zuleika Dobson""]","[""Zuleika Dobson | ID: 37""]",7982,22.88,True,structured_complete

@@ -1,0 +1,24 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:nq_128k:5,,"[""Nala""]",,20635,49.18,True,abstained
+loft:nq_128k:10,,"[""at least seven"", ""at least seven players"", ""seven""]",,1698,8.8,True,abstained
+loft:nq_128k:11,,"[""September 1972""]",The Waltons first aired in September 1972.,8485,12.87,True,final_called
+loft:nq_128k:13,,"[""2011""]",,8803,25.56,True,abstained
+loft:nq_128k:14,,"[""the summit of Cadillac Mountain""]","The sun hits the US first in the eastern part, specifically near Lake Michigan north of Milwaukee, in document ID 540 titled ""Sunset Towers"".",5130,16.02,True,final_called
+loft:nq_128k:15,,"[""Indian government""]",Ministry of Corporate Affairs,3483,8.88,True,final_called
+loft:nq_128k:17,,"[""Ledger""]",Heath Ledger plays the Joker in Batman: The Dark Knight.,9651,42.19,True,final_called
+loft:nq_128k:19,,"[""The Lykan Hypersport""]","TITLE: an Hypersport  
+ID: 158",19377,24.4,True,repetition_broken
+loft:nq_128k:20,,"[""Jack Lord"", ""John Joseph Patrick Ryan""]",Jack Lord played the original Steve McGarrett on Hawaii Five-O.,1739,8.77,True,final_called
+loft:nq_128k:27,,"[""cell nucleus"", ""in the cell nucleus""]",The protein is made in the cytosol.,7405,16.14,True,final_called
+loft:nq_128k:30,,"[""9 to 25 February 2018""]","The text does not mention Mexico playing in the Winter Olympics, nor does it provide a date for such an event. Therefore, there is no valid date to extract.",3972,18.02,True,final_called
+loft:nq_128k:32,,"[""Grisha""]",,11099,50.55,True,abstained
+loft:nq_128k:33,,"[""Serous Membrane"", ""the visceral membrane""]","The text provided does not mention the membrane on the surface of the stomach. Therefore, based on the given information, the question cannot be answered.",3997,22.8,True,final_called
+loft:nq_128k:34,,"[""June 22, 1942""]","The text does not mention when it became law to stand for the national anthem. Therefore, no date can be provided based on the given information.",9266,30.25,True,final_called
+loft:nq_128k:39,,"[""David Ben-Gurion""]","Final Answer: Title: Dexter (season 3) | CONTENT: While stalking a murderous drug dealer, ""Freebo"", Dext, ID: 880, First Signatory: The first signatory of the Israeli Declaration of Independence was David Ben-Gurion.",4994,14.93,True,final_called
+loft:nq_128k:41,,"[""February 27, 2015"", ""February 27, 2015""]",,35825,37.09,False,max_steps
+loft:nq_128k:42,,"[""produced by Quincy Jones""]","{'TITLE': 'We Are the World', 'ID': 130, 'WRITERS': 'Michael Jackson and Lionel Richie'}",9589,12.72,True,final_called
+loft:nq_128k:44,,"[""Jakkur, Bangalore, India""]",,29522,20.37,False,max_steps
+loft:nq_128k:45,,"[""condense the steam""]","The reason cooling water runs through the condenser is to condense the steam coming out of the cylinders or turbines, which reduces back pressure and decreases steam and fuel consumption while increasing power output and recycling boiler water.",3299,8.08,True,final_called
+loft:nq_128k:47,,"[""coffee"", ""honey"", ""livestock"", ""macadamia nuts"", ""pineapple"", ""sugarcane""]","The provided text does not mention Hawaii's primary export to the United States. Therefore, based on the given information, the question cannot be answered.",1497,5.85,True,final_called
+loft:nq_128k:48,,"[""imperial rule""]","Final Answer: The provided text does not specify the type of government the Ming dynasty had. It only mentions that the Ming dynasty's economy was the largest in the world and highlights aspects like merchant influence and technological advances. Therefore, based on the given information, the type of government is not stated.",3581,9.11,True,final_called
+loft:nq_128k:51,,"[""Coire"", ""Corey"", ""Corie"", ""Correy"", ""Corrie"", ""Cory"", ""Khouri"", ""Kori"", ""Kory""]","['Corey', 'Coire', 'Corie', 'Corrie', 'Correy', 'Kory', 'Khouri', 'Kori']",5522,11.6,True,final_called

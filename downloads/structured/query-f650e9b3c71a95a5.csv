@@ -1,0 +1,119 @@
+id,question,answers,prediction,tokens,latency_s,finished,end_reason
+loft:quest_128k:0,,"[""A Case of Need""]",Final Answer: [],7320,24.53,True,structured_complete
+loft:quest_128k:1,,"[""Five Point Someone"", ""One Night @ the Call Center"", ""The 3 Mistakes of My Life""]","[""Five Point Someone""]  
+Final Answer: [""Nothing relevant""]",9154,63.19,True,structured_complete
+loft:quest_128k:2,,"[""Duel with Death"", ""Fly Away Home (2016 film)"", ""Sunshine (1999 film)""]","[""Sunshine (1999 film)""]",7990,34.67,True,structured_complete
+loft:quest_128k:3,,"[""Moomins and the Comet Chase"", ""Quest for a Heart"", ""Santa Claus and the Magic Drum""]","[""Santa Claus and the Magic Drum"", ""Quest for a Heart"", ""Moomins and the Comet Chase""]
+
+Final Answer: [""Santa Claus and the Magic Drum"", ""Quest for a Heart"", ""Moomins and the Comet Chase""]",9848,84.64,True,structured_complete
+loft:quest_128k:4,,"[""At Night We Walk in Circles"", ""La reina de América"", ""Lost City Radio""]","[]
+
+Final Answer: []",6639,6.84,True,structured_complete
+loft:quest_128k:5,,"[""One Way Trip 3D""]","[""The Deadly Game (1982 film)""] 
+
+Final Answer: [""The Deadly Game (1982 film)""]",7179,21.5,True,structured_complete
+loft:quest_128k:6,,"[""Lego Scooby-Doo! Blowout Beach Bash"", ""Scooby-Doo! and the Curse of the 13th Ghost"", ""The Magic Snowflake""]","[""A Chinese Ghost Story (2011 film)""]",7708,31.08,True,structured_complete
+loft:quest_128k:7,,"[""Firecrest (novel)"", ""Lament for Leto""]","[""Firecrest (novel) | ID: 204""]
+
+Final Answer: [""Firecrest (novel) | ID: 204""]",7383,25.35,True,structured_complete
+loft:quest_128k:8,,"[""Crisis of Conscience""]","[""Crisis of Conscience""]",7738,37.11,True,structured_complete
+loft:quest_128k:9,,"[""Demi-Gods and Semi-Devils"", ""The Adventures of Peregrine Pickle"", ""The History of Sir Charles Grandison""]",,6490,4.13,True,abstained
+loft:quest_128k:10,,"[""Chain of Attack"", ""The Final Nexus"", ""The Peacekeepers""]","TITLE: The Final Nexus | ID: 1  
+TITLE: Chain of Attack | ID: 32  
+TITLE: The Peacekeepers | ID: 33  
+
+[""Chain of Attack"", ""The Final Nexus"", ""The Peacekeepers""]  
+Final Answer: [""Chain of Attack"", ""The Final Nexus"", ""The Peacekeepers""]",8007,44.67,True,structured_complete
+loft:quest_128k:11,,"[""Best Defense"", ""Red Dawn""]","[""Chain of Attack"", ""Oba: The Last Samurai"", ""Twilight Zone: The Movie"", ""The Samovar Girl""]  
+Final Answer: [""Nothing relevant""]",8787,64.38,True,structured_complete
+loft:quest_128k:12,,"[""Seveneves""]","[""Nothing relevant""]",7244,16.77,True,structured_complete
+loft:quest_128k:13,,"[""Alega Gang: Public Enemy No.1 of Cebu"", ""Lapu-Lapu (2002 film)"", ""Patay na si Hesus""]","[""Alega Gang: Public Enemy No.1 of Cebu""]",7852,38.45,True,structured_complete
+loft:quest_128k:14,,"[""All She Was Worth"", ""Crossfire (novel)"", ""Out (novel)""]",,6266,3.61,True,abstained
+loft:quest_128k:15,,"[""Elizabeth (film)""]","[]
+
+Final Answer: []",6689,4.5,True,structured_complete
+loft:quest_128k:16,,"[""Personal Recollections of Joan of Arc""]","TITLE: Personal Recollections of Joan of Arc  
+ID: 259  
+
+Final Answer: [""'Personal Recollections of Joan of Arc'""]",6935,9.26,True,structured_complete
+loft:quest_128k:17,,"[""Hitman's Wife's Bodyguard"", ""Red Notice (film)"", ""The King's Man""]","[""Hitman's Wife's Bodyguard"", ""Red Notice (film)""]
+
+Final Answer: [""'Hitman's Wife's Bodyguard'"", ""'Red Notice (film)']""]",7593,23.55,True,structured_complete
+loft:quest_128k:18,,"[""The Way of the Scarlet Pimpernel""]","TITLE: The Way of the Scarlet Pimpernel | ID: 186  
+List:  
+- ""The Way of the Scarlet Pimpernel""
+
+Final Answer: [""The Way of the Scarlet Pimpernel""]",6940,13.5,True,structured_complete
+loft:quest_128k:19,,"[""Batman & Bill"", ""Batman & Robin (film)"", ""Batman (serial)""]","TITLE: Batman & Robin (film) | ID: 0
+
+Final Answer: [""Batman & Robin (film)""]",7055,12.47,True,structured_complete
+loft:quest_128k:20,,"[""Batman: The Killing Joke (film)"", ""Pérák: The Shadow over Prague"", ""The League of Extraordinary Gentlemen (film)""]","[""Batman: The Killing Joke (film) | 56"", ""The League of Extraordinary Gentlemen (film) | 102"", ""Pérák: The Shadow over Prague | 324""]",8834,53.06,True,structured_complete
+loft:quest_128k:21,,"[""Poison in Jest"", ""The Waxworks Murder""]",,6314,3.12,True,abstained
+loft:quest_128k:22,,"[""Battle Cry (Uris novel)"", ""Go Tell It on the Mountain (novel)"", ""Junkie (novel)""]","TITLE: Battle Cry (Uris novel) | ID: 275  
+List:  
+- ""Battle Cry (Uris novel) released in 1953""
+
+Final Answer: [""Battle Cry (Uris novel) released in 1953""]",7166,15.81,True,structured_complete
+loft:quest_128k:23,,"[""P4W: Prison for Women"", ""The Phantom (2021 film)"", ""Waseskun""]","Final Answer: [""nothing relevant""]",8249,41.43,True,structured_complete
+loft:quest_128k:24,,"[""Mythago Wood"", ""Nights at the Circus""]","[""Mythago Wood"", ""41""]",7779,25.28,True,structured_complete
+loft:quest_128k:25,,"[""Laughing Gas (novel)""]",,6341,3.36,True,abstained
+loft:quest_128k:26,,"[""Hannibal Rising"", ""Jewel (novel)""]",,6353,2.6,True,abstained
+loft:quest_128k:27,,"[""Ryan (film)""]","[""Ryan (film) | ID: 314""]",7287,18.59,True,structured_complete
+loft:quest_128k:28,,"[""Cavalleria rusticana (1982 film)"", ""The Deadly Game (1982 film)"", ""The Life of Verdi (miniseries)""]","TITLE: The Life of Verdi (miniseries) | ID: 264  
+List:  
+- The Life of Verdi (miniseries) is a 1982 Italian-language biographical television miniseries filmed on location in Italy.
+
+Final Answer: [""The Life of Verdi (miniseries) is a 1982 Italian-language biographical television miniseries filmed on location in Italy""]",7007,10.56,True,structured_complete
+loft:quest_128k:29,,"[""Hulk: Where Monsters Dwell"", ""Resident Evil: Vendetta""]",,6217,2.6,True,abstained
+loft:quest_128k:30,,"[""A Lingering Face"", ""Looking Up (film)"", ""Ni Jing: Thou Shalt Not Steal""]","TITLE: A Chinese Ghost Story (2011 film)  
+ID: 68  
+
+List:  
+- ""A Chinese Ghost Story (2011 film) – ID: 68""
+
+Final Answer: [""A Chinese Ghost Story (2011 film) – ID: 68""]",6854,8.21,True,structured_complete
+loft:quest_128k:31,,"[""Child Bride"", ""I Accuse My Parents"", ""The Devil's Sleep""]","[""Now Hare This""]",6750,4.44,True,structured_complete
+loft:quest_128k:32,,"[""Time and the Wind""]","[""Time and the Wind""]  
+Final Answer: [""Time and the Wind""]",7381,14.41,True,structured_complete
+loft:quest_128k:33,,"[""Midnight Sun (Meyer novel)"", ""New Moon (novel)"", ""Twilight (Meyer novel)""]",Final Answer: [],7299,16.0,True,structured_complete
+loft:quest_128k:34,,"[""Boy at War"", ""The Changeover"", ""The Firebird Rocket""]","[""""]  
+Final Answer: []",6800,7.92,True,structured_complete
+loft:quest_128k:35,,"[""Killing Them Softly"", ""Mac & Devin Go to High School""]",,6436,3.02,True,abstained
+loft:quest_128k:36,,"[""My Uncle Napoleon"", ""Savushun"", ""The Blind Owl""]","[""""]",7804,28.37,True,structured_complete
+loft:quest_128k:37,,"[""Doctor Zhivago (film)""]","[""Victory at Entebbe""]",8447,39.91,True,structured_complete
+loft:quest_128k:38,,"[""The Picturegoers"", ""The Violent Bear It Away""]","[""The Violent Bear It Away""] 
+
+Final Answer: [""The Violent Bear It Away""]",6921,9.88,True,structured_complete
+loft:quest_128k:39,,"[""Undercover with the KKK""]",,6334,3.34,True,abstained
+loft:quest_128k:40,,"[""An Obvious Situation"", ""That Night's Wife"", ""The Copper (1930 film)""]","TITLE: The Copper (1930 film) | ID: 92  
+TITLE: An Obvious Situation | ID: 203  
+
+[""The Copper (1930 film)"", ""An Obvious Situation""]  
+
+Final Answer: [""The Copper (1930 film)"", ""An Obvious Situation""]",7643,24.69,True,structured_complete
+loft:quest_128k:41,,"[""Ace Attorney (film)"", ""True Story (film)""]","[""The Documentary Focuses on Bill Finger's Role in Creating Batman"", ""Never Let Me Go""]  
+Final Answer: [""The Documentary Focuses on Bill Finger's Role in Creating Batman"", ""Never Let Me Go""]",7675,26.31,True,structured_complete
+loft:quest_128k:42,,"[""Le Grand Meaulnes"", ""The Mysteries of Paris"", ""The Mystery of the Yellow Room""]","[""The Mysteries of Paris | 321""]",7469,16.09,True,structured_complete
+loft:quest_128k:43,,"[""Casta Diva (1935 film)"", ""The Fire Devil"", ""Under Capricorn""]","[""Under Capricorn | 73""]",7459,19.39,True,structured_complete
+loft:quest_128k:44,,"[""First Invasion: The War of 1812"", ""Last of the Buccaneers"", ""Mohawk (2017 film)""]","[""First Invasion: The War of 1812 | 168""]",8630,41.6,True,structured_complete
+loft:quest_128k:45,,"[""Going Vertical"", ""Prefontaine (film)""]",,6348,2.72,True,abstained
+loft:quest_128k:46,,"[""Ilium (novel)"", ""Summer of Night"", ""The Fall of Hyperion (novel)""]","TITLE: Summer of Night | ID: 77  
+TITLE: The Fall of Hyperion (novel) | ID: 117
+
+[""Summer of Night"", ""The Fall of Hyperion (novel)""]
+
+Final Answer: [""Summer of Night"", ""The Fall of Hyperion (novel)""]",7815,31.65,True,structured_complete
+loft:quest_128k:47,,"[""We the Living""]","[""""]  
+Final Answer: []",6832,8.03,True,structured_complete
+loft:quest_128k:48,,"[""Le Divorce"", ""Peppermint Soda"", ""Two English Girls""]","[""Le Divorce | 163""]",7361,15.65,True,structured_complete
+loft:quest_128k:49,,"[""Aftermath (1994 film)"", ""Amoklauf"", ""Aya: Imagined Autobiography""]",Final Answer: [],7142,12.91,True,structured_complete
+loft:quest_128k:50,,"[""Circe (novel)"", ""Julian (novel)""]",,6403,2.54,True,abstained
+loft:quest_128k:51,,"[""Alice's Adventures in Wonderland"", ""Prince Caspian"", ""The Magician's Nephew""]","[""The Magician's Nephew | 147"", ""Prince Caspian | 206""]",9268,51.92,True,structured_complete
+loft:quest_128k:52,,"[""A.P.E.X.""]","TITLE: A.P.E.X. | ID: 22  
+[""A.P.E.X.""]
+
+Final Answer: [""A.P.E.X.""]",6943,10.22,True,structured_complete
+loft:quest_128k:53,,"[""Babes in Toyland (1934 film)"", ""Mad Monster Party?""]","TITLE: Mad Monster Party? | ID: 313
+
+Final Answer: [""\""Mad Monster Party?\""""]",8990,50.87,True,structured_complete
+loft:quest_128k:54,,"[""Come in Spinner"", ""The Thorn Birds"", ""Zuleika Dobson""]","[""Zuleika Dobson | 37""]",8315,27.99,True,structured_complete
