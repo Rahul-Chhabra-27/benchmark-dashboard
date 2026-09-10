@@ -53,4 +53,14 @@ class StructuredDataTests(unittest.TestCase):
             self.assertLess(r['root_peak_tokens'],2000)
 
 
+    def test_compare_view_rows_carry_usage(self):
+        # The cross-campaign view plots every Sep 9 / Sep 10 row on a token axis.
+        for r in self.data['runs']:
+            if r['campaign'] in ('graph-order','query','geometry'):
+                with self.subTest(run=r['id']):
+                    self.assertIsNotNone(r['tokens_per_query'])
+                    self.assertGreater(r['tokens_per_query'],0)
+                    self.assertLessEqual(r['n'],55)
+
+
 if __name__=='__main__': unittest.main()

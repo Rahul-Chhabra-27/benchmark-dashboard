@@ -42,6 +42,33 @@ READER = {
 NAMES = {'nq_128k': 'NQ', 'hotpotqa_128k': 'HotpotQA', 'musique_128k': 'MuSiQue', 'qampari_128k': 'Qampari',
          'quest_128k': 'Quest'}
 ORDER = {'bm25-graph': 0, 'source': 1, 'vanilla': 2, 'rlm': 3, 'kvzip': 4}
+# How the graph order is built -- mirrors evaluation/rlm/organization.py (config
+# revision 1). No step ever sees the question or its answers.
+EXPLAINER = [
+    '1 · Chunk. The document is cut into consecutive 2,000-character chunks with no overlap — about 240 '
+    'chunks for a 128k-token LOFT document.',
+    '2 · Score every pair with BM25. Each chunk is used as a BM25 query against every chunk (lower-cased '
+    'alphanumeric words, stopwords removed, k1 = 1.5, b = 0.75). A shared word counts for more when it is rare '
+    'in the document (inverse document frequency) and frequent in the matched chunk, with a penalty for long '
+    'chunks. So two chunks score high when they share distinctive words — the same names, dates or entities.',
+    '3 · Make it symmetric. A chunk\'s match with itself is dropped, each chunk\'s scores are divided by its '
+    'own best match, and the two directions are averaged: w(i, j) = (s(i→j)/max_i + s(j→i)/max_j) / 2. It '
+    'is 1 only when each chunk is the other\'s best match.',
+    '4 · Keep strong links only. Each chunk keeps edges to its 5 highest-weight neighbours (the union over '
+    'all chunks), giving a sparse similarity graph.',
+    '5 · Spanning forest. Kruskal\'s algorithm keeps the strongest edges that do not close a cycle — a '
+    'maximum-weight spanning forest, one tree per connected group of chunks (on nq: 238 chunks, 779 kept '
+    'edges, one tree).',
+    '6 · Walk it. Starting from the earliest chunk, each tree is walked depth-first, always following the '
+    'strongest untaken edge and backtracking at dead ends; then the next unvisited earliest chunk starts a new '
+    'walk. Ties go to the earlier chunk, so the order is deterministic. Chunks with no edges are kept, in '
+    'place. Building the graph costs under 1 CPU-second per document, once, shared by every question.',
+    'Both arms then pack chunks in their order into reader groups of at most 8,192 tokens (counted with the '
+    'real chat template, instructions and question included); each chunk keeps its own [source chars s:e] '
+    'label, so distant chunks placed side by side stay distinguishable. One reader call per group writes '
+    'findings, and the reducer sees them in group order. Source order is simply chunk 1, 2, 3, … — so both '
+    'arms read identical text under identical budgets, and only the order differs.',
+]
 
 
 def slug(row):
@@ -142,6 +169,7 @@ def main():
             'RLM come from the Aug 30 110-row runs, restricted to these 55 test questions. qampari and quest are '
             'scored on answer coverage, the others on subspan EM — never compare across the two.'),
         task_notes=task_notes,
+        explainer=EXPLAINER,
     )
     data['campaigns'].insert(0, campaign)
     data['runs'] = runs + data['runs']

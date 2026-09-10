@@ -84,7 +84,11 @@ It replaces only the `graph-order` campaign, its rows in the flat CSV and
 scratch, so re-run the splice after one.
 
 Direct link: [Structured RLM](https://rahul-chhabra-27.github.io/benchmark-dashboard/#structured).
-Filter choices are retained in the URL for sharing.
+Filter choices are retained in the URL for sharing. The default view,
+**Compare all · Sep 9 + Sep 10**, puts every completed configuration from the chunk
+geometry sweep, the query-selection study and the graph-order campaign (with its
+references) on one score-vs-tokens axis, filterable by campaign and method, with an
+optional best-score-for-its-token-cost (Pareto) filter.
 
 Regenerate after evaluations finish:
 
